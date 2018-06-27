@@ -23,6 +23,9 @@ a {
     	text-decoration: underline;
     }
 }
+.search-form{
+    position: relative;
+}
 .main-site{
     margin: 0 auto;
     overflow: hidden;
@@ -114,7 +117,7 @@ a {
 	}
 	.main-search-box{
 		padding-top: 20px;		
-		input[type=text]{
+		input[type=search]{
 			margin: 0px;
 		    border-style: none;
 		    outline: none;
@@ -132,6 +135,9 @@ a {
 			width: 350px;
 		    height: 32px;
 		    position: relative;
+            &:before{
+                content: initial;
+            }
 		}
 		input[type=submit]{
 		    position: absolute;
@@ -161,15 +167,22 @@ a {
 	.user-login{
 	    height: 50px;
 	    margin-top: 20px;
-	    background: url(../images/ik.gif) no-repeat 35px 6px;
+	    background: url(../images/ik.gif) no-repeat 35px 0;
 	}
 	.user-login-wrapper{
+        position: relative;
+        top: -3px;
 		.login{
 			a{
 				color: #4f4f4f;
 				font-weight: bold;
 			}
 		}
+        .user_logged_in{
+            position: relative;
+            left: -38px;
+            top: 10px;
+        }
 	}
 	.main-magemenu{
 		background: #231D2B;
@@ -1230,7 +1243,7 @@ footer{
 /*-----------------------Begin List Product --------------------*/
 .listing-page-wrapper{
     .section1.slider{
-        margin: 15px 0;
+        margin: 0 0 15px;
     }
     .featured-category{
         margin-top: 50px;

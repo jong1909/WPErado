@@ -6,6 +6,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.search-form {
+  position: relative; }
+
 .main-site {
   margin: 0 auto;
   overflow: hidden; }
@@ -73,7 +76,7 @@ a {
   padding-top: 20px; }
 #header .main-search-box {
   padding-top: 20px; }
-  #header .main-search-box input[type=text] {
+  #header .main-search-box input[type=search] {
     margin: 0px;
     border-style: none;
     outline: none;
@@ -90,6 +93,8 @@ a {
     width: 350px;
     height: 32px;
     position: relative; }
+    #header .main-search-box #search-product:before {
+      content: initial; }
   #header .main-search-box input[type=submit] {
     position: absolute;
     visibility: visible;
@@ -114,10 +119,17 @@ a {
 #header .user-login {
   height: 50px;
   margin-top: 20px;
-  background: url(../images/ik.gif) no-repeat 35px 6px; }
-#header .user-login-wrapper .login a {
-  color: #4f4f4f;
-  font-weight: bold; }
+  background: url(../images/ik.gif) no-repeat 35px 0; }
+#header .user-login-wrapper {
+  position: relative;
+  top: -3px; }
+  #header .user-login-wrapper .login a {
+    color: #4f4f4f;
+    font-weight: bold; }
+  #header .user-login-wrapper .user_logged_in {
+    position: relative;
+    left: -38px;
+    top: 10px; }
 #header .main-magemenu {
   background: #231D2B;
   height: 43px; }
@@ -948,7 +960,7 @@ footer {
 
 /*-----------------------Begin List Product --------------------*/
 .listing-page-wrapper .section1.slider {
-  margin: 15px 0; }
+  margin: 0 0 15px; }
 .listing-page-wrapper .featured-category {
   margin-top: 50px; }
   .listing-page-wrapper .featured-category .col-md-4 {

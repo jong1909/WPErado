@@ -44,14 +44,10 @@
 			<div class="container">
 				<div class="header-middle-wrapper row">
 					<div class="col-md-3 col-ssmm-7 col-ssm-7 shop-logo">
-						<a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/logo.jpg" class="img-responsive" alt=""></a>
+						<a href="/"><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/logo.jpg" class="img-responsive" alt=""></a>
 					</div>
 					<div class="col-md-5 col-ssmm-12 col-ssm-12 main-search-box">
-						<form action="" id="search-product">
-							<input type="text" placeholder="Nhập từ khóa tìm kiếm">
-							<input type="submit" alt="search">
-						</form>
-
+						<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
 					</div>
 					<div class="col-md-4 store-support">
 						<div class="col-md-6 hotline">
@@ -60,8 +56,8 @@
 						</div>
 						<div class="col-md-6 user-login">
 							<div class="float-right user-login-wrapper">
-								<div class="login"><a href="">Đăng nhập</a></div>
-								<div class="register"><a href="">Đăng ký tài khoản</a></div>
+								<div class="login"><?php echo do_shortcode( '[llrmloginlogout]' );?></div>
+								<div class="register"><?php echo do_shortcode( '[llrmregister]' );?></div>
 							</div>							
 						</div>
 					</div>
