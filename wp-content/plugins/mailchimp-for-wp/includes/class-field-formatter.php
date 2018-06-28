@@ -48,11 +48,6 @@ class MC4WP_Field_Formatter {
 	 * @return string
 	 */
 	public function birthday( $value ) {
-        $value = trim( $value );
-        if( empty( $value ) ) {
-            return $value;
-        }
-
 		if( is_array( $value ) ) {
 			// allow for "day" and "month" fields
 			if( isset( $value['month'] ) && isset( $value['day'] ) ) {
@@ -63,18 +58,24 @@ class MC4WP_Field_Formatter {
 			}
 		}
 
+        $value = trim( $value );
+        if( empty( $value ) ) {
+            return $value;
+        }
+
 		// always use slashes as delimiter, so next part works
         $value = str_replace( array( '.', '-' ), '/', $value );
 
 		// if first part looks like a day, flip order so month (or even year) comes first
 		// this allows `strtotime` to understand `dd/mm` values
 		$values = explode( '/', $value );
-		if( $values[0] > 12 && $values[0] <= 31 ) {
+		if( $values[0] > 12 && $values[0] <= 31 && isset( $values[1] ) && $values[1] <= 12 ) {
 			$values = array_reverse ( $values );
 			$value = join( '/', $values );
 		}
 
-		$value = (string) date( 'm/d', strtotime( $value ) );
+		$value = (string) date('m/d', strtotime( $value ) );
+
 		return $value;
 	}
 
@@ -84,11 +85,6 @@ class MC4WP_Field_Formatter {
 	 * @return string
 	 */
 	public function date( $value ) {
-
-	    $value = trim( $value );
-        if( empty( $value ) ) {
-            return $value;
-        }
 
 		if( is_array( $value ) ) {
 
@@ -100,6 +96,11 @@ class MC4WP_Field_Formatter {
 				$value = join( '/', $value );
 			}
 		}
+
+        $value = trim( $value );
+        if( empty( $value ) ) {
+            return $value;
+        }
 
 		return (string) date('Y-m-d', strtotime( $value ) );
 	}

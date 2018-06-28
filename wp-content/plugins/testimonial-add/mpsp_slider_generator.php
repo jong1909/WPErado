@@ -1,4 +1,4 @@
-
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <?php echo get_post_meta($id,'mpsp_slide_nav_button_position',true); ?>
 <style>
 .owl-pagination{

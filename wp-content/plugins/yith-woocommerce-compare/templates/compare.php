@@ -19,8 +19,8 @@ $widths = array();
 foreach( $products as $product ) $widths[] = '{ "sWidth": "205px", resizeable:true }';
 
 $table_text = get_option( 'yith_woocompare_table_text' );
-yit_wpml_register_string( 'Plugins', 'plugin_yit_compare_table_text', $table_text );
-$localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compare_table_text', $table_text );
+do_action ( 'wpml_register_single_string', 'Plugins', 'plugin_yit_compare_table_text', $table_text );
+$localized_table_text = apply_filters ( 'wpml_translate_single_string', $table_text, 'Plugins', 'plugin_yit_compare_table_text' );
 
 ?><!DOCTYPE html>
 <!--[if IE 6]>
@@ -49,12 +49,14 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
     <title><?php _e( 'Product Comparison', 'yith-woocommerce-compare' ) ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" />
+    <?php wp_head() ?>
+
+    <?php do_action( 'yith_woocompare_popup_head' ) ?>    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" />
     <link rel="stylesheet" href="<?php echo $this->stylesheet_url() ?>" type="text/css" />
     <link rel="stylesheet" href="<?php echo YITH_WOOCOMPARE_URL ?>assets/css/colorbox.css"/>
     <link rel="stylesheet" href="<?php echo YITH_WOOCOMPARE_URL ?>assets/css/jquery.dataTables.css"/>
-
-    <?php wp_head() ?>
 
     <style type="text/css">
         body.loading {
@@ -80,7 +82,7 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
     <thead>
     <tr>
         <th>&nbsp;</th>
-        <?php foreach( $products as $i => $product ) : ?>
+        <?php foreach( $products as $product_id => $product ) : ?>
             <td></td>
         <?php endforeach; ?>
     </tr>
@@ -88,7 +90,7 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
     <tfoot>
     <tr>
         <th>&nbsp;</th>
-        <?php foreach( $products as $i => $product ) : ?>
+        <?php foreach( $products as $product_id => $product ) : ?>
             <td></td>
         <?php endforeach; ?>
     </tr>
@@ -104,11 +106,17 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
     <?php else : ?>
         <tr class="remove">
             <th>&nbsp;</th>
-            <?php foreach( $products as $i => $product ) : $product_class = ( $i % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product->id ?>
+            <?php
+            $index = 0;
+            foreach( $products as $product_id => $product ) :
+                $product_class = ( $index % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product_id ?>
                 <td class="<?php echo $product_class; ?>">
-                    <a href="<?php echo add_query_arg( 'redirect', 'view', $this->remove_product_url( $product->id ) ) ?>" data-product_id="<?php echo $product->id; ?>"><?php _e( 'Remove', 'yith-woocommerce-compare' ) ?> <span class="remove">x</span></a>
+                    <a href="<?php echo add_query_arg( 'redirect', 'view', $this->remove_product_url( $product_id ) ) ?>" data-product_id="<?php echo $product_id; ?>"><?php _e( 'Remove', 'yith-woocommerce-compare' ) ?> <span class="remove">x</span></a>
                 </td>
-            <?php endforeach ?>
+                <?php
+                ++$index;
+            endforeach;
+            ?>
         </tr>
 
         <?php foreach ( $fields as $field => $name ) : ?>
@@ -120,7 +128,10 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
                     <?php if ( $field == 'image' ) echo '<div class="fixed-th"></div>'; ?>
                 </th>
 
-                <?php foreach( $products as $i => $product ) : $product_class = ( $i % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product->id; ?>
+                <?php
+                $index = 0;
+                foreach( $products as $product_id => $product ) :
+                    $product_class = ( $index % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product_id; ?>
                     <td class="<?php echo $product_class; ?>"><?php
                         switch( $field ) {
 
@@ -138,7 +149,9 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
                         }
                         ?>
                     </td>
-                <?php endforeach ?>
+                    <?php
+                    ++$index;
+                endforeach; ?>
 
             </tr>
 
@@ -148,9 +161,14 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
             <tr class="price repeated">
                 <th><?php echo $fields['price'] ?></th>
 
-                <?php foreach( $products as $i => $product ) : $product_class = ( $i % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product->id ?>
+                <?php
+                $index = 0;
+                foreach( $products as $product_id => $product ) :
+                    $product_class = ( $index % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product_id ?>
                     <td class="<?php echo $product_class ?>"><?php echo $product->fields['price'] ?></td>
-                <?php endforeach; ?>
+                    <?php
+                    ++$index;
+                endforeach; ?>
 
             </tr>
         <?php endif; ?>
@@ -159,9 +177,16 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
             <tr class="add-to-cart repeated">
                 <th><?php echo $fields['add-to-cart'] ?></th>
 
-                <?php foreach( $products as $i => $product ) : $product_class = ( $i % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product->id ?>
-                    <td class="<?php echo $product_class ?>"><?php woocommerce_template_loop_add_to_cart(); ?></td>
-                <?php endforeach; ?>
+                <?php
+                $index = 0;
+                foreach( $products as $product_id => $product ) :
+                    $product_class = ( $index % 2 == 0 ? 'odd' : 'even' ) . ' product_' . $product_id ?>
+                    <td class="<?php echo $product_class ?>">
+                        <?php woocommerce_template_loop_add_to_cart(); ?>
+                    </td>
+                    <?php
+                    ++$index;
+                endforeach; ?>
 
             </tr>
         <?php endif; ?>
@@ -174,12 +199,12 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
 <?php do_action( 'yith_woocompare_after_main_table' ); ?>
 
 <?php if( wp_script_is( 'responsive-theme', 'enqueued' ) ) wp_dequeue_script( 'responsive-theme' ) ?><?php if( wp_script_is( 'responsive-theme', 'enqueued' ) ) wp_dequeue_script( 'responsive-theme' ) ?>
-<?php do_action('wp_print_footer_scripts'); ?>
+<?php print_footer_scripts(); ?>
 
 <script type="text/javascript">
 
     jQuery(document).ready(function($){
-        <?php if ( $is_iframe ) : ?>$('a').attr('target', '_parent');<?php endif; ?>
+        $('a').attr('target', '_parent');
 
         var oTable;
         $('body').on( 'yith_woocompare_render_table', function(){
@@ -202,23 +227,25 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
         }).trigger('yith_woocompare_render_table');
 
         // add to cart
-        var button_clicked;
-        $(document).on('click', 'a.add_to_cart_button', function(){
-            button_clicked = $(this);
-            button_clicked.block({message: null, overlayCSS: {background: '#fff url(' + woocommerce_params.ajax_loader_url + ') no-repeat center', backgroundSize: '16px 16px', opacity: 0.6}});
-        });
+        var redirect_to_cart = false,
+            body             = $('body');
 
         // close colorbox if redirect to cart is active after add to cart
-        $('body').on( 'adding_to_cart', function ( $thisbutton, data ) {
+        body.on( 'adding_to_cart', function ( $thisbutton, data ) {
             if( wc_add_to_cart_params.cart_redirect_after_add == 'yes' ) {
                 wc_add_to_cart_params.cart_redirect_after_add = 'no';
                 redirect_to_cart = true;
             }
         });
 
-        // remove add to cart button after added
-        $('body').on('added_to_cart', function( ev, fragments, cart_hash, button ){
+        body.on('wc_cart_button_updated', function( ev, button ){
+            $('a.added_to_cart').attr('target', '_parent');
+        });
 
+        // remove add to cart button after added
+        body.on('added_to_cart', function( ev, fragments, cart_hash, button ){
+
+            $('a').attr('target', '_parent');
 
             if( redirect_to_cart == true ) {
                 // redirect
@@ -226,18 +253,12 @@ $localized_table_text = yit_wpml_string_translate( 'Plugins', 'plugin_yit_compar
                 return;
             }
 
-            button_clicked.hide();
-
-            <?php if ( $is_iframe ) : ?>
-            $('a').attr('target', '_parent');
-
             // Replace fragments
             if ( fragments ) {
                 $.each(fragments, function(key, value) {
                     $(key, window.parent.document).replaceWith(value);
                 });
             }
-            <?php endif; ?>
         });
 
         // close window

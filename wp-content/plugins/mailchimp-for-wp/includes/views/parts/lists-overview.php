@@ -1,13 +1,16 @@
 <h3><?php _e( 'Your MailChimp Account' ,'mailchimp-for-wp' ); ?></h3>
 <p><?php _e( 'The table below shows your MailChimp lists and their details. If you just applied changes to your MailChimp lists, please use the following button to renew the cached lists configuration.', 'mailchimp-for-wp' ); ?></p>
 
-<form method="post" action="">
-	<input type="hidden" name="_mc4wp_action" value="empty_lists_cache" />
 
-	<p>
-		<input type="submit" value="<?php _e( 'Renew MailChimp lists', 'mailchimp-for-wp' ); ?>" class="button" />
-	</p>
-</form>
+<div id="mc4wp-list-fetcher">
+	<form method="post" action="">
+		<input type="hidden" name="_mc4wp_action" value="empty_lists_cache" />
+
+		<p>
+			<input type="submit" value="<?php _e( 'Renew MailChimp lists', 'mailchimp-for-wp' ); ?>" class="button" />
+		</p>
+	</form>
+</div>
 
 <div class="mc4wp-lists-overview">
 	<?php if( empty( $lists ) ) { ?>
@@ -35,7 +38,7 @@
 			/** @var MC4WP_MailChimp_List $list */
 			echo '<tr>';
 			echo sprintf( '<td><a href="javascript:mc4wp.helpers.toggleElement(\'.list-%s-details\')">%s</a><span class="row-actions alignright"></span></td>', $list->id, esc_html( $list->name ) );
-			echo sprintf( '<td>%s</td>', esc_html( $list->id ) );
+			echo sprintf( '<td><code>%s</code></td>', esc_html( $list->id ) );
 			echo sprintf( '<td>%s</td>', esc_html( $list->subscriber_count ) );
 			echo '</tr>';
 
@@ -46,13 +49,13 @@
 
 			// Fields
 			if ( ! empty( $list->merge_fields ) ) { ?>
-				<h3>Merge Fields</h3>
+				<h3><?php _e('Merge Fields', 'mailchimp-for-wp');?></h3>
 				<table class="widefat striped">
 					<thead>
 						<tr>
-							<th>Name</th>
-							<th>Tag</th>
-							<th>Type</th>
+							<th><?php _e('Name', 'mailchimp-for-wp');?></th>
+							<th><?php _e('Tag', 'mailchimp-for-wp');?></th>
+							<th><?php _e('Type', 'mailchimp-for-wp');?></th>
 						</tr>
 					</thead>
 					<?php foreach ( $list->merge_fields as $merge_field ) { ?>
@@ -80,18 +83,21 @@
 			// interest_categories
 			if ( ! empty( $list->interest_categories ) ) { ?>
 
-				<h3>Interest Categories</h3>
+				<h3><?php _e('Interest Categories', 'mailchimp-for-wp');?></h3>
 				<table class="widefat striped">
 					<thead>
 						<tr>
-							<th>Name</th>
-							<th>Type</th>
-							<th>Interests</th>
+							<th><?php _e('Name', 'mailchimp-for-wp');?></th>
+							<th><?php _e('Type', 'mailchimp-for-wp');?></th>
+							<th><?php _e('Interests', 'mailchimp-for-wp');?></th>
 						</tr>
 					</thead>
 					<?php foreach ( $list->interest_categories as $interest_category ) { ?>
 						<tr>
-							<td><?php echo esc_html( $interest_category->name ); ?></td>
+							<td>
+								<strong><?php echo esc_html( $interest_category->name ); ?></strong><br /><br />
+								ID: <code><?php echo esc_html( $interest_category->id ); ?></code>
+							</td>
 							<td><?php echo esc_html( $interest_category->field_type ); ?></td>
 							<td>
 								<div class="row" style="margin-bottom: 4px;">

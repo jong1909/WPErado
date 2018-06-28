@@ -2,13 +2,15 @@
 /*
 Plugin Name: a3 Lazy Load
 Description: Speed up your site and enhance frontend user's visual experience in PC's, Tablets and mobile with a3 Lazy Load.
-Version: 1.8.2
+Version: 1.8.9
 Author: a3rev Software
 Author URI: https://a3rev.com/
 Requires at least: 4.0
-Tested up to: 4.9.0
+Tested up to: 4.9.6
 Text Domain: a3-lazy-load
 Domain Path: /languages
+WC requires at least: 2.0.0
+WC tested up to: 3.4.1
 License: GPLv2 or later
 	Copyright © 2011 a3 Revolution Software Development team
 	a3 Revolution Software Development team
@@ -19,7 +21,6 @@ License: GPLv2 or later
 */
 ?>
 <?php
-define('A3_LAZY_VERSION', '1.8.2');
 define('A3_LAZY_LOAD_FILE_PATH', dirname(__FILE__));
 define('A3_LAZY_LOAD_DIR_NAME', basename(A3_LAZY_LOAD_FILE_PATH));
 define('A3_LAZY_LOAD_FOLDER', dirname(plugin_basename(__FILE__)));
@@ -29,6 +30,9 @@ define('A3_LAZY_LOAD_DIR', WP_CONTENT_DIR . '/plugins/' . A3_LAZY_LOAD_FOLDER);
 define('A3_LAZY_LOAD_JS_URL', A3_LAZY_LOAD_URL . '/assets/js');
 define('A3_LAZY_LOAD_CSS_URL', A3_LAZY_LOAD_URL . '/assets/css');
 define('A3_LAZY_LOAD_IMAGES_URL', A3_LAZY_LOAD_URL . '/assets/images');
+
+define( 'A3_LAZY_LOAD_KEY', 'a3_lazy_load' );
+define( 'A3_LAZY_VERSION', '1.8.9' );
 
 /**
  * Load Localisation files.
@@ -46,6 +50,9 @@ function a3_lazy_load_plugin_textdomain() {
 	load_textdomain( 'a3-lazy-load', WP_LANG_DIR . '/a3-lazy-load/a3-lazy-load-' . $locale . '.mo' );
 	load_plugin_textdomain( 'a3-lazy-load', false, A3_LAZY_LOAD_FOLDER.'/languages' );
 }
+
+// Disable for load new google font faces
+add_filter( A3_LAZY_LOAD_KEY . '_new_google_fonts_enable', '__return_false' );
 
 include( 'admin/admin-ui.php' );
 include( 'admin/admin-interface.php' );

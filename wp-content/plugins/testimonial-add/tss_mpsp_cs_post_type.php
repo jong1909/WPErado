@@ -1,18 +1,10 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-
-
-/**
-* Registers a new post type
-* @uses $wp_post_types Inserts new post type object into the list
-*
-* @param string  Post type key, must not exceed 20 characters
-* @param array|string  See optional args description above.
-* @return object|WP_Error the registered post type object, or an error object
-*/
 function tss_mpsp_slider_posts_type() {
 
+	$menu_icon_path = plugins_url('img/icons/testimonials-icon.png',__FILE__);
 	$labels = array(
 		'name'                => _x( 'Testimonial Sliders', 'text-domain' ),
 		'singular_name'       => _x( 'Testimonial Slider', 'text-domain' ),
@@ -38,7 +30,7 @@ function tss_mpsp_slider_posts_type() {
 		'show_in_menu'        => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => null,
-		'menu_icon'           => null,
+		'menu_icon'           => $menu_icon_path,
 		'show_in_nav_menus'   => true,
 		'publicly_queryable'  => true,
 		'exclude_from_search' => false,

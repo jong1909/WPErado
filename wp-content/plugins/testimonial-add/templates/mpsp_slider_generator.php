@@ -14,38 +14,35 @@
 
 
 
+
 </style>
 
 
-
-
-
 <style type="text/css">
+
   #tss_warppper{
     background: <?php echo get_post_meta($id,'mpsp_posts_bg_color',true); ?>;
-    min-width: 180px;
+    width: 200px;
     text-align: center;
     margin: 0 auto;
-    padding: 10px 20px 10px 20px;
+    padding: 10px;
   }
 
   #tss_image{
-    width: 100px;
-    height: 100px;
+    max-width: 150px;
     border-radius:<?php echo get_post_meta($id,'tss_mpsp_slider_img_border',true); ?>px;
     text-align: center;
-
-
+    display: initial !important;
   }
 
   .tss_p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
     color: <?php echo get_post_meta($id,'mpsp_posts_description_color',true); ?>;
   }
   #tss_name{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -61,19 +58,17 @@
     color: #dddddd;
   }
   #tss_testimonial{
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
   }
   </style>
 
   
              
-              <div id="<?php echo 'tss_id'.$id; ?>" class="owl-carousel">
+              <div id="<?php echo 'tss_id'.$id; ?>" class="owl-carousel" style='text-align:center;'>
                 
           <?php
-
-
-// WP_Query arguments
+               // WP_Query arguments
                   $args = array (
                     'post_type'              => 'tss_data',
                     'category_name'          => get_post_meta($id,'mpsp_posts_value',true), 
@@ -82,8 +77,6 @@
                     'orderby'                => get_post_meta($id,'mpsp_posts_orderby',true),
 
                   );
-
-
 // The Query
                   $the_query = new WP_Query( $args );
 
@@ -120,11 +113,12 @@ jQuery(document).ready(function() {
  
   jQuery("<?php echo '#tss_id'.$id; ?>").owlCarousel({
     items :<?php echo  get_post_meta($id,'mpsp_slide_single',true); ?>,
+    singleItem: true,
     autoPlay : <?php echo get_post_meta($id,'mpsp_slide_autoplay',true); ?>,
     stopOnHover : true,
     navigation: <?php echo  get_post_meta($id,'mpsp_slide_navigation',true); ?>,
-    paginationSpeed : 1000,
-    goToFirstSpeed : 2000,
+    paginationSpeed : <?php echo  get_post_meta($id,'mpsp_slide_speed',true); ?>00,
+    goToFirstSpeed : <?php echo  get_post_meta($id,'mpsp_slide_speed',true); ?>00,
     singleItem : false,
     autoHeight : true,
     slideSpeed : <?php echo  get_post_meta($id,'mpsp_slide_speed',true); ?>000,

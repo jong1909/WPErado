@@ -44,8 +44,6 @@ class A3_Lazy_Load
 		}
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 11 );
-		add_action( 'wp_print_scripts', array( $this, 'localize_printed_scripts' ), 5 );
-		add_action( 'wp_print_footer_scripts', array( $this, 'localize_printed_scripts' ), 5 );
 
 		add_filter( 'a3_lazy_load_html', array( $this, 'filter_html' ), 10, 2 );
 
@@ -66,13 +64,18 @@ class A3_Lazy_Load
 		if ( $a3_lazy_load_global_settings['a3l_apply_to_images'] == true ) {
 			add_filter( 'a3_lazy_load_images', array( $this, 'filter_images' ), 10, 2 );
 
-			add_filter( 'wp_get_attachment_image_attributes', array( $this, 'get_attachment_image_attributes' ), 200 );
+			//add_filter( 'wp_get_attachment_image_attributes', array( $this, 'get_attachment_image_attributes' ), 200 );
 
 			if ( $a3_lazy_load_global_settings['a3l_apply_image_to_content'] == true ) {
-				add_filter( 'the_content', array( $this, 'filter_content_images' ), 10 );
+				add_filter( 'the_content', array( $this, 'filter_content_images' ), 100 );
+
+				// Compatibility with ACF plugin - Thank you ondoheer https://github.com/ondoheer
+				add_filter( 'acf_the_content', array( $this, 'filter_content_images' ), 100 );
+
 			}
 			if ( $a3_lazy_load_global_settings['a3l_apply_image_to_textwidget'] == true ) {
-				add_filter( 'widget_text', array( $this, 'filter_images' ), 200 );
+				add_action( 'dynamic_sidebar_before', array( $this, 'sidebar_before_filter_images' ), 0 );
+				add_action( 'dynamic_sidebar_after', array( $this, 'sidebar_after_filter_images' ), 1000 );
 			}
 			if ( $a3_lazy_load_global_settings['a3l_apply_image_to_postthumbnails'] == true ) {
 				add_filter( 'post_thumbnail_html', array( $this, 'filter_images' ), 200 );
@@ -88,21 +91,28 @@ class A3_Lazy_Load
 			$this->_skip_videos_classes = array_map( 'trim', explode( ',', $skip_videos_classes ) );
 		}
 		if ( is_array( $this->_skip_videos_classes ) ) {
-			$this->_skip_videos_classes = array_merge( array('a3-notlazy'), $this->_skip_videos_classes );
+			$this->_skip_videos_classes = array_merge( array('a3-notlazy', 'wp-video-shortcode'), $this->_skip_videos_classes );
 		} else {
-			$this->_skip_videos_classes = array('a3-notlazy');
+			$this->_skip_videos_classes = array('a3-notlazy','wp-video-shortcode');
 		}
 
 		if ( $a3_lazy_load_global_settings['a3l_apply_to_videos'] == true ) {
 			add_filter( 'a3_lazy_load_videos', array( $this, 'filter_videos' ), 10, 2 );
 
 			if ( $a3_lazy_load_global_settings['a3l_apply_video_to_content'] == true ) {
-				add_filter( 'the_content', array( $this, 'filter_videos' ), 10 );
+				add_filter( 'the_content', array( $this, 'filter_videos' ), 100 );
+
+				// Compatibility with ACF plugin - Thank you ondoheer https://github.com/ondoheer
+				add_filter( 'acf_the_content', array( $this, 'filter_videos' ), 100 );
 			}
 			if ( $a3_lazy_load_global_settings['a3l_apply_video_to_textwidget'] == true ) {
-				add_filter( 'widget_text', array( $this, 'filter_videos' ), 200 );
+				add_action( 'dynamic_sidebar_before', array( $this, 'sidebar_before_filter_videos' ), 0 );
+				add_action( 'dynamic_sidebar_after', array( $this, 'sidebar_after_filter_videos' ), 1000 );
 			}
 		}
+
+		// Add lazy attributes to all allowed post tags list
+		add_filter( 'wp_kses_allowed_html', array( $this, 'add_lazy_attributes' ), 10, 2 );
 	}
 
 	static function _instance() {
@@ -150,6 +160,10 @@ class A3_Lazy_Load
 		wp_register_script( 'jquery-lazyloadxt-extend', apply_filters( 'a3_lazy_load_extend_script', A3_LAZY_LOAD_JS_URL.'/jquery.lazyloadxt.extend.js' ), array( 'jquery', 'jquery-lazyloadxt', 'jquery-lazyloadxt-srcset' ), self::version, $in_footer );
 
 		wp_enqueue_script( 'jquery-lazyloadxt-extend' );
+
+		$A3_Lazy_Load = A3_Lazy_Load::_instance();
+
+		$A3_Lazy_Load->localize_printed_scripts();
 
 		do_action('after_a3_lazy_load_xt_script');
 	}
@@ -212,6 +226,38 @@ class A3_Lazy_Load
 		return false;
 	}
 
+	static function add_lazy_attributes( $allowedposttags, $context ) {
+
+		if ( 'post' === $context && ! empty( $allowedposttags ) ) {
+
+			$lazy_attributes = array(
+				'data-lazy-type' => true,
+				'data-src'       => true,
+				'data-srcset'    => true,
+				'data-poster'    => true,
+			);
+
+			foreach ( $allowedposttags as $tag => $attributes ) {
+				if ( true === $attributes ) {
+					$attributes = array();
+				}
+
+				if ( is_array( $attributes ) ) {
+					// Add lazy attributes to post tag
+					$allowedposttags[$tag] = array_merge( $attributes, $lazy_attributes );
+				}
+			}
+
+			// Add noscript tag to allowed post tags list
+			if ( ! isset( $allowedposttags['noscript'] ) ) {
+				$allowedposttags['noscript'] = array();
+			}
+
+		}
+
+		return $allowedposttags;
+	}
+
 	static function filter_html( $content, $include_noscript = null ) {
 		if ( is_admin() ) {
 			return $content;
@@ -265,6 +311,20 @@ class A3_Lazy_Load
 		$content = apply_filters( 'a3_lazy_load_images_after', $content );
 
 		return $content;
+	}
+
+	static function sidebar_before_filter_images() {
+		ob_start();
+	}
+
+	static function sidebar_after_filter_images() {
+		$content = ob_get_clean();
+
+		$A3_Lazy_Load = A3_Lazy_Load::_instance();
+
+		echo $A3_Lazy_Load->filter_images( $content );
+
+		unset( $content );
 	}
 
 	static function filter_content_images( $content ) {
@@ -386,6 +446,20 @@ class A3_Lazy_Load
 		return $content;
 	}
 
+	static function sidebar_before_filter_videos() {
+		ob_start();
+	}
+
+	static function sidebar_after_filter_videos() {
+		$content = ob_get_clean();
+
+		$A3_Lazy_Load = A3_Lazy_Load::_instance();
+
+		echo $A3_Lazy_Load->filter_videos( $content );
+
+		unset( $content );
+	}
+
 	protected function _filter_videos( $content, $include_noscript = null ) {
 
 		if ( null === $include_noscript ) {
@@ -417,7 +491,7 @@ class A3_Lazy_Load
 				$i++;
 				// replace the src and add the data-src attribute
 				$replaceHTML = '';
-				$replaceHTML = preg_replace( '/iframe(.*?)src=/is', 'iframe$1src="' . $this->iframe_placeholder_url . '" data-lazy-type="iframe" data-src=', $imgHTML );
+				$replaceHTML = preg_replace( '/iframe(.*?)src=/is', 'iframe$1 data-lazy-type="iframe" data-src=', $imgHTML );
 
 				// add the lazy class to the img element
 				if ( preg_match( '/class=["\']/i', $replaceHTML ) ) {

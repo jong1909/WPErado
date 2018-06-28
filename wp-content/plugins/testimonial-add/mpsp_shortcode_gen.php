@@ -1,5 +1,5 @@
 <?php
-
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 add_shortcode( 'tss_slider', 'tss_mpsp_shortcode_generate' );
 function tss_mpsp_shortcode_generate($atts, $content){

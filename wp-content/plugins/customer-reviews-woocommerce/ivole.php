@@ -3,12 +3,12 @@
 Plugin Name: Customer Reviews for WooCommerce
 Description: Customer Reviews for WooCommerce plugin helps you get more customer reviews for your shop by sending automated reminders and coupons.
 Plugin URI: https://wordpress.org/plugins/customer-reviews-woocommerce/
-Version: 3.29
+Version: 3.32
 Author: ivole
 Author URI: https://profiles.wordpress.org/ivole
 Text Domain: customer-reviews-woocommerce
 WC requires at least: 2.2.11
-WC tested up to: 3.3.5
+WC tested up to: 3.4
 License: GPLv3
 
 Customer Reviews for WooCommerce is free software: you can redistribute it and/or modify
@@ -47,6 +47,7 @@ register_activation_hook( __FILE__, 'my_ivole_activate' );
 require_once( 'class-ivole.php' );
 require_once( 'class-ivole-qtranslate.php' );
 require_once( 'class-ivole-all-reviews.php' );
+require_once( 'class-ivole-wpml.php' );
 
 /**
  * Check if WooCommerce is active
@@ -63,7 +64,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 	add_action('plugins_loaded', 'qtranslate_init', 1);
 	function qtranslate_init() {
     $ivole_qtranslate = new Ivole_QTranslate();
-  }
+	}
 }
 
 add_shortcode( 'ivole_unsubscribe', 'ivole_email_unsubscribe_shortcode' );

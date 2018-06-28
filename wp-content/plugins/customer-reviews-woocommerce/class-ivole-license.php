@@ -35,20 +35,23 @@ if ( ! class_exists( 'Ivole_License' ) ) :
   		);
   		$result = curl_exec( $ch );
       if( false === $result ) {
-  			return __( 'Unknown: ', 'ivole' ) . curl_error( $ch );
+  			return __( 'Unknown: ', IVOLE_TEXT_DOMAIN ) . curl_error( $ch );
   		}
       $result = json_decode( $result );
       if( isset( $result->error ) ) {
 				update_option( 'ivole_reviews_nobranding', 'no' );
-        return __( 'Not Active: ', 'ivole' ) . $result->error;
+				update_option( 'ivole_shop_logo', NULL );
+        return __( 'Not Active: ', IVOLE_TEXT_DOMAIN ) . $result->error;
       } else if( isset( $result->valid ) && 1 == $result->valid ) {
-        return __( 'Active', 'ivole' );
+        return __( 'Active', IVOLE_TEXT_DOMAIN );
       } else if( isset( $result->expired ) && 1 == $result->expired ) {
 				update_option( 'ivole_reviews_nobranding', 'no' );
-        return __( 'Expired', 'ivole' );
+				update_option( 'ivole_shop_logo', NULL );
+        return __( 'Expired', IVOLE_TEXT_DOMAIN );
       } else {
 				update_option( 'ivole_reviews_nobranding', 'no' );
-        return __( 'Unknown Error', 'ivole' );
+				update_option( 'ivole_shop_logo', NULL );
+        return __( 'Unknown Error', IVOLE_TEXT_DOMAIN );
       }
 		}
 

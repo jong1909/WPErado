@@ -1,7 +1,7 @@
 <?php
 
 function TssFrontpageUI(){
-$ulp = 'ultimate-landing-page';
+$ulp = 'contact-form-add';
 	$ulp_install_link = '<a href="' . esc_url( network_admin_url('plugin-install.php?tab=plugin-information&plugin=' . $ulp . '&TB_iframe=true&width=600&height=550' ) ) . '" class="thickbox" title="More info about ' . $ulp . '">Install Now' . '</a>';
 
 
@@ -14,6 +14,9 @@ $msfp = 'mailchimp-subscribe-sm';
 
 $pss = 'posts-slider';
 	$pss_install_link = '<a href="' . esc_url( network_admin_url('plugin-install.php?tab=plugin-information&plugin=' . $pss . '&TB_iframe=true&width=600&height=550' ) ) . '" class="thickbox" title="More info about ' . $pss . '">Install Now' . '</a>';
+
+
+
 	?>
 <style type="text/css">
 	.butt_tes{
@@ -39,7 +42,7 @@ $pss = 'posts-slider';
 		 border-bottom:10px solid #037BA1;
 		 margin-bottom: 40px;
 		 display: inline-block;
-		 float: right;
+		 float: left;
 		 margin-left: 20px;
 	}
 	.butt_tes2:hover{
@@ -68,7 +71,7 @@ $pss = 'posts-slider';
 		
 		<a  style='' class="butt_tes2" 
 			href="edit.php?post_type=tss_data"> All Testimonials </a>
-		
+			<br>
 			<a style='' class="butt_tes" 
 			href="edit.php?post_type=tss_slider"><b>All Sliders</a>
 			
@@ -84,13 +87,11 @@ $pss = 'posts-slider';
 		<div id='sec_right'>
 				<h3>Recommended Plugins</h3>
 				<img src="<?php echo plugins_url('imgs/ulp.png',__FILE__); ?>" class="rc_plugin_thumb">
-				<p><b>Ultimate Landing Page - <?php echo $ulp_install_link; ?></p>
-				<img src="<?php echo plugins_url('imgs/psp.png',__FILE__); ?>" class="rc_plugin_thumb">
-				<p>Posts Slider Plugin - <?php echo $pss_install_link; ?></p>
-				<img src="<?php echo plugins_url('imgs/ts.png',__FILE__); ?>" class="rc_plugin_thumb">
-				<p>Ultimate Bar Plugin - <?php echo $tss_install_link; ?></p>
+				<p><b>Form Builder Plugin - <?php echo $ulp_install_link; ?></p>
 				<img src="<?php echo plugins_url('imgs/msf.png',__FILE__); ?>" class="rc_plugin_thumb">
 				<p>Subscribe Form Plugin - <?php echo $msfp_install_link; ?></p>
+				<img src="<?php echo plugins_url('imgs/psp.png',__FILE__); ?>" class="rc_plugin_thumb">
+				<p>Posts Slider Plugin (Free) - <?php echo $pss_install_link; ?></p>
 				<p>Need Help ? <br> Or Hire a developer : <a href="mailto:support@web-settler.com?subject=Posts Slider Support" "Email Us" target="_blank">Email Us</a> </p>
 				</b>
 		</div>
@@ -98,10 +99,10 @@ $pss = 'posts-slider';
 			<ul>
 			<h3>How to use :</h3>
 				<li>
-					Step 1. Add New Testimonials.
+					Step 1. Add few Testimonials.
 				</li>
 				<li>
-					Step 2. Add New Slider.
+					Step 2. Create a new Slider.
 				</li>
 				<li>
 					Step 3. Setup your slider.
@@ -123,14 +124,14 @@ $pss = 'posts-slider';
 		<style>
 		#how-to-use{
 			position: absolute;
-			top: 40%;
+			top: 60%;
 		 	left: 40px;
 		 	background-color: #fff;
 		 	border: 2px solid #e3e3e3;
 		 	border-radius: 10px;
 		 	padding: 20px;
 		 	margin-top: 80px;
-
+		 	font-size: 16px;
 		}
 		#detasd{
 			background-color: #fff;
@@ -155,9 +156,8 @@ $pss = 'posts-slider';
 
 		#sec_left{
 			margin-top:100px;
-			width:50%;
+			width:auto;
 			display: inline-block;
-			float: left;
 		}
 		#sec_right{
 			margin-top:10px;

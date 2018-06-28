@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 function tss_slider_data($post){
     // $post is already set, and contains an object: the WordPress post
     global $post;
@@ -49,6 +51,8 @@ function tss_slider_data($post){
  </div>
 
  </div>
+ <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us8.list-manage.com","uuid":"46b196269ed011acb6bee800c","lid":"bdaca95686"}) })</script>
+ 
  <?php
 
  } 

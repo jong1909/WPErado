@@ -31,8 +31,8 @@ jQuery(document).ready(function($) {
                 }
 
                 button.addClass('added')
-                        .attr( 'href', response.table_url )
-                        .text( yith_woocompare.added_label );
+                    .attr( 'href', response.table_url )
+                    .text( yith_woocompare.added_label );
 
                 // add the product in the widget
                 widget_list.html( response.widget_table );
@@ -67,10 +67,12 @@ jQuery(document).ready(function($) {
                 iframe: true,
                 width: '90%',
                 height: '90%',
+                className: 'yith_woocompare_colorbox',
+                close: yith_woocompare.close_label,
                 onClosed: function(){
                     var widget_list = $('.yith-woocompare-widget ul.products-list'),
                         data = {
-                            action: yith_woocompare.actionview,
+                            action: yith_woocompare.actionreload,
                             context: 'frontend'
                         };
 
@@ -80,7 +82,7 @@ jQuery(document).ready(function($) {
 
                     $.ajax({
                         type: 'post',
-                        url: yith_woocompare.ajaxurl.toString().replace( '%%endpoint%%', yith_woocompare.actionview ),
+                        url: yith_woocompare.ajaxurl.toString().replace( '%%endpoint%%', yith_woocompare.actionreload ),
                         data: data,
                         success: function(response){
                             // add the product in the widget
@@ -175,7 +177,7 @@ jQuery(document).ready(function($) {
 
     $('.yith-woocompare-widget')
 
-        // view table (click on compare
+    // view table (click on compare
         .on('click', 'a.compare', function (e) {
             e.preventDefault();
             $('body').trigger('yith_woocompare_open_popup', { response: $(this).attr('href') });
@@ -233,6 +235,10 @@ jQuery(document).ready(function($) {
             });
         });
 
+    $('body').on('added_to_cart', function( ev, fragments, cart_hash, $thisbutton ){
+        if( $( $thisbutton).closest( 'table.compare-list' ).length )
+            $thisbutton.hide();
+    });
 
     function yith_add_query_arg(key, value)
     {

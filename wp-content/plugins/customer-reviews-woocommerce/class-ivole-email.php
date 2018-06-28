@@ -6,15 +6,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! class_exists( 'Ivole_Email' ) ) :
 
-if ( is_file( plugin_dir_path( __DIR__ ) . '/woocommerce/includes/libraries/class-emogrifier.php' ) ) {
-	include_once( plugin_dir_path( __DIR__ ) . '/woocommerce/includes/libraries/class-emogrifier.php' );
-} else {
-	//backup for Emogrifier class that is missing in early versions of WooCommerce
-	if ( is_file( plugin_dir_path( __FILE__ ) . '/dependencies/class-emogrifier.php' ) ) {
-		include_once( plugin_dir_path( __FILE__ ) . '/dependencies/class-emogrifier.php' );
-	}
-}
-
 require_once('class-ivole-email-footer.php');
 
 /**
@@ -41,7 +32,7 @@ class Ivole_Email {
 	/**
 	 * Constructor.
 	 */
-	public function __construct() {
+	public function __construct( $order_id = 0 ) {
 		$this->id               = 'ivole_reminder';
 		$this->heading          = strval( get_option( 'ivole_email_heading', __( 'How did we do?', 'ivole' ) ) );
 		$this->subject          = strval( get_option( 'ivole_email_subject', '[{site_title}] ' . __( 'Review Your Experience with Us', 'ivole' ) ) );
@@ -67,6 +58,23 @@ class Ivole_Email {
 			if( 'QQ' === $this->language ) {
 				global $q_config;
 				$this->language = strtoupper( $q_config['language'] );
+			}
+		}
+
+		//WPML integration
+		if ( has_filter( 'wpml_translate_single_string' ) && defined( 'ICL_LANGUAGE_CODE' ) && ICL_LANGUAGE_CODE ) {
+			$wpml_current_language = apply_filters( 'wpml_current_language', NULL );
+			if ( $order_id ) {
+				$wpml_current_language = get_post_meta( $order_id, 'wpml_language', true );
+			}
+			$this->heading = apply_filters( 'wpml_translate_single_string', $this->heading, 'ivole', 'ivole_email_heading', $wpml_current_language );
+			$this->subject = apply_filters( 'wpml_translate_single_string', $this->subject, 'ivole', 'ivole_email_subject', $wpml_current_language );
+			$this->form_header = apply_filters( 'wpml_translate_single_string', $this->form_header, 'ivole', 'ivole_form_header', $wpml_current_language );
+			$this->form_body = apply_filters( 'wpml_translate_single_string', $this->form_body, 'ivole', 'ivole_form_body', $wpml_current_language );
+			$this->from_name = apply_filters( 'wpml_translate_single_string', $this->from_name, 'ivole', 'ivole_email_from_name', $wpml_current_language );
+			$this->footer = apply_filters( 'wpml_translate_single_string', $this->footer, 'ivole', 'ivole_email_footer', $wpml_current_language );
+ 			if ( 'WPML' === $this->language ) {
+				$this->language = strtoupper( $wpml_current_language );
 			}
 		}
 	}
@@ -111,6 +119,11 @@ class Ivole_Email {
 					return 3;
 				}
 			}
+			//check if registered customers option is used
+			$registered_customers = false;
+			if( 'yes' === get_option( 'ivole_registered_customers', 'no' ) ) {
+				$registered_customers = true;
+			}
 			$order = new WC_Order( $order_id );
 			// check if we are dealing with old WooCommerce version
 			$customer_first_name = '';
@@ -120,7 +133,16 @@ class Ivole_Email {
 			$order_items = array();
 			if( method_exists( $order, 'get_billing_email' ) ) {
 				// Woocommerce version 3.0 or later
-				$this->to = $order->get_billing_email();
+				if( $registered_customers ) {
+					$user = $order->get_user();
+					if( $user ) {
+						$this->to = $user->user_email;
+					} else {
+						$this->to = $order->get_billing_email();
+					}
+				} else {
+					$this->to = $order->get_billing_email();
+				}
 				$this->replace['customer-first-name'] = $order->get_billing_first_name();
 				$customer_first_name = $order->get_billing_first_name();
 				$customer_last_name = $order->get_billing_last_name();
@@ -132,7 +154,21 @@ class Ivole_Email {
 				$order_currency = $order->get_currency();
 			} else {
 				// Woocommerce before version 3.0
-				$this->to = get_post_meta( $order_id, '_billing_email', true );
+				if( $registered_customers ) {
+					$user_id = get_post_meta( $order_id, '_customer_user', true );
+					if( $user_id ) {
+						$user = get_user_by( 'id', $user_id );
+						if( $user ) {
+							$this->to = $user->user_email;
+						} else {
+							$this->to = get_post_meta( $order_id, '_billing_email', true );
+						}
+					} else {
+						$this->to = get_post_meta( $order_id, '_billing_email', true );
+					}
+				} else {
+					$this->to = get_post_meta( $order_id, '_billing_email', true );
+				}
 				$this->replace['customer-first-name'] = get_post_meta( $order_id, '_billing_first_name', true );
 				$customer_first_name = get_post_meta( $order_id, '_billing_first_name', true );
 				$customer_last_name = get_post_meta( $order_id, '_billing_last_name', true );
@@ -293,6 +329,7 @@ class Ivole_Email {
 		ob_start();
 		//$email_heading = $this->heading;
 		$def_body = Ivole_Email::$default_body;
+		$lang = $this->language;
 		include( $this->template_html );
 		return ob_get_clean();
 	}
@@ -300,29 +337,6 @@ class Ivole_Email {
 	public static function plugin_path() {
     return untrailingslashit( plugin_dir_path( __FILE__ ) );
   }
-
-	public function send() {
-
-		add_filter( 'wp_mail_from', array( $this, 'get_from_address' ) );
-		add_filter( 'wp_mail_from_name', array( $this, 'get_from_name' ) );
-		add_filter( 'wp_mail_content_type', array( $this, 'get_content_type' ) );
-
-		$subject = $this->replace_variables( $this->subject );
-		$message = $this->get_content();
-		$message = $this->replace_variables( $message );
-		$message = $this->style_inline( $message );
-		$headers = array();
-		if($this->bcc) {
-			$headers[] = 'Bcc: ' . $this->bcc;
-		}
-		$return  = wp_mail( $this->to, $subject, $message, $headers, array() );
-
-		remove_filter( 'wp_mail_from', array( $this, 'get_from_address' ) );
-		remove_filter( 'wp_mail_from_name', array( $this, 'get_from_name' ) );
-		remove_filter( 'wp_mail_content_type', array( $this, 'get_content_type' ) );
-
-		return $return;
-	}
 
 	public function get_from_address() {
 		$from_address = apply_filters( 'woocommerce_email_from_address', get_option( 'woocommerce_email_from_address' ), $this );
@@ -336,27 +350,6 @@ class Ivole_Email {
 
 	public function get_content_type() {
 		return 'text/html';
-	}
-
-	public function style_inline( $content ) {
-		// make sure we only inline CSS for html emails
-		if ( in_array( $this->get_content_type(), array( 'text/html', 'multipart/alternative' ) ) && class_exists( 'DOMDocument' ) ) {
-			ob_start();
-			if ( is_file( plugin_dir_path( __DIR__ ) . '/woocommerce/templates/emails/email-styles.php' ) ) {
-				wc_get_template( 'emails/email-styles.php' );
-			}
-			$css = apply_filters( 'woocommerce_email_styles', ob_get_clean() );
-
-			// apply CSS styles inline for picky email clients
-			try {
-				$emogrifier = new Emogrifier( $content, $css );
-				$content    = $emogrifier->emogrify();
-			} catch ( Exception $e ) {
-				$logger = new WC_Logger();
-				$logger->add( 'emogrifier', $e->getMessage() );
-			}
-		}
-		return $content;
 	}
 
 	public function replace_variables( $input ) {
@@ -429,8 +422,16 @@ class Ivole_Email {
 				$q_name = $prod_temp->get_title();
 
 				//qTranslate integration
-				if( function_exists( 'qtranxf_useCurrentLanguageIfNotFoundUseDefaultLanguage' ) ) {
+				$ivole_language = get_option( 'ivole_language' );
+				if( function_exists( 'qtranxf_useCurrentLanguageIfNotFoundUseDefaultLanguage' ) && $ivole_language === 'QQ' ) {
 					$q_name = qtranxf_useCurrentLanguageIfNotFoundUseDefaultLanguage( $q_name );
+				}
+
+				//WPML integration
+				if ( has_filter( 'translate_object_id' ) && $ivole_language === 'WPML' ) {
+					$wpml_current_language = get_post_meta( $order->get_id(), 'wpml_language', true );
+					$translated_product_id = apply_filters( 'translate_object_id', $item['product_id'], 'product', true, $wpml_current_language );
+					$q_name = get_the_title( $translated_product_id );
 				}
 
 				$q_name = strip_tags( $q_name );

@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 include 'tss_mpsp_cs_post_type.php';
 include 'mpsp_metaboxes.php';

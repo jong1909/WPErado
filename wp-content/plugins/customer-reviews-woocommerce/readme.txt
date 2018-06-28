@@ -3,7 +3,7 @@ Contributors: ivole
 Tags: woocommerce, review plugin, review reminder, customer reviews, review for discount
 Requires at least: 4.5
 Tested up to: 4.9
-Stable tag: 3.29
+Stable tag: 3.32
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -37,7 +37,7 @@ Receive more authentic reviews from your real customers by sending automated inv
 * Works out of the box by using a responsive email template with custom colors
 * Unsubscribe option
 * Built-in testing tool to make sure that emails look beautifully before sending them
-* Reminders in different languages via an integration with "qTranslate X" plugin
+* Reminders in different languages via an integration with "qTranslate X" and "WPML" plugins
 
 === Aggregated Review Form ===
 
@@ -50,6 +50,7 @@ Let your customers review all the products from their orders on a single page.
 * Review forms are optimized for different screen sizes (including mobile)
 * Review forms include pictures of products
 * Review forms support upload of photos and videos
+* Manual approval of reviews submitted via aggregated review forms
 
 === Enhanced Customer Reviews ===
 
@@ -74,7 +75,7 @@ Stimulate your customers to leave reviews and increase their lifetime value by o
 * Fine-tune properties of coupons according to your sales strategy
 * Works out of the box by using a responsive email template with custom colors
 * Built-in testing tool to make sure that emails look beautifully before sending them
-* Emails with coupons in different languages via an integration with "qTranslate X" plugin
+* Emails with coupons in different languages via an integration with "qTranslate X" and "WPML" plugins
 
 === How does it work? ===
 
@@ -174,6 +175,16 @@ If you would like to change how reviews are sorted on product pages, it is possi
 
 == Changelog ==
 
+= 3.32 =
+* New feature: add shop logo to email templates and review forms (requires the premium version)
+* Bug fixes
+= 3.31 =
+* New feature: if customers have accounts on your website, send review reminders to emails associated with their accounts instead of their billing emails (optionally)
+* Bug fixes
+= 3.30 =
+* New feature: WPML integration
+* New feature: update of terms and conditions for GDPR
+* Bug fixes
 = 3.29 =
 * New feature: always show 'Actions' column on WooCommerce Orders page when manual reminders are enabled
 * New feature: show product names and icons when using [cusrev_all_reviews] shortcode

@@ -17,9 +17,9 @@
 		if( empty( $lists ) ) {
 			?><td colspan="2"><?php printf( __( 'No lists found, <a href="%s">are you connected to MailChimp</a>?', 'mailchimp-for-wp' ), admin_url( 'admin.php?page=mailchimp-for-wp' ) ); ?></td><?php
 		} else { ?>
-			<td>
+			<td >
 
-				<ul id="mc4wp-lists" style="margin-bottom: 20px;">
+				<ul id="mc4wp-lists" style="margin-bottom: 20px; max-height: 300px; overflow-y: auto;">
 					<?php foreach( $lists as $list ) { ?>
 						<li>
 							<label>
@@ -41,10 +41,10 @@
 				<?php _e( 'Yes' ); ?>
 			</label> &nbsp;
 			<label>
-				<input type="radio" name="mc4wp_form[settings][double_optin]" value="0" <?php checked( $opts['double_optin'], 0 ); ?> />&rlm;
+				<input type="radio" name="mc4wp_form[settings][double_optin]" value="0" <?php checked( $opts['double_optin'], 0 ); ?> onclick="return confirm('<?php esc_attr_e( 'Are you sure you want to disable double opt-in?', 'mailchimp-for-wp' ); ?>');" />&rlm;
 				<?php _e( 'No' ); ?>
 			</label>
-			<p class="help"><?php _e( 'Select "yes" if you want people to confirm their email address before being subscribed (recommended)', 'mailchimp-for-wp' ); ?></p>
+			<p class="help"><?php _e( 'We strongly suggest keeping double opt-in enabled. Disabling double opt-in may result in abuse.', 'mailchimp-for-wp' ); ?></p>
 		</td>
 	</tr>
 
@@ -77,7 +77,7 @@
 			</label>
 			<p class="help">
 				<?php _e( 'Select "no" if you want to add the selected interests to any previously selected interests when updating a subscriber.', 'mailchimp-for-wp' ); ?>
-				<?php printf( ' <a href="%s" target="_blank">' . __( 'What does this do?', 'mailchimp-for-wp' ) . '</a>', 'https://mc4wp.com/kb/what-does-replace-groupings-mean/' ); ?>
+				<?php printf( ' <a href="%s" target="_blank">' . __( 'What does this do?', 'mailchimp-for-wp' ) . '</a>', 'https://kb.mc4wp.com/what-does-replace-groupings-mean/#utm_source=wp-plugin&utm_medium=mailchimp-for-wp&utm_campaign=settings-page' ); ?>
 			</p>
 		</td>
 	</tr>
@@ -120,7 +120,13 @@
 		<th scope="row"><label for="mc4wp_form_redirect"><?php _e( 'Redirect to URL after successful sign-ups', 'mailchimp-for-wp' ); ?></label></th>
 		<td>
 			<input type="text" class="widefat" name="mc4wp_form[settings][redirect]" id="mc4wp_form_redirect" placeholder="<?php printf( __( 'Example: %s', 'mailchimp-for-wp' ), esc_attr( site_url( '/thank-you/' ) ) ); ?>" value="<?php echo esc_attr( $opts['redirect'] ); ?>" />
-			<p class="help"><?php _e( 'Leave empty or enter <code>0</code> for no redirect. Otherwise, use complete (absolute) URLs, including <code>http://</code>.', 'mailchimp-for-wp' ); ?></p>
+			<p class="help">
+				<?php _e( 'Leave empty or enter <code>0</code> for no redirect. Otherwise, use complete (absolute) URLs, including <code>http://</code>.', 'mailchimp-for-wp' ); ?>
+			</p>
+			<p class="help">
+				<?php _e( 'Your "subscribed" message will not show when redirecting to another page, so make sure to let your visitors know they were successfully subscribed.', 'mailchimp-for-wp' ); ?>
+			</p>		
+				
 		</td>
 	</tr>
 

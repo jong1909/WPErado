@@ -1,15 +1,15 @@
 === YITH WooCommerce Compare ===
 
 Contributors: yithemes
-Tags: wc, shop, woocommerce, compare, compare products, product compare, widget, comparison, product comparison, compare table
+Tags: woocommerce compare, compare products, product compare, product comparison, compare table
 Requires at least: 3.5.1
-Tested up to: 4.5.2
-Stable tag: 2.0.9
+Tested up to: 4.9.6
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 YITH WooCommerce Compare allows you to compare more products of your shop in one complete table.
-WooCommerce Compatible up to 2.6.x
+WooCommerce Compatible up to 3.4
 
 == Description ==
 
@@ -66,126 +66,183 @@ yith-woocommerce-compare-<WORDPRESS LOCALE >.mo
 
 == Changelog ==
 
+= 2.3.1 = Released on Jun 5, 2018
+
+* New: Support to WooCommerce 3.4.1.
+* New: Support to WordPress 4.9.6.
+* Update: Plugin Core.
+* Fix: WPML table fields translation.
+
+= 2.3.0 = Released on Feb 2, 2018
+
+* New: Support to WooCommerce 3.3.0.
+* New: Support to WordPress 4.9.2.
+* Update: Plugin Core.
+
+= 2.2.3 = Released on Dec 21, 2017
+
+* New: Support to WooCommerce 3.2.6.
+* New: Support to WordPress 4.9.1.
+* New: Product SKU field in compare table.
+* Update: Plugin Core.
+* Update: Language Files.
+* Dev: New filter yith_woocompare_standard_fields_array to filter standard compare fields.
+
+= 2.2.2 = Released on Oct 24, 2017
+
+* New: Support to WooCommerce 3.2.1.
+* New: Support to WordPress 4.8.2.
+* Update: Plugin Core.
+* Update: Language Files.
+
+= 2.2.1 = Released on Jul 05, 2017
+
+* New: Support to WooCommerce 3.1.
+* New: Support to WordPress 4.8.
+* New: Russian Translation.
+* New: Slovenian Translation.
+* Update: Plugin Core.
+* Update: Language Files.
+* Fix: WPML and Add to cart action from popup.
+
+= 2.2.0 = Released on Mar 29, 2017
+
+* New: Support to WooCommerce 3.0.0 RC2.
+* New: Support to WordPress 4.7.3
+* Update: Plugin Core.
+* Update: Language Files.
+
+= 2.1.0 = Released on Oct 19, 2016
+
+* New: Support to WooCommerce 2.6.4
+* New: Support to WordPress 4.6
+* New: Auto remove from compare list for products that are private or were cancelled.
+* New: Add as default fields Weight and Dimensions.
+* Update: Plugin Core.
+* Update: Language Files.
+* Fix: Uncaught ReferenceError "redirect_to_cart is not defined" error on "add to cart" action.
+* Fix: Compatibility issue with NextGen Gallery plugin.
+
 = 2.0.9 = Released on Jun 13, 2016
 
-* Added: Support to WooCommerce 2.6 RC1
-* Updated: Plugin Core.
+* New: Support to WooCommerce 2.6 RC1
+* Update: Plugin Core.
 
 = 2.0.8 = Released on Apr 19, 2016
 
-* Added: Compatibility with WordPress 4.5
-* Fixed: Fatal error call to undefined method WC_AJAX::get_endpoint() for WooCommerce version older then 2.4
-* Updated: Plugin Core.
+* New: Compatibility with WordPress 4.5
+* Update: Plugin Core.
+* Fix: Fatal error call to undefined method WC_AJAX::get_endpoint() for WooCommerce version older then 2.4
 
 = 2.0.7 = Released on Apr 01, 2016
 
-* Fixed: Product status now updates automatically when the product is removed from the compare widget.
-* Fixed: Redirect correctly to cart page after "Add to cart" is clicked if "Redirect to the cart page after successful addition" option is enabled.
-* Fixed: Redirect correctly to product page after "Add to cart" is clicked when "Enable AJAX add to cart buttons on archives" option is disabled.
-* Updated: Plugin template compare.php
-* Updated: Plugin Core.
-* Updated: Language file.
+* Update: Plugin template compare.php
+* Update: Plugin Core.
+* Update: Language file.
+* Fix: Product status now updates automatically when the product is removed from the compare widget.
+* Fix: Redirect correctly to cart page after "Add to cart" is clicked if "Redirect to the cart page after successful addition" option is enabled.
+* Fix: Redirect correctly to product page after "Add to cart" is clicked when "Enable AJAX add to cart buttons on archives" option is disabled.
 
 = 2.0.6 = Released on Jan 11, 2016
 
-* Added: Compatibility with WooCommerce 2.5 RC
-* Updated: Change ajax call fron admin-ajax to wc-ajax
-* Updated: Plugin template compare.php
-* Updated: Plugin Core
+* New: Compatibility with WooCommerce 2.5 RC
+* Update: Change ajax call fron admin-ajax to wc-ajax
+* Update: Plugin template compare.php
+* Update: Plugin Core
 
 = 2.0.5 = Released on Oct 30, 2015
 
-* Fixed: After you remove product from compare, you can re-add it without reload page
-* Updated: Plugin Core
+* Update: Plugin Core
+* Fix: After you remove product from compare, you can re-add it without reload page
 
 = 2.0.4 = Released on Sep 22, 2015
 
-* Fixed: JS error when loading compare window
-* Updated: Changed Text Domain from 'yith-wcmp' to 'yith-woocommerce-compare'
-* Updated: Plugin Core Framework
+* Update: Changed Text Domain from 'yith-wcmp' to 'yith-woocommerce-compare'
+* Update: Plugin Core Framework
+* Fix: JS error when loading compare window
 
 = 2.0.3 = Released on Aug 21, 2015
 
-* Added: Compatibility with WooPress 4.3
+* New: Compatibility with WooPress 4.3
 
 = 2.0.2 = Released on Aug 12, 2015
 
-* Added: Compatibility with WooCommerce 2.4
-* Updated: Core plugin
+* New: Compatibility with WooCommerce 2.4
+* Update: Core plugin
 
 = 2.0.1 = Released on Aug 10, 2015
 
-* Fixed: Compare table layout
-* Fixed: undefined function unblock() in main js
-* Updated: Core plugin
+* Update: Core plugin
+* Fix: Compare table layout
+* Fix: undefined function unblock() in main js
 
 = 2.0.0 = Released on Jul 15, 2015
 
-* Added: Added new plugin core
-* Fixed: Error in class yith-woocompare-fontend
-* Fixed: Lightbox doesn't close after click view cart
-* Fixed: minor bug fix
-* Updated: Language files
+* New: New plugin core
+* Update: Language files
 * Removed: old default.po catalog language file
+* Fix: Error in class yith-woocompare-fontend
+* Fix: Lightbox doesn't close after click view cart
+* Fix: minor bug fix
 
 = 1.2.3 = Released on Feb 13, 2015
 
-* Added: Bulgarian Translation by Joanna Mikova
-* Added: Spanish Translation by Rodoslav Angelov and Mariano Rivas
+* New: Bulgarian Translation by Joanna Mikova
+* New: Spanish Translation by Rodoslav Angelov and Mariano Rivas
 
 = 1.2.2 = Released on Dec 03, 2014
 
-* Fixed: Shortcode compare
+* Fix: Shortcode compare
 
 = 1.2.1 = Released on Sep 17, 2014
 
-* Added: Support to WC 2.2.3
+* New: Support to WC 2.2.3
 
 = 1.2.0 = Released on Sep 16, 2014
 
-* Added: Support to WC 2.2.2
+* New: Support to WC 2.2.2
 * Update: Compare Template
-* Updated: Plugin Core Framework
+* Update: Plugin Core Framework
+* Fix: Fields orders
 * Tweek: WPML Support improved
-* Fixed: Fields orders
 
 = 1.1.4 = Released on Jun 30, 2014
 
-* Updated: Colorbox Library Version 1.5.10
-* Fixed: Horizontal scroll bar issue: show at the end of iframe
+* Update: Colorbox Library Version 1.5.10
+* Fix: Horizontal scroll bar issue: show at the end of iframe
 
 = 1.1.3 = Released on Jun 05, 2014
 
-* Added: RTL Support
+* New: RTL Support
 
 = 1.1.2 = Released on Mar 21, 2014
 
-* Fixed: WPML Support on Compare Widget
+* Fix: WPML Support on Compare Widget
 
 = 1.1.1 = Released on Feb 19, 2014
 
-* Fixed: Add to cart Button on Compare page
+* Fix: Add to cart Button on Compare page
 
 = 1.1.0 = Released on Feb 13, 2014
 
-* Added: Support to WooCommerce 2.1.X
-* Added: French translation by Paumo
+* New: Support to WooCommerce 2.1.X
+* New: French translation by Paumo
 
 = 1.0.5 = Released on Oct 14, 2013
 
-* Added: Persian translation by Khalil Delavaran
-* Added: Compare table title option
-* Added: Compatibility with WPML plugin
-* Added: Brazilian Portuguese translation by hotelwww
-* Updated: Dutch translation by Frans Pronk
-* Fixed: Responsive features
-* Fixed: Dequeued wrong JS scripts
+* New: Persian translation by Khalil Delavaran
+* New: Compare table title option
+* New: Compatibility with WPML plugin
+* New: Brazilian Portuguese translation by hotelwww
+* Fix: Responsive features
+* Fix: Dequeued wrong JS scripts
+* Update: Dutch translation by Frans Pronk
 
 = 1.0.4 = Released on Sep 04, 2013
 
-* Added: complete Dutch translation. Thanks to Frans Pronk
-* Fixed: Sortable scripts included only in the plugin admin page
-* Fixed: products list in popup don't update after have added a product
+* New: complete Dutch translation. Thanks to Frans Pronk
+* Fix: Sortable scripts included only in the plugin admin page
+* Fix: products list in popup don't update after have added a product
 
 = 1.0.3 = Released on Jul 31, 2013
 
@@ -197,10 +254,10 @@ yith-woocommerce-compare-<WORDPRESS LOCALE >.mo
 
 = 1.0.1 = Released on Jun 27, 2013
 
-* Added: Link/Button text option in plugin options
-* Added: ability to add a link in the menu top open the popup
-* Fixed: bug with attributes added after installation
-* Fixed: bug with plugin activated but not working for multisites
+* New: Link/Button text option in plugin options
+* New: ability to add a link in the menu top open the popup
+* Fix: bug with attributes added after installation
+* Fix: bug with plugin activated but not working for multisites
 
 = 1.0.0 = Released on Jun 24, 2013
 
@@ -216,8 +273,8 @@ If you have suggestions about how to improve YITH WooCommerce Compare, you can [
 * English (Default)
 * Italiano
 
-If you have created your own language pack, or have an update for an existing one, you can send [gettext PO and MO file](http://codex.wordpress.org/Translating_WordPress "Translating WordPress")
-[use](http://yithemes.com/contact/ "Your Inspiration Themes") so we can bundle it into YITH WooCommerce Compare Languages.
+If you can't find this plugin in your language and want to translate it, use the dedicated tool at [Translating WordPress](https://translate.wordpress.org/locale/it/default/wp-plugins/yith-woocommerce-compare "Translating WordPress").
+Or, if you have created your own language pack, or have an update for an existing one, you can send it as an email attachment from our [Contacts page](http://yithemes.com/contact/ "Your Inspiration Themes") and we will bundle into YITH WooCommerce Compare.
 
 == Documentation ==
 
@@ -225,7 +282,9 @@ Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woo
 
 == Upgrade notice ==
 
-= 2.0.9 = Released on Jun 13, 2016
+= 2.3.1 = Released on Jun 5, 2018
 
-* Added: Support to WooCommerce 2.6 RC1
-* Updated: Plugin Core.
+* New: Support to WooCommerce 3.4.1.
+* New: Support to WordPress 4.9.6.
+* Update: Plugin Core.
+* Fix: WPML table fields translation.

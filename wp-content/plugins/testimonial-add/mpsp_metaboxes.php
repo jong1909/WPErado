@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 add_action('add_meta_boxes','tss_mpsp_metaboxes_add');
 

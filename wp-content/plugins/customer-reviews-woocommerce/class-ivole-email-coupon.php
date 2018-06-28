@@ -6,12 +6,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! class_exists( 'Ivole_Email_Coupon' ) ) :
 
-if ( is_file( plugin_dir_path( __DIR__ ) . '/woocommerce/includes/libraries/class-emogrifier.php' ) ) {
-	include_once( plugin_dir_path( __DIR__ ) . '/woocommerce/includes/libraries/class-emogrifier.php' );
-} else {
-
-}
-
 require_once('class-ivole-email.php');
 
 /**
@@ -36,7 +30,7 @@ class Ivole_Email_Coupon {
 	/**
 	 * Constructor.
 	 */
-	public function __construct() {
+	public function __construct( $order_id = 0 ) {
 		$this->id               = 'ivole_review_coupon';
 		$this->heading          = strval( get_option( 'ivole_email_heading_coupon', __( 'Thank You for Leaving a Review', 'ivole' ) ) );
 		$this->subject          = strval( get_option( 'ivole_email_subject_coupon', '[{site_title}] ' . __( 'Discount Coupon for You', 'ivole' ) ) );
@@ -61,6 +55,22 @@ class Ivole_Email_Coupon {
 			if( 'QQ' === $this->language ) {
 				global $q_config;
 				$this->language = strtoupper( $q_config['language'] );
+			}
+		}
+
+		//WPML integration
+		if ( has_filter( 'wpml_translate_single_string' ) && defined( 'ICL_LANGUAGE_CODE' ) && ICL_LANGUAGE_CODE ) {
+			$wpml_current_language = apply_filters( 'wpml_current_language', NULL );
+			if ( $order_id ) {
+				$wpml_current_language = get_post_meta( $order_id, 'wpml_language', true );
+			}
+			$this->heading = apply_filters( 'wpml_translate_single_string', $this->heading, 'ivole', 'ivole_email_heading_coupon', $wpml_current_language );
+			$this->subject = apply_filters( 'wpml_translate_single_string', $this->subject, 'ivole', 'ivole_email_subject_coupon', $wpml_current_language );
+			$this->from_name = apply_filters( 'wpml_translate_single_string', $this->from_name, 'ivole', 'ivole_email_from_name', $wpml_current_language );
+			$this->footer = apply_filters( 'wpml_translate_single_string', $this->footer, 'ivole', 'ivole_email_footer', $wpml_current_language );
+
+ 			if ( 'WPML' === $this->language ) {
+				$this->language = strtoupper( $wpml_current_language );
 			}
 		}
 	}
@@ -315,6 +325,7 @@ class Ivole_Email_Coupon {
 		ob_start();
 		//$email_heading = $this->heading;
 		$def_body = Ivole_Email::$default_body_coupon;
+		$lang = $this->language;
 		include( $this->template_html );
 		return ob_get_clean();
 	}
@@ -322,29 +333,6 @@ class Ivole_Email_Coupon {
 	public static function plugin_path() {
     return untrailingslashit( plugin_dir_path( __FILE__ ) );
   }
-
-	public function send() {
-
-		add_filter( 'wp_mail_from', array( $this, 'get_from_address' ) );
-		add_filter( 'wp_mail_from_name', array( $this, 'get_from_name' ) );
-		add_filter( 'wp_mail_content_type', array( $this, 'get_content_type' ) );
-
-		$subject = $this->replace_variables( $this->subject );
-		$message = $this->get_content();
-		$message = $this->replace_variables( $message );
-		$message = $this->style_inline( $message );
-		$headers = array();
-		if($this->bcc) {
-			$headers[] = 'Bcc: ' . $this->bcc;
-		}
-		$return  = wp_mail( $this->to, $subject, $message, $headers, array() );
-
-		remove_filter( 'wp_mail_from', array( $this, 'get_from_address' ) );
-		remove_filter( 'wp_mail_from_name', array( $this, 'get_from_name' ) );
-		remove_filter( 'wp_mail_content_type', array( $this, 'get_content_type' ) );
-
-		return $return;
-	}
 
 	public function get_from_address() {
 		$from_address = apply_filters( 'woocommerce_email_from_address', get_option( 'woocommerce_email_from_address' ), $this );
@@ -358,25 +346,6 @@ class Ivole_Email_Coupon {
 
 	public function get_content_type() {
 		return 'text/html';
-	}
-
-	public function style_inline( $content ) {
-		// make sure we only inline CSS for html emails
-		if ( in_array( $this->get_content_type(), array( 'text/html', 'multipart/alternative' ) ) && class_exists( 'DOMDocument' ) ) {
-			ob_start();
-			wc_get_template( 'emails/email-styles.php' );
-			$css = apply_filters( 'woocommerce_email_styles', ob_get_clean() );
-
-			// apply CSS styles inline for picky email clients
-			try {
-				$emogrifier = new Emogrifier( $content, $css );
-				$content    = $emogrifier->emogrify();
-			} catch ( Exception $e ) {
-				$logger = new WC_Logger();
-				$logger->add( 'emogrifier', $e->getMessage() );
-			}
-		}
-		return $content;
 	}
 
 	public function replace_variables( $input ) {

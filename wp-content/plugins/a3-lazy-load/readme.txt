@@ -2,12 +2,12 @@
 Contributors: a3rev, a3rev Software, nguyencongtuan
 Tags: a3 lazy load, Lazy Loading , image lazy load, lazyload
 Requires at least: 4.5
-Tested up to: 4.9.0
-Stable tag: 1.8.2
+Tested up to: 4.9.6
+Stable tag: 1.8.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Use a3 Lazy Load for images, videos, iframes. Instantly improve your sites load time and dramatically improve site users experience.
+Use a3 Lazy Load for images, videos, iframes. Instantly improve your sites load time and dramatically improve site users experience.
 
 == DESCRIPTION ==
 
@@ -21,7 +21,7 @@ a3 Lazy Load is the most fully featured, incredibly easy to set up lazy load plu
 
 Images are the number one element that slows page load and increases bandwidth use. From the a3 Lazy Load admin panel turn load images by a3 Lazy Load ON | OFF. For more flexibility when ON you can choose to ON | OFF lazy load for images in
 
-* Post and Pages (All Content areas)
+* Post, Pages and Custom Post Types (All Content areas)
 * Widgets (Sidebar, header and footer)
 * Apply to post thumbnails
 * Apply to gravatars
@@ -30,19 +30,21 @@ Images are the number one element that slows page load and increases bandwidth u
 
 = VIDEO LAZY LOAD =
 
-a3 Lazy Load supports all WordPress video Embeds including Youtube, Vimeo and HTML5 video - for a full list see the [WordPress Codex Embeds](http://codex.wordpress.org/Embeds) list. The WordPress embed method of copying and pasting the video url into posts and pages content area is fully supported. Note - embed video by WordPress shortcode is not supported.
+a3 Lazy Load supports all WordPress video Embeds including Youtube, Vimeo and HTML5 video - for a full list see the [WordPress Codex Embeds](http://codex.wordpress.org/Embeds) list. The WordPress embed method of copying and pasting the video url into posts and pages content area is fully supported. 
+
+<strong>Note</strong> - Works with Videos added by Text and HTML Widgets but not the new WordPress Video widget. That widget does not pull iframe at first load, it use JavaScript to replace html to iframe and hence a3 lazy Load can't see it to apply.  
 
 From the a3 lazy Load admin panel turn Video Support ON | OFF. When ON you can choose to ON | OFF lazy load for videos in
 
-* Post and Pages (All Content areas)
-* Widgets (Sidebar, header and footer)
+* Video embeded by URL in Post and Pages (All Content areas)
+* Video in Widget types, Text Widget and HTML Wigets.
 * Youtube [see demo](http://ressio.github.io/lazy-load-xt/demo/youtube-iframe.htm)
 * Video [see demo](http://ressio.github.io/lazy-load-xt/demo/video-html5.htm)
 * Fully Compatible with the popular [Youtube Embed Plugin](https://wordpress.org/plugins/youtube-embed/)
 
 = iFRAME LAZY LOAD =
 
-a3 Lazy Load has built in support for content that is added by iframe from any source in content and widgets  examples
+a3 Lazy Load has built in support for content that is added by iframe from any source in content and widgets. Examples
 
 * WordPress embedded media
 * Facebook Like boxes with profiles, Like buttons, Recommend
@@ -59,7 +61,11 @@ a3 Lazy Load has built in support for content that is added by iframe from any s
 * Built in auto support for WordPress AMP plugin
 * Built in support for Better AMP plugin
 * There are no setting options for exclude /amp - Lazy Load is just never applied to the /amp endpoint
-* When the url is loaded in browser without /amp Lazy Load is applied  
+* When the url is loaded in browser without /amp Lazy Load is applied 
+
+= ADVANCED CUSTOM FIELDS =
+
+Fully compatible with the very popular Advanced Custom Fields plugin, Free and Premium versions. 
 
 = LAZY LOAD EFFECTS =
 
@@ -82,22 +88,32 @@ a3 Lazy Load gives you the option to load its script from your sites HEAD or fro
 
 = EXCLUDE IMAGES & VIDEO =
 
-a3 Lazy Load allows you to easily exclude any images and video by class name from having the Lazy Load effect applied.
+a3 Lazy Load allows you to easily exclude any image or video by class name from having the Lazy Load effect applied. [See FAQ's](https://wordpress.org/plugins/a3-lazy-load/#faq-header) 
 
 = JAVASCIPT DISABLED FALLBACK =
 
 a3 Lazy Load has built in Noscript fallback if user has JavaScript turned off in their browser. Developers who use underscore.js in their applications can use the Noscript parameter to exclude their plugins content from Lazy Load.
 
-= PLUGIN COMPATIBILITY =
+= THEME & PLUGIN COMPATIBILITY =
 
-* Work with any WordPress theme that follows the WordPress Theme Codex
-* Fully compatible with WPTouch plugin - Set to not apply on Mobiles if WPTouch is installed
-* Fully compatible with MobilePress plugin - Set to not apply on Mobiles if MobilePress is installed
-* Will not conflict with any plugin that has lazy load built in
-* Plugin Developers a3 lazy load filter allows them to let lazy load apply to their plugin
-* Tested 100% compatible with WP Super Cache and W3 Total Cache plugins
-* Tested 100% compatible with Amazon Cloudfront
-* Fully compatible with CDN architecture.
+a3 Lazy Load works with any WordPress theme that follows the WordPress Theme Codex. However, many Theme & Plugin developers will use a custom written function to add objects, example the theme has a home page with layout created by a custom function they have written. a3 Lazy Load cannot know what these functions are and so cannot apply to the objects loaded by that custom function.
+
+If your images or objects not being Lazy Loaded in a certain section of your site, but are Lazy Loaded everywhere else you will know this is the cause. Please if this happens raise a support ticket with the developer, explaining that they just need to add a simple tag to their custom functions so that a3 Lazy Load apply to their custom function and be fully compatible. [Here is a list](https://wordpress.org/plugins/a3-lazy-load/#faq-header) of a3 lazy Load filter tags to include in your ticket to make it easy for the developer.
+
+Don't forget when a developer does add full compatibility with a3 Lazy Load please let us know via a support ticket on this forum and we will add them to the list below.
+
+These are just some of the more popular plugins that are either tested 100% compatible with a3 Lazy Load or tags has been added for 100% compatibility.   
+
+* Plugin - Advanced Custom Fields
+* Plugin - WooCommerce
+* Plugin - WP Offload
+* Plugin - WP Super Cache and W3 Total Cache plugins
+* Plugin - Youtube Embed
+* Plugin - WordPress AMP
+* Plugin - WPTouch. Note - Set to not apply on Mobiles if WPTouch is installed
+* Plugin - MobilePress - Set to not apply on Mobiles if MobilePress is installed
+* Plugins - Will not conflict with any plugin that has lazy load built in
+* CDN's - Cloudfront, Cloudflare and all other known CDN architecture.
 
 = MORE FEATURES =
 
@@ -108,16 +124,58 @@ a3 Lazy Load has built in Noscript fallback if user has JavaScript turned off in
 
 = JOIN THE a3 LAZY LOAD COMMUNITY =
 
-When you download a3 lazy Load, you join our community. Regardless of if you are a WordPress newbie or experienced developer if youre interested in contributing to a3 Lazy Load development head over to the [a3 Lazy Load GitHub Repository](https://github.com/a3rev/a3-lazy-load) to find out how you can contribute.
+When you download a3 lazy Load, you join our community. Regardless of if you are a WordPress newbie or experienced developer if you are interested in contributing to a3 Lazy Load development head over to the [a3 Lazy Load GitHub Repository](https://github.com/a3rev/a3-lazy-load) to find out how you can contribute.
 Want to add a new language to a3 Lazy Load? Great! You can contribute via [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/a3-lazy-load)
+
 
 == Installation ==
  
 = Minimum Requirements =
 
-* WordPress 4.5
-* PHP version 5.5.0 or greater
-* MySQL version 5.5.0 or greater
+* WordPress 4.6 or greater
+* PHP version 5.6.0 or greater
+* MySQL version 5.6 or greater OR MariaDB version 10.0 or greater
+
+== Frequently Asked Questions ==
+
+= How do I exclude individual objects from Lazy Load? =
+
+Use this built in class name to exclude lazy load on individual images, videos and iframes.
+<code>a3-notlazy</code>
+
+= Why are some images, videos, objects not Lazy Loaded? =
+
+a3 Lazy Load can only be applied to objects that are added using core WordPress functions. If your theme or a plugin developer adds objects such as images or videos via a custom written function, a3 lazy Load cannot know what that custom function is and hence cannot Lazy Load the object.
+
+So if you see object not being lazy loaded please check first if those objects are loaded by the theme or a plugin. If they are, you can be confident that they are loaded by a custom function. 
+
+If this is the case, please help yourself and other a3 lazy Load users by raising a support ticket with the developer and ask them to add an a3 Lazy Load filter tag to their function to allow a3 Lazy Load to find it and apply to the object. 
+
+Below is a list of available a3 Lazy Load filters to use and pass onto the developer.
+
+= Filter tags to apply lazy load =
+
+Apply lazy load for images in content.
+<code>a3_lazy_load_images</code> 
+Example:
+<code>apply_filters( 'a3_lazy_load_images', $your_content, null );</code>
+
+Apply lazy load for videos and iframe from content.
+<code>a3_lazy_load_videos</code> 
+Example:
+<code>apply_filters( 'a3_lazy_load_videos', $your_content, null );</code>
+
+Apply lazy load for all images, videos and iframe from content
+<code>a3_lazy_load_html</code>
+Example:
+<code>apply_filters( 'a3_lazy_load_html', $your_content, null );</code>
+
+= Filter Tags to Exclude by Theme Class name =
+
+Filter tags to add to class name of theme to exclude lazy load on images or videos.
+<code>a3_lazy_load_skip_images_classes</code>
+<code>a3_lazy_load_skip_videos_classes</code>
+
 
 == SCREENSHOTS ==
 
@@ -136,6 +194,53 @@ Want to add a new language to a3 Lazy Load? Great! You can contribute via [trans
 
 == Changelog ==
 
+= 1.8.9 - 2018/06/04 =
+* This Maintenance update has 2 code tweaks for compatibility with themes and plugins that load images via the wp_kses_post sanitizer as WooCommerce does since version 3.4.0 with widgets and on Cart page.
+* Tweak - Append lazy attributes to attribute list of allowed post tags list so that lazy load can run on frontend when that content is output via wp_kses_post 
+* Tweak - Add noscript tag to allowed post tags list to resolve duplicate image if that image is output via wp_kses_post
+* Tweak - Test for compatibility with WooCommerce version 3.4.1
+
+= 1.8.8 - 2018/05/26 =
+* This maintenance update is for compatibility with WordPress 4.9.6 and the new GDPR compliance requirements for users in the EU 
+* Tweak - Test for compatibility with WordPress 4.9.6
+* Tweak - Check for any issues with GDPR compliance. None Found
+
+= 1.8.7 - 2018/03/24 =
+* Maintenance Update. 2 code tweaks to enhance the lazy loading of images, video and iframe added by third party shortcodes in the content
+* Tweak - Increase lazy load filter priority value so that lazy load is applied to images loaded by the shortcode function do_shortcode 
+* Tweak - Increase lazy load filter priority value so that lazy load is applied to video and iframe loaded by the shortcode function do_shortcode
+
+= 1.8.6 - 2018/03/24 =
+* Maintenance Update. 1 bug fix from this morning 1.8.5 major maintenance release. A small piece of new code in v 1.8.5 was written on PHP v7 and is not compatible with PHP version 5.6 If you are running v PHP 5.6 please run this update to fix it
+* Fix - PHP Fatal Error Call instance a3_lazy_load instead of us $this is not an object caused by incompatibility with PHP version 5.6
+
+= 1.8.5 - 2018/03/23 =
+* Maintenance Update. Refactor of Lazy Load on Widgets, Full Compatibility with the Advanced Custom Fields plugin, optimization tweaks and 3 bug fixes.
+* Refactor - Apply lazy load to all widgets instead of Text Widget and HTML widget from WordPress
+* Refactor - Remove the code that hook to tag 'wp_get_attachment_image_attributes' which was required to add support for lazy load for [gallery] shortcode. Redundant after WP version 4.6.0 and now removed.
+* Tweak - Add filter to acf_the_content tag for apply lazy load on the Content from ACF plugin. Kudos to @ondoheer for creating full compatibility with ACF Free and Premium version. 
+* Tweak - Disable load new google fonts via API. Google fonts not used and saves 4 calls to database on each page load. Thanks to Robert Harm for reporting the issue
+* Tweak - Optimized loading gif compression for even faster load. Thanks @jasom for the suggestion
+* Tweak - Remove duplicate parameters from plugin scripts. Thanks to @galbaras for reporting the issue
+* Tweak - Add new FAQs tab to plugins page with Add Lazy Load Tags to custom Function description and exclude Lazy Load Class name for easy reference.
+* Tweak - Update plugins description
+* Framework - Define filter tag for enable OR disable load new google fonts via API
+* Framework - Update plugin framework to new version 2.0.3
+* Fix - Turn Image in Widget OFF option which had stopped working. Thanks to @japenz and @dimitar-koev for reporting and confirming the bug
+* Fix - If videos embed have preload=none do not call video load from a3 Lazy Load. Thanks to Celso Azevedo @celsoazevedo for an excellent bug report which enabled us to replicate the issue.
+* Fix - Remove src with placeholder image url for iframe
+
+= 1.8.4 - 2018/02/13 =
+* Maintenance Update. Under the bonnet tweaks to keep your plugin running smoothly and is the foundation for new features to be developed this year 
+* Framework - Update a3rev Plugin Framework to version 2.0.2
+* Framework - Add Framework version for all style and script files
+* Tweak - Update for full compatibility with a3rev Dashboard plugin
+* Tweak - Test for compatibility with WordPress 4.9.4
+
+= 1.8.3 - 2018/01/19 =
+* Tweak - Tested for compatibility with WordPress 4.9.2
+* Fix - Remove redirect to plugins admin panel when activate the plugin for the first time with WordPress 4.9.2
+
 = 1.8.2 - 2017/06/02 =
 * Tweak - Tested for compatibility with WordPress major version 4.8.0
 * Tweak - Add Lazy Load support for new WordPress 4.8.0 Image, Video and Media widgets
@@ -143,18 +248,18 @@ Want to add a new language to a3 Lazy Load? Great! You can contribute via [trans
 * Fix - WordPress Admin Tool Bar User Avatar conflict Issue #2
 
 = 1.8.1 - 2017/05/31 =
-* Fix - Use correct object A3_Lazy_Load instead of this as it was causing a fatal error
+* Fix - Use correct object A3_Lazy_Load instead of 'this' as it was causing a fatal error
 
 = 1.8.0 - 2017/05/30 =
-* Feature  Updated for compatibility with Better AMP plugin
-* Feature  Launched a3Lazy Load Github public Repository
-* Feature  WordPress Translation activation. Add text domain declaration in file header.
+* Feature - Updated for compatibility with Better AMP plugin
+* Feature - Launched a3Lazy Load Github public Repository
+* Feature - WordPress Translation activation. Add text domain declaration in file header.
 * Tweak - Change global $$variable to global ${$variable} for compatibility with PHP 7.0
 * Tweak - Update a3 Revolution to a3rev Software on plugins description
 * Tweak - Update plugin framework to latest version
 * Tweak - Tested for full compatibility with WordPress version 4.7.5
 * Tweak - Tested for full compatibility with PHP 7.0
-* Fix  Exclude images by class
+* Fix - Exclude images by class
 
 = 1.7.1 =
 * Tweak - Register fontawesome in plugin framework with style name is 'font-awesome-styles'
@@ -281,6 +386,27 @@ Want to add a new language to a3 Lazy Load? Great! You can contribute via [trans
 
 
 == Upgrade Notice ==
+
+= 1.8.9 =
+Maintenance update. This upgrade has 2 code tweaks for compatibility with themes and plugins that load images via the wp_kses_post sanitizer as WooCommerce does since version 3.4.0 with widgets and on Cart page.
+
+= 1.8.8 =
+Maintenance Update. Compatibility WordPress 4.9.6 and the new GDPR compliance requirements for users in the EU
+
+= 1.8.7 =
+Maintenance Update. 2 code tweaks to enhance the lazy loading of images, video and iframe added by third party shortcodes in the content
+
+= 1.8.6 =
+Maintenance Update. 1 bug fix from this morning 1.8.5 major maintenance release. A small piece of new code in v 1.8.5 was written on PHP v7 and is not compatible with PHP version 5.6 If you are running v PHP 5.6 please run this update to fix it
+
+= 1.8.5 =
+Maintenance Update. Refactor of Lazy Load on Widgets, Full Compatibility with the Advanced Custom Fields plugin, optimization tweaks and 3 bug fixes.
+
+= 1.8.4 =
+Maintenance Update. This version updates the Plugin Framework to v 2.0.2, adds full compatibility with a3rev dashboard and WordPress v 4.9.4
+
+= 1.8.3 =
+Maintenance Update. 1 redirect Bug fix on first activate on site with WordPress v4.9.2
 
 = 1.8.2 =
 Maintenance Update. 1 bug fix and 1 code tweak for compatibility with upcoming Major WordPress version 4.8.0

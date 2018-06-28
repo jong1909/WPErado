@@ -45,9 +45,24 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 						$customer_last_name = '';
 						$customer_email = '';
 
+						//check if registered customers option is used
+						$registered_customers = false;
+						if( 'yes' === get_option( 'ivole_registered_customers', 'no' ) ) {
+							$registered_customers = true;
+						}
+
 						if( method_exists( $order, 'get_billing_email' ) ) {
 							// Woocommerce version 3.0 or later
-							$customer_email = $order->get_billing_email();
+							if( $registered_customers ) {
+								$user = $order->get_user();
+								if( $user ) {
+									$customer_email = $user->user_email;
+								} else {
+									$customer_email = $order->get_billing_email();
+								}
+							} else {
+								$customer_email = $order->get_billing_email();
+							}
 							$customer_first_name = $order->get_billing_first_name();
 							$customer_last_name = $order->get_billing_last_name();
 							$customer_name = $order->get_billing_first_name() . ' ' . $order->get_billing_last_name();
@@ -55,7 +70,21 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 							$order_currency = $order->get_currency();
 						} else {
 							// Woocommerce before version 3.0
-							$customer_email = get_post_meta( $order_id, '_billing_email', true );
+							if( $registered_customers ) {
+								$user_id = get_post_meta( $order_id, '_customer_user', true );
+								if( $user_id ) {
+									$user = get_user_by( 'id', $user_id );
+									if( $user ) {
+										$customer_email = $user->user_email;
+									} else {
+										$customer_email = get_post_meta( $order_id, '_billing_email', true );
+									}
+								} else {
+									$customer_email = get_post_meta( $order_id, '_billing_email', true );
+								}
+							} else {
+								$customer_email = get_post_meta( $order_id, '_billing_email', true );
+							}
 							$customer_first_name = get_post_meta( $order_id, '_billing_first_name', true );
 							$customer_last_name = get_post_meta( $order_id, '_billing_last_name', true );
 							$customer_name = get_post_meta( $order_id, '_billing_first_name', true ) . ' ' . get_post_meta( $order_id, '_billing_last_name', true );
@@ -186,9 +215,15 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 									global $q_config;
 									$old_lang = $q_config['language'];
 									$q_config['language'] = $lang;
+
+									//WPML integration
+									if ( has_filter( 'wpml_current_language' ) ) {
+										$old_lang = apply_filters( 'wpml_current_language', NULL );
+										do_action( 'wpml_switch_language', $lang );
+									}
 								}
 
-								$ec = new Ivole_Email_Coupon();
+								$ec = new Ivole_Email_Coupon( $order_id );
 
 								$coupon_type = get_option( 'ivole_coupon_type', 'static' );
 								if( $coupon_type === 'static' ) {
@@ -292,6 +327,11 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 								//qTranslate integration
 								if( $lang ) {
 									$q_config['language'] = $old_lang;
+
+									//WPML integration
+									if ( has_filter( 'wpml_current_language' ) ) {
+										do_action( 'wpml_switch_language', $old_lang );
+									}
 								}
 							}
 

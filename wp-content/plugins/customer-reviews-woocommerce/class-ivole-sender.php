@@ -66,14 +66,25 @@ if ( ! class_exists( 'Ivole_Sender' ) ) :
 				global $q_config;
 				$old_lang = $q_config['language'];
 				$q_config['language'] = $lang;
+
+				//WPML integration
+				if ( has_filter( 'wpml_current_language' ) ) {
+					$old_lang = apply_filters( 'wpml_current_language', NULL );
+					do_action( 'wpml_switch_language', $lang );
+				}
 			}
 
-			$e = new Ivole_Email();
+			$e = new Ivole_Email( $order_id );
 			$e->trigger2( $order_id );
 
 			//qTranslate integration
 			if( $lang ) {
 				$q_config['language'] = $old_lang;
+
+				//WPML integration
+				if ( has_filter( 'wpml_current_language' ) ) {
+					do_action( 'wpml_switch_language', $old_lang );
+				}
 			}
 		}
 

@@ -220,7 +220,7 @@ abstract class MC4WP_Integration {
 	 * Outputs a checkbox
 	 */
 	public function output_checkbox() {
-		echo $this->get_checkbox_html();
+        echo $this->get_checkbox_html();
 	}
 
 	/**
@@ -229,6 +229,21 @@ abstract class MC4WP_Integration {
 	 * @return string
 	 */
 	public function get_checkbox_html() {
+
+        $show_checkbox = empty( $this->options['implicit'] );
+        $integration_slug = $this->slug;
+
+        /**
+         * Filters whether to show the sign-up checkbox for this integration.
+         *
+         * @param bool $show_checkbox
+         * @param string $integration_slug
+         */
+        $show_checkbox = (bool) apply_filters( 'mc4wp_integration_show_checkbox', $show_checkbox, $integration_slug );
+
+        if( ! $show_checkbox ) {
+            return '';
+        }
 
 		ob_start();
 
@@ -240,16 +255,17 @@ abstract class MC4WP_Integration {
         /** @ignore */
 		do_action( 'mc4wp_integration_'. $this->slug .'_before_checkbox_wrapper', $this );
 
-        echo sprintf( '<p class="mc4wp-checkbox mc4wp-checkbox-%s">', esc_attr( $this->slug ) );
-        echo '<label>';
+        $wrapper_tag = $this->options['wrap_p'] ? 'p' : 'span';
 
-		// Hidden field to make sure "0" is sent to server
-		echo sprintf( '<input type="hidden" name="%s" value="0" />', esc_attr( $this->checkbox_name ) );
+        // Hidden field to make sure "0" is sent to server
+        echo sprintf( '<input type="hidden" name="%s" value="0" />', esc_attr( $this->checkbox_name ) );
+
+        echo sprintf( '<%s class="mc4wp-checkbox mc4wp-checkbox-%s">', $wrapper_tag, esc_attr( $this->slug ) );
+        echo '<label>';
 		echo sprintf( '<input type="checkbox" name="%s" value="1" %s />', esc_attr( $this->checkbox_name ), $this->get_checkbox_attributes() );
         echo sprintf( '<span>%s</span>', $this->get_label_text() );
-
 		echo '</label>';
-        echo '</p>';
+        echo sprintf( '</%s>', $wrapper_tag );
 
         /** @ignore */
 		do_action( 'mc4wp_integration_after_checkbox_wrapper', $this );
@@ -338,7 +354,6 @@ abstract class MC4WP_Integration {
 		$slug = $this->slug;
 		$mailchimp = new MC4WP_MailChimp();
 		$log = $this->get_log();
-		$request= $this->get_request();
 		$list_ids = $this->get_lists();
 
 		/** @var MC4WP_MailChimp_Subscriber $subscriber */
@@ -396,7 +411,7 @@ abstract class MC4WP_Integration {
 		foreach( $map as $list_id => $subscriber ) {
 			$subscriber->status = $this->options['double_optin'] ? 'pending' : 'subscribed';
 			$subscriber->email_type = $email_type;
-			$subscriber->ip_signup = $request->get_client_ip();
+			$subscriber->ip_signup = mc4wp_get_request_ip_address();
 
 			/** @ignore (documented elsewhere) */
 			$subscriber = apply_filters( 'mc4wp_subscriber_data', $subscriber );
@@ -426,7 +441,7 @@ abstract class MC4WP_Integration {
 
 			// log error
 			if( $mailchimp->get_error_code() == 214 ) {
-				$log->warning( sprintf( "%s > %s is already subscribed to the selected list(s)", $this->name, mc4wp_obfuscate_string( $subscriber->email_address ) ) );
+				$log->warning( sprintf( "%s > %s is already subscribed to the selected list(s)", $this->name, $subscriber->email_address ) );
 			} else {
 				$log->error( sprintf( '%s > MailChimp API Error: %s', $this->name, $mailchimp->get_error_message() ) );
 			}
@@ -508,8 +523,7 @@ abstract class MC4WP_Integration {
 	 * @return array
 	 */
 	public function get_data() {
-		$request = mc4wp('request');
-		$data = $request->params->all();
+		$data = array_merge( $_GET, $_POST );
 		return $data;
 	}
 
@@ -526,12 +540,4 @@ abstract class MC4WP_Integration {
 	protected function get_api() {
 		return mc4wp('api');
 	}
-
-	/**
-	 * @return MC4WP_Request
-	 */
-	protected function get_request() {
-		return mc4wp('request');
-	}
-
 }

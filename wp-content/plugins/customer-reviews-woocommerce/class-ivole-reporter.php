@@ -30,17 +30,47 @@ if ( ! class_exists( 'Ivole_Reporter' ) ) :
 							$customer_last_name = '';
 							$order_date = '';
 							$order_currency = '';
+
+							//check if registered customers option is used
+							$registered_customers = false;
+							if( 'yes' === get_option( 'ivole_registered_customers', 'no' ) ) {
+								$registered_customers = true;
+							}
+
 							// get information about the order
 							if( method_exists( $order, 'get_billing_email' ) ) {
 								// Woocommerce version 3.0 or later
-								$customer_email = $order->get_billing_email();
+								if( $registered_customers ) {
+									$user = $order->get_user();
+									if( $user ) {
+										$customer_email = $user->user_email;
+									} else {
+										$customer_email = $order->get_billing_email();
+									}
+								} else {
+									$customer_email = $order->get_billing_email();
+								}
 								$customer_first_name = $order->get_billing_first_name();
 								$customer_last_name = $order->get_billing_last_name();
 								$order_date = date_i18n( 'd.m.Y', strtotime( $order->get_date_created() ) );
 								$order_currency = $order->get_currency();
 							} else {
 								// Woocommerce before version 3.0
-								$customer_email = get_post_meta( $order_id, '_billing_email', true );
+								if( $registered_customers ) {
+									$user_id = get_post_meta( $order_id, '_customer_user', true );
+									if( $user_id ) {
+										$user = get_user_by( 'id', $user_id );
+										if( $user ) {
+											$customer_email = $user->user_email;
+										} else {
+											$customer_email = get_post_meta( $order_id, '_billing_email', true );
+										}
+									} else {
+										$customer_email = get_post_meta( $order_id, '_billing_email', true );
+									}
+								} else {
+									$customer_email = get_post_meta( $order_id, '_billing_email', true );
+								}
 								$customer_first_name = get_post_meta( $order_id, '_billing_first_name', true );
 								$customer_last_name = get_post_meta( $order_id, '_billing_last_name', true );
 								$order_date = date_i18n( 'd.m.Y', strtotime( $order->order_date ) );

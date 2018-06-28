@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 function tss_mpsp_slider_posts_settings($post){
     // $post is already set, and contains an object: the WordPress post
@@ -32,7 +33,7 @@ function tss_mpsp_slider_posts_settings($post){
       <br>
 
       <label class='layout_label'  for="mpsp_posts_visible">No. of Testimonials In Slider :</label>
-      <input type="number" name="mpsp_posts_visible" value="<?php echo $mpsp_posts_visible; ?>" min='1'>
+      <input type="number" name="mpsp_posts_visible" value="<?php echo $mpsp_posts_visible; ?>" min='2'>
 
       <br>
       <label class='layout_label'  for="mpsp_posts_order">Testimonials Order :</label>
@@ -53,8 +54,6 @@ function tss_mpsp_slider_posts_settings($post){
 
       <label class='layout_label'  for="mpsp_posts_orderby"  title="Sort retrieved posts by.">Testimonials Order By :</label >
       <select name="mpsp_posts_orderby">
-        <option selected value=""
-        >Choose..</option>
         <option value="none" 
 
         <?php selected( 'none',$mpsp_posts_orderby ); ?>
@@ -99,7 +98,11 @@ function tss_mpsp_slider_posts_settings($post){
       <br>
       <br>
       <div style="">
-      <h2 align="center" style="color:#fff;">Select layout</h2>
+      <h1  style="color:#333;">Select layout</h1>
+      <hr >
+      <br>
+      <br>
+      <br>
       <label class='layout_label' for="mpsp_layout_1"><img src="<?php echo plugins_url('img/Temp-1.png',__FILE__); ?>"  style='width:100px; height:200px;' > </label>
 
       <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_1' value="templates/mpsp_slider_generator" style="width:15px;"  <?php checked( "templates/mpsp_slider_generator", $mpsp_slide_layout_custom ); ?>
@@ -108,39 +111,38 @@ function tss_mpsp_slider_posts_settings($post){
       <br>
       <label class='layout_label' for="mpsp_layout_6"><img src="<?php echo plugins_url('img/Temp-6.png',__FILE__); ?>"  style='width:200px;' > </label>
 
-      <input disabled type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_6' value="templates/mpsp_slider_generator_5" style="width:15px;"  <?php checked( "templates/mpsp_slider_generator_5", $mpsp_slide_layout_custom ); ?>
-    ><span style="color:red;"><a href="http://web-settler.com/testimonials-plugin/" target="_blank">(Premium version Only)</a></span>
+      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_6' value="templates/mpsp_slider_generator_5" style="width:15px;"  <?php checked( "templates/mpsp_slider_generator_5", $mpsp_slide_layout_custom ); ?>
+    >
    <br>
 
       <label class='layout_label' for="mpsp_layout_2"><img src="<?php echo plugins_url('img/Temp-2.png',__FILE__); ?>" width="200px" ></label>
-      <input type="radio" disabled name="mpsp_slide_layout_custom" id='mpsp_layout_2'  value='templates/mpsp_slider_generator_1' style="width:15px;"
+      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_2'  value='templates/mpsp_slider_generator_1' style="width:15px;"
 
 <?php checked( "templates/mpsp_slider_generator_1", $mpsp_slide_layout_custom ); ?>
-      > <b><i><span style="color:red;"><a href="http://web-settler.com/testimonials-plugin/" target="_blank">(Premium version Only)</a></span>
-          <br>
+      > <b>          <br>
 
       <label class='layout_label' for="mpsp_layout_3"><img src="<?php echo plugins_url('img/temp-3.png',__FILE__); ?>" width="200px"></label>
-      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_3' disabled
+      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_3'
       value='templates/mpsp_slider_generator_2'style="width:15px;" selected     
 <?php checked( "templates/mpsp_slider_generator_2", $mpsp_slide_layout_custom ); ?>
-      > <span style="color:red;"><a href="http://web-settler.com/testimonials-plugin/" target="_blank">(Premium version Only)</a></span>
+      > 
           <br>
           <label class='layout_label' for="mpsp_layout_4"><img src="<?php echo plugins_url('img/temp-4.png',__FILE__); ?>" width="200px"></label>
-      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_4' disabled
+      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_4'
       value='templates/mpsp_slider_generator_3'style="width:15px;" selected     
 <?php checked( "templates/mpsp_slider_generator_3", $mpsp_slide_layout_custom ); ?>
-      > <span style="color:red;"><a href="http://web-settler.com/testimonials-plugin/" target="_blank">(Premium version Only)</a></span>
+      > 
           <br>
           <label class='layout_label' for="mpsp_layout_5"><img src="<?php echo plugins_url('img/temp-5.png',__FILE__); ?>" width="200px"></label>
-      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_5' disabled
+      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_5'
       value='templates/mpsp_slider_generator_4'style="width:15px;" selected     
 <?php checked( "templates/mpsp_slider_generator_4", $mpsp_slide_layout_custom ); ?>
-      > <span style="color:red;"><a href="http://web-settler.com/testimonials-plugin/" target="_blank">(Premium version Only)</a></span> </i></b>
+      > </b>
          <br>
       <label class='layout_label' for="mpsp_layout_6"><img src="<?php echo plugins_url('img/Temp-7.png',__FILE__); ?>"  style='width:200px;' > </label>
 
-      <input disabled type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_6' value="templates/mpsp_slider_generator_5" style="width:15px;"  <?php checked( "templates/mpsp_slider_generator_5", $mpsp_slide_layout_custom ); ?>
-    ><span style="color:red;"><a href="http://web-settler.com/testimonials-plugin/" target="_blank">(Premium version Only)</a></span>
+      <input type="radio" name="mpsp_slide_layout_custom" id='mpsp_layout_6' value="templates/mpsp_slider_generator_5" style="width:15px;"  <?php checked( "templates/mpsp_slider_generator_5", $mpsp_slide_layout_custom ); ?>
+    >
    <br> 
           <br>
           <br>

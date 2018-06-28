@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
           } else if (response.code === 3) {
             jQuery( '#post-' + response.order_id ).find( '.ivole-review-reminder' ).text( response.message );
           } else {
-            jQuery( '#post-' + response.order_id ).find( '.ivole-review-reminder' ).text('Error code 4');
+            jQuery( '#post-' + response.order_id ).find( '.ivole-review-reminder' ).text( response.message );
           }
         }, 'json');
       }

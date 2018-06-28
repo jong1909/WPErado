@@ -1,14 +1,14 @@
-=== Testimonial Slider ===
-Contributors:umarbajwa,websettler
+=== Testimonial Slider - Free Testimonials Slider Plugin ===
+Contributors:umarbajwa
 Donate link: http://web-settler.com/testimonials-plugin/
-Tags: simple testimonial, testimonial, slider, testimonials, easy testimonial slider, Responsive testimonial slider, ratings, slideshow,custom testimonial,feedback, feedback slider, testimonials responsive slider
+Tags: simple testimonial, testimonial, slider, testimonials, easy testimonial slider, Responsive testimonial slider, ratings,custom testimonial,feedback, feedback slider, testimonials responsive slider
 Requires at least: 3.4 
-Tested up to: 4.6
-Stable tag: 3.5.2
-License: GPLv2 
+Tested up to: 4.9.4
+Stable tag: 3.5.8
+License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Testimonial Plugin to add and display testimonials on your WordPress website.
+Testimonial Slider plugin is the only plugin you will need to display testimonials on your site, Create testimonial slider or list and design as per your needs.
 
 ==Description==
 
@@ -180,6 +180,11 @@ Yes, You can delete/edit user submitted testimonials you can also manually add t
 
 == Changelog ==
 
+= 3.5.6 =
+
+* All Pro Testimonial Templates are now free.
+* Few Design Bug Fixes
+
 = 3.5.2 =
 
 * Slidespeed bug fixed.
@@ -281,7 +286,6 @@ Testimonial Slider plugin.
 = 1.1 =
 * Fixed same posts in testimonial slider issue.
 * Testimonial Data is now added separately.
-
 
 
 

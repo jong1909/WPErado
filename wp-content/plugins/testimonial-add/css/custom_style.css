@@ -70,9 +70,10 @@
         width: 98%;
 
       }
+      /*
 #tss_mpsp_slider_posts_settings{
     background-color: #34495e;
-}
+} */
 
         .slide_hed_posts{
         width: 500px;
@@ -87,10 +88,11 @@
 
     }
   .layout_label{
-    color: #fff;
+    color: #333;
     }
-
+    /*
     #tss_mpsp_slider_posts_settings > h2{
         color: #fff !important;
     }
+    */
     </style>

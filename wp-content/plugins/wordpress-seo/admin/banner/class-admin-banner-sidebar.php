@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Admin\Banner
  */
 
@@ -24,7 +26,7 @@ class WPSEO_Admin_Banner_Sidebar {
 	 * @param WPSEO_Admin_Banner_Renderer $banner_renderer The render class for banners.
 	 */
 	public function __construct( $title, WPSEO_Admin_Banner_Renderer $banner_renderer ) {
-		$this->title = $title;
+		$this->title           = $title;
 		$this->banner_renderer = $banner_renderer;
 	}
 
@@ -82,26 +84,23 @@ class WPSEO_Admin_Banner_Sidebar {
 	 * @return WPSEO_Admin_Banner_Spot
 	 */
 	protected function get_premium_spot() {
-		$premium_spot = new WPSEO_Admin_Banner_Spot( __( 'Premium', 'wordpress-seo' ), $this->banner_renderer );
+		$premium_spot = new WPSEO_Admin_Banner_Spot( '', $this->banner_renderer );
 
-		$premium_spot->set_description(
-			sprintf(
-				/* translators: %1$s to anchor to the Yoast plugin page, %2$s is the a-closing tag, %3$s: Yoast SEO  */
-				__( 'Consider switching to the %1$sPremium version of %3$s%2$s.', 'wordpress-seo' ),
-				'<a target="_blank" href="https://yoa.st/ji">',
-				'</a>',
-				'Yoast SEO'
-			)
-		);
+		$premium_uri = WPSEO_Shortlinker::get( 'https://yoa.st/jj' );
 
-		$premium_spot->add_banner(
-			new WPSEO_Admin_Banner(
-				'https://yoa.st/jj',
-				'premium-seo.png',
-				261,
-				152,
-				__( 'Buy the Yoast SEO Premium plugin now and get access to extra features and 24/7 support!', 'wordpress-seo' )
-			)
+		$premium_spot->set_extra(
+			/* translators: %1$s expands to the plugin name */
+			'<h2>' . sprintf( esc_html__( 'Upgrade to %1$s', 'wordpress-seo' ), 'Yoast SEO Premium' ) . '</h2>' .
+			'<ul>' .
+			'<li><strong>' . esc_html__( 'Rank for up to 5 focus keywords per page', 'wordpress-seo' ) . '</strong></li>' .
+			'<li><strong>' . esc_html__( 'Preview your page in Facebook and Twitter', 'wordpress-seo' ) . '</strong></li>' .
+			'<li><strong>' . esc_html__( 'Get real-time suggestions for internal links', 'wordpress-seo' ) . '</strong></li>' .
+			'<li><strong>' . esc_html__( 'No more dead links a.k.a. 404 pages', 'wordpress-seo' ) . '</strong></li>' .
+			'<li><strong>' . esc_html__( '24/7 email support', 'wordpress-seo' ) . '</strong></li>' .
+			'<li><strong>' . esc_html__( 'No ads', 'wordpress-seo' ) . '</strong></li>' .
+			'</ul>' .
+			/* translators: %s expands to Yoast SEO Premium */
+			'<a id="wpseo-premium-button" class="button button-primary" href="' . $premium_uri . '" target="_blank">' . sprintf( __( 'Get %s now', 'wordpress-seo' ), 'Yoast SEO Premium' ) . '</a><br/>'
 		);
 
 		return $premium_spot;
@@ -117,9 +116,9 @@ class WPSEO_Admin_Banner_Sidebar {
 
 		$service_spot->set_description(
 			sprintf(
-				/* translators: %1$s expands to anchor start text with link to the Yoast Services page, %2$s to Yoast, %3$s is the a-closing tag.  */
-				__( 'Don\'t want dive into SEO yourself? %1$sLet team %2$s help you!%3$s', 'wordpress-seo' ),
-				'<a target="_blank" href="https://yoa.st/jk">',
+				/* translators: %1$s expands to a link start tag to the Yoast Services page, %2$s to Yoast, %3$s is the link closing tag. */
+				__( 'Do you want to know how to improve your rankings? %1$sLet team %2$s help you!%3$s', 'wordpress-seo' ),
+				'<a target="_blank" href="' . WPSEO_Shortlinker::get( 'https://yoa.st/jk' ) . '">',
 				'Yoast',
 				'</a>'
 			)
@@ -127,21 +126,15 @@ class WPSEO_Admin_Banner_Sidebar {
 
 		$service_spot->add_banner(
 			new WPSEO_Admin_Banner(
-				'https://yoa.st/jl',
-				'website-review.png',
-				261,
-				152,
-				__( 'Order a Website Review and we will tell you what to improve to attract more visitors!', 'wordpress-seo' )
-			)
-		);
-
-		$service_spot->add_banner(
-			new WPSEO_Admin_Banner(
-				'https://yoa.st/jm',
+				WPSEO_Shortlinker::get( 'https://yoa.st/jm' ),
 				'configuration-service.png',
 				261,
 				152,
-				__( 'Let our experts set up your Yoast SEO Premium plugin!', 'wordpress-seo' )
+				sprintf(
+				/* translators: %1$s expands to Yoast SEO Premium. */
+					__( 'Let our experts set up your %1$s plugin!', 'wordpress-seo' ),
+					'Yoast SEO Premium'
+				)
 			)
 		);
 
@@ -174,10 +167,9 @@ class WPSEO_Admin_Banner_Sidebar {
 
 		$extension_spot->set_description(
 			sprintf(
-				/* translators: %1$s expands to Yoast SEO, %2$s to anchor to the Yoast plugin page, %3$s is the a-closing tag.  */
-				__( 'Extend your %1$s plugin with our %2$sSEO plugins%3$s.', 'wordpress-seo' ),
-				'Yoast SEO',
-				'<a target="_blank" href="https://yoa.st/jn">',
+				/* translators: %1$s expands to a link start tag to the Yoast plugin page, %2$s is the link closing tag. */
+				__( 'Take your SEO to the next level and outrank your competition with our %1$sSEO plugins%2$s.', 'wordpress-seo' ),
+				'<a target="_blank" href="' . WPSEO_Shortlinker::get( 'https://yoa.st/jn' ) . '">',
 				'</a>'
 			)
 		);
@@ -185,23 +177,31 @@ class WPSEO_Admin_Banner_Sidebar {
 		if ( empty( $active_extensions['video'] ) ) {
 			$extension_spot->add_banner(
 				new WPSEO_Admin_Banner(
-					'https://yoa.st/jo',
+					WPSEO_Shortlinker::get( 'https://yoa.st/jo' ),
 					'video-seo.png',
 					261,
 					152,
-					__( 'Buy the Yoast Video SEO plugin now and optimize your videos for video search results and social media!', 'wordpress-seo' )
+					sprintf(
+						/* translators: %1$s expands to Yoast Video SEO. */
+						__( 'Buy the %1$s plugin now and optimize your videos for video search results and social media!', 'wordpress-seo' ),
+						'Yoast Video SEO'
+					)
 				)
 			);
 		}
 
-		if ( empty( $active_extensions['woocommerce'] )  ) {
+		if ( empty( $active_extensions['woocommerce'] ) ) {
 			$extension_spot->add_banner(
 				new WPSEO_Admin_Banner(
-					'https://yoa.st/jp',
+					WPSEO_Shortlinker::get( 'https://yoa.st/jp' ),
 					'woocommerce-seo.png',
 					261,
 					152,
-					__( 'Buy the Yoast WooCommerce SEO plugin now and optimize your shop today to improve your product promotion!', 'wordpress-seo' )
+					sprintf(
+						/* translators: %1$s expands to Yoast WooCommerce SEO. */
+						__( 'Buy the %1$s plugin now and optimize your shop today to improve your product promotion!', 'wordpress-seo' ),
+						'Yoast WooCommerce SEO'
+					)
 				)
 			);
 		}
@@ -209,10 +209,14 @@ class WPSEO_Admin_Banner_Sidebar {
 		if ( empty( $active_extensions['local'] ) ) {
 			$extension_spot->add_banner(
 				new WPSEO_Admin_Banner(
-					'https://yoa.st/jq',
+					WPSEO_Shortlinker::get( 'https://yoa.st/jq' ),
 					'local-seo.png', 261,
 					152,
-					__( 'Buy the Yoast Local SEO plugin now to improve your site&#8217;s Local SEO and ranking in Google Maps!', 'wordpress-seo' )
+					sprintf(
+						/* translators: %1$s expands to Yoast Local SEO. */
+						__( 'Buy the %1$s plugin now to improve your site&#8217;s Local SEO and ranking in Google Maps!', 'wordpress-seo' ),
+						'Yoast Local SEO'
+					)
 				)
 			);
 		}
@@ -220,11 +224,15 @@ class WPSEO_Admin_Banner_Sidebar {
 		if ( empty( $active_extensions['news'] ) ) {
 			$extension_spot->add_banner(
 				new WPSEO_Admin_Banner(
-					'https://yoa.st/jr',
+					WPSEO_Shortlinker::get( 'https://yoa.st/jr' ),
 					'news-seo.png',
 					261,
 					152,
-					__( 'Buy the Yoast News SEO plugin now and start optimizing to get your site featured in Google News!', 'wordpress-seo' )
+					sprintf(
+						/* translators: %1$s expands to Yoast News SEO. */
+						__( 'Buy the %1$s plugin now and start optimizing to get your site featured in Google News!', 'wordpress-seo' ),
+						'Yoast News SEO'
+					)
 				)
 			);
 		}
@@ -238,20 +246,20 @@ class WPSEO_Admin_Banner_Sidebar {
 	 * @return WPSEO_Admin_Banner_Spot
 	 */
 	protected function get_courses_spot() {
-		$courses_spot = new WPSEO_Admin_Banner_Spot( __( 'Courses', 'wordpress-seo' ), $this->banner_renderer );
+		$courses_spot = new WPSEO_Admin_Banner_Spot( __( 'Improve your SEO skills', 'wordpress-seo' ), $this->banner_renderer );
 
 		$courses_spot->set_description(
 			sprintf(
-				/* translators: %1$s expands to anchor start text with link to the Yoast Services page, %2$s is the a-closing tag.  */
-				__( 'You can easily learn more about SEO, content and the like with one of %1$sour courses%2$s', 'wordpress-seo' ),
-				'<a target="_blank" href="https://yoa.st/jt">',
+				/* translators: %1$s expands to a link start tag to the Yoast Services page, %2$s is the link closing tag. */
+				__( 'We believe SEO should be for everyone. That’s why we develop courses on any topic related to SEO. %1$sDiscover our online SEO courses &raquo;%2$s', 'wordpress-seo' ),
+				'<a target="_blank" href="' . WPSEO_Shortlinker::get( 'https://yoa.st/jt' ) . '">',
 				'</a>'
 			)
 		);
 
 		$courses_spot->add_banner(
 			new WPSEO_Admin_Banner(
-				'https://yoa.st/ju',
+				WPSEO_Shortlinker::get( 'https://yoa.st/ju' ),
 				'basic-seo-training.png',
 				261,
 				152,
@@ -261,18 +269,22 @@ class WPSEO_Admin_Banner_Sidebar {
 
 		$courses_spot->add_banner(
 			new WPSEO_Admin_Banner(
-				'https://yoa.st/jv',
-				'yoast-seo-for-wordpress-training.png',
+				WPSEO_Shortlinker::get( 'https://yoa.st/jv' ),
+				'yoast-seo-for-wordpress-training-2018.png',
 				261,
 				152,
-				/* translators: %1$s expands to Yoast SEO for WordPress Training  */
-				sprintf( __( 'Take the %s course and become a certified Yoast SEO for WordPress expert!', 'wordpress-seo' ), 'Yoast SEO for WordPress Training' )
+				sprintf(
+					/* translators: %1$s expands to Yoast SEO for WordPress Training, %2$s to Yoast SEO for WordPress. */
+					__( 'Take the %1$s course and become a certified %2$s expert!', 'wordpress-seo' ),
+					'Yoast SEO for WordPress Training',
+					'Yoast SEO for WordPress'
+				)
 			)
 		);
 
 		$courses_spot->add_banner(
 			new WPSEO_Admin_Banner(
-				'https://yoa.st/jw',
+				WPSEO_Shortlinker::get( 'https://yoa.st/jw' ),
 				'seo-copywriting-training.png',
 				261,
 				152,
@@ -282,11 +294,41 @@ class WPSEO_Admin_Banner_Sidebar {
 
 		$courses_spot->add_banner(
 			new WPSEO_Admin_Banner(
-				'https://yoa.st/jx',
-				'keyword-research-training.png',
+				WPSEO_Shortlinker::get( 'https://yoa.st/qy' ),
+				'site-structure-training.png',
 				261,
 				152,
-				__( 'Take the online Keyword Research Training course and learn how to rank with your keywords!', 'wordpress-seo' )
+				__( 'Take the online Site Structure Training course and learn how to structure your website!', 'wordpress-seo' )
+			)
+		);
+
+		$courses_spot->add_banner(
+			new WPSEO_Admin_Banner(
+				WPSEO_Shortlinker::get( 'https://yoa.st/jaa' ),
+				'technical-seo-training.png',
+				261,
+				152,
+				__( 'Take the online Technical SEO Training course and learn essential technical SEO-concepts!', 'wordpress-seo' )
+			)
+		);
+
+		$courses_spot->add_banner(
+			new WPSEO_Admin_Banner(
+				WPSEO_Shortlinker::get( 'https://yoa.st/15h' ),
+				'structured-data-course.png',
+				261,
+				152,
+				__( 'Take the online Structured Data Training course and learn how to create rich snippets!', 'wordpress-seo' )
+			)
+		);
+
+		$courses_spot->add_banner(
+			new WPSEO_Admin_Banner(
+				WPSEO_Shortlinker::get( 'https://yoa.st/2oi' ),
+				'seo-for-beginners-training.png',
+				261,
+				152,
+				__( 'Get the FREE SEO for beginners training course and learn the SEO basics to make your site rank higher.', 'wordpress-seo' )
 			)
 		);
 
@@ -305,7 +347,7 @@ class WPSEO_Admin_Banner_Sidebar {
 		);
 
 		$remove_banner_spot->set_description(
-			'<a target="_blank" href="https://yoa.st/jy">'.
+			'<a target="_blank" href="' . WPSEO_Shortlinker::get( 'https://yoa.st/jy' ) . '">' .
 			/* translators: %1$s expands to Yoast SEO Premium */
 			sprintf( __( 'Upgrade to %1$s &raquo;', 'wordpress-seo' ), 'Yoast SEO Premium' ) .
 			'</a>'

@@ -6,15 +6,15 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.5
+ * Version: 1.5.1
  * Author URI: https://www.wponlinesupport.com
  *
  * @package WordPress
  * @author WP Online Support
  */
 
-if( !defined('WPSISAC_VERSION') ){
-    define( 'WPSISAC_VERSION', '1.5' ); // Plugin version
+if( !defined('WPSISAC_VERSION') ) {
+    define( 'WPSISAC_VERSION', '1.5.1' ); // Plugin version
 }
 if( !defined( 'WPSISAC_VERSION_DIR' ) ) {
     define( 'WPSISAC_VERSION_DIR', dirname( __FILE__ ) ); // Plugin dir
@@ -25,37 +25,6 @@ if( !defined( 'WPSISAC_URL' ) ) {
 if( !defined( 'WPSISAC_POST_TYPE' ) ) {
     define( 'WPSISAC_POST_TYPE', 'slick_slider' ); // Plugin post type
 }
-
-
-/* Plugin Wpos Analytics Data Starts */
-function wpos_analytics_anl25_load() {
-
-    require_once dirname( __FILE__ ) . '/wpos-analytics/wpos-analytics.php';
-
-    $wpos_analytics =  wpos_anylc_init_module( array(
-                            'id'            => 25,
-                            'file'          => plugin_basename( __FILE__ ),
-                            'name'          => 'WP Slick Slider and Image Carousel',
-                            'slug'          => 'wp-slick-slider-and-image-carousel',
-                            'type'          => 'plugin',
-                            'menu'          => 'edit.php?post_type=slick_slider',
-                            'text_domain'   => 'wp-slick-slider-and-image-carousel',
-                            'promotion'     => array( // Only Pass if you have Promotion file
-                                                    'bundle' => array(
-                                                                        'name'  => 'Plugin and Theme Bundle',
-                                                                        'desc'  => 'Yes, I want to download the 50+ Plugins and 12+ Themes free.',
-                                                                        'file'  => 'https://www.wponlinesupport.com/latest/wpos-free-50-plugins-plus-12-themes.zip'                                                               
-                                                            )
-                                                    )
-                        ));
-
-    return $wpos_analytics;
-}
-
-// Init Analytics
-wpos_analytics_anl25_load();
-
-/* Plugin Wpos Analytics Data Ends */
 
 register_activation_hook( __FILE__, 'free_wpsisac_install_premium_version' );
 function free_wpsisac_install_premium_version(){
@@ -68,17 +37,22 @@ function free_wpsisac_deactivate_premium_version(){
 }
 add_action( 'admin_notices', 'free_wpsisac_rpfs_admin_notice');
 function free_wpsisac_rpfs_admin_notice() {
+    global $pagenow;
+
     $dir = ABSPATH . 'wp-content/plugins/wp-slick-slider-and-image-carousel-pro/wp-slick-image-slider.php';
-    if( is_plugin_active( 'wp-slick-slider-and-image-carousel/wp-slick-image-slider.php' ) && file_exists($dir)) {
-        global $pagenow;
-        if( $pagenow == 'plugins.php' ){
-            deactivate_plugins ( 'wp-slick-slider-and-image-carousel-pro/wp-slick-image-slider.php',true);
-            if ( current_user_can( 'install_plugins' ) ) {
-                echo '<div id="message" class="updated notice is-dismissible"><p><strong>Thank you for activating  WP Slick Slider and Image Carousel</strong>.<br /> It looks like you had PRO version <strong>(<em> WP Slick Slider and Image Carousel  Pro</em>)</strong> of this plugin activated. To avoid conflicts the extra version has been deactivated and we recommend you delete it. </p></div>';
-            }
-        }
+    $notice_link        = add_query_arg( array('message' => 'wpsisac-plugin-notice'), admin_url('plugins.php') );
+    $notice_transient   = get_transient( 'wpsisac_install_notice' );
+
+    if( $notice_transient == false && $pagenow == 'plugins.php' && file_exists( $dir ) && current_user_can( 'install_plugins' ) ) {        
+        echo '<div class="updated notice" style="position:relative;">
+            <p>
+                <strong>'.sprintf( __('Thank you for activating %s', 'wp-slick-slider-and-image-carousel'), 'WP Slick Slider and Image Carousel').'</strong>.<br/>
+                '.sprintf( __('It looks like you had PRO version %s of this plugin activated. To avoid conflicts the extra version has been deactivated and we recommend you delete it.', 'wp-slick-slider-and-image-carousel'), '<strong>(<em>WP Slick Slider and Image Carousel  Pro</em>)</strong>' ).'
+            </p>
+            <a href="'.esc_url( $notice_link ).'" class="notice-dismiss" style="text-decoration:none;"></a>
+        </div>';
     }
-}     
+}
 
 add_action('plugins_loaded', 'wpsisac_load_textdomain');
 function wpsisac_load_textdomain() {
@@ -105,3 +79,32 @@ require_once( WPSISAC_VERSION_DIR . '/includes/admin/class-wpsisac-admin.php' );
 if ( is_admin() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
     require_once( WPSISAC_VERSION_DIR . '/includes/admin/wpsisac-how-it-work.php' );	
 }
+
+/* Plugin Wpos Analytics Data Starts */
+function wpos_analytics_anl25_load() {
+
+    require_once dirname( __FILE__ ) . '/wpos-analytics/wpos-analytics.php';
+
+    $wpos_analytics =  wpos_anylc_init_module( array(
+                            'id'            => 25,
+                            'file'          => plugin_basename( __FILE__ ),
+                            'name'          => 'WP Slick Slider and Image Carousel',
+                            'slug'          => 'wp-slick-slider-and-image-carousel',
+                            'type'          => 'plugin',
+                            'menu'          => 'edit.php?post_type=slick_slider',
+                            'text_domain'   => 'wp-slick-slider-and-image-carousel',
+                            'offers'         => array(
+                                                    'trial_premium' => array(
+                                                                'button'    => 'TRY FREE FOR 30 DAYS',
+                                                                'image'     => 'http://analytics.wponlinesupport.com/?anylc_img=25',
+                                                                'link'      => 'https://www.wponlinesupport.com/plugins-plus-themes-powerpack-combo-offer/?ref=blogeditor'
+                                                        ),
+                                                    ),
+                        ));
+
+    return $wpos_analytics;
+}
+
+// Init Analytics
+wpos_analytics_anl25_load();
+/* Plugin Wpos Analytics Data Ends */

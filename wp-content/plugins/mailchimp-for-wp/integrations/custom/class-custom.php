@@ -27,7 +27,7 @@ class MC4WP_Custom_Integration extends MC4WP_Integration {
 	* Add hooks
 	*/
 	public function add_hooks() {
-		add_action( 'init', array( $this, 'listen'), 90 );
+		add_action( 'init', array( $this, 'listen'), 50 );
 	}
 
 	/**
@@ -76,7 +76,8 @@ class MC4WP_Custom_Integration extends MC4WP_Integration {
 
 		// do nothing if no email was found
 		if( empty( $data['EMAIL'] ) ) {
-			return false;
+            $this->get_log()->warning( sprintf( '%s > Unable to find EMAIL field.', $this->name ) );
+            return false;
 		}
 
 		return $this->subscribe( $data );

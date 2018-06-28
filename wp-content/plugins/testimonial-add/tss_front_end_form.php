@@ -1,4 +1,4 @@
-
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <form id="custom-post-type" name="custom-post-type" method="post" action="">
  
 <p><label for="title">Name</label><br />

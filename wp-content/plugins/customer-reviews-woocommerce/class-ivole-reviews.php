@@ -189,7 +189,7 @@ if ( ! class_exists( 'Ivole_Reviews' ) ) :
 									$temp_comment_content .= '</div>';
 								}
 							}
-							$temp_comment_content .= '<div style="clear:both;"></div></div';
+							$temp_comment_content .= '<div style="clear:both;"></div></div>';
 							if( $temp_comment_content_flag ) {
 								$comment->comment_content .= $temp_comment_content;
 							}
