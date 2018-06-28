@@ -110,6 +110,7 @@
 		</div>
 		<div class="main-magemenu">
 			<div class="container">
+<!--
 				<ul class="cont-megamenu">
 					<li class="homepage"><a href="">Trang chủ</a></li>
 					<li><a href="">Ghế sofa</a>
@@ -214,6 +215,9 @@
                         </div>
 					</li>					
 				</ul>
+				
+-->
+				<?php wp_nav_menu( array( 'theme_location' => 'primary-menu','menu' => 'Main Menu','menu_class' => 'cont-megamenu' ) ); ?>
 			</div>			
 		</div>
 
