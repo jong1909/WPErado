@@ -26,7 +26,6 @@
  * SOFTWARE.
  */
 
-if ( ! is_callable( 'random_bytes' ) ):
 /**
  * Windows with PHP < 5.3.0 will not have the function
  * openssl_random_pseudo_bytes() available, so let's use
@@ -47,17 +46,14 @@ function random_bytes($bytes)
             'random_bytes(): $bytes must be an integer'
         );
     }
-
     if ($bytes < 1) {
         throw new Error(
             'Length must be greater than 0'
         );
     }
-
     $buf = '';
     $util = new COM('CAPICOM.Utilities.1');
     $execCount = 0;
-
     /**
      * Let's not let it loop forever. If we run N times and fail to
      * get N bytes of random data, then CAPICOM has failed us.
@@ -72,7 +68,6 @@ function random_bytes($bytes)
         }
         ++$execCount; 
     } while ($execCount < $bytes);
-
     /**
      * If we reach here, PHP has failed us.
      */
@@ -80,4 +75,3 @@ function random_bytes($bytes)
         'Could not gather sufficient random data'
     );
 }
-endif;

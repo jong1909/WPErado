@@ -1,0 +1,3104 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-09-14 16:52+0700\n"
+"PO-Revision-Date: 2015-09-14 16:52+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:9
+msgid "Don't worry you will be back on track in no time!"
+msgstr ""
+
+#: 404.php:11
+msgid ""
+"Page doesn't exist or some other error occured. Go to our home page or go "
+"back previous page"
+msgstr ""
+
+#: 404.php:13
+msgid "PREVIOUS PAGE"
+msgstr ""
+
+#: 404.php:14
+msgid "BACK TO HOMEPAGE"
+msgstr ""
+
+#: defines.php:14 lib/defines.php:27
+msgid "About"
+msgstr ""
+
+#: defines.php:15
+msgid ""
+"<p class=\"description\">SW MaxShop is an outstanding responsive WordPress "
+"theme for multipurpose store, this theme is suitable for any kind of online "
+"store that needs a feature rich and beautiful presence online.<br><br>\n"
+"\t\tTheme Name:         SW MAX SHOP<br>\n"
+"\t\tTheme URI:         <a href=\"http://magentech.com/\">http://magentech."
+"com/</a><br>\n"
+"\t\tDescription:        SW Max Shop is base theme.<br>\n"
+"\t\tVersion:            1.0.2<br>\n"
+"\t\tAuthor:             Magentech<br>\n"
+"\t\tAuthor URI:         <a href=\"http://magentech.com/\">http://magentech."
+"com/</a>\n"
+"</p>"
+msgstr ""
+
+#: defines.php:31 lib/config.php:32 lib/defines.php:44
+msgid "General"
+msgstr ""
+
+#: defines.php:32 lib/defines.php:45
+msgid ""
+"<p class=\"description\">The theme allows to build your own styles right out "
+"of the backend without any coding knowledge. Start your own color scheme by "
+"selecting one of 5 predefined schemes. Upload new logo and favicon or get "
+"their URL.</p>"
+msgstr ""
+
+#: defines.php:41 lib/config.php:37 lib/defines.php:54
+msgid "Color Scheme"
+msgstr ""
+
+#: defines.php:57 lib/defines.php:70
+msgid "Background Image"
+msgstr ""
+
+#: defines.php:65 lib/defines.php:78
+msgid "Color Option"
+msgstr ""
+
+#: defines.php:66 lib/defines.php:79
+msgid "Only color validation can be done on this field type"
+msgstr ""
+
+#: defines.php:67 lib/defines.php:80
+msgid "This is the description field, again good for additional info."
+msgstr ""
+
+#: defines.php:73 lib/defines.php:86
+msgid "Background Repeat"
+msgstr ""
+
+#: defines.php:82 lib/config.php:50 lib/defines.php:95
+msgid "Favicon Icon"
+msgstr ""
+
+#: defines.php:90 lib/config.php:65 lib/defines.php:103
+msgid "Responsive Support"
+msgstr ""
+
+#: defines.php:98 lib/config.php:70 lib/defines.php:111
+msgid "Logo Image"
+msgstr ""
+
+#: defines.php:106 lib/config.php:111 lib/defines.php:119
+msgid "Layout"
+msgstr ""
+
+#: defines.php:107 lib/defines.php:120
+msgid ""
+"<p class=\"description\">Ya Framework comes with a layout setting that "
+"allows you to build any number of stunning layouts and apply theme to your "
+"entries.</p>"
+msgstr ""
+
+#: defines.php:116 lib/defines.php:129
+msgid "Box Layout"
+msgstr ""
+
+#: defines.php:128 lib/defines.php:141
+msgid "Background Box Image"
+msgstr ""
+
+#: defines.php:135 lib/config.php:131 lib/defines.php:148
+msgid "Left Sidebar Expand"
+msgstr ""
+
+#: defines.php:156 lib/defines.php:169
+msgid "Right Sidebar Expand"
+msgstr ""
+
+#: defines.php:176 lib/defines.php:189
+msgid "Left Sidebar Medium Desktop Expand"
+msgstr ""
+
+#: defines.php:196 lib/defines.php:209
+msgid "Right Sidebar Medium Desktop Expand"
+msgstr ""
+
+#: defines.php:216 lib/defines.php:229
+msgid "Left Sidebar Tablet Expand"
+msgstr ""
+
+#: defines.php:236 lib/defines.php:249
+msgid "Right Sidebar Tablet Expand"
+msgstr ""
+
+#: defines.php:257 lib/defines.php:270
+msgid "Header"
+msgstr ""
+
+#: defines.php:258 lib/defines.php:271
+msgid ""
+"<p class=\"description\">Ya Framework comes with a header setting that "
+"allows you to build style header.</p>"
+msgstr ""
+
+#: defines.php:267 lib/defines.php:280
+msgid "Header Style"
+msgstr ""
+
+#: defines.php:281 lib/defines.php:294
+msgid "Phone number"
+msgstr ""
+
+#: defines.php:287 lib/defines.php:300
+msgid "Search form"
+msgstr ""
+
+#: defines.php:300 lib/config.php:75 lib/defines.php:313
+msgid "Navbar Options"
+msgstr ""
+
+#: defines.php:301 lib/defines.php:314
+msgid ""
+"<p class=\"description\">If you got a big site with a lot of sub menus we "
+"recommend using a mega menu. Just select the dropbox to display a menu as "
+"mega menu or dropdown menu.</p>"
+msgstr ""
+
+#: defines.php:310 lib/config.php:102 lib/defines.php:323
+msgid "Menu Type"
+msgstr ""
+
+#: defines.php:317 lib/defines.php:330
+msgid "Theme Location"
+msgstr ""
+
+#: defines.php:325 lib/defines.php:338
+msgid "Responsive Menu Visible"
+msgstr ""
+
+#: defines.php:333 lib/defines.php:346
+msgid "Select Menu Style"
+msgstr ""
+
+#: defines.php:341 lib/defines.php:354
+msgid "Blog Options"
+msgstr ""
+
+#: defines.php:342 lib/defines.php:355
+msgid "<p class=\"description\">Select layout in blog listing page.</p>"
+msgstr ""
+
+#: defines.php:351 lib/defines.php:364
+msgid "Sidebar Blog Layout"
+msgstr ""
+
+#: defines.php:364 lib/config.php:158 lib/defines.php:377
+msgid "Layout blog"
+msgstr ""
+
+#: defines.php:377 lib/config.php:167 lib/defines.php:389
+msgid "Blog column"
+msgstr ""
+
+#: defines.php:389 lib/defines.php:401
+msgid "Product Options"
+msgstr ""
+
+#: defines.php:390 lib/defines.php:402
+msgid "<p class=\"description\">Select layout in product listing page.</p>"
+msgstr ""
+
+#: defines.php:399 lib/defines.php:411
+msgid "Product Listing column Desktop"
+msgstr ""
+
+#: defines.php:412 lib/defines.php:424
+msgid "Product Listing column Medium Desktop"
+msgstr ""
+
+#: defines.php:425 lib/defines.php:437
+msgid "Product Listing column Tablet"
+msgstr ""
+
+#: defines.php:438 lib/defines.php:450
+msgid "Sidebar Product Layout"
+msgstr ""
+
+#: defines.php:451 lib/defines.php:463
+msgid "Layout product"
+msgstr ""
+
+#: defines.php:462 lib/config.php:177 lib/defines.php:474
+msgid "Typography"
+msgstr ""
+
+#: defines.php:463 lib/defines.php:475
+msgid ""
+"<p class=\"description\">Change the font style of your blog, custom with "
+"Google Font.</p>"
+msgstr ""
+
+#: defines.php:472 lib/config.php:182 lib/defines.php:484
+msgid "Use Google Webfont"
+msgstr ""
+
+#: defines.php:480 lib/config.php:187 lib/defines.php:492
+msgid "Webfont Weight"
+msgstr ""
+
+#: defines.php:496 lib/config.php:215 lib/defines.php:508
+msgid "Webfont Assign to"
+msgstr ""
+
+#: defines.php:499 lib/config.php:217 lib/defines.php:511
+msgid "Headers"
+msgstr ""
+
+#: defines.php:500 lib/config.php:218 lib/defines.php:512
+msgid "Everywhere"
+msgstr ""
+
+#: defines.php:501 lib/config.php:219 lib/defines.php:513
+msgid "Custom"
+msgstr ""
+
+#: defines.php:508 lib/config.php:225 lib/defines.php:520
+msgid "Webfont Custom Selector"
+msgstr ""
+
+#: defines.php:514 defines.php:523 lib/defines.php:526 lib/defines.php:535
+msgid "Social share"
+msgstr ""
+
+#: defines.php:515 lib/defines.php:527
+msgid ""
+"<p class=\"description\">Social sharing is ready to use and built in. You "
+"can share your pages with just a click and your post can go to their wall "
+"and you can gain vistitors from Social Networks. Check Social Networks that "
+"you want to use.</p>"
+msgstr ""
+
+#: defines.php:531 lib/defines.php:543
+msgid "Facebook"
+msgstr ""
+
+#: defines.php:539 lib/defines.php:551
+msgid "Twitter"
+msgstr ""
+
+#: defines.php:547 lib/defines.php:559
+msgid "Linked_in"
+msgstr ""
+
+#: defines.php:555 lib/defines.php:567
+msgid "Google+"
+msgstr ""
+
+#: defines.php:574 lib/config.php:230 lib/defines.php:586
+msgid "Advanced"
+msgstr ""
+
+#: defines.php:575 lib/defines.php:587
+msgid ""
+"<p class=\"description\">Custom advanced with Cpanel, Widget advanced, "
+"Developer mode </p>"
+msgstr ""
+
+#: defines.php:583 lib/defines.php:595
+msgid "Show cPanel"
+msgstr ""
+
+#: defines.php:591 lib/defines.php:603
+msgid "Widget Advanced"
+msgstr ""
+
+#: defines.php:599 lib/config.php:235 lib/defines.php:611
+msgid "Developer Mode"
+msgstr ""
+
+#: defines.php:608 lib/defines.php:620
+msgid "Back to top"
+msgstr ""
+
+#: defines.php:616 lib/defines.php:628
+msgid "Direction"
+msgstr ""
+
+#: defines.php:623
+msgid "Active Effect Scroll"
+msgstr ""
+
+#: defines.php:632 lib/config.php:240 lib/defines.php:644
+msgid "Google Analytics ID"
+msgstr ""
+
+#: defines.php:638 lib/config.php:245 lib/defines.php:650
+msgid "Custom CSS/JS"
+msgstr ""
+
+#: defines.php:674 lib/admin.php:8 lib/admin.php:9 lib/defines.php:686
+#: lib/defines.php:689
+msgid "Theme Options"
+msgstr ""
+
+#: defines.php:677
+msgid "YA Options :: "
+msgstr ""
+
+#: defines.php:698 lib/defines.php:714
+msgid "Sidebar Left Blog"
+msgstr ""
+
+#: defines.php:706 lib/defines.php:722
+msgid "Sidebar Right Blog"
+msgstr ""
+
+#: defines.php:715 lib/defines.php:731
+msgid "Top"
+msgstr ""
+
+#: defines.php:723 lib/defines.php:740
+msgid "Sidebar Left Detail Product"
+msgstr ""
+
+#: defines.php:731 lib/defines.php:748
+msgid "Sidebar Right Detail Product"
+msgstr ""
+
+#: defines.php:739
+msgid "Sidebar Bottom Left Detail Product"
+msgstr ""
+
+#: defines.php:747 lib/defines.php:756
+msgid "Sidebar Bottom Detail Product"
+msgstr ""
+
+#: defines.php:756 lib/defines.php:774
+msgid "Sidebar Left Product"
+msgstr ""
+
+#: defines.php:765 lib/defines.php:783
+msgid "Sidebar Right Product"
+msgstr ""
+
+#: defines.php:774 lib/defines.php:792
+msgid "Above Footer"
+msgstr ""
+
+#: defines.php:782 lib/defines.php:800
+msgid "Footer"
+msgstr ""
+
+#: defines.php:790 lib/defines.php:808
+msgid "Footer Copyright"
+msgstr ""
+
+#: defines.php:798 lib/defines.php:816
+msgid "Floating"
+msgstr ""
+
+#: lib/activation.php:33 lib/activation.php:34
+msgid "Theme Activation"
+msgstr ""
+
+#: lib/activation.php:70
+#, php-format
+msgid "%s Theme Activation"
+msgstr ""
+
+#: lib/activation.php:86 lib/activation.php:91
+msgid "Create static front page?"
+msgstr ""
+
+#: lib/activation.php:96 lib/activation.php:118 lib/activation.php:139
+#: lib/activation.php:160 lib/activation.php:181 lib/visual-map.php:314
+#: lib/visual-map.php:324 lib/visual-map.php:739
+msgid "Yes"
+msgstr ""
+
+#: lib/activation.php:99 lib/activation.php:121 lib/activation.php:142
+#: lib/activation.php:163 lib/activation.php:184 lib/visual-map.php:315
+#: lib/visual-map.php:325 lib/visual-map.php:740
+msgid "No"
+msgstr ""
+
+#: lib/activation.php:101
+msgid "Create a page called Home and set it to be the static front page"
+msgstr ""
+
+#: lib/activation.php:108
+msgid "Change permalink structure?"
+msgstr ""
+
+#: lib/activation.php:113
+msgid "Update permalink structure?"
+msgstr ""
+
+#: lib/activation.php:123
+msgid "Change permalink structure to /&#37;postname&#37;/"
+msgstr ""
+
+#: lib/activation.php:130
+msgid "Change uploads folder?"
+msgstr ""
+
+#: lib/activation.php:134
+msgid "Update uploads folder?"
+msgstr ""
+
+#: lib/activation.php:144
+msgid "Change uploads folder to /assets/ instead of /wp-content/uploads/"
+msgstr ""
+
+#: lib/activation.php:151 lib/activation.php:155
+msgid "Create navigation menu?"
+msgstr ""
+
+#: lib/activation.php:165
+msgid "Create the Primary Navigation menu and set the location"
+msgstr ""
+
+#: lib/activation.php:172 lib/activation.php:176
+msgid "Add pages to menu?"
+msgstr ""
+
+#: lib/activation.php:186
+msgid "Add all current published pages to the Primary Navigation"
+msgstr ""
+
+#: lib/admin.php:19
+msgid "YA Advanced Options Page"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:399
+#: lib/class-tgm-plugin-activation.php:3029
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:400
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/classes.php:246
+msgid "Override by Theme"
+msgstr ""
+
+#: lib/classes.php:255
+msgid "Default Template"
+msgstr ""
+
+#: lib/classes.php:460 lib/visual-map.php:127 lib/visual-map.php:213
+#: lib/visual-map.php:285 lib/visual-map.php:639 lib/visual-map.php:782
+#: lib/visual-map.php:810 lib/visual-map.php:934 lib/visual-map.php:962
+#: lib/visual-map.php:1048 lib/visual-map.php:1076 lib/visual-map.php:1162
+#: lib/visual-map.php:1190 lib/visual-map.php:1304 lib/visual-map.php:1332
+#: lib/visual-map.php:1444 lib/visual-map.php:1472
+msgid "Title"
+msgstr ""
+
+#: lib/classes.php:468 lib/visual-map.php:183 lib/visual-map.php:602
+msgid "Template"
+msgstr ""
+
+#: lib/cleanup.php:411
+msgid "Readmore"
+msgstr ""
+
+#: lib/cleanup.php:552
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: lib/config.php:39
+msgid "Green"
+msgstr ""
+
+#: lib/config.php:40
+msgid "Blue"
+msgstr ""
+
+#: lib/config.php:41
+msgid "Orange"
+msgstr ""
+
+#: lib/config.php:42
+msgid "Pink"
+msgstr ""
+
+#: lib/config.php:43
+msgid "Purple"
+msgstr ""
+
+#: lib/config.php:44
+msgid "Red"
+msgstr ""
+
+#: lib/config.php:55
+msgid "Text Direction"
+msgstr ""
+
+#: lib/config.php:57
+msgid "Auto"
+msgstr ""
+
+#: lib/config.php:58
+msgid "Left to Right"
+msgstr ""
+
+#: lib/config.php:59
+msgid "Right to Left"
+msgstr ""
+
+#: lib/config.php:79
+msgid "Navbar Position"
+msgstr ""
+
+#: lib/config.php:88
+msgid "Navbar Inverse Color"
+msgstr ""
+
+#: lib/config.php:92
+msgid "Display Branding"
+msgstr ""
+
+#: lib/config.php:97
+msgid "Use Logo for Branding"
+msgstr ""
+
+#: lib/config.php:117
+msgid "Primary Sidebar Expand"
+msgstr ""
+
+#: lib/config.php:145
+msgid "Left Right Expand"
+msgstr ""
+
+#: lib/config.php:201
+msgid "Webfont Character Set"
+msgstr ""
+
+#: lib/config.php:203
+msgid "Cyrillic"
+msgstr ""
+
+#: lib/config.php:204
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: lib/config.php:205
+msgid "Greek"
+msgstr ""
+
+#: lib/config.php:206
+msgid "Greek Extended"
+msgstr ""
+
+#: lib/config.php:207
+msgid "Latin"
+msgstr ""
+
+#: lib/config.php:208
+msgid "Latin Extended"
+msgstr ""
+
+#: lib/config.php:209
+msgid "Vietnamese"
+msgstr ""
+
+#: lib/defines.php:28
+msgid ""
+"<p class=\"description\">SW MaxShop is an outstanding responsive WordPress "
+"theme for multipurpose store, this theme is suitable for any kind of online "
+"store that needs a feature rich and beautiful presence online.<br><br>\n"
+"\t\t\tTheme Name:         SW MAX SHOP<br>\n"
+"\t\t\tTheme URI:         <a href=\"http://magentech.com/\">http://magentech."
+"com/</a><br>\n"
+"\t\t\tDescription:        SW Max Shop is base theme.<br>\n"
+"\t\t\tVersion:            2.0.0<br>\n"
+"\t\t\tAuthor:             Magentech<br>\n"
+"\t\t\tAuthor URI:         <a href=\"http://magentech.com/\">http://magentech."
+"com/</a>\n"
+"\t</p>"
+msgstr ""
+
+#: lib/defines.php:55
+msgid "Select one of 5 predefined schemes"
+msgstr ""
+
+#: lib/defines.php:96
+msgid ""
+"Use the Upload button to upload the new favicon and get URL of the favicon"
+msgstr ""
+
+#: lib/defines.php:104
+msgid ""
+"Support reponsive layout, if you do not want to use this function, please "
+"uncheck."
+msgstr ""
+
+#: lib/defines.php:112
+msgid "Use the Upload button to upload the new logo and get URL of the logo"
+msgstr ""
+
+#: lib/defines.php:130
+msgid "Select Layout Box or Wide"
+msgstr ""
+
+#: lib/defines.php:163
+msgid "Select width of left sidebar."
+msgstr ""
+
+#: lib/defines.php:184
+msgid "Select width of right sidebar medium desktop."
+msgstr ""
+
+#: lib/defines.php:204
+msgid "Select width of left sidebar medium desktop."
+msgstr ""
+
+#: lib/defines.php:224
+msgid "Select width of right sidebar."
+msgstr ""
+
+#: lib/defines.php:244
+msgid "Select width of left sidebar tablet."
+msgstr ""
+
+#: lib/defines.php:264
+msgid "Select width of right sidebar tablet."
+msgstr ""
+
+#: lib/defines.php:281
+msgid "Select Header style"
+msgstr ""
+
+#: lib/defines.php:295
+msgid "Fill here your phone number to be displayed in header."
+msgstr ""
+
+#: lib/defines.php:302
+msgid "Hide or show search form"
+msgstr ""
+
+#: lib/defines.php:331
+msgid "Select theme location to active mega menu."
+msgstr ""
+
+#: lib/defines.php:339
+msgid "Select option to show responsive menu visible"
+msgstr ""
+
+#: lib/defines.php:347
+msgid "Select fixed menu or not"
+msgstr ""
+
+#: lib/defines.php:372
+msgid "Select style sidebar blog"
+msgstr ""
+
+#: lib/defines.php:384
+msgid "Select style layout blog"
+msgstr ""
+
+#: lib/defines.php:396
+msgid "Select style number column blog"
+msgstr ""
+
+#: lib/defines.php:419
+msgid "Select number of column on Desktop Screen"
+msgstr ""
+
+#: lib/defines.php:432
+msgid "Select number of column on Medium Desktop Screen"
+msgstr ""
+
+#: lib/defines.php:445
+msgid "Select number of column on Tablet Screen"
+msgstr ""
+
+#: lib/defines.php:458
+msgid "Select style sidebar product"
+msgstr ""
+
+#: lib/defines.php:465
+msgid "Grid Layout"
+msgstr ""
+
+#: lib/defines.php:466
+msgid "List Layout"
+msgstr ""
+
+#: lib/defines.php:469
+msgid "Select style layout product"
+msgstr ""
+
+#: lib/defines.php:485
+msgid "Insert font style that you actually need on your webpage."
+msgstr ""
+
+#: lib/defines.php:491
+msgid "For weight, see Google Fonts to custom for each font style."
+msgstr ""
+
+#: lib/defines.php:509
+msgid ""
+"Select the place will apply the font style headers, every where or custom."
+msgstr ""
+
+#: lib/defines.php:519
+msgid ""
+"Insert the places will be custom here, after selected custom Webfont assign."
+msgstr ""
+
+#: lib/defines.php:597
+msgid "Turn on/off Cpanel"
+msgstr ""
+
+#: lib/defines.php:605
+msgid "Turn on/off Widget Advanced"
+msgstr ""
+
+#: lib/defines.php:613
+msgid "Turn on/off preset"
+msgstr ""
+
+#: lib/defines.php:643
+msgid "Enter Google Analytics code"
+msgstr ""
+
+#: lib/defines.php:649
+msgid ""
+"Insert your own CSS into this block. This overrides all default styles "
+"located throughout the theme"
+msgstr ""
+
+#: lib/defines.php:765
+msgid "Sidebar Top Product Category"
+msgstr ""
+
+#: lib/init.php:13
+msgid "Primary Menu"
+msgstr ""
+
+#: lib/nav.php:253
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: lib/nav.php:257
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: lib/nav.php:281
+msgid "Move up"
+msgstr ""
+
+#: lib/nav.php:294
+msgid "Move down"
+msgstr ""
+
+#: lib/nav.php:296 lib/nav.php:298
+msgid "Edit Menu Item"
+msgstr ""
+
+#: lib/nav.php:306
+msgid "URL"
+msgstr ""
+
+#: lib/nav.php:313
+msgid "Navigation Label"
+msgstr ""
+
+#: lib/nav.php:319
+msgid "Title Attribute"
+msgstr ""
+
+#: lib/nav.php:326
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: lib/nav.php:331
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: lib/nav.php:337
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: lib/nav.php:343
+msgid "Description"
+msgstr ""
+
+#: lib/nav.php:345
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: lib/nav.php:349
+msgid "Show/Hide Advance Menu Config"
+msgstr ""
+
+#: lib/nav.php:409 lib/options/fields/upload/field_upload.php:39
+msgid "Browse"
+msgstr ""
+
+#: lib/nav.php:410 lib/nav.php:446
+#: lib/options/fields/multi_text/field_multi_text.php:39
+#: lib/options/fields/multi_text/field_multi_text.php:46
+#: lib/options/fields/multi_text/field_multi_text.php:50
+msgid "Remove"
+msgstr ""
+
+#: lib/nav.php:433
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: lib/nav.php:447
+msgid "Cancel"
+msgstr ""
+
+#: lib/one-click-install/importer/parsers.php:42
+#: lib/one-click-install/importer/parsers.php:63
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: lib/one-click-install/importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: lib/one-click-install/importer/parsers.php:67
+#: lib/one-click-install/importer/parsers.php:72
+#: lib/one-click-install/importer/parsers.php:262
+#: lib/one-click-install/importer/parsers.php:451
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:205
+msgid "Demo already imported"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:225
+msgid "Import Again"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:229
+msgid "Import Demo Data"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:421
+msgid "Theme options Import file could not be found. Please try again."
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:479
+msgid "Widget Import file could not be found. Please try again."
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:552
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:574
+msgid "Site does not support widget"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:597
+msgid "Widget already exists"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:646
+msgid "Imported"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:649
+msgid "Imported to Inactive"
+msgstr ""
+
+#: lib/one-click-install/importer/radium-importer.php:656
+msgid "No Title"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:134
+#: lib/one-click-install/importer/wordpress-importer.php:143
+#: lib/one-click-install/importer/wordpress-importer.php:194
+#: lib/one-click-install/importer/wordpress-importer.php:198
+#: lib/one-click-install/importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:178
+msgid "All done."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:286
+#: woocommerce/single-product-reviews.php:67
+msgid "Submit"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:299
+msgid "Import author:"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:423
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:461
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:505
+#: lib/one-click-install/importer/wordpress-importer.php:631
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:527
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:548
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:603
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:749
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:756
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:843
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:856
+msgid "Invalid file type"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:900
+msgid "Remote server did not respond"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:906
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:913
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:918
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:924
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:1022
+msgid "Import WordPress"
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:1029
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:1044
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: lib/one-click-install/importer/wordpress-importer.php:1045
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: lib/options/fields/color_gradient/field_color_gradient.php:35
+msgid "From:"
+msgstr ""
+
+#: lib/options/fields/color_gradient/field_color_gradient.php:38
+msgid " To:"
+msgstr ""
+
+#: lib/options/fields/google_webfonts/field_google_webfonts.php:42
+msgid ""
+"The fonts provided below are free to use custom fonts from the <a href=\""
+msgstr ""
+
+#: lib/options/fields/multi_field/field_multi_field.php:74
+#: lib/options/fields/multi_text/field_multi_text.php:54
+msgid "Add More"
+msgstr ""
+
+#: lib/options/fields/upload/field_upload.php:40
+msgid "Remove Upload"
+msgstr ""
+
+#: lib/options/options.php:34
+msgid "Options"
+msgstr ""
+
+#: lib/options/options.php:289
+msgid "Are you sure? Resetting will loose all custom values."
+msgstr ""
+
+#: lib/options/options.php:589
+msgid "SAVE"
+msgstr ""
+
+#: lib/options/options.php:590
+msgid "RESET"
+msgstr ""
+
+#: lib/options/options.php:677 lib/options/options.php:835
+msgid "Reset to Defaults"
+msgstr ""
+
+#: lib/options/options.php:683
+msgid "<strong>Settings Imported!</strong>"
+msgstr ""
+
+#: lib/options/options.php:685
+msgid "<strong>Settings Saved!</strong>"
+msgstr ""
+
+#: lib/options/options.php:690
+msgid "<strong>Settings have changed!, you should save them!</strong>"
+msgstr ""
+
+#: lib/options/options.php:691
+msgid "<strong><span></span> error(s) were found!</strong>"
+msgstr ""
+
+#: lib/options/options.php:693
+msgid "<strong><span></span> warning(s) were found!</strong>"
+msgstr ""
+
+#: lib/options/options.php:712
+msgid "Import / Export"
+msgstr ""
+
+#: lib/options/options.php:728 lib/options/options.php:810
+msgid "Dev Mode Info"
+msgstr ""
+
+#: lib/options/options.php:746
+msgid "Import / Export Options"
+msgstr ""
+
+#: lib/options/options.php:748
+msgid "Import Options"
+msgstr ""
+
+#: lib/options/options.php:756
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: lib/options/options.php:769
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: lib/options/options.php:779
+msgid "Import"
+msgstr ""
+
+#: lib/options/options.php:779
+msgid ""
+"WARNING! This will overwrite any existing options, please proceed with "
+"caution!"
+msgstr ""
+
+#: lib/options/options.php:782
+msgid "Export Options"
+msgstr ""
+
+#: lib/options/options.php:784
+msgid ""
+"Here you can copy/download your themes current option settings. Keep this "
+"safe as you can use it as a backup should anything go wrong. Or you can use "
+"it to restore your settings on this site (or any other site). You also have "
+"the handy option to copy the link to yours sites settings. Which you can "
+"then use to duplicate on another site"
+msgstr ""
+
+#: lib/options/validation/color/validation_color.php:15
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: lib/options/validation/comma_numeric/validation_comma_numeric.php:15
+msgid ""
+"You must provide a comma seperated list of numerical values for this option."
+msgstr ""
+
+#: lib/options/validation/date/validation_date.php:15
+msgid "This field must be a valid date."
+msgstr ""
+
+#: lib/options/validation/email/validation_email.php:15
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: lib/options/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: lib/options/validation/no_special_chars/validation_no_special_chars.php:15
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: lib/options/validation/numeric/validation_numeric.php:15
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: lib/options/validation/url/validation_url.php:15
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:22
+msgid "Allow users to choose a currency for prices to be displayed in."
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:24
+msgid "WooCommerce Currency Converter"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:69
+msgid "Reset"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:95
+msgid "Title:"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:96
+msgid "Currency converter"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:98
+msgid "Currency codes:"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:98
+msgid "1 per line"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter-widget.php:102
+msgid "Show reset link:"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter.php:30
+msgid "Open Exchange Rate API"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter.php:32
+msgid "App Key"
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter.php:33
+#, php-format
+msgid ""
+"(optional) If you have an <a href=\"%s\">Open Exchange Rate API app ID</a>, "
+"enter it here."
+msgstr ""
+
+#: lib/plugins/currency-converter/currency-converter.php:123
+msgid "Original price:"
+msgstr ""
+
+#: lib/shortcodes.php:353
+msgid "Home"
+msgstr ""
+
+#: lib/shortcodes.php:426 lib/shortcodes.php:441
+msgid "Archives for"
+msgstr ""
+
+#: lib/shortcodes.php:445
+msgid "You searched for"
+msgstr ""
+
+#: lib/shortcodes.php:448
+msgid "Error 404: Page not found"
+msgstr ""
+
+#: lib/shortcodes.php:1626 widgets/ya_posts/women.php:19
+msgid "View All"
+msgstr ""
+
+#: lib/shortcodes.php:1743 templates/content-rsidebar.php:56
+#: widgets/ya_posts/2colum.php:40
+msgid " comments"
+msgstr ""
+
+#: lib/shortcodes.php:2037 lib/shortcodes/ya_slider.php:282
+#: lib/shortcodes/ya_slider.php:777 woocommerce/content-product.php:71
+#: woocommerce/content-product.php:92
+msgid "Quick View"
+msgstr ""
+
+#: lib/shortcodes/portfolio.php:69 lib/widgets.php:571 lib/widgets.php:879
+msgid "All"
+msgstr ""
+
+#: lib/shortcodes/portfolio.php:101
+msgid "Show More Portfolio"
+msgstr ""
+
+#: lib/shortcodes/portfolio.php:101
+msgid "All Items Loaded"
+msgstr ""
+
+#: lib/shortcodes/portfolio.php:106
+msgid "Please select categories id"
+msgstr ""
+
+#: lib/shortcodes/ya_slider.php:213
+msgid "View more..."
+msgstr ""
+
+#: lib/utils.php:63
+msgid "Latest Posts"
+msgstr ""
+
+#: lib/utils.php:72
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: lib/utils.php:74
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: lib/utils.php:76
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: lib/utils.php:78
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: lib/utils.php:83
+#, php-format
+msgid "Search Results for <small>%s</small>"
+msgstr ""
+
+#: lib/utils.php:85
+msgid "Not Found"
+msgstr ""
+
+#: lib/utils.php:97
+#, php-format
+msgid "Please make sure your <a href=\"%s\">.htaccess</a> file is writable "
+msgstr ""
+
+#: lib/utils.php:861 widgets/ya_top/searchcate.php:37
+msgid "Search for products"
+msgstr ""
+
+#: lib/visual-map.php:5
+msgid "Same window"
+msgstr ""
+
+#: lib/visual-map.php:6
+msgid "New window"
+msgstr ""
+
+#: lib/visual-map.php:8 lib/visual-map.php:35 widgets/ya_top/searchcate.php:27
+msgid "All Categories"
+msgstr ""
+
+#: lib/visual-map.php:30
+msgid "All Categories Products"
+msgstr ""
+
+#: lib/visual-map.php:44
+msgid "POSTS"
+msgstr ""
+
+#: lib/visual-map.php:47 lib/visual-map.php:145 lib/visual-map.php:235
+#: lib/visual-map.php:372 lib/visual-map.php:452 lib/visual-map.php:494
+#: lib/visual-map.php:583 lib/visual-map.php:632 lib/visual-map.php:803
+#: lib/visual-map.php:955 lib/visual-map.php:1069 lib/visual-map.php:1183
+#: lib/visual-map.php:1325 lib/visual-map.php:1465
+msgid "Ya Shortcode"
+msgstr ""
+
+#: lib/visual-map.php:50 lib/visual-map.php:375
+msgid "Display posts-seclect category"
+msgstr ""
+
+#: lib/visual-map.php:54 lib/visual-map.php:152 lib/visual-map.php:242
+#: lib/visual-map.php:379 lib/visual-map.php:459 lib/visual-map.php:499
+#: lib/visual-map.php:590
+msgid "Widget title"
+msgstr ""
+
+#: lib/visual-map.php:56
+msgid "Select style for widget title. Leave blank to use default widget title."
+msgstr ""
+
+#: lib/visual-map.php:60 lib/visual-map.php:158 lib/visual-map.php:248
+#: lib/visual-map.php:385 lib/visual-map.php:596 lib/visual-map.php:645
+#: lib/visual-map.php:816 lib/visual-map.php:1338 lib/visual-map.php:1478
+msgid "Style title"
+msgstr ""
+
+#: lib/visual-map.php:62
+msgid "Select style for title. Leave blank to use default style title."
+msgstr ""
+
+#: lib/visual-map.php:66 lib/visual-map.php:1276
+msgid "Layout post style"
+msgstr ""
+
+#: lib/visual-map.php:70
+msgid "The blog"
+msgstr ""
+
+#: lib/visual-map.php:71
+msgid "2 column"
+msgstr ""
+
+#: lib/visual-map.php:72
+msgid "Slideshow"
+msgstr ""
+
+#: lib/visual-map.php:73
+msgid "Middle right"
+msgstr ""
+
+#: lib/visual-map.php:74
+msgid "Our Member"
+msgstr ""
+
+#: lib/visual-map.php:76 lib/visual-map.php:407 lib/visual-map.php:760
+#: lib/visual-map.php:1282 lib/visual-map.php:1422
+msgid "Select different style posts."
+msgstr ""
+
+#: lib/visual-map.php:82 lib/visual-map.php:413 lib/visual-map.php:680
+#: lib/visual-map.php:844 lib/visual-map.php:1198
+msgid "Category filter:"
+msgstr ""
+
+#: lib/visual-map.php:89 lib/visual-map.php:171 lib/visual-map.php:261
+#: lib/visual-map.php:420 lib/visual-map.php:614
+msgid "Number of posts to show"
+msgstr ""
+
+#: lib/visual-map.php:95 lib/visual-map.php:177 lib/visual-map.php:426
+#: lib/visual-map.php:1211
+msgid "Excerpt length (in words)"
+msgstr ""
+
+#: lib/visual-map.php:97 lib/visual-map.php:179 lib/visual-map.php:428
+#: lib/visual-map.php:1213
+msgid "Excerpt length (in words)."
+msgstr ""
+
+#: lib/visual-map.php:101 lib/visual-map.php:224 lib/visual-map.php:361
+#: lib/visual-map.php:438 lib/visual-map.php:483 lib/visual-map.php:572
+#: lib/visual-map.php:621 lib/visual-map.php:792 lib/visual-map.php:944
+#: lib/visual-map.php:1058 lib/visual-map.php:1172 lib/visual-map.php:1314
+#: lib/visual-map.php:1454
+msgid "Extra class name"
+msgstr ""
+
+#: lib/visual-map.php:103 lib/visual-map.php:226 lib/visual-map.php:363
+#: lib/visual-map.php:440 lib/visual-map.php:485 lib/visual-map.php:574
+#: lib/visual-map.php:623 lib/visual-map.php:794 lib/visual-map.php:946
+#: lib/visual-map.php:1060 lib/visual-map.php:1174 lib/visual-map.php:1316
+#: lib/visual-map.php:1456
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: lib/visual-map.php:109 lib/visual-map.php:195 lib/visual-map.php:267
+#: lib/visual-map.php:764 lib/visual-map.php:916 lib/visual-map.php:1286
+#: lib/visual-map.php:1426
+msgid "Order way"
+msgstr ""
+
+#: lib/visual-map.php:112 lib/visual-map.php:198 lib/visual-map.php:270
+#: lib/visual-map.php:767 lib/visual-map.php:919 lib/visual-map.php:1289
+#: lib/visual-map.php:1429 lib/widgets/ya_categories/tmpl/default_form.php:45
+#: lib/widgets/ya_default/tmpl/default_form.php:17
+#: lib/widgets/ya_posts/tmpl/default_form.php:47
+msgid "Descending"
+msgstr ""
+
+#: lib/visual-map.php:113 lib/visual-map.php:199 lib/visual-map.php:271
+#: lib/visual-map.php:768 lib/visual-map.php:920 lib/visual-map.php:1290
+#: lib/visual-map.php:1430 lib/widgets/ya_categories/tmpl/default_form.php:49
+#: lib/widgets/ya_default/tmpl/default_form.php:21
+#: lib/widgets/ya_posts/tmpl/default_form.php:51
+msgid "Ascending"
+msgstr ""
+
+#: lib/visual-map.php:115 lib/visual-map.php:201 lib/visual-map.php:273
+#: lib/visual-map.php:770 lib/visual-map.php:922 lib/visual-map.php:1292
+#: lib/visual-map.php:1432
+#, php-format
+msgid "Designates the ascending or descending order. More at %s."
+msgstr ""
+
+#: lib/visual-map.php:120 lib/visual-map.php:206 lib/visual-map.php:278
+#: lib/visual-map.php:775 lib/visual-map.php:927 lib/visual-map.php:1041
+#: lib/visual-map.php:1155 lib/visual-map.php:1297 lib/visual-map.php:1437
+msgid "Order by"
+msgstr ""
+
+#: lib/visual-map.php:124 lib/visual-map.php:210 lib/visual-map.php:282
+#: lib/visual-map.php:779 lib/visual-map.php:931 lib/visual-map.php:1045
+#: lib/visual-map.php:1159 lib/visual-map.php:1301 lib/visual-map.php:1441
+#: lib/woocommerce-hook.php:239
+msgid "Date"
+msgstr ""
+
+#: lib/visual-map.php:125 lib/visual-map.php:211 lib/visual-map.php:283
+#: lib/visual-map.php:780 lib/visual-map.php:932 lib/visual-map.php:1046
+#: lib/visual-map.php:1160 lib/visual-map.php:1302 lib/visual-map.php:1442
+msgid "ID"
+msgstr ""
+
+#: lib/visual-map.php:126 lib/visual-map.php:212 lib/visual-map.php:284
+#: lib/visual-map.php:781 lib/visual-map.php:933 lib/visual-map.php:1047
+#: lib/visual-map.php:1161 lib/visual-map.php:1303 lib/visual-map.php:1443
+#: templates/entry-meta.php:4
+msgid "Author"
+msgstr ""
+
+#: lib/visual-map.php:128 lib/visual-map.php:214 lib/visual-map.php:286
+#: lib/visual-map.php:783 lib/visual-map.php:935 lib/visual-map.php:1049
+#: lib/visual-map.php:1163 lib/visual-map.php:1305 lib/visual-map.php:1445
+msgid "Modified"
+msgstr ""
+
+#: lib/visual-map.php:129 lib/visual-map.php:215 lib/visual-map.php:287
+#: lib/visual-map.php:784 lib/visual-map.php:936 lib/visual-map.php:1050
+#: lib/visual-map.php:1164 lib/visual-map.php:1306 lib/visual-map.php:1446
+msgid "Random"
+msgstr ""
+
+#: lib/visual-map.php:130 lib/visual-map.php:216 lib/visual-map.php:288
+#: lib/visual-map.php:785 lib/visual-map.php:937 lib/visual-map.php:1051
+#: lib/visual-map.php:1165 lib/visual-map.php:1307 lib/visual-map.php:1447
+msgid "Comment count"
+msgstr ""
+
+#: lib/visual-map.php:131 lib/visual-map.php:217 lib/visual-map.php:289
+#: lib/visual-map.php:786 lib/visual-map.php:938 lib/visual-map.php:1052
+#: lib/visual-map.php:1166 lib/visual-map.php:1308 lib/visual-map.php:1448
+msgid "Menu order"
+msgstr ""
+
+#: lib/visual-map.php:133 lib/visual-map.php:219 lib/visual-map.php:291
+#: lib/visual-map.php:788 lib/visual-map.php:940 lib/visual-map.php:1054
+#: lib/visual-map.php:1168 lib/visual-map.php:1310 lib/visual-map.php:1450
+#, php-format
+msgid "Select how to sort retrieved posts. More at %s."
+msgstr ""
+
+#: lib/visual-map.php:142
+msgid "Testimonial Slide"
+msgstr ""
+
+#: lib/visual-map.php:148
+msgid "The tesminial on your site"
+msgstr ""
+
+#: lib/visual-map.php:154 lib/visual-map.php:244 lib/visual-map.php:381
+#: lib/visual-map.php:461 lib/visual-map.php:592 lib/visual-map.php:641
+#: lib/visual-map.php:812 lib/visual-map.php:964 lib/visual-map.php:1078
+#: lib/visual-map.php:1192 lib/visual-map.php:1334 lib/visual-map.php:1474
+msgid ""
+"What text use as a widget title. Leave blank to use default widget title."
+msgstr ""
+
+#: lib/visual-map.php:162 lib/visual-map.php:252 lib/visual-map.php:389
+#: lib/visual-map.php:649 lib/visual-map.php:820 lib/visual-map.php:1342
+#: lib/visual-map.php:1482
+msgid "Style title 1"
+msgstr ""
+
+#: lib/visual-map.php:163 lib/visual-map.php:253 lib/visual-map.php:390
+#: lib/visual-map.php:650 lib/visual-map.php:821 lib/visual-map.php:1343
+#: lib/visual-map.php:1483
+msgid "Style title 2"
+msgstr ""
+
+#: lib/visual-map.php:164 lib/visual-map.php:254 lib/visual-map.php:391
+#: lib/visual-map.php:651 lib/visual-map.php:822 lib/visual-map.php:1344
+#: lib/visual-map.php:1484
+msgid "Style title 3"
+msgstr ""
+
+#: lib/visual-map.php:165 lib/visual-map.php:255 lib/visual-map.php:392
+#: lib/visual-map.php:652 lib/visual-map.php:823 lib/visual-map.php:1345
+#: lib/visual-map.php:1485
+msgid "Style title 4"
+msgstr ""
+
+#: lib/visual-map.php:167 lib/visual-map.php:257 lib/visual-map.php:394
+#: lib/visual-map.php:598 lib/visual-map.php:654 lib/visual-map.php:825
+#: lib/visual-map.php:1347 lib/visual-map.php:1487
+msgid "What text use as a style title. Leave blank to use default style title."
+msgstr ""
+
+#: lib/visual-map.php:186
+msgid "Indicators Up"
+msgstr ""
+
+#: lib/visual-map.php:187
+msgid "indicators"
+msgstr ""
+
+#: lib/visual-map.php:188
+msgid "Slide Style 1"
+msgstr ""
+
+#: lib/visual-map.php:189
+msgid "Slide Style 2"
+msgstr ""
+
+#: lib/visual-map.php:191
+msgid "Chose template for testimonial"
+msgstr ""
+
+#: lib/visual-map.php:232
+msgid "Brand"
+msgstr ""
+
+#: lib/visual-map.php:238
+msgid "The best sale  product on your site"
+msgstr ""
+
+#: lib/visual-map.php:295 lib/visual-map.php:432 lib/visual-map.php:434
+#: lib/visual-map.php:723 lib/visual-map.php:887 lib/visual-map.php:1012
+#: lib/visual-map.php:1126 lib/visual-map.php:1247 lib/visual-map.php:1387
+msgid "Speed slide"
+msgstr ""
+
+#: lib/visual-map.php:297 lib/visual-map.php:725 lib/visual-map.php:889
+#: lib/visual-map.php:1014 lib/visual-map.php:1128 lib/visual-map.php:1249
+#: lib/visual-map.php:1389
+msgid "Speed for slide"
+msgstr ""
+
+#: lib/visual-map.php:301
+msgid "Effect slide"
+msgstr ""
+
+#: lib/visual-map.php:304 lib/visual-map.php:607
+msgid "Slide"
+msgstr ""
+
+#: lib/visual-map.php:305
+msgid "Fade"
+msgstr ""
+
+#: lib/visual-map.php:307
+msgid "Effect for slide"
+msgstr ""
+
+#: lib/visual-map.php:311
+msgid "Hover slide"
+msgstr ""
+
+#: lib/visual-map.php:317
+msgid "Hover for slide"
+msgstr ""
+
+#: lib/visual-map.php:321
+msgid "Swipe slide"
+msgstr ""
+
+#: lib/visual-map.php:327
+msgid "Swipe for slide"
+msgstr ""
+
+#: lib/visual-map.php:331 lib/visual-map.php:693 lib/visual-map.php:857
+#: lib/visual-map.php:982 lib/visual-map.php:1096 lib/visual-map.php:1217
+#: lib/visual-map.php:1357
+msgid "Number of Columns >1200px:"
+msgstr ""
+
+#: lib/visual-map.php:333 lib/visual-map.php:695 lib/visual-map.php:859
+#: lib/visual-map.php:984 lib/visual-map.php:1098 lib/visual-map.php:1219
+#: lib/visual-map.php:1359
+msgid "Number colums you want display  > 1200px."
+msgstr ""
+
+#: lib/visual-map.php:337 lib/visual-map.php:699 lib/visual-map.php:863
+#: lib/visual-map.php:988 lib/visual-map.php:1102 lib/visual-map.php:1223
+#: lib/visual-map.php:1363
+msgid "Number of Columns on 768px to 1199px:"
+msgstr ""
+
+#: lib/visual-map.php:339 lib/visual-map.php:701 lib/visual-map.php:865
+#: lib/visual-map.php:990 lib/visual-map.php:1104 lib/visual-map.php:1225
+#: lib/visual-map.php:1365
+msgid "Number colums you want display  on 768px to 1199px."
+msgstr ""
+
+#: lib/visual-map.php:343 lib/visual-map.php:705 lib/visual-map.php:869
+#: lib/visual-map.php:994 lib/visual-map.php:1108 lib/visual-map.php:1229
+#: lib/visual-map.php:1369
+msgid "Number of Columns on 480px to 767px:"
+msgstr ""
+
+#: lib/visual-map.php:345 lib/visual-map.php:707 lib/visual-map.php:871
+#: lib/visual-map.php:996 lib/visual-map.php:1110 lib/visual-map.php:1231
+#: lib/visual-map.php:1371
+msgid "Number colums you want display  on 480px to 767px."
+msgstr ""
+
+#: lib/visual-map.php:349 lib/visual-map.php:711 lib/visual-map.php:875
+#: lib/visual-map.php:1000 lib/visual-map.php:1114 lib/visual-map.php:1235
+#: lib/visual-map.php:1375
+msgid "Number of Columns on 321px to 479px:"
+msgstr ""
+
+#: lib/visual-map.php:351 lib/visual-map.php:713 lib/visual-map.php:877
+#: lib/visual-map.php:1002 lib/visual-map.php:1116 lib/visual-map.php:1237
+#: lib/visual-map.php:1377
+msgid "Number colums you want display  on 321px to 479px."
+msgstr ""
+
+#: lib/visual-map.php:355 lib/visual-map.php:717 lib/visual-map.php:881
+#: lib/visual-map.php:1006 lib/visual-map.php:1120 lib/visual-map.php:1241
+#: lib/visual-map.php:1381
+msgid "Number of Columns in 320px or less than:"
+msgstr ""
+
+#: lib/visual-map.php:357 lib/visual-map.php:719 lib/visual-map.php:883
+#: lib/visual-map.php:1008 lib/visual-map.php:1122 lib/visual-map.php:1243
+#: lib/visual-map.php:1383
+msgid "Number colums you want display  in 320px or less than."
+msgstr ""
+
+#: lib/visual-map.php:369
+msgid "SLIDE POSTS"
+msgstr ""
+
+#: lib/visual-map.php:398
+msgid "Type post"
+msgstr ""
+
+#: lib/visual-map.php:402
+msgid "bottom"
+msgstr ""
+
+#: lib/visual-map.php:403
+msgid "right"
+msgstr ""
+
+#: lib/visual-map.php:404
+msgid "left"
+msgstr ""
+
+#: lib/visual-map.php:405
+msgid "out"
+msgstr ""
+
+#: lib/visual-map.php:449
+msgid "vertical mega menu"
+msgstr ""
+
+#: lib/visual-map.php:455
+msgid "Display vertical mega menu"
+msgstr ""
+
+#: lib/visual-map.php:467
+msgid "Category menu:"
+msgstr ""
+
+#: lib/visual-map.php:474
+msgid "Theme shortcode want display"
+msgstr ""
+
+#: lib/visual-map.php:477
+msgid "default"
+msgstr ""
+
+#: lib/visual-map.php:479
+msgid "Select different style menu."
+msgstr ""
+
+#: lib/visual-map.php:491
+msgid "Ya_Gallery"
+msgstr ""
+
+#: lib/visual-map.php:495
+msgid "Animated carousel with images"
+msgstr ""
+
+#: lib/visual-map.php:501
+msgid ""
+"Enter text which will be used as widget title. Leave blank if no title is "
+"needed."
+msgstr ""
+
+#: lib/visual-map.php:505
+msgid "Images"
+msgstr ""
+
+#: lib/visual-map.php:508
+msgid "Select images from media library."
+msgstr ""
+
+#: lib/visual-map.php:512
+msgid "Gallery size"
+msgstr ""
+
+#: lib/visual-map.php:514
+msgid ""
+"Enter image size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height). Leave empty to use \"thumbnail\" size. If used slides per "
+"view, this will be used to define carousel wrapper size."
+msgstr ""
+
+#: lib/visual-map.php:519
+msgid "Gallery caption"
+msgstr ""
+
+#: lib/visual-map.php:522
+msgid "true"
+msgstr ""
+
+#: lib/visual-map.php:523
+msgid "false"
+msgstr ""
+
+#: lib/visual-map.php:525
+msgid "Images display caption true or false"
+msgstr ""
+
+#: lib/visual-map.php:529
+msgid "Gallery type"
+msgstr ""
+
+#: lib/visual-map.php:532
+msgid "column"
+msgstr ""
+
+#: lib/visual-map.php:533 lib/visual-map.php:563
+msgid "slide"
+msgstr ""
+
+#: lib/visual-map.php:534
+msgid "flex"
+msgstr ""
+
+#: lib/visual-map.php:536
+msgid "Images display type"
+msgstr ""
+
+#: lib/visual-map.php:540
+msgid "Gallery columns"
+msgstr ""
+
+#: lib/visual-map.php:542
+msgid ""
+"Enter gallery columns. Example: 1,2,3,4 ... Only use gallery type=\"column\"."
+msgstr ""
+
+#: lib/visual-map.php:550
+msgid "Slider speed"
+msgstr ""
+
+#: lib/visual-map.php:553
+msgid "Duration of animation between slides (in ms)"
+msgstr ""
+
+#: lib/visual-map.php:560
+msgid "Gallery event"
+msgstr ""
+
+#: lib/visual-map.php:565
+msgid "event slide images"
+msgstr ""
+
+#: lib/visual-map.php:580
+msgid "Best Sale"
+msgstr ""
+
+#: lib/visual-map.php:586
+msgid "Display bestseller"
+msgstr ""
+
+#: lib/visual-map.php:606 lib/visual-map.php:756 lib/visual-map.php:1280
+#: lib/visual-map.php:1420 lib/woocommerce-hook.php:236
+msgid "Default"
+msgstr ""
+
+#: lib/visual-map.php:609
+msgid "Select different style best sale."
+msgstr ""
+
+#: lib/visual-map.php:629
+msgid "Woocommerce Slider"
+msgstr ""
+
+#: lib/visual-map.php:635
+msgid "Display slider product"
+msgstr ""
+
+#: lib/visual-map.php:659 lib/visual-map.php:830
+msgid "Select Icon:"
+msgstr ""
+
+#: lib/visual-map.php:663 lib/visual-map.php:834
+msgid "Select the icon from the list."
+msgstr ""
+
+#: lib/visual-map.php:671 lib/visual-map.php:968 lib/visual-map.php:1082
+#: woocommerce/cart/cart.php:26
+msgid "Image"
+msgstr ""
+
+#: lib/visual-map.php:674 lib/visual-map.php:971 lib/visual-map.php:1085
+msgid "Select image from media library."
+msgstr ""
+
+#: lib/visual-map.php:687 lib/visual-map.php:851 lib/visual-map.php:976
+#: lib/visual-map.php:1090
+msgid "Number of product to show"
+msgstr ""
+
+#: lib/visual-map.php:729 lib/visual-map.php:893 lib/visual-map.php:1018
+#: lib/visual-map.php:1132 lib/visual-map.php:1253 lib/visual-map.php:1393
+msgid "Interval slide"
+msgstr ""
+
+#: lib/visual-map.php:731 lib/visual-map.php:895 lib/visual-map.php:1020
+#: lib/visual-map.php:1134 lib/visual-map.php:1255 lib/visual-map.php:1395
+msgid "Interval for slide"
+msgstr ""
+
+#: lib/visual-map.php:735 lib/visual-map.php:899 lib/visual-map.php:1024
+#: lib/visual-map.php:1138 lib/visual-map.php:1259 lib/visual-map.php:1399
+msgid "Autoplay for slider"
+msgstr ""
+
+#: lib/visual-map.php:742 lib/visual-map.php:906 lib/visual-map.php:1031
+#: lib/visual-map.php:1145 lib/visual-map.php:1266 lib/visual-map.php:1406
+msgid "Select autoplay slider or not autoplay slider."
+msgstr ""
+
+#: lib/visual-map.php:746
+msgid "Number Slider"
+msgstr ""
+
+#: lib/visual-map.php:748 lib/visual-map.php:912 lib/visual-map.php:1037
+#: lib/visual-map.php:1151 lib/visual-map.php:1272 lib/visual-map.php:1412
+msgid "Number Slided for slide"
+msgstr ""
+
+#: lib/visual-map.php:752
+msgid "Layout Style"
+msgstr ""
+
+#: lib/visual-map.php:757
+msgid "Child categories product"
+msgstr ""
+
+#: lib/visual-map.php:758
+msgid "Left Child Cat"
+msgstr ""
+
+#: lib/visual-map.php:800 lib/visual-map.php:806
+msgid "Woocommerce Countdown Slider"
+msgstr ""
+
+#: lib/visual-map.php:903 lib/visual-map.php:1028 lib/visual-map.php:1142
+#: lib/visual-map.php:1263 lib/visual-map.php:1403
+msgid "True"
+msgstr ""
+
+#: lib/visual-map.php:904 lib/visual-map.php:1029 lib/visual-map.php:1143
+#: lib/visual-map.php:1264 lib/visual-map.php:1404
+msgid "False"
+msgstr ""
+
+#: lib/visual-map.php:910 lib/visual-map.php:1035 lib/visual-map.php:1149
+#: lib/visual-map.php:1270 lib/visual-map.php:1410
+msgid "Number Slided"
+msgstr ""
+
+#: lib/visual-map.php:952 lib/visual-map.php:958
+msgid "Upsell product slider"
+msgstr ""
+
+#: lib/visual-map.php:1066 lib/visual-map.php:1072
+msgid "Related Product Slider"
+msgstr ""
+
+#: lib/visual-map.php:1180
+msgid "Post Slider"
+msgstr ""
+
+#: lib/visual-map.php:1186
+msgid "Ya Post Slider"
+msgstr ""
+
+#: lib/visual-map.php:1205 lib/visual-map.php:1351
+msgid "Number of post to show"
+msgstr ""
+
+#: lib/visual-map.php:1322 lib/visual-map.php:1328
+msgid "Our Brand Slider"
+msgstr ""
+
+#: lib/visual-map.php:1416
+msgid "Layout shortcode want display"
+msgstr ""
+
+#: lib/visual-map.php:1462
+msgid "Pricing Table"
+msgstr ""
+
+#: lib/visual-map.php:1468
+msgid "Display Pricing Table"
+msgstr ""
+
+#: lib/visual-map.php:1491
+msgid "style for table"
+msgstr ""
+
+#: lib/visual-map.php:1495
+msgid "Pricing table"
+msgstr ""
+
+#: lib/visual-map.php:1497
+msgid "Select style for table."
+msgstr ""
+
+#: lib/visual-map.php:1501
+msgid "Description for table"
+msgstr ""
+
+#: lib/visual-map.php:1507
+msgid "Plan or title"
+msgstr ""
+
+#: lib/visual-map.php:1509
+msgid "Plan or title of table"
+msgstr ""
+
+#: lib/visual-map.php:1513
+msgid "Cost"
+msgstr ""
+
+#: lib/visual-map.php:1515
+msgid "Cost of table"
+msgstr ""
+
+#: lib/visual-map.php:1519
+msgid "Currency"
+msgstr ""
+
+#: lib/visual-map.php:1521
+msgid "Currency of cost on table"
+msgstr ""
+
+#: lib/visual-map.php:1525 lib/visual-map.php:1527
+msgid "Percent of MONTH"
+msgstr ""
+
+#: lib/visual-map.php:1531
+msgid "Content need show"
+msgstr ""
+
+#: lib/visual-map.php:1533
+msgid "Display content"
+msgstr ""
+
+#: lib/visual-map.php:1537 lib/visual-map.php:1539
+msgid "Button link"
+msgstr ""
+
+#: lib/visual-map.php:1543
+msgid "button text"
+msgstr ""
+
+#: lib/visual-map.php:1545
+msgid "Button text"
+msgstr ""
+
+#: lib/visual-map.php:1549
+msgid "button target"
+msgstr ""
+
+#: lib/visual-map.php:1551
+msgid "Display button target"
+msgstr ""
+
+#: lib/visual-map.php:1556 lib/visual-map.php:1558
+msgid "button rel"
+msgstr ""
+
+#: lib/widgets.php:48 lib/widgets.php:49
+msgid "SW Posts"
+msgstr ""
+
+#: lib/widgets.php:70
+msgid "SW Category List header widget"
+msgstr ""
+
+#: lib/widgets.php:71
+msgid "SW List Category"
+msgstr ""
+
+#: lib/widgets.php:77
+msgid "SW Vertical Mega Menu Widget"
+msgstr ""
+
+#: lib/widgets.php:78
+msgid "SW Vertical Mega Menu"
+msgstr ""
+
+#: lib/widgets.php:86
+msgid "SW top header widget"
+msgstr ""
+
+#: lib/widgets.php:87
+msgid "SW Top Widget"
+msgstr ""
+
+#: lib/widgets.php:94 lib/widgets.php:95
+msgid "SW Top Rated Product Widget"
+msgstr ""
+
+#: lib/widgets.php:102
+msgid "SW best seller product woocommerce"
+msgstr ""
+
+#: lib/widgets.php:103
+msgid "SW best seller products"
+msgstr ""
+
+#: lib/widgets.php:110
+msgid "SW related products woocommerce"
+msgstr ""
+
+#: lib/widgets.php:111
+msgid "SW related products"
+msgstr ""
+
+#: lib/widgets.php:140
+msgid "SW Categories"
+msgstr ""
+
+#: lib/widgets.php:141
+msgid "SW Catetories"
+msgstr ""
+
+#: lib/widgets.php:148
+msgid "SW feature product woocommerce"
+msgstr ""
+
+#: lib/widgets.php:149
+msgid "SW Feature Products"
+msgstr ""
+
+#: lib/widgets.php:157 lib/widgets.php:158
+msgid "WP Default Widget"
+msgstr ""
+
+#: lib/widgets.php:165
+msgid "SW Social Networks"
+msgstr ""
+
+#: lib/widgets.php:166
+msgid "SW Social"
+msgstr ""
+
+#: lib/widgets.php:219
+msgid "Title: "
+msgstr ""
+
+#: lib/widgets.php:240
+msgid "Social"
+msgstr ""
+
+#: lib/widgets.php:243
+msgid "fa-* | title"
+msgstr ""
+
+#: lib/widgets.php:248 lib/widgets.php:276
+msgid "Link "
+msgstr ""
+
+#: lib/widgets.php:270
+msgid "Add a new social network"
+msgstr ""
+
+#: lib/widgets.php:271
+msgid "Classname for Icon or Title"
+msgstr ""
+
+#: lib/widgets.php:274
+msgid ""
+"If using as\n"
+"\t\ticon, please choose class name in Font Awesome. This is required."
+msgstr ""
+
+#: lib/widgets.php:289
+msgid "Theme Options on Frontend"
+msgstr ""
+
+#: lib/widgets.php:290
+msgid "YA cPanel"
+msgstr ""
+
+#: lib/widgets.php:421
+msgid "Widget Style"
+msgstr ""
+
+#: lib/widgets.php:572 lib/widgets.php:880
+msgid "Only on selected"
+msgstr ""
+
+#: lib/widgets.php:573 lib/widgets.php:881
+msgid "Except selected"
+msgstr ""
+
+#: lib/widgets.php:577 lib/widgets.php:888
+msgid "Widget Display"
+msgstr ""
+
+#: lib/widgets.php:596 lib/widgets.php:850
+msgid "Show only for login users"
+msgstr ""
+
+#: lib/widgets.php:597 lib/widgets.php:851
+msgid "Show only for logout users"
+msgstr ""
+
+#: lib/widgets.php:626
+msgid "Language Display"
+msgstr ""
+
+#: lib/widgets.php:642 lib/widgets.php:855
+msgid "Blog posts"
+msgstr ""
+
+#: lib/widgets.php:643 lib/widgets.php:856
+msgid "Archive page"
+msgstr ""
+
+#: lib/widgets.php:644
+msgid "Archive Date"
+msgstr ""
+
+#: lib/widgets.php:645 lib/widgets.php:857
+msgid "Category archive"
+msgstr ""
+
+#: lib/widgets.php:646 lib/widgets.php:858
+msgid "Tag archive"
+msgstr ""
+
+#: lib/widgets.php:647 lib/widgets.php:859
+msgid "Author archive"
+msgstr ""
+
+#: lib/widgets.php:648 lib/widgets.php:860
+msgid "Search page"
+msgstr ""
+
+#: lib/widgets.php:649
+msgid "Single post"
+msgstr ""
+
+#: lib/widgets.php:650
+msgid "Page template"
+msgstr ""
+
+#: lib/widgets.php:651
+msgid "Page 404"
+msgstr ""
+
+#: lib/widgets.php:666
+msgid "Taxonomy slugs"
+msgstr ""
+
+#: lib/widgets.php:670
+msgid "Posts type"
+msgstr ""
+
+#: lib/widgets.php:674
+msgid "Categories ID"
+msgstr ""
+
+#: lib/widgets.php:678
+msgid "Posts ID"
+msgstr ""
+
+#: lib/widgets.php:854
+msgid "Front page"
+msgstr ""
+
+#: lib/widgets.php:861
+msgid "Pages"
+msgstr ""
+
+#: lib/widgets.php:862
+msgid "Single post page"
+msgstr ""
+
+#: lib/widgets/top_rated_product/tmpl/default.php:1
+#: lib/widgets/ya_recommend_product/tmpl/default.php:1
+#: lib/widgets/ya_relate_product/tmpl/default.php:1
+msgid " review(s)"
+msgstr ""
+
+#: lib/widgets/top_rated_product/tmpl/default_form.php:6
+#: lib/widgets/ya_best_seller/tmpl/default_form.php:6
+#: lib/widgets/ya_best_seller_product/tmpl/default_form.php:8
+#: lib/widgets/ya_feature_product/tmpl/default_form.php:6
+#: lib/widgets/ya_posts/tmpl/default_form.php:57
+#: lib/widgets/ya_recommend_product/tmpl/default_form.php:7
+#: lib/widgets/ya_relate_product/tmpl/default_form.php:7
+#: lib/widgets/ya_related/tmpl/default_form.php:7
+msgid "Number of Posts"
+msgstr ""
+
+#: lib/widgets/vertical_megamenu/tmpl/default_form.php:8
+msgid "Menu Name"
+msgstr ""
+
+#: lib/widgets/vertical_megamenu/tmpl/default_form.php:13
+msgid "Select Menu Name"
+msgstr ""
+
+#: lib/widgets/ya_best_seller/tmpl/default.php:1
+#: lib/widgets/ya_best_seller_product/tmpl/default.php:1
+#: lib/widgets/ya_feature_product/tmpl/default.php:1
+msgid " review(s) "
+msgstr ""
+
+#: lib/widgets/ya_best_seller_product/tmpl/default_form.php:15
+msgid "El_class"
+msgstr ""
+
+#: lib/widgets/ya_best_seller_product/tmpl/default_form.php:23
+msgid "Style title "
+msgstr ""
+
+#: lib/widgets/ya_categories/tmpl/default_form.php:11
+#: lib/widgets/ya_category_list/tmpl/default_form.php:11
+#: lib/widgets/ya_category_product/tmpl/default_form.php:11
+msgid "Categories Name"
+msgstr ""
+
+#: lib/widgets/ya_categories/tmpl/default_form.php:17
+#: lib/widgets/ya_posts/tmpl/default_form.php:19
+msgid "Orderby"
+msgstr ""
+
+#: lib/widgets/ya_categories/tmpl/default_form.php:38
+#: lib/widgets/ya_default/tmpl/default_form.php:10
+#: lib/widgets/ya_posts/tmpl/default_form.php:40
+msgid "Order"
+msgstr ""
+
+#: lib/widgets/ya_categories/tmpl/default_form.php:55
+msgid "Number of Categories"
+msgstr ""
+
+#: lib/widgets/ya_categories/tmpl/default_form.php:64
+msgid "Exclude"
+msgstr ""
+
+#: lib/widgets/ya_category_list/tmpl/default.php:36
+#: lib/widgets/ya_category_product/tmpl/default.php:36
+msgid "Shop Now"
+msgstr ""
+
+#: lib/widgets/ya_default/tmpl/default.php:20
+msgid "Written by"
+msgstr ""
+
+#: lib/widgets/ya_default/tmpl/default_form.php:27
+msgid "Number of comments"
+msgstr ""
+
+#: lib/widgets/ya_default/tmpl/default_form.php:36
+#: lib/widgets/ya_posts/tmpl/default_form.php:84
+msgid "Excerpt length (in words): "
+msgstr ""
+
+#: lib/widgets/ya_posts/tmpl/default_form.php:13
+msgid "Category Name"
+msgstr ""
+
+#: lib/widgets/ya_posts/tmpl/default_form.php:66
+msgid "Include Posts ID"
+msgstr ""
+
+#: lib/widgets/ya_posts/tmpl/default_form.php:75
+msgid "Exclude Posts ID"
+msgstr ""
+
+#: lib/widgets/ya_related/tmpl/default_form.php:15
+msgid "Length of excerpt"
+msgstr ""
+
+#: lib/woocommerce-hook.php:234
+msgid "Sort by"
+msgstr ""
+
+#: lib/woocommerce-hook.php:236 lib/woocommerce-hook.php:237
+#: lib/woocommerce-hook.php:238 lib/woocommerce-hook.php:239
+#: lib/woocommerce-hook.php:240
+msgid "Sort by "
+msgstr ""
+
+#: lib/woocommerce-hook.php:237 woocommerce/single-product-reviews.php:62
+msgid "Name"
+msgstr ""
+
+#: lib/woocommerce-hook.php:238 woocommerce/cart/cart.php:28
+msgid "Price"
+msgstr ""
+
+#: lib/woocommerce-hook.php:240
+msgid "Rating"
+msgstr ""
+
+#: lib/woocommerce-hook.php:254
+msgid "8"
+msgstr ""
+
+#: page-notitle.php:16 templates/content-default.php:40
+#: templates/content-grid.php:58 templates/content-list.php:40
+#: templates/content-page.php:11 templates/content-rsidebar.php:80
+#: templates/content-single.php:33
+msgid "Pages:"
+msgstr ""
+
+#: templates/comments.php:16
+msgid "(Edit)"
+msgstr ""
+
+#: templates/comments.php:17
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: templates/comments.php:22
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: templates/comments.php:42
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: templates/comments.php:59 templates/comments.php:61
+msgid "&larr; Older comments"
+msgstr ""
+
+#: templates/comments.php:64 templates/comments.php:66
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: templates/comments.php:80
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr ""
+
+#: templates/comments.php:80
+msgid "Log out of this account"
+msgstr ""
+
+#: templates/comments.php:80
+msgid "Log out &raquo;"
+msgstr ""
+
+#: templates/comments.php:84
+msgid "Name*"
+msgstr ""
+
+#: templates/comments.php:128
+msgid "Post comment"
+msgstr ""
+
+#: templates/content-default.php:28 templates/content-single.php:11
+msgid "Category: "
+msgstr ""
+
+#: templates/content-grid.php:61 templates/content-grid.php:126
+msgid "Read more"
+msgstr ""
+
+#: templates/content-grid.php:99 templates/pagination.php:6
+#: templates/pagination.php:8
+msgid "Prev"
+msgstr ""
+
+#: templates/content-grid.php:100 templates/pagination.php:32
+#: templates/pagination.php:34
+msgid "Next"
+msgstr ""
+
+#: templates/content-rsidebar.php:59
+msgid " Views"
+msgstr ""
+
+#: templates/content-rsidebar.php:78
+msgid "READ MORE"
+msgstr ""
+
+#: templates/content-single.php:51
+msgid "Related Posts:"
+msgstr ""
+
+#: templates/content-single.php:84
+msgid "<span class=\"fa fa-arrow-circle-left\"></span> %title"
+msgstr ""
+
+#: templates/content-single.php:85
+msgid "%title <span class=\"fa fa-arrow-circle-right \"></span>"
+msgstr ""
+
+#: templates/entry-meta.php:5
+msgid "Published"
+msgstr ""
+
+#: templates/entry-meta.php:6
+msgid "Category"
+msgstr ""
+
+#: templates/header-style1.php:38 templates/header-style2.php:38
+#: templates/header-style3.php:34 templates/header-style5.php:35
+msgid "HOT LINE:"
+msgstr ""
+
+#: templates/header-style4.php:80
+msgid "All categories"
+msgstr ""
+
+#: templates/header-style5.php:52
+msgid "Show All"
+msgstr ""
+
+#: templates/no-results.php:4
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: templates/search-product.php:41 templates/search-product.php:43
+msgid "<i class=\"fa fa-caret-left\"></i>"
+msgstr ""
+
+#: templates/search-product.php:83 templates/search-product.php:86
+msgid "<i class=\"fa fa-caret-right\"></i>"
+msgstr ""
+
+#: templates/search-product.php:99
+msgid "No product found."
+msgstr ""
+
+#: templates/searchform.php:2
+msgid "Search for:"
+msgstr ""
+
+#: widgets/ya_posts/thisweak.php:23
+msgid "This Week"
+msgstr ""
+
+#: widgets/ya_top/login-header4.php:9 widgets/ya_top/login.php:11
+#: woocommerce/myaccount/form-login.php:27
+#: woocommerce/myaccount/form-login.php:50
+#: woocommerce/myaccount/login-form.php:31
+msgid "Login"
+msgstr ""
+
+#: widgets/ya_top/login-header4.php:13 widgets/ya_top/login.php:15
+msgid "Sign in Or Register"
+msgstr ""
+
+#: widgets/ya_top/login-header4.php:25 widgets/ya_top/login.php:27
+msgid "Logout"
+msgstr ""
+
+#: woocommerce/cart/cart.php:27
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:29
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:30
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:47 woocommerce/minicart-ajax-style1.php:43
+#: woocommerce/minicart-ajax-style2.php:41 woocommerce/minicart-ajax.php:45
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:74
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:119
+msgid "Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:119
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:119
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:126
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/loop-shop.php:40 woocommerce/loop/no-products-found.php:14
+msgid "No products found which match your selection."
+msgstr ""
+
+#: woocommerce/minicart-ajax-style1.php:9
+msgid "Shopping Cart"
+msgstr ""
+
+#: woocommerce/minicart-ajax-style1.php:10
+#: woocommerce/minicart-ajax-style1.php:44
+#: woocommerce/minicart-ajax-style2.php:9
+#: woocommerce/minicart-ajax-style2.php:42 woocommerce/minicart-ajax.php:11
+#: woocommerce/minicart-ajax.php:46
+msgid "View your shopping cart"
+msgstr ""
+
+#: woocommerce/minicart-ajax-style1.php:10
+#: woocommerce/minicart-ajax-style2.php:9
+msgid "item(s)"
+msgstr ""
+
+#: woocommerce/minicart-ajax-style1.php:85
+#: woocommerce/minicart-ajax-style2.php:83 woocommerce/minicart-ajax.php:87
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/minicart-ajax-style1.php:89
+#: woocommerce/minicart-ajax-style2.php:87 woocommerce/minicart-ajax.php:91
+msgid "Go To Cart"
+msgstr ""
+
+#: woocommerce/minicart-ajax-style1.php:90
+#: woocommerce/minicart-ajax-style2.php:88 woocommerce/minicart-ajax.php:92
+msgid "Check Out"
+msgstr ""
+
+#: woocommerce/minicart-ajax.php:10
+msgid "My Cart"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:34
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:38
+#: woocommerce/myaccount/form-login.php:89
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:45
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:53
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:66
+#: woocommerce/myaccount/form-login.php:103
+#: woocommerce/myaccount/register-form.php:55
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:75
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:82
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:96
+msgid "Anti-spam"
+msgstr ""
+
+#: woocommerce/myaccount/login-form.php:26
+msgid "Forgot your password?"
+msgstr ""
+
+#: woocommerce/myaccount/login-form.php:44
+msgid "Create an account"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:23
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:44
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:57
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:57
+msgid "Be the first to review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:58
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:64
+msgid "Email"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:73
+msgid "Your Rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:74
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:75
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:76
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:77
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:79
+msgid "Very Poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:83
+msgid "Your Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:92
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:32
+#: woocommerce/single-product/product-image.php:52
+msgid "Sale!"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:27
+msgid "Availability"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:28
+msgid "In stock"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:28
+msgid "Out stock"
+msgstr ""
+
+#: woocommerce/single-product/review.php:26
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:27
+msgid "out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:33
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: woocommerce/single-product/review.php:40
+msgid "verified owner"
+msgstr ""
+
+#: woocommerce/single-product/short-description.php:17
+msgid "QUICK OVERVIEW"
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:14
+msgid "Additional Information"
+msgstr ""
+
+#: woocommerce/single-product/tabs/description.php:14
+msgid "Product Description"
+msgstr ""

@@ -1,0 +1,89 @@
+.display-none {
+    display: none;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-tr {
+    display: table-row;
+}
+
+.display-td {
+    display: table-cell;
+}
+
+.blocked-locations-container, .blocked-ips-container, .blocked-refs-container {
+    vertical-align: top;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 120px;
+}
+
+.success-message {
+    color: #4F8A11;
+}
+
+.fail-message {
+    color: #D70D18;
+}
+
+.ljn-form-wrapper form {
+    border: 1px solid #ccc;
+    background-color: #F1F1F1;
+    padding: 15px;
+}
+
+.tabs-container {
+    text-align: center;
+}
+
+.basic-tab, .advanced-tab {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+
+.active-tab {
+    border-bottom :1px solid #F1F1F1;
+}
+
+.ljn-advanced-container .display-td {
+    padding: 10px 5px;
+}
+
+.ljn-advanced-container label {
+    color: rgb(35, 40, 45);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.remote-banners-container {
+    width: 720px;
+    height: 90px;
+    margin: 10px auto 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.remote-banners-container a {
+    position: absolute;
+    z-index: 1200;
+}
+
+.long-input {
+    min-width: 250px;
+}

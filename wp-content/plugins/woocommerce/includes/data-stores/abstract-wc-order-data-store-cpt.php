@@ -1,10 +1,4 @@
 <?php
-/**
- * Abstract_WC_Order_Data_Store_CPT class file.
- *
- * @package WooCommerce/Classes
- */
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -13,6 +7,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Abstract Order Data Store: Stored in CPT.
  *
  * @version  3.0.0
+ * @category Class
+ * @author   WooThemes
  */
 abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP implements WC_Object_Data_Store_Interface, WC_Abstract_Order_Data_Store_Interface {
 
@@ -50,31 +46,25 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 
 	/**
 	 * Method to create a new order in the database.
-	 *
-	 * @param WC_Order $order Order object.
+	 * @param WC_Order $order
 	 */
 	public function create( &$order ) {
 		$order->set_version( WC_VERSION );
 		$order->set_date_created( current_time( 'timestamp', true ) );
 		$order->set_currency( $order->get_currency() ? $order->get_currency() : get_woocommerce_currency() );
 
-		$id = wp_insert_post(
-			apply_filters(
-				'woocommerce_new_order_data',
-				array(
-					'post_date'     => gmdate( 'Y-m-d H:i:s', $order->get_date_created( 'edit' )->getOffsetTimestamp() ),
-					'post_date_gmt' => gmdate( 'Y-m-d H:i:s', $order->get_date_created( 'edit' )->getTimestamp() ),
-					'post_type'     => $order->get_type( 'edit' ),
-					'post_status'   => 'wc-' . ( $order->get_status( 'edit' ) ? $order->get_status( 'edit' ) : apply_filters( 'woocommerce_default_order_status', 'pending' ) ),
-					'ping_status'   => 'closed',
-					'post_author'   => 1,
-					'post_title'    => $this->get_post_title(),
-					'post_password' => uniqid( 'order_' ),
-					'post_parent'   => $order->get_parent_id( 'edit' ),
-					'post_excerpt'  => $this->get_post_excerpt( $order ),
-				)
-			), true
-		);
+		$id = wp_insert_post( apply_filters( 'woocommerce_new_order_data', array(
+			'post_date'     => gmdate( 'Y-m-d H:i:s', $order->get_date_created( 'edit' )->getOffsetTimestamp() ),
+			'post_date_gmt' => gmdate( 'Y-m-d H:i:s', $order->get_date_created( 'edit' )->getTimestamp() ),
+			'post_type'     => $order->get_type( 'edit' ),
+			'post_status'   => 'wc-' . ( $order->get_status( 'edit' ) ? $order->get_status( 'edit' ) : apply_filters( 'woocommerce_default_order_status', 'pending' ) ),
+			'ping_status'   => 'closed',
+			'post_author'   => 1,
+			'post_title'    => $this->get_post_title(),
+			'post_password' => uniqid( 'order_' ),
+			'post_parent'   => $order->get_parent_id( 'edit' ),
+			'post_excerpt'  => $this->get_post_excerpt( $order ),
+		) ), true );
 
 		if ( $id && ! is_wp_error( $id ) ) {
 			$order->set_id( $id );
@@ -88,26 +78,23 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Method to read an order from the database.
 	 *
-	 * @param WC_Data $order Order object.
+	 * @param WC_Data $order
 	 *
-	 * @throws Exception If passed order is invalid.
+	 * @throws Exception
 	 */
 	public function read( &$order ) {
 		$order->set_defaults();
-		$post_object = get_post( $order->get_id() );
 
-		if ( ! $order->get_id() || ! $post_object || ! in_array( $post_object->post_type, wc_get_order_types(), true ) ) {
+		if ( ! $order->get_id() || ! ( $post_object = get_post( $order->get_id() ) ) || ! in_array( $post_object->post_type, wc_get_order_types() ) ) {
 			throw new Exception( __( 'Invalid order.', 'woocommerce' ) );
 		}
 
-		$order->set_props(
-			array(
-				'parent_id'     => $post_object->post_parent,
-				'date_created'  => 0 < $post_object->post_date_gmt ? wc_string_to_timestamp( $post_object->post_date_gmt ) : null,
-				'date_modified' => 0 < $post_object->post_modified_gmt ? wc_string_to_timestamp( $post_object->post_modified_gmt ) : null,
-				'status'        => $post_object->post_status,
-			)
-		);
+		$order->set_props( array(
+			'parent_id'     => $post_object->post_parent,
+			'date_created'  => 0 < $post_object->post_date_gmt ? wc_string_to_timestamp( $post_object->post_date_gmt ) : null,
+			'date_modified' => 0 < $post_object->post_modified_gmt ? wc_string_to_timestamp( $post_object->post_modified_gmt ) : null,
+			'status'        => $post_object->post_status,
+		) );
 
 		$this->read_order_data( $order, $post_object );
 		$order->read_meta_data();
@@ -125,16 +112,11 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 
 	/**
 	 * Method to update an order in the database.
-	 *
-	 * @param WC_Order $order Order object.
+	 * @param WC_Order $order
 	 */
 	public function update( &$order ) {
 		$order->save_meta_data();
 		$order->set_version( WC_VERSION );
-
-		if ( null === $order->get_date_created( 'edit' ) ) {
-			$order->set_date_created( current_time( 'timestamp', true ) );
-		}
 
 		$changes = $order->get_changes();
 
@@ -173,20 +155,14 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 
 	/**
 	 * Method to delete an order from the database.
-	 *
-	 * @param WC_Order $order Order object.
-	 * @param array    $args Array of args to pass to the delete method.
-	 *
-	 * @return void
+	 * @param WC_Order $order
+	 * @param array $args Array of args to pass to the delete method.
 	 */
 	public function delete( &$order, $args = array() ) {
 		$id   = $order->get_id();
-		$args = wp_parse_args(
-			$args,
-			array(
-				'force_delete' => false,
-			)
-		);
+		$args = wp_parse_args( $args, array(
+			'force_delete' => false,
+		) );
 
 		if ( ! $id ) {
 			return;
@@ -212,7 +188,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Excerpt for post.
 	 *
-	 * @param  WC_order $order Order object.
+	 * @param  WC_order $order
 	 * @return string
 	 */
 	protected function get_post_excerpt( $order ) {
@@ -234,26 +210,24 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Read order data. Can be overridden by child classes to load other props.
 	 *
-	 * @param WC_Order $order Order object.
-	 * @param object   $post_object Post object.
+	 * @param WC_Order $order
+	 * @param object   $post_object
 	 * @since 3.0.0
 	 */
 	protected function read_order_data( &$order, $post_object ) {
 		$id = $order->get_id();
 
-		$order->set_props(
-			array(
-				'currency'           => get_post_meta( $id, '_order_currency', true ),
-				'discount_total'     => get_post_meta( $id, '_cart_discount', true ),
-				'discount_tax'       => get_post_meta( $id, '_cart_discount_tax', true ),
-				'shipping_total'     => get_post_meta( $id, '_order_shipping', true ),
-				'shipping_tax'       => get_post_meta( $id, '_order_shipping_tax', true ),
-				'cart_tax'           => get_post_meta( $id, '_order_tax', true ),
-				'total'              => get_post_meta( $id, '_order_total', true ),
-				'version'            => get_post_meta( $id, '_order_version', true ),
-				'prices_include_tax' => metadata_exists( 'post', $id, '_prices_include_tax' ) ? 'yes' === get_post_meta( $id, '_prices_include_tax', true ) : 'yes' === get_option( 'woocommerce_prices_include_tax' ),
-			)
-		);
+		$order->set_props( array(
+			'currency'           => get_post_meta( $id, '_order_currency', true ),
+			'discount_total'     => get_post_meta( $id, '_cart_discount', true ),
+			'discount_tax'       => get_post_meta( $id, '_cart_discount_tax', true ),
+			'shipping_total'     => get_post_meta( $id, '_order_shipping', true ),
+			'shipping_tax'       => get_post_meta( $id, '_order_shipping_tax', true ),
+			'cart_tax'           => get_post_meta( $id, '_order_tax', true ),
+			'total'              => get_post_meta( $id, '_order_total', true ),
+			'version'            => get_post_meta( $id, '_order_version', true ),
+			'prices_include_tax' => metadata_exists( 'post', $id, '_prices_include_tax' ) ? 'yes' === get_post_meta( $id, '_prices_include_tax', true ) : 'yes' === get_option( 'woocommerce_prices_include_tax' ),
+		) );
 
 		// Gets extra data associated with the order if needed.
 		foreach ( $order->get_extra_data_keys() as $key ) {
@@ -267,7 +241,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Helper method that updates all the post meta for an order based on it's settings in the WC_Order class.
 	 *
-	 * @param WC_Order $order Order object.
+	 * @param $order WC_Order
 	 * @since 3.0.0
 	 */
 	protected function update_post_meta( &$order ) {
@@ -304,7 +278,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Clear any caches.
 	 *
-	 * @param WC_Order $order Order object.
+	 * @param WC_Order $order
 	 * @since 3.0.0
 	 */
 	protected function clear_caches( &$order ) {
@@ -316,26 +290,23 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Read order items of a specific type from the database for this order.
 	 *
-	 * @param  WC_Order $order Order object.
-	 * @param  string   $type Order item type.
+	 * @param  WC_Order $order
+	 * @param  string $type
 	 * @return array
 	 */
 	public function read_items( $order, $type ) {
 		global $wpdb;
 
 		// Get from cache if available.
-		$items = 0 < $order->get_id() ? wp_cache_get( 'order-items-' . $order->get_id(), 'orders' ) : false;
+		$items = wp_cache_get( 'order-items-' . $order->get_id(), 'orders' );
 
 		if ( false === $items ) {
-			$items = $wpdb->get_results(
-				$wpdb->prepare( "SELECT order_item_type, order_item_id, order_id, order_item_name FROM {$wpdb->prefix}woocommerce_order_items WHERE order_id = %d ORDER BY order_item_id;", $order->get_id() )
-			);
+			$get_items_sql = $wpdb->prepare( "SELECT order_item_type, order_item_id, order_id, order_item_name FROM {$wpdb->prefix}woocommerce_order_items WHERE order_id = %d ORDER BY order_item_id;", $order->get_id() );
+			$items         = $wpdb->get_results( $get_items_sql );
 			foreach ( $items as $item ) {
 				wp_cache_set( 'item-' . $item->order_item_id, $item, 'order-items' );
 			}
-			if ( 0 < $order->get_id() ) {
-				wp_cache_set( 'order-items-' . $order->get_id(), $items, 'orders' );
-			}
+			wp_cache_set( 'order-items-' . $order->get_id(), $items, 'orders' );
 		}
 
 		$items = wp_list_filter( $items, array( 'order_item_type' => $type ) );
@@ -352,7 +323,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Remove all line items (products, coupons, shipping, taxes) from the order.
 	 *
-	 * @param WC_Order $order Order object.
+	 * @param WC_Order $order
 	 * @param string   $type Order item type. Default null.
 	 */
 	public function delete_items( $order, $type = null ) {
@@ -370,7 +341,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Get token ids for an order.
 	 *
-	 * @param WC_Order $order Order object.
+	 * @param WC_Order $order
 	 * @return array
 	 */
 	public function get_payment_token_ids( $order ) {
@@ -381,8 +352,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends WC_Data_Store_WP impleme
 	/**
 	 * Update token ids for an order.
 	 *
-	 * @param WC_Order $order Order object.
-	 * @param array    $token_ids Payment token ids.
+	 * @param WC_Order $order
+	 * @param array    $token_ids
 	 */
 	public function update_payment_token_ids( $order, $token_ids ) {
 		update_post_meta( $order->get_id(), '_payment_tokens', $token_ids );

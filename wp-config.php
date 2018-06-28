@@ -1,4 +1,29 @@
 <?php
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
+
+
+
+
+/** Enable W3 Total Cache */
+ //Added by WP-Cache Manager
+
+/** Enable W3 Total Cache */
+ //Added by WP-Cache Manager
+
+/** Enable W3 Total Cache */
+ //Added by WP-Cache Manager
+
+/** Enable W3 Total Cache */
+ //Added by WP-Cache Manager
+
+/** Enable W3 Total Cache */
+ //Added by WP-Cache Manager
+
+/** Enable W3 Total Cache */
+ //Added by WP-Cache Manager
+
 /**
  * The base configuration for WordPress
  *
@@ -19,8 +44,13 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+// ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'sofazdb');
+ //Added by WP-Cache Manager
+ //Added by WP-Cache Manager
+ //Added by WP-Cache Manager
+define( 'WPCACHEHOME', 'C:\xampp\htdocs\wordpress.zsofa.vn\wp-content\plugins\wp-super-cache' ); //Added by WP-Cache Manager
+define('DB_NAME', 'zsofa_test');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -32,7 +62,7 @@ define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -46,14 +76,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '|`BC:1@Q ;h/soZ8[MMxBO69yG.taTtVA:yR)gLi5oywf?`G]=Oe?*lz48kqVGvm');
-define('SECURE_AUTH_KEY',  '((1[uV>0Y%Se;~gH]6BJ?]Bv*y|({u^R}/3/HtD0-.V(fHrbpX)AKl`}7jFp?x25');
-define('LOGGED_IN_KEY',    'pOTKq0|n&;(l|)b_>3Cx:1Xdl:%zQ3hT4i5,,@gyBqUdxz=M2W*8&r)Zf&E8kGU#');
-define('NONCE_KEY',        't3]0_%z?AmtELSrDo%jDrInNln~WYKUh6xuT%NAuaK?Bq?e{{eO:TBVn#Oh[6;sD');
-define('AUTH_SALT',        'w>)vCZ_Cq.@~_wG`_:0L_m!>qD0#A6*40w`{4+uEMWH5}WO([#:cGx8wWPPkyrWh');
-define('SECURE_AUTH_SALT', '|luV=@#@s4v,({p>So>1GA;OvcAWo-v^gJudra;p81J/6eYP!&,BI[_iSONV%RUM');
-define('LOGGED_IN_SALT',   '.QYD@3,w..L`>I|,Oa/bp7IU`ylNI{pZWo.+KR`s?zA%Z}Rx}:3BM*|Uo{Wc5KQ^');
-define('NONCE_SALT',       '5}8;Gv3.^i{rZ4TLr</q2:.t/KsCD=;9;PR!GKWEb{m|]P^;$[:n[@s<5nA7yLjp');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 
 /**#@-*/
 

@@ -88,7 +88,7 @@ jQuery( function( $ ) {
 		return false;
 	});
 
-	// Product type specific options.
+	// PRODUCT TYPE SPECIFIC OPTIONS.
 	$( 'select#product-type' ).change( function() {
 
 		// Get value.
@@ -228,20 +228,16 @@ jQuery( function( $ ) {
 		return false;
 	});
 
-	// Stock options.
+	// STOCK OPTIONS.
 	$( 'input#_manage_stock' ).change( function() {
 		if ( $( this ).is( ':checked' ) ) {
 			$( 'div.stock_fields' ).show();
-			$( 'p.stock_status_field' ).hide();
 		} else {
-			var product_type = $( 'select#product-type' ).val();
-
 			$( 'div.stock_fields' ).hide();
-			$( 'p.stock_status_field:not( .hide_if_' + product_type + ' )' ).show();
 		}
 	}).change();
 
-	// Date picker fields.
+	// DATE PICKER FIELDS.
 	function date_picker_select( datepicker ) {
 		var option         = $( datepicker ).next().is( '.hasDatepicker' ) ? 'minDate' : 'maxDate',
 			otherDateField = 'minDate' === option ? $( datepicker ).next() : $( datepicker ).prev(),
@@ -264,7 +260,7 @@ jQuery( function( $ ) {
 		$( this ).find( 'input' ).each( function() { date_picker_select( $( this ) ); } );
 	});
 
-	// Attribute Tables.
+	// ATTRIBUTE TABLES.
 
 	// Initial order.
 	var woocommerce_attribute_items = $( '.product_attributes' ).find( '.woocommerce_attribute' ).get();

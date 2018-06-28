@@ -1,0 +1,5 @@
+[20-Feb-2016 13:50:28 UTC] PHP Fatal error:  Out of memory (allocated 67108864) (tried to allocate 3264 bytes) in /home/zsofa/public_html/wp-content/plugins/image-watermark/image-watermark.php on line 2395
+[20-Feb-2016 13:50:48 UTC] PHP Fatal error:  Out of memory (allocated 67371008) (tried to allocate 13056 bytes) in /home/zsofa/public_html/wp-content/plugins/image-watermark/image-watermark.php on line 2395
+[20-Feb-2016 13:51:30 UTC] PHP Fatal error:  Out of memory (allocated 67108864) (tried to allocate 13056 bytes) in /home/zsofa/public_html/wp-content/plugins/image-watermark/image-watermark.php on line 2395
+[20-Feb-2016 13:53:57 UTC] PHP Fatal error:  Out of memory (allocated 67108864) (tried to allocate 3264 bytes) in /home/zsofa/public_html/wp-content/plugins/image-watermark/image-watermark.php on line 2395
+[06-Mar-2016 07:34:53 UTC] PHP Warning:  htmlspecialchars_decode() expects parameter 1 to be string, array given in /home/zsofa/public_html/wp-content/plugins/js_composer/include/classes/editors/popups/class-vc-shortcode-edit-form.php on line 44

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Bảo hành sản phẩm zSOFA.vn">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Hege Refsnes">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+<style>
+	
+</style>
+</head>
+<body>
+
+Nhập số điện thoại <input id="phone" type="text"> <button id="check">Check bảo hành </button>
+
+<p class="check-none"></p>
+
+<div id="content">
+	<h3>Thông tin bảo hành</h3>
+	<table class="table table-striped">
+		<tbody>
+		  <tr>
+			<td><strong>Tên Khách Hàng</strong></td>
+			<td class="name"></td>
+		  </tr>
+		  <tr>
+			<td><strong>Điện thoại</strong></td>
+			<td class="phone"></td>
+		  </tr>
+		  <tr>
+			<td><strong>Chi tiết mua hàng</strong></td>
+			<td class="detail"></td>
+		  </tr>
+		  <tr>
+			<td><strong>Địa chỉ</strong></td>
+			<td class="address"></td>
+		  </tr>
+		  <tr>
+			<td><strong>Ngày mua</strong></td>
+			<td class="date_buy"></td>
+		  </tr>
+		  <tr>
+			<td><strong>Thời hạn bảo hành</strong></td>
+			<td class="date_war"></td>
+		  </tr>
+		</tbody>
+	</table>
+	
+</div>
+
+<script>
+$("#content, #check-none").hide();
+$(document).on("click", "#check", function(){
+	$("#content, #check-none").hide();
+	var phone = $('#phone').val();
+		while(phone.charAt(0) === '0')
+			phone = phone.substr(1);	
+	var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange=function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var data = JSON.parse(this.responseText);
+			if(data.code == 200){
+				$("#content").show();
+				$("#check-none").hide();
+				$(".name").html(data.message.name);
+				$(".phone").html(data.message.phone);
+				$(".detail").html(data.message.detail);
+				$(".address").html(data.message.address);
+				$(".date_buy").html(data.message.date_buy);
+				$(".date_war").html(data.message.date_war);
+			}else{
+				$("#check-none").show();
+				$(".check-none").html(data.message);
+			}
+		}
+	  };
+	  xhttp.open("GET", "http://m.zsofa.vn/index.php/site/CheckWarranty?phone="+phone, true);
+	  xhttp.send();
+});
+</script>
+</body>
+</html>
