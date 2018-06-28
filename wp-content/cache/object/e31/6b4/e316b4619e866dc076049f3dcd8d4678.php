@@ -1,7 +1,0 @@
-�[<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:13904;s:11:"post_author";s:4:"4062";s:9:"post_date";s:19:"2018-05-27 12:48:46";s:13:"post_date_gmt";s:19:"0000-00-00 00:00:00";s:12:"post_content";s:579:"BẠn muốn tìm kiếm một chiếc ghế sofa đơn cho phòng khách nhà mình hay dành cho căn phòng đọc sách hay cho căn phòng ngủ mà chưa biết chọn mua ở đâu ?
-
-BẠn đang mong muốn có thể tìm được một đơn vị cung cấp ghế sofa vừa chất lượng mà giá cả lại đảm bảo nhất ở tphcm .
-
-Đó là lý do bạn nên đến với zSofa, một đơn vị cung cấp ghế sofa hàng đầu luôn đảm bảo chất lượng và giá cả cho mọi bộ ghế sofa mà mình cung cấp.
-
-Chọn ghế sofa đơn";s:10:"post_title";s:41:"MUA GHẾ SOFA ĐƠN QUẬN 5 TẠI ZSOFA";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:5:"draft";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:0:"";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-05-27 12:48:46";s:17:"post_modified_gmt";s:19:"2018-05-27 05:48:46";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:25:"https://zsofa.vn/?p=13904";s:10:"menu_order";i:0;s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}
