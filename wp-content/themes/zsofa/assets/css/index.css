@@ -2200,6 +2200,9 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
+.zsofa-sorting {
+  display: none; }
+
 /*-----------------------Begin media screen --------------------*/
 @media (max-width: 1023px) {
   html #wpadminbar {
@@ -2806,7 +2809,7 @@ input[type="search"]::-webkit-search-results-decoration {
     #header .header-middle-wrapper.menu-mobile-wrapper .shop-logo {
       padding-top: 0; }
       #header .header-middle-wrapper.menu-mobile-wrapper .shop-logo img {
-        height: 25px;
+        height: 31px;
         margin: 0 auto; }
   #header .main-search-box {
     padding-top: 60px;
@@ -3143,7 +3146,10 @@ input[type="search"]::-webkit-search-results-decoration {
     display: none; }
 
   .section9.newsletter .mobile-newsletter {
-    display: none; } }
+    display: none; }
+
+  #header .shop-logo {
+    padding: 5px 97px 5px 0; } }
 /*-----------------------End media screen --------------------*/
 
 /*# sourceMappingURL=index.css.map */

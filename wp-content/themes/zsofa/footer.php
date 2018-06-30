@@ -6,11 +6,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 about-store-cont">
-						<div class="footer-ge-title about-erado">
-							VỀ ERADO
+						<div class="footer-ge-title about-Zsofa">
+							VỀ Zsofa
 						</div>
-						<p class="about-erado-desc">
-							" Nội thất Erado tiếp nối thành công của thương hiệu rOsano (thuộc công ty cổ phần rOsano Việt Nam nay đổi tên thành công ty cổ phần Erado Việt Nam)..được hàng trăm nghìn khách hàng trên toàn quốc tin dùng."
+						<p class="about-Zsofa-desc">
+							" Nội thất Zsofa tiếp nối thành công của thương hiệu rOsano (thuộc công ty cổ phần rOsano Việt Nam nay đổi tên thành công ty cổ phần Zsofa Việt Nam)..được hàng trăm nghìn khách hàng trên toàn quốc tin dùng."
 						</p>
 						<img src="" alt="" class="img-responsive">
 					</div>
@@ -21,9 +21,9 @@
 									<h2><a href="">VỀ CÔNG TY</a></h2>
 								</div>
 								<ul>
-									<li><a href="">Giới thiệu Erado</a></li>
+									<li><a href="">Giới thiệu Zsofa</a></li>
 									<li><a href="">Công Trình Đã Thực Hiện</a></li>
-									<li><a href="">Chỉ đường đến Erado</a></li>
+									<li><a href="">Chỉ đường đến Zsofa</a></li>
 								</ul>
 							</div>
 							<div class="col-md-6 col-ssm-12 col-ssmm-6 for-buyers">
@@ -42,7 +42,7 @@
 						<div class="row support-phone authentication">
 							<div class="col-md-7">
 								<div class="call-to-us">
-									HÃY GỌI ERADO ĐỂ ĐƯỢC TƯ VẤN
+									HÃY GỌI Zsofa ĐỂ ĐƯỢC TƯ VẤN
 								</div>
 								<div class="hot-line">
 									<span>Hỗ trợ : </span>
@@ -57,7 +57,7 @@
 					
 					<div class="col-md-3 company-addresses">
 						<div class="footer-ge-title company-addresses-title">
-							CÔNG TY CP ERADO VIỆT NAM
+							CÔNG TY CP Zsofa VIỆT NAM
 						</div>
 						<ul>
 							<li>
@@ -86,7 +86,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-ssmm-6 col-ssm-6">
-						<div class="company-name">Công ty cổ phần <span>Erado</span> Việt Nam</div>
+						<div class="company-name">Công ty cổ phần <span>Zsofa</span> Việt Nam</div>
 					</div>
 					<div class="col-md-9">
 						<div class="bussiness-num">Số ĐKKD : 0106404186 - Cấp bởi Sở kế Hoạch Đầu Tư Thành phố Hà Nội</div>
