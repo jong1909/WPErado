@@ -44,7 +44,7 @@
 			<div class="container">
 				<div class="header-middle-wrapper row">
 					<div class="col-md-3 col-ssmm-7 col-ssm-7 shop-logo">
-						<a href="/"><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/logo.jpg" class="img-responsive" alt=""></a>
+						<a href="/"><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/zsofa_logo.png" class="img-responsive" alt=""></a>
 					</div>
 					<div class="col-md-5 col-ssmm-12 col-ssm-12 main-search-box">
 						<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
@@ -100,7 +100,7 @@
                     <div class="hotline-num">0976.529.529</div>
                 </div>
                 <div class="col-md-3 col-ssmm-6 col-ssm-6 shop-logo">
-                    <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/logo.jpg" class="img-responsive" alt=""></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/zsofa_logo.png" class="img-responsive" alt=""></a>
                 </div>
                 <div class="col-ssmm-3 col-ssm-3 show-destop-screen">
                     <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/pc.png" alt=""></a>
