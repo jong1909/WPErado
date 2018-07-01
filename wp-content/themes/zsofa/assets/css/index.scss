@@ -1150,7 +1150,7 @@ footer{
 		}
 	}
 	.address, .hot-line{
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.company-addresses{
 		padding-left: 0;
@@ -1159,7 +1159,7 @@ footer{
 			line-height: 18px;
 		}
 		li{
-			margin-bottom: 15px;
+			margin-bottom: 9px;
 		}
 	}
 	.about-buyers .top-content{
@@ -1585,6 +1585,18 @@ footer{
     }
     .product-main-img{
         margin-top: 20px;
+        position: relative;
+        img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .woocommerce-product-gallery__trigger{
+        position: absolute;
+        z-index: 9;
+        top: 5px;
+        right: 5px;
     }
     .col-ssm-5.col-left{
         width: 44%;
@@ -2056,6 +2068,7 @@ footer{
             }
             >li{
                 display: none;
+                padding: 20px 0;
             }
             >li.show{
                 display: block;

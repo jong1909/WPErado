@@ -883,14 +883,14 @@ footer {
       left: 0;
       top: 5px; }
   footer .address, footer .hot-line {
-    font-size: 13px; }
+    font-size: 12px; }
   footer .company-addresses {
     padding-left: 0;
     padding-right: 0; }
     footer .company-addresses p {
       line-height: 18px; }
     footer .company-addresses li {
-      margin-bottom: 15px; }
+      margin-bottom: 9px; }
   footer .about-buyers .top-content {
     padding-bottom: 35px;
     border-bottom: 1px solid #384359; }
@@ -1210,7 +1210,17 @@ footer {
       display: inline-block;
       text-indent: -99999px; }
 .product-detail-page .product-main-img {
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: relative; }
+  .product-detail-page .product-main-img img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+.product-detail-page .woocommerce-product-gallery__trigger {
+  position: absolute;
+  z-index: 9;
+  top: 5px;
+  right: 5px; }
 .product-detail-page .col-ssm-5.col-left {
   width: 44%;
   background: #F5F5F5;
@@ -1561,7 +1571,8 @@ footer {
     .product-detail-page .product-description .tab-contents img {
       max-width: 100%; }
     .product-detail-page .product-description .tab-contents > li {
-      display: none; }
+      display: none;
+      padding: 20px 0; }
     .product-detail-page .product-description .tab-contents > li.show {
       display: block; }
     .product-detail-page .product-description .tab-contents .mobile-tab-title {

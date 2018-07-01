@@ -61,21 +61,19 @@
 						</div>
 						<ul>
 							<li>
-								<div class="spmarket">Siêu Thị Nội Thất 1</div>
-								<p class="address">Địa chỉ: Số 356 Bạch Mai, Hà Nội</p>
-								<p class="hot-line">Hotline: O9O5.356.356 - O916 59 8668 </p>
+								<div class="spmarket">Showroom Q7</div>
+								<p class="address">Địa chỉ: 981 Huỳnh Tấn Phát, P. Phú Thuận, Quận 7, TP.HCM</p>
+								<p class="hot-line">Hotline: 19006107 - 0975488488  </p>
 							</li>
 							<li>
-								<div class="spmarket">Siêu Thị Nội Thất 2</div>
-								<p class="address">Tầng 3, C14 Bắc Hà  ( C14 - Bộ Công An)
-								Đường Lê Văn Lương kéo dài..</p>
-								<p class="hot-line">O985.OO.8668 - O979. 16. 3456</p>
+								<div class="spmarket">Showroom GV</div>
+								<p class="address">Địa chỉ: 687 Phan Văn Trị P. 7, Q. Gò Vấp, TP.HCM</p>
+								<p class="hot-line">Hotline: 19006107</p>
 							</li>
 							<li>
-								<div class="spmarket">Siêu Thị Nội Thất 3</div>
-								<p class="address">Địa chỉ: Tầng 3, Toà FLC complex
-								Số 36 Phạm Hùng (cạnh bến xe Mỹ Đình)</p>
-								<p class="hot-line">Hotline: O976.52.6688 - O904. 962.888</p>
+								<div class="spmarket">Showroom TĐ</div>
+								<p class="address">Địa chỉ: 209 Tô Ngọc Vân, P. Linh Đông, Thủ Đức, TP.HCM</p>
+								<p class="hot-line">Hotline: 19006107 </p>
 							</li>
 						</ul>
 					</div>

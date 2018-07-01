@@ -67,3 +67,19 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+    add_image_size( 'post-thumb', 300, 210, array( 'center', 'center' ) );
+
+}
+function wpdocs_setup_theme_thumb() {
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 420, 280,array( 'center', 'center')  );
+}
+add_action( 'after_setup_theme', 'wpdocs_setup_theme_thumb' );
+
+function wpdocs_theme_thumb_wide() {
+    add_image_size( 'post-thumb-wide', 600, 400, array( 'center', 'center' ) );
+
+}
+add_action( 'after_setup_theme', 'wpdocs_theme_thumb_wide' );
