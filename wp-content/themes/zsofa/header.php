@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon image_src" href="<?php echo get_template_directory_uri() ; ?>/assets/images/template/fav.ico.png">
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 <?php do_action( 'zsofa_before_site' ); ?>
 <!-- Begin Header -->
 <div id="overlay-region"></div>

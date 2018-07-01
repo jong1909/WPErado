@@ -205,7 +205,7 @@ get_header(); ?>
 						<div class="col-md-3 col-ssmm-6 col-ssm-6 active">
 							<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ghe-thu-gian.png" alt=""></a>
 							<div class="feature-cont-wrapper">
-								<div class="catalog-title"><a href="">Ghế Thư Giãn</a></div>
+								<div class="catalog-title"><a href="/danh-muc/ghe-sofa-thu-gian/">Ghế Thư Giãn</a></div>
 								<p class="fea-cata-content">
 									Các dòng ghế thư giãn cao cấp nhập khẩu với thiết kế hiện đại mang đến vẻ đẹp cho không gian sống và sự trải nghiệm tối ưu khi sử dụng
 								</p>
@@ -213,9 +213,9 @@ get_header(); ?>
 							
 						</div>
 						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ghe-thu-gian.png" alt=""></a>
+							<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ghe-sofa.jpg" alt=""></a>
 							<div class="feature-cont-wrapper">
-								<div class="catalog-title"><a href="">Ghế Sofa</a></div>
+								<div class="catalog-title"><a href="/danh-muc/ghe-sofa/">Ghế Sofa</a></div>
 								<p class="fea-cata-content">
 									Điều gì khiến: Hoa hậu Kỳ Duyên và Á hậu Huyền My cùng nghệ sỹ Quang Tèo, đạo diễn Bình Trọng cùng hàng nghìn khách hàng đã chọn mua: nội thất, bàn ghế sofa Erado ? Bấm xem
 								</p>
@@ -223,9 +223,9 @@ get_header(); ?>
 							
 						</div>
 						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ghe-thu-gian.png" alt=""></a>
+							<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that.jpg" alt=""></a>
 							<div class="feature-cont-wrapper">
-								<div class="catalog-title"><a href="">Nội thất</a></div>
+								<div class="catalog-title"><a href="/danh-muc/noi-that/">Nội thất</a></div>
 								<p class="fea-cata-content">
 									Bàn trà, Kệ tivi, Bàn ghế ăn, Giường da... với kiểu dáng thiết kế đẹp, hiện đại, sang trọng và tinh tế. Mầu sắc theo đúng xu hướng, không lo sợ bị lỗi mốt cùng chất liệu hạng sang
 								</p>
@@ -233,9 +233,9 @@ get_header(); ?>
 							
 						</div>
 						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ghe-thu-gian.png" alt=""></a>
+							<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/giuong-ngu.png" alt=""></a>
 							<div class="feature-cont-wrapper">
-								<div class="catalog-title"><a href="">Giường ngủ</a></div>
+								<div class="catalog-title"><a href="/danh-muc/giuong-cao-cap/">Giường ngủ</a></div>
 								<p class="fea-cata-content">
 									Giường Ngủ da thật cao cấp mang đậm phong cách châu Âu
 								</p>
@@ -251,30 +251,21 @@ get_header(); ?>
 						<div class="col-md-7 promotion-products">
 							<h3 class="promotion-title">SẢN PHẨM <strong>KHUYẾN MÃI</strong></h3>
 							<div class="row">
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Ghế thư giãn Ceri mã 05</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Sofa da thật mã 352</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Sofa phòng khách mã 242</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Sofa đẹp mã 564</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
+							    <?php
+                                    $args = array( 'post_type' => 'product', 'posts_per_page' => 4, 'product_cat' => 'khuyen-mai', 'orderby' => 'rand' );
+                                    $loop = new WP_Query( $args );
+                                    while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                                        <div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
+                                            <h3 class="product-feature-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></h3>
+                                            <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>">
+
+                                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                                <span class="feature-price-sale">900.000</span></a>
+                                            <div class="feature-price-real"><?php echo $product->get_regular_price(); ?></div>
+
+                                        </div>
+                                    <?php endwhile; ?>
+                                    <?php wp_reset_query(); ?>
 							</div>
 							
 						</div>
@@ -318,42 +309,21 @@ get_header(); ?>
 						<h1>SẢN PHẨM BÁN CHẠY</h1>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-							<div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-							<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-							<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-							
-						</div>
-						<div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-							<div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-							<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-							<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-							
-						</div>
-						<div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-							<div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-							<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-							<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-							
-						</div>
-						<div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-							<div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-							<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-							<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-							
-						</div>
-						<div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-							<div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-							<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-							<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-							
-						</div>
-						<div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-							<div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-							<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-							<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-							
-						</div>
+					<?php
+                        $args = array( 'post_type' => 'product', 'posts_per_page' => 6, 'product_cat' => 'san-pham-ban-chay', 'orderby' => 'rand' );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                            <div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
+                                <h3 class="product-feature-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></h3>
+                                <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>">
+
+                                    <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                    <span class="feature-price-sale">900.000</span></a>
+                                <div class="feature-price-real"><?php echo $product->get_regular_price(); ?></div>
+
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>
 					</div>
 				</div>
 			</div>
@@ -389,206 +359,25 @@ get_header(); ?>
                         <a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/147.jpg" alt=""></a>
                     </div>
 					<div class="row list-products">
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+				        <?php
+                            $args = array( 'post_type' => 'product', 'posts_per_page' => 20, 'product_cat' => 'ghe-sofa', 'orderby' => 'rand' );
+                            $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                                <div class="col-md-3 col-ssmm-6 col-ssm-6">
+                                    <div class="product-wrapper">
+                                        <a class="product-image image_blur" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+                                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                        </a>
+                                    </div>
+                                    <h3 class="product-title-info"><a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="product-link"><?php the_title(); ?></a></h3>
+                                    <div class="product-price">
+                                        <span class="tit-price">Giá: </span><span class="value-price"><?php echo $product->get_price_html(); ?></span>
+                                    </div>
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
+                                </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>
 					</div>
 					
 				</div>
@@ -626,126 +415,25 @@ get_header(); ?>
                         <a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/148.jpg" alt=""></a>
                     </div>
 					<div class="row list-products">
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+						<?php
+                            $args = array( 'post_type' => 'product', 'posts_per_page' => 12, 'product_cat' => 'noi-that', 'orderby' => 'rand' );
+                            $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                                <div class="col-md-3 col-ssmm-6 col-ssm-6">
+                                    <div class="product-wrapper">
+                                        <a class="product-image image_blur" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+                                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                        </a>
+                                    </div>
+                                    <h3 class="product-title-info"><a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="product-link"><?php the_title(); ?></a></h3>
+                                    <div class="product-price">
+                                        <span class="tit-price">Giá: </span><span class="value-price"><?php echo $product->get_price_html(); ?></span>
+                                    </div>
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>						
+                                </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>						
 						
 					</div>
 					
@@ -757,10 +445,10 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-md-3 col-ssmm-12 col-ssm-12">
 								<div class="category-title">
-									<a href="">Giường ngủ</a>
+									<a href="">Sofa giường</a>
 								</div>
 								<div class="mobile-best-sell-title hot-product-title">
-                                    <h1><a href="">Giường ngủ</a></h1>
+                                    <h1><a href="">Sofa giường</a></h1>
                                 </div>
 							</div>
 							<div class="col-md-9">
@@ -782,87 +470,25 @@ get_header(); ?>
 
 					</div>
 					<div class="row list-products">
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+						<?php
+                            $args = array( 'post_type' => 'product', 'posts_per_page' => 8, 'product_cat' => 'sofa-giuong', 'orderby' => 'rand' );
+                            $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                                <div class="col-md-3 col-ssmm-6 col-ssm-6">
+                                    <div class="product-wrapper">
+                                        <a class="product-image image_blur" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+                                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                        </a>
+                                    </div>
+                                    <h3 class="product-title-info"><a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="product-link"><?php the_title(); ?></a></h3>
+                                    <div class="product-price">
+                                        <span class="tit-price">Giá: </span><span class="value-price"><?php echo $product->get_price_html(); ?></span>
+                                    </div>
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>											
-						
+                                </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>	
 					</div>
 					
 				</div>
@@ -873,10 +499,10 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-md-3 col-ssmm-12 col-ssm-12">
 								<div class="category-title">
-									<a href="">Hàng trang trí</a>
+									<a href="">Thảm thổ nhĩ kỳ</a>
 								</div>
 								<div class="mobile-best-sell-title hot-product-title">
-                                    <h1><a href="">Hàng trang trí</a></h1>
+                                    <h1><a href="">Thảm thổ nhĩ kỳ</a></h1>
                                 </div>
 							</div>
 							<div class="col-md-9">
@@ -897,87 +523,25 @@ get_header(); ?>
 
 					</div>
 					<div class="row list-products">
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+						<?php
+                            $args = array( 'post_type' => 'product', 'posts_per_page' => 8, 'product_cat' => 'tham-tho-nhi-ky', 'orderby' => 'rand' );
+                            $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                                <div class="col-md-3 col-ssmm-6 col-ssm-6">
+                                    <div class="product-wrapper">
+                                        <a class="product-image image_blur" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+                                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                        </a>
+                                    </div>
+                                    <h3 class="product-title-info"><a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="product-link"><?php the_title(); ?></a></h3>
+                                    <div class="product-price">
+                                        <span class="tit-price">Giá: </span><span class="value-price"><?php echo $product->get_price_html(); ?></span>
+                                    </div>
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>											
-						
+                                </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>	
 					</div>
 					
 				</div>
@@ -1015,87 +579,25 @@ get_header(); ?>
 
 					</div>
 					<div class="row list-products">
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+						<?php
+                            $args = array( 'post_type' => 'product', 'posts_per_page' => 8, 'product_cat' => 'tham-sofa', 'orderby' => 'rand' );
+                            $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                                <div class="col-md-3 col-ssmm-6 col-ssm-6">
+                                    <div class="product-wrapper">
+                                        <a class="product-image image_blur" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+                                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                        </a>
+                                    </div>
+                                    <h3 class="product-title-info"><a href="<?php echo get_permalink( $loop->post->ID ) ?>" class="product-link"><?php the_title(); ?></a></h3>
+                                    <div class="product-price">
+                                        <span class="tit-price">Giá: </span><span class="value-price"><?php echo $product->get_price_html(); ?></span>
+                                    </div>
 
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-ssmm-6 col-ssm-6">
-							<div class="product-wrapper">
-								<a class="product-image image_blur" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
-
-							</div>
-							<div class="product-title-info"><a href="" class="product-link">Sofa da mã 569</a></div>
-							<div class="product-price">
-								<span class="tit-price">Giá: </span><span class="value-price">20,500,000</span><span class="currency-price"> VNĐ</span>
-							</div>
-						</div>											
-						
+                                </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>
 					</div>
 					
 				</div>

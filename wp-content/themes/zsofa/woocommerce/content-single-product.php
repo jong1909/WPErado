@@ -43,7 +43,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
             <div class="row">
                 <div class="col-ssmm-12 col-ssmm-12 col-md-5 col-left">
                     <div class="ribbon-wrapper ribbon-mobile">
-                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>ERADO</strong> tiếp nối thành công của thương hiệu <strong>rOsano</strong></div>
+                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>Zsofa</strong> tiếp nối thành công của thương hiệu <strong>rOsano</strong></div>
                         <div class="col-ssmm-5 col-ssm-5 col-md-5">
                             ĐẾN ĐÚNG NƠI - MUA ĐÚNG CHỖ
                         </div>
@@ -232,7 +232,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
                     <ul class="tab-links clearfix">
                         <li class="product-info active">Thông tin<div>sản phẩm</div></li>
                         <li class="product-price">Chi tiết giá bán</li>
-                        <li class="reason">Tại sao chọn Erado?</li>
+                        <li class="reason">Tại sao chọn Zsofa?</li>
                         <li class="promo">Khuyến mại</li>
                         <li class="free-delivery">Miễn phí vận chuyển</li>
                     </ul>
@@ -279,7 +279,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
 
                         </li>
                         <li>
-                            <h3 class="mobile-tab-title">Tại sao chọn Erado</h3>
+                            <h3 class="mobile-tab-title">Tại sao chọn Zsofa</h3>
                             <!--Begin user's content-->
                             <span style="font-size: 18px;"><span style="font-family: 'Times New Roman';"><span style="color: rgb(255, 0, 0);">12 Lý do vượt trội của sofa ERADO so với các nơi khác khiến hàng nghìn khách hàng chọn mua:</span></span></span><span style="font-family: 'Times New Roman';"><span style="font-size: 17px;"><span style="color: rgb(255, 0, 0);"><br>
 </span></span></span>

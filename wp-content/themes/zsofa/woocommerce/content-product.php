@@ -27,10 +27,10 @@ $link = apply_filters( 'woocommerce_loop_product_link', get_the_permalink(), $pr
 ?>
 <div class="col-md-4 col-ssmm-6 col-ssm-6">
     <div class="product-wrapper">
-        <a class="product-image image_blur" href="<?php echo esc_url( $link ) ?>"><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-ma-569-8290.jpg" alt=""></a>
+        <a class="product-image image_blur" href="<?php echo esc_url( $link ) ?>"><?php echo woocommerce_get_product_thumbnail(); ?></a>
 
     </div>
-    <div class="product-title-info"><a href="" class="product-link"><?php echo get_the_title() ?></a></div>
+    <div class="product-title-info"><a href="<?php echo esc_url( $link ) ?>" class="product-link"><?php echo get_the_title() ?></a></div>
     <div class="product-price">
         <span class="tit-price">Giá: </span>
         <span class="value-price">
