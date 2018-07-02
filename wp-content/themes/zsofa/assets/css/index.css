@@ -1578,7 +1578,9 @@ footer {
     padding: 0px 9px;
     margin-bottom: 10px; }
     .product-detail-page .product-description .tab-contents img {
-      max-width: 100%; }
+      max-width: 100%;
+      height: auto;
+      display: block; }
     .product-detail-page .product-description .tab-contents > li {
       display: none;
       padding: 20px 0; }
