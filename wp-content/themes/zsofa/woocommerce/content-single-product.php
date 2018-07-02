@@ -27,6 +27,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
     'woocommerce-product-gallery--columns-' . absint( $columns ),
     'images',
 ) );
+$dimensions = wc_format_dimensions($product->get_dimensions(false));
 
 ?>
     <div class="product-breadcrumb">
@@ -83,9 +84,15 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
                         </div>
                     </div>
                     <div class="product-name"><?php the_title( '<h1 class="product_title entry-title">', '</h1>' ); ?></div>
-                    <div class="product-size"><span>Kích thước:</span> 2800*1800*1000</div>
-                    <div class="col-ssmm-12 col-ssm-12 col-md-3"><div class="product-warranty"><span>Bảo hành:</span> 6 năm</div></div>
-                    <div class="col-ssmm-12 col-ssm-12 col-md-5"><div class="product-status"><span>Tình trạng:</span> Còn hàng</div></div>
+                    <div class="product-size"><span>Kích thước: </span><?php if ( $product->has_dimensions() ) {
+                            echo $dimensions ;
+                        }
+                        else{
+                            echo 'Liên hệ ( kích thước tùy chọn )';
+                        }
+                        ?></div>
+                    <div class="col-ssmm-12 col-ssm-12 col-md-3"><div class="product-warranty"><span>Bảo hành: </span><?php the_field('bao_hanh'); ?></div></div>
+                    <div class="col-ssmm-12 col-ssm-12 col-md-5"><div class="product-status"><span>Tình trạng: </span><?php echo ($product->is_in_stock())? 'Còn hàng' : 'Hết hàng'?></div></div>
                     <div class="price-wrapper clearfix">
                         <div class="price col-ssmm-12 col-ssm-12 col-md-5"><span class="title">Giá bán: </span><span class="num"><?php echo $product->get_price_html(); ?></span></div>
                         <div class="old-price col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Giá cũ: </span><span class="num">45,000,000</span><span class="currency"> đ</span></div>
@@ -96,11 +103,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
                         <div class="col-ssm-8">
                             <div class="promotion">
                                 <h3 class="promo-title">Khuyến mại</h3>
-                                <ul>
-                                    <li><span class="item-promo">Quà tặng đồ trang trí sofa giá trị:</span><span class="price">1.890.000 đ</span></li>
-                                    <li><span class="item-promo">Giảm trực tiếp vào hoá đơn mua sofa da:</span><span class="price">2.000.000 đ </span></li>
-                                    <li><span class="item-promo">Thêm phiếu quà tặng giảm <span class="hot">10%</span> cho những lần mua tiếp theo</span></li>
-                                </ul>
+                                <?php the_field('khuyen_mai'); ?>
                             </div>
                         </div>
                         <div class="col-ssmm-12 col-ssm-12 col-md-4 applications">
