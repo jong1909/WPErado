@@ -1567,7 +1567,7 @@ footer {
   .product-detail-page .product-description .tab-links li.active.promo {
     background: #ee4238 url(../images/i.png) 7px center no-repeat; }
   .product-detail-page .product-description .tab-links li.free-delivery {
-    padding-left: 41px;
+    padding-left: 45px;
     margin-right: 0;
     background: #404042 url(../images/k.png) 5px center no-repeat; }
   .product-detail-page .product-description .tab-links li.free-delivery.active {
@@ -2261,7 +2261,8 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 10px 0 0;
     width: 100%;
     background: #fff;
-    height: 50px; }
+    height: 50px;
+    top: 0; }
     #header .header-middle-wrapper.menu-mobile-wrapper .shop-logo {
       padding-top: 0; }
       #header .header-middle-wrapper.menu-mobile-wrapper .shop-logo img {
@@ -2381,6 +2382,9 @@ input[type="search"]::-webkit-search-results-decoration {
             right: 0;
             margin: 0 auto;
             background: #F83E3F; }
+      .section4.featured-products .feature-cont-wrapper .fea-cata-content {
+        height: 38px;
+        overflow: hidden; }
     .section4.featured-products .fea-title {
       font-weight: bold;
       font-size: 18px;

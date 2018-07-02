@@ -113,7 +113,7 @@ get_header(); ?>
 					<div class="title-customer">
 						"Nghệ sỹ Quang Tèo và Á hậu Huyền My"
 					</div>
-					<h2 class="why-choose-us">CÙNG HÀNG NGHÌN KHÁCH HÀNG <strong>ĐÃ CHỌN ERADO</strong> BỞI :</h2>
+					<h2 class="why-choose-us">CÙNG HÀNG NGHÌN KHÁCH HÀNG <strong>ĐÃ CHỌN ZSOFA</strong> BỞI :</h2>
 					<div class="store-services-content row">
 						<div class="col-md-3 phy-facilities">
 							<h3>Cơ sở vật chất sang trọng</h3>
@@ -130,7 +130,7 @@ get_header(); ?>
 						<div class="col-md-3 professional-human">
 							<h3>Nhân lực chuyên nghiệp</h3>
 							<p class="item-desc">
-								Nhân sự Erado được đào tạo chuẩn quốc tế, quy trình lắp đặt được thực hiện an toàn chuyên nghiệp
+								Nhân sự Zsofa được đào tạo chuẩn quốc tế, quy trình lắp đặt được thực hiện an toàn chuyên nghiệp
 							</p>
 						</div>
 						<div class="col-md-3 product-warranty">
@@ -260,8 +260,8 @@ get_header(); ?>
                                             <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
                                                 <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
-                                                <span class="feature-price-sale">900.000</span></a>
-                                            <div class="feature-price-real"><?php echo $product->get_regular_price(); ?></div>
+                                                <span class="feature-price-sale"><?php echo wc_price($product->get_sale_price()); ?></span></a>
+                                            <div class="feature-price-real"><?php echo wc_price($product->get_regular_price()); ?></div>
 
                                         </div>
                                     <?php endwhile; ?>
@@ -272,7 +272,7 @@ get_header(); ?>
 						<div class="col-md-5 customer-reviews">
 							<div class="reviews-wrapper">
 								<h3 class="reviews-title">
-									KHÁCH HÀNG <strong>NÓI VỀ ERADO</strong>
+									KHÁCH HÀNG <strong>NÓI VỀ Zsofa</strong>
 								</h3>
 								<div class="cus-review-slide">
 									<div class="customer-reviews-slider flexslider">
@@ -318,8 +318,8 @@ get_header(); ?>
                                 <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
                                     <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
-                                    <span class="feature-price-sale">900.000</span></a>
-                                <div class="feature-price-real"><?php echo $product->get_regular_price(); ?></div>
+                                    <span class="feature-price-sale"><?php echo wc_price($product->get_sale_price()); ?></span></a>
+                                <div class="feature-price-real"><?php echo wc_price($product->get_regular_price()); ?></div>
 
                             </div>
                         <?php endwhile; ?>
@@ -603,7 +603,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="store-connect-mobile">
-			    <h3>Kết nối với Erado</h3>
+			    <h3>Kết nối với Zsofa</h3>
 			</div>
 			<div style="width:375px;margin:auto;"><div class="fb-page fb_iframe_widget fb_iframe_widget_fluid" data-href="https://www.facebook.com/sieuthinoithatrosano" data-adapt-container-width="true" data-tabs="timeline" data-show-facepile="true" data-width="375" data-height="300" data-colorscheme="light" data-show-faces="1" data-header="1" data-stream="1" data-show-border="1" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;color_scheme=light&amp;container_width=375&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsieuthinoithatrosano&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;tabs=timeline&amp;width=375"><span style="vertical-align: bottom; width: 375px; height: 300px;"><iframe name="fff68f6c7fd7ac" width="375px" height="300px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FmAiQUwlReIP.js%3Fversion%3D42%23cb%3Df880af12b2f314%26domain%3Derado.vn%26origin%3Dhttp%253A%252F%252Ferado.vn%252Ffad893aac5b54%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=375&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsieuthinoithatrosano&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;tabs=timeline&amp;width=375" style="border: none; visibility: visible; width: 375px; height: 300px;" class=""></iframe></span></div></div>
 			<div class="section7 product-categories">
@@ -657,7 +657,7 @@ get_header(); ?>
 					<div class="row">
 						<div class="col-ssmm-12 col-ssm-12 col-md-4">
 							<h1 class="store-news-title">
-								<a href="">CHUYÊN ĐỀ ERADO</a>
+								<a href="">CHUYÊN ĐỀ ZSOFA</a>
 							</h1>
 							<div class="more-link"><a href="">Bàn giao nội thất cho anh Long ở FLC Thanh Hóa</a></div>
 							<div class="news-content-wr">
@@ -674,7 +674,7 @@ get_header(); ?>
 						</div>
 						<div class="col-ssmm-12 col-ssm-12 col-md-4">
 							<h1 class="store-news-title">
-								<a href="">Kinh nghiệm hay của erado</a>
+								<a href="">Kinh nghiệm hay của Zsofa</a>
 							</h1>
 							<div class="more-link"><a href="">Chọn ghế bàn ăn loại nào</a></div>
 							<div class="news-content-wr">
@@ -693,7 +693,7 @@ get_header(); ?>
 							</h1>
 							<div class="more-link"><a href="">Sức hút từ bộ sưu tập sofa da thật phối gỗ của thương </a></div>
 							<div class="news-content-wr">
-								<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-phoi-go-den-tu-thuong-hieu-noi-that-erado.png" alt=""></a><p class="news-summary">Thương hiệu nội thất ERADO giới thiệu đến quý khách hàng bộ sưu tập sofa da thật phối gỗ hiện đại đang được rất nhiều khách hàng </p>
+								<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-phoi-go-den-tu-thuong-hieu-noi-that-erado.png" alt=""></a><p class="news-summary">Thương hiệu nội thất ZSOFA giới thiệu đến quý khách hàng bộ sưu tập sofa da thật phối gỗ hiện đại đang được rất nhiều khách hàng </p>
 							</div>
 							<div class="other-news">
 								<h5 class="other-news-title">Các tin khác</h5>

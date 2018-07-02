@@ -2059,7 +2059,7 @@ footer{
                 background: #ee4238 url(../images/i.png) 7px center no-repeat;
             }
             li.free-delivery{
-                padding-left: 41px;
+                padding-left: 45px;
                 margin-right: 0;
                 background: #404042 url(../images/k.png) 5px center no-repeat;
             }
@@ -2974,6 +2974,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             width: 100%;
             background: #fff;
             height: 50px;
+            top:0;
              .shop-logo {
                  padding-top: 0;
                 img{
@@ -3128,6 +3129,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                         background: #F83E3F;
                     }
                 }
+            }
+            .fea-cata-content{
+                height: 38px;
+                overflow: hidden;
             }
         }
         .fea-title{

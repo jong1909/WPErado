@@ -77,7 +77,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
                 </div>
                 <div class="col-ssmm-12 col-ssm-12 col-md-7 col-right">
                     <div class="ribbon-wrapper">
-                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>ERADO</strong> tiếp nối thành công của thương hiệu <strong>rOsano</strong></div>
+                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>ZSOFA</strong> tiếp nối thành công của thương hiệu <strong>rOsano</strong></div>
                         <div class="col-ssmm-5 col-ssm-5 col-md-5">
                             ĐẾN ĐÚNG NƠI - MUA ĐÚNG CHỖ
                         </div>
@@ -136,9 +136,9 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
                     <div class="store-addresses clearfix">
                         <div class="sub-title">Địa chỉ mua hàng</div>
                         <ul>
-                            <li><span>Showroom 01</span>- Số 356 Bạch Mai, Hai Bà Trưng, Hà Nội</li>
-                            <li><span>Showroom 02</span>- Tầng 3, C14  Bắc Hà, Tố Hữu (Lê Văn Lương kéo dài)</li>
-                            <li><span>Showroom 03</span>- Tầng 3, Toà FLC Complex 36 Phạm Hùng, HN (Cạnh bến xe)</li>
+                            <li><span>Showroom Q7</span>- 981 Huỳnh Tấn Phát, P. Phú Thuận, Quận 7, TP.HCM</li>
+                            <li><span>Showroom GV</span>- 687 Phan Văn Trị P. 7, Q. Gò Vấp, TP.HCM</li>
+                            <li><span>Showroom TĐ</span>- 209 Tô Ngọc Vân, P. Linh Đông, Thủ Đức, TP.HCM</li>
                         </ul>
                     </div>
 
@@ -153,75 +153,23 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
             <div class="row">
                 <div id="product-detail-slider" class="flexslider carousel">
                     <ul class="slides">
-                        <li>
-                            <div class="feature-product-wrapp">
-                                <div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-                                <a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-                                <div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-                                <div class="buy-now clearfix"><a href="">Mua ngay</a></div>
+                        <?php
+                        $args = array( 'post_type' => 'product', 'posts_per_page' => 10, 'product_cat' => 'san-pham-ban-chay', 'orderby' => 'rand' );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                            <li>
+                                <div class="feature-product-wrapp">
+                                    <div class="product-feature-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
+                                    <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?><span class="feature-price-sale"><?php echo wc_price($product->get_sale_price()); ?></span></a>
+                                    <div class="feature-price-real"><?php echo wc_price($product->get_regular_price()); ?></div>
+                                    <div class="buy-now clearfix"><a href="<?php echo get_permalink( $loop->post->ID ) ?>">Mua ngay</a></div>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature-product-wrapp">
-                                <div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-                                <a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-                                <div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-                                <div class="buy-now clearfix"><a href="">Mua ngay</a></div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature-product-wrapp">
-                                <div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-                                <a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-                                <div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-                                <div class="buy-now clearfix"><a href="">Mua ngay</a></div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature-product-wrapp">
-                                <div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-                                <a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-                                <div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-                                <div class="buy-now clearfix"><a href="">Mua ngay</a></div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature-product-wrapp">
-                                <div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-                                <a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-                                <div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-                                <div class="buy-now clearfix"><a href="">Mua ngay</a></div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature-product-wrapp">
-                                <div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-                                <a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-                                <div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-                                <div class="buy-now clearfix"><a href="">Mua ngay</a></div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature-product-wrapp">
-                                <div class="product-feature-title"><a href="">Ghế thư giãn Jula mã 01</a></div>
-                                <a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-an-ma-t1608-6935.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-                                <div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-                                <div class="buy-now clearfix"><a href="">Mua ngay</a></div>
-
-                            </div>
-                        </li>
+                                </div>
+                            </li>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>
                     </ul>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
@@ -296,7 +244,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
                                 <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Dòng sản phẩm sofa được nhập khẩu từ những thương hiệu có uy tín và danh tiếng.&nbsp;</span></span></li>
                                 <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Cơ sở vật chất rộng rãi sang trọng, đúng như thương hiệu công khai về cơ sở vật chất</span></span></li>
                                 <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Tính năng chăm sóc sức khoẻ tích hợp trên sofa là giá trị vượt trội hơn các nơi khác ở hai góc độ: các điểm phần ngồi được tính toán theo các đốt trên cột sống người dùng ngả lưng và sofa ERADOđã chạm được các điểm trên cột sống và giảm mệt mỏi cho người dùng.&nbsp;</span>&nbsp;</span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Sofa ERADO&nbsp;nối tiếp nối thành công của thương hiệu cũ rOsano, được hàng trăm nghìn khách hàng trên toàn quốc tin dùng</span></span><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';"> .</span></span></li>
+                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Sofa ZSOFA&nbsp;nối tiếp nối thành công của thương hiệu cũ rOsano, được hàng trăm nghìn khách hàng trên toàn quốc tin dùng</span></span><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';"> .</span></span></li>
                             </ul>
                             <div style="text-align: right;">
                                 <div style="text-align: left;"><span style="font-size: 10px;"> <br>
