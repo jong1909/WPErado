@@ -181,8 +181,8 @@ $dimensions = wc_format_dimensions($product->get_dimensions(false));
             <div class="row">
                 <div class="col-ssmm-12 col-ssm-12 col-md-9">
                     <ul class="tab-links clearfix">
-                        <li class="product-info active">Thông tin<div>sản phẩm</div></li>
-                        <li class="product-price">Chi tiết giá bán</li>
+                        <li class="product-info active">Thông tin</li>
+                        <li class="product-price">Quy trình bán hàng</li>
                         <li class="reason">Tại sao chọn Zsofa?</li>
                         <li class="promo">Khuyến mại</li>
                         <li class="free-delivery">Miễn phí vận chuyển</li>
@@ -196,35 +196,9 @@ $dimensions = wc_format_dimensions($product->get_dimensions(false));
                             <!--End item-info -->
                         </li>
                         <li class="clearfix">
-                            <h3 class="mobile-tab-title">Chi tiết giá bán</h3>
+                            <h3 class="mobile-tab-title">Quy trình bán hàng</h3>
                             <!--Begin user's content-->
-                            &nbsp;<br>
-                            <ul style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit; text-align: justify;">
-                                <li style="color: rgb(51, 51, 51); font-family: Arial; padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Khung gỗ : tự nhiên cao cấp ( đảm bảo không mối mọt )</span></span></li>
-                                <li style="color: rgb(51, 51, 51); font-family: Arial; padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Chân ghế : tự chọn ( chân inox - chân gỗ)</span></span></li>
-                                <li style="color: rgb(51, 51, 51); font-family: Arial; padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Đệm mút : Cứng hoặc mềm - bông mút ( tùy chọn )</span></span></li>
-                                <li style="color: rgb(51, 51, 51); font-family: Arial; padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Giá :&nbsp;<span style="color: rgb(255, 0, 0);"><strong>43.000</strong></span><strong><span style="color: rgb(255, 0, 0);">.000</span></strong>&nbsp;- Da thật cao cấp</span></span></li>
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><font color="#333333" face="Times New Roman"><span style="font-size: 16px;">Kích thước: Sofa góc :&nbsp;&nbsp;2800*1800*1000. (&nbsp;</span></font><span style="color: rgb(255, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: 16px;">Kích thước - màu sắc có thể thay đổi theo yêu cầu</span><font color="#333333" face="Times New Roman"><span style="font-size: 16px;">&nbsp;)</span></font></li>
-                            </ul>
-                            <span style="color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">.........................................................................................................................</span><br type="_moz" style="color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">
-                            <br type="_moz" style="color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">
-                            <ul style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit; color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="color: rgb(255, 0, 0);"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Tặng</span></span></span><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">&nbsp;thêm: 03 gối trang trí nhập khẩu:&nbsp;</span><span style="color: rgb(255, 0, 0);"><span style="font-family: 'Times New Roman';">990.000</span></span></span></li>
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';"><span style="color: rgb(255, 0, 0);">Tặng&nbsp;</span>bộ làm sạch da của Singapore ( duy nhất tại Erado ):&nbsp;</span></span><span style="color: rgb(255, 0, 0); font-family: 'Times New Roman'; font-size: 16px;">800.000</span></li>
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';"><span style="color: rgb(255, 0, 0);">Tặng</span>&nbsp;02 đôn thời trang, tiện ích ( duy nhất tại Erado ):&nbsp;</span><span style="color: rgb(255, 0, 0);"><span style="font-family: 'Times New Roman';">1.800.000</span></span></span></li>
-                            </ul>
-                            <br type="_moz" style="color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">
-                            <span style="color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">.........................................................................................................................</span><br style="color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">
-                            <br type="_moz" style="color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">
-                            <ul style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit; color: rgb(51, 51, 51); font-family: Arial; text-align: justify;">
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Bảo hành : 12 năm về khung, 03 năm về đệm mút , bảo hành nhanh chóng. Ghét chậm trễ!</span></span></li>
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Bề mặt da bảo hành:&nbsp;<span style="color: rgb(255, 0, 0);"><strong>1</strong></span><span style="color: rgb(255, 0, 0);"><strong>&nbsp;năm</strong></span>&nbsp;(da indo) -&nbsp;<span style="color: rgb(255, 0, 0);"><strong>2 năm&nbsp;</strong></span>( da Hàn Quốc) -&nbsp;<span style="color: rgb(255, 0, 0);"><strong>5&nbsp;năm</strong></span>&nbsp;( Da Hạng sang MBtech)<br type="_moz">
-    </span></span></li>
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Cam kết đảm bảo chất lượng và giá trị của sản phẩm, nguồn gốc xuất sứ vật liệu rõ ràng.</span></span></li>
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Đặc biệt : Quý khách có thể kiểm tra giám sát chất lượng sản phẩm sofa theo từng giai đoạn</span></span></li>
-                                <li style="padding: 0px; margin: 3px 3px 3px 10px; list-style-type: inherit;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Miễn phí vận chuyển trong khu vực &nbsp;Hà Nội - Quý khách ở xa chúng tôi sẽ hỗ trợ vận chuyển</span></span></li>
-                            </ul>
-
+                            <?php echo get_field_details('quy_trinh_ban_hang', 'default_value'); ?>
 
                             <!--End user's content-->
 
