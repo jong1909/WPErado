@@ -72,6 +72,35 @@ function get_field_reference( $field_name, $post_id ) {
 *  @return	array	$return: an array containin the field groups
 */
 
+function get_field_details($field_name, $return='default_value') {
+	global $wpdb;
+	$value = get_field($field_name, $post_id);
+	if($value) return $value;
+	
+	$field = get_field_object($field_name);
+	$result = [];
+	$post_name = $field['id'];
+
+	$posts = get_posts(['post_type' => 'acf']);
+	foreach ($posts as $post) {
+		$post_id = $post->ID;
+		$post_metas = get_post_meta($post_id, '', true);
+		foreach ($post_metas  as $key => $val) {
+			if(preg_match('/^field_.+/', $key)) {
+				$field_data = unserialize($val[0]);
+				if($field_data['name'] == $field_name) {
+					$result = $field_data;
+					break 2;
+				}
+			}
+		}
+	}
+	if(isset($result[$return])) {
+		$value = apply_filters('acf/format_value_for_api', $result[$return], '', $field);
+	} else $value = '';
+
+	return $value;
+}
 function get_field_objects( $post_id = false, $options = array() ) {
 	
 	// global
