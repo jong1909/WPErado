@@ -18,9 +18,9 @@ class RevSliderBaseAdmin extends RevSliderBase {
 	private static $tempVars = array();
 	private static $startupError = '';
 	private static $menuRole = 'admin';
-	private static $arrMetaBoxes = '';		//option boxes that will be added to post
+	private static $arrMetaBoxes = array();		//option boxes that will be added to post
 	
-	private static $allowed_views = array('master-view', 'system/validation', 'system/dialog-video', 'system/dialog-update', 'system/dialog-global-settings', 'sliders', 'slider', 'slider_template', 'slides', 'slide', 'navigation-editor', 'slide-editor', 'slide-overview', 'slide-editor', 'slider-overview', 'themepunch-google-fonts');
+	private static $allowed_views = array('master-view', 'system/validation', 'system/dialog-video', 'system/dialog-update', 'system/dialog-global-settings', 'sliders', 'slider', 'slider_template', 'slides', 'slide', 'navigation-editor', 'slide-editor', 'slide-overview', 'slide-editor', 'slider-overview', 'themepunch-google-fonts', 'global-settings');
 	
 	/**
 	 * 
@@ -44,6 +44,8 @@ class RevSliderBaseAdmin extends RevSliderBase {
 		if($this->isInsidePlugin() == true){
 			add_action('admin_enqueue_scripts', array('RevSliderBaseAdmin', 'addCommonScripts'));
 			add_action('admin_enqueue_scripts', array('RevSliderAdmin', 'onAddScripts'));
+		}else{
+			add_action('admin_enqueue_scripts', array('RevSliderBaseAdmin', 'addGlobalScripts'));
 		}
 		
 		//a must event for any admin. call onActivate function.
@@ -151,6 +153,14 @@ class RevSliderBaseAdmin extends RevSliderBase {
 		self::$menuRole = $menuRole;
 	}
 	
+	
+	/**
+	 * get the menu role - for viewing menus
+	 */
+	public static function getMenuRole(){
+		return self::$menuRole;
+	}
+	
 	/**
 	 * 
 	 * set startup error to be shown in master view
@@ -168,14 +178,23 @@ class RevSliderBaseAdmin extends RevSliderBase {
 	private function isInsidePlugin(){
 		$page = self::getGetVar("page");
 		
-		if($page == 'revslider' || $page == 'themepunch-google-fonts' || $page == 'revslider_navigation')
+		if($page == 'revslider' || $page == 'themepunch-google-fonts' || $page == 'revslider_navigation' || $page == 'revslider_global_settings')
 			return(true);
 		return(false);
 	} 
 	
 	
 	/**
-	 * 
+	 * add global used scripts
+	 * @since: 5.1.1
+	 */
+	public static function addGlobalScripts(){
+		wp_enqueue_script(array('jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'wpdialogs'));
+		wp_enqueue_style(array('wp-jquery-ui', 'wp-jquery-ui-dialog', 'wp-jquery-ui-core'));
+	}
+	
+	
+	/**
 	 * add common used scripts
 	 */
 	public static function addCommonScripts(){
@@ -262,7 +281,7 @@ class RevSliderBaseAdmin extends RevSliderBase {
 				self::$tempVars["is_masterView"] = true;
 				require $masterViewFilepath;
 			}else{		//simple require the view file.
-				if(!in_array($view, self::$allowed_views)) UniteFunctionsRev::throwError(__('Wrong Request', REVSLIDER_TEXTDOMAIN));
+				if(!in_array($view, self::$allowed_views)) UniteFunctionsRev::throwError(__('Wrong Request', 'revslider'));
 				
 				switch($view){ //switch URLs to corresponding php files
 					case 'slide':
@@ -405,7 +424,13 @@ class RevSliderBaseAdmin extends RevSliderBase {
 		
 		$options = apply_filters('revslider_mod_activation_option', $options);
 		
+		
 		$operations = new RevSliderOperations();
+		$options_exist = $operations->getGeneralSettingsValues();
+		if(!is_array($options_exist)) $options_exist = array();
+		
+		$options = array_merge($options_exist, $options);
+		
 		$operations->updateGeneralSettings($options);
 		
 	}

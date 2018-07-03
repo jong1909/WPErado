@@ -16,36 +16,8 @@ get_header(); ?>
 	<div id="wrapper">
 		<div id="content-wrapper">
 			<div class="section1 slider">
-				<div id="main-slider" class="flexslider">
-				  <ul class="slides">
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/kitchen_adventurer_caramel.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/kitchen_adventurer_cheesecake_brownie.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/kitchen_adventurer_donut.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/kitchen_adventurer_lemon.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g80.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g81.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g108.png" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g133.png" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g140.jpg" />
-				    </li>
-				  </ul>
+				<div id="main-slider">
+				  <?php echo do_shortcode( '[rev_slider alias="home-page"]' );  ?>
 				</div>
 			</div>
 			<div class="section1 slider-mobile slider">

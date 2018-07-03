@@ -253,7 +253,7 @@ if ( ! class_exists( 'zsofa' ) ) :
 			 * Scripts
 			 */
 			$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-			wp_enqueue_script( 'zsofa-jquery', get_template_directory_uri() . '/assets/js/jquery-1.11.3.min.js', array(), 'v1', true );
+//			wp_enqueue_script( 'zsofa-jquery', get_template_directory_uri() . '/assets/js/jquery-1.11.3.min.js', array(), 'v1', true );
 			wp_enqueue_script( 'zsofa-navigation', get_template_directory_uri() . '/assets/js/navigation' . $suffix . '.js', array(), $zsofa_version, true );
 			wp_enqueue_script( 'zsofa-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix' . $suffix . '.js', array(), '20130115', true );
 			wp_enqueue_script( 'zsofa-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), 'v1', true );
