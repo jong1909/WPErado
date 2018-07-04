@@ -452,7 +452,10 @@ a {
       text-decoration: none;
       font-size: 12px;
       padding-top: 8px;
-      font-weight: bold; }
+      font-weight: bold;
+      height: 25px;
+      line-height: 19px;
+      overflow: hidden; }
       .section3.real-videos .videos-sub-product .video-product-title a:hover {
         color: #ff0000; }
     .section3.real-videos .videos-sub-product .video-product-price {

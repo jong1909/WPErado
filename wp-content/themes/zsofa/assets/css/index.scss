@@ -584,6 +584,9 @@ a {
     		font-size: 12px;
     		padding-top: 8px;
     		font-weight: bold;
+            height: 25px;
+            line-height: 19px;
+            overflow: hidden;
     		a{
     			&:hover{
     				color: #ff0000;
