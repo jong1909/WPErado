@@ -1798,6 +1798,9 @@ footer{
             border-radius: 5px;
             margin-top: -6px;
             padding: 7px 0 10px 10px;
+            br{
+                display: none;
+            }
             .promo-title{
                 width: 140px;
                 height: 28px;
@@ -1809,9 +1812,6 @@ footer{
                 font-size: 14px;
                 font-weight: 500;
                 text-transform: uppercase;
-                br{
-                    display: none;
-                }
             }
             .price,.hot{
                 color: #ff0000;
