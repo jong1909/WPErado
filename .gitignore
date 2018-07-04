@@ -6,3 +6,4 @@
 .htaccess
 error_log
 *.log
+temp-write-test-*
