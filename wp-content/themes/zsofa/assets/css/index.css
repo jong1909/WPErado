@@ -464,10 +464,6 @@ a {
       font-size: 16px;
       font-weight: bold;
       margin-bottom: 12px; }
-      .section3.real-videos .videos-sub-product .video-product-price span {
-        color: #959595;
-        font-size: 12px;
-        font-weight: normal; }
     .section3.real-videos .videos-sub-product .views {
       position: absolute;
       bottom: 0;
@@ -476,12 +472,6 @@ a {
       color: #888;
       padding: 2px 0 2px 25px;
       background: url(../images/c5.gif) no-repeat 10px center; }
-
-.home .section3.real-videos .videos-sub-product .video-product-price {
-  color: #ea445c !important;
-  font-size: 16px !important;
-  font-weight: bold !important;
-  margin-bottom: 12px !important; }
 
 .section4.featured-products {
   background: url(../images/b1.jpg) no-repeat center top, #f4f4f4 url(../images/b3.gif) repeat-x left top;
