@@ -131,7 +131,7 @@
         $(".mega-menu-mobile").clickOff(function() {
             $(".mobile-menu-icon").removeClass('active');
             $(".mega-menu-mobile .sub-menu").hide();
-            $('#overlay-region').hide();
+            // $('#overlay-region').hide();
         });
         $(".mobile-menu-icon").click(function(e){
             e.preventDefault();            
@@ -142,7 +142,7 @@
             }else{
                 $(this).addClass('active');
                 $(".mega-menu-mobile .sub-menu").show();
-                $('#overlay-region').show();
+                $('#overlay-region').addClass('show');
             }
             
             
