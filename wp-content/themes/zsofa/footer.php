@@ -108,7 +108,7 @@
 <div class="win-wrapper-vdproduct popup-mobile show">
     <div class="win">
         <a href="javascript:;" class="win-close"></a>
-        <a class="button-click" href="javascript:;">close</a>
+        <div id="product-video-content"><iframe width="854" height="480" src="https://www.youtube.com/embed/iZhIG_fJj9A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
     </div>
 </div>
