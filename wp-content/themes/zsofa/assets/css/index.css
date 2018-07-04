@@ -3364,7 +3364,7 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 0;
   top: 0;
   background: #000;
-  opacity: 0;
+  opacity: 0.75;
   filter: alpha(opacity=0);
   position: fixed; }
 
