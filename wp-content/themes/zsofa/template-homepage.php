@@ -17,7 +17,7 @@ get_header(); ?>
 		<div id="content-wrapper">
 			<div class="section1 slider">
 				<div id="main-slider">
-				  <?php echo do_shortcode( '[rev_slider alias="home-page"]' );  ?>
+				  <?php echo do_shortcode( '[rev_slider alias="home-page-slider"]' );  ?>
 				</div>
 			</div>
 			<div class="section1 slider-mobile slider">
