@@ -1809,6 +1809,9 @@ footer{
                 font-size: 14px;
                 font-weight: 500;
                 text-transform: uppercase;
+                br{
+                    display: none;
+                }
             }
             .price,.hot{
                 color: #ff0000;
