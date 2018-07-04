@@ -91,8 +91,11 @@
         $('.view-more').click(function(){
             var videoContentIframe = $(this).parent().find('.product-video-link').html();
             $('#product-video-content').html(videoContentIframe);
-            $('.win-wrapper-vdproduct').show();
-            $('#overlay-region').show();
+            $('.win-wrapper-vdproduct','#overlay-region').show();
+        });
+        $('#overlay-region').click(function(){
+            $('#product-video-content').html('');
+            $('.win-wrapper-vdproduct','#overlay-region').hide();
         });
     }
     /* ----------------------------------------------- */
