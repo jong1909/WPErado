@@ -88,8 +88,8 @@
         
     }
     function showProductVideo(){
-        $('.videos-main-product .view-more').click(function(){
-            var videoContentIframe = $(this).parent().find('.view-more').html();
+        $('.view-more').click(function(){
+            var videoContentIframe = $(this).parent().find('.product-video-link').html();
             $('#product-video-content').html(videoContentIframe);
             $('#overlay-region','.win-wrapper-vdproduct').show();
 
