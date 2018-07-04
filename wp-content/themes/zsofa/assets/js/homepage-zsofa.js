@@ -91,8 +91,8 @@
         $('.view-more').click(function(){
             var videoContentIframe = $(this).parent().find('.product-video-link').html();
             $('#product-video-content').html(videoContentIframe);
-            $('#overlay-region','.win-wrapper-vdproduct').show();
-
+            $('.win-wrapper-vdproduct').show();
+            $('#overlay-region').show();
         });
     }
     /* ----------------------------------------------- */
