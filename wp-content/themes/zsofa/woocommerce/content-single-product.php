@@ -91,7 +91,7 @@ $dimensions = wc_format_dimensions($product->get_dimensions(false));
                             echo 'Liên hệ ( kích thước tùy chọn )';
                         }
                         ?></div>
-                    <div class="col-ssmm-12 col-ssm-12 col-md-3"><div class="product-warranty"><span>Bảo hành: </span><?php the_field('bao_hanh'); ?></div></div>
+                    <div class="col-ssmm-12 col-ssm-12 col-md-3"><div class="product-warranty"><span>Bảo hành: </span><?php echo get_field_details('bao_hanh'); ?></div></div>
                     <div class="col-ssmm-12 col-ssm-12 col-md-5"><div class="product-status"><span>Tình trạng: </span><?php echo ($product->is_in_stock())? 'Còn hàng' : 'Hết hàng'?></div></div>
                     <div class="price-wrapper clearfix">
                         <div class="price col-ssmm-12 col-ssm-12 col-md-5"><span class="title">Giá bán: </span><span class="num"><?php echo $product->get_price_html(); ?></span></div>
@@ -103,7 +103,7 @@ $dimensions = wc_format_dimensions($product->get_dimensions(false));
                         <div class="col-ssm-8">
                             <div class="promotion">
                                 <h3 class="promo-title">Khuyến mại</h3>
-                                <?php the_field('khuyen_mai'); ?>
+                                <?php echo get_field_details('khuyen_mai'); ?>
                             </div>
                         </div>
                         <div class="col-ssmm-12 col-ssm-12 col-md-4 applications">
