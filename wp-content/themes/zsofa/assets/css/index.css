@@ -369,6 +369,10 @@ a {
         background: rgba(0, 0, 0, 0.5019607843);
         top: 0;
         left: 0; }
+      .section3.real-videos .videos-main-product a.img-wrapper img {
+        max-width: 100%;
+        max-height: 333px;
+        display: block; }
     .section3.real-videos .videos-main-product a.view-more {
       width: 152px;
       height: 40px;

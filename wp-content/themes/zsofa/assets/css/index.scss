@@ -485,6 +485,11 @@ a {
 	    		top:0;
 	    		left: 0;
 	    	}
+            img{
+                max-width: 100%;
+                max-height: 333px;
+                display: block;
+            }
     	}
     	
     	a.view-more{
