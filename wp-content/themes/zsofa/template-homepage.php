@@ -127,7 +127,7 @@ get_header(); ?>
                                     <?php if(get_field_details('main_video') == '1'): ?>
                                         <a class="img-wrapper" href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb-wide'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="600px" height="400px" />'; ?></a>
                                         <a href="javascript:;" class="view-more">Xem video</a>
-                                        <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>">Bàn ăn 8 ghế mã T1723</a></div>
+                                        <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
                                         <div class="video-product-price"><?php echo wc_price($product->get_regular_price()); ?></div>
                                         <div class="views">5 lượt xem</div>
                                     <?php endif ?>
@@ -146,7 +146,7 @@ get_header(); ?>
                                             <div class="videos-sub-product">
                                                 <a class="img-wrapper" href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?></a>
                                                 <a href="" class="view-more">Xem video</a>
-                                                <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>">Bàn ăn 8 ghế mã T1723</a></div>
+                                                <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
                                                 <div class="video-product-price"><?php echo wc_price($product->get_regular_price()); ?></div>
                                                 <div class="views">5 lượt xem</div>
                                             </div>
