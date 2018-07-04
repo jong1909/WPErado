@@ -3360,7 +3360,7 @@ input[type="search"]::-webkit-search-results-decoration {
   z-index: 999;
   width: 100%;
   height: 100%;
-  display: block;
+  display: none;
   left: 0;
   top: 0;
   background: #000;
@@ -3372,6 +3372,9 @@ div.show {
   display: block; }
 
 div.hide {
+  display: none; }
+
+.product-video-link {
   display: none; }
 
 /* -------------End product video css ----------*/

@@ -87,6 +87,14 @@
         });
         
     }
+    function showProductVideo(){
+        $('.videos-main-product .view-more').click(function(){
+            var videoContentIframe = $(this).parent().find('.view-more').html();
+            $('#product-video-content').html(videoContentIframe);
+            $('#overlay-region','.win-wrapper-vdproduct').show();
+
+        });
+    }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
     /* ----------------------------------------------- */
@@ -97,6 +105,7 @@
         runSlider();
         toggleMenuLeftSide();
         showToolTipMenu();
+        showProductVideo();
             //  Function Click out site menu-> hide menu
 
         $.fn.clickOff = function(callback, selfDestroy) {
