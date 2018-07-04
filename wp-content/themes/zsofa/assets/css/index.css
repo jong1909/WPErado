@@ -3311,7 +3311,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 18px;
   height: 18px;
   line-height: 0;
-  background: url(../images/common/close.png) no-repeat;
+  background: url(../images/common-icon/close.png) no-repeat;
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
   -ms-transition: all .4s;

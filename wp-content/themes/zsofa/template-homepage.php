@@ -150,6 +150,7 @@ get_header(); ?>
                                                 <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
                                                 <div class="video-product-price"><?php echo wc_price($product->get_regular_price()); ?></div>
                                                 <div class="views">5 lượt xem</div>
+                                                <div class="product-video-link"><?php echo get_field_details('video_san_pham')?></div>
                                             </div>
                                         </div>
                                     <?php endif ?>
