@@ -80,87 +80,8 @@ get_header(); ?>
 			        </div>
 			    </div>
 			</div>
-			<div class="section-2 store-services">
-				<div class="container">
-					<div class="title-customer">
-						"Nghệ sỹ Quang Tèo và Á hậu Huyền My"
-					</div>
-					<h2 class="why-choose-us">CÙNG HÀNG NGHÌN KHÁCH HÀNG <strong>ĐÃ CHỌN ZSOFA</strong> BỞI :</h2>
-					<div class="store-services-content row">
-						<div class="col-md-3 phy-facilities">
-							<h3>Cơ sở vật chất sang trọng</h3>
-							<p class="item-desc">
-								Showroom rộng lớn, thiết kế hiện đại sang trọng theo tiêu chuẩn 3S, phục vụ tốt nhất cho khách hàng
-							</p>
-						</div>
-						<div class="col-md-3 exquisite-product">
-							<h3>Sản phẩm tinh xảo</h3>
-							<p class="item-desc">
-								Mẫu sản phẩm được thiết kế hoàn mỹ, sắc nét vượt trội, vật liệu hạng sang, nguồn gốc rõ ràng!
-							</p>
-						</div>
-						<div class="col-md-3 professional-human">
-							<h3>Nhân lực chuyên nghiệp</h3>
-							<p class="item-desc">
-								Nhân sự Zsofa được đào tạo chuẩn quốc tế, quy trình lắp đặt được thực hiện an toàn chuyên nghiệp
-							</p>
-						</div>
-						<div class="col-md-3 product-warranty">
-							<h3>Bảo hành sản phẩm</h3>
-							<p class="item-desc">
-								Dịch vụ bảo hành tận nơi. Cam kết chế độ bảo hành chu đáo, tận tâm, linh hoạt. Ghét chậm trễ
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section3 real-videos">
-				<div class="container">
-					<h1>Sản phẩm <strong>video thực tế</strong></h1>
-					<div class="row videos-content">
-						<div class="col-md-6">
-							<div class="videos-main-product">
-                                <?php
-                                $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'product_cat' => 'video-product', 'orderby' => 'none' );
-                                $loop = new WP_Query( $args );
-                                while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                                    <?php if(get_field_details('main_video') == '1'): ?>
-                                        <a class="img-wrapper" href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb-wide'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="600px" height="400px" />'; ?></a>
-                                        <a href="javascript:;" class="view-more">Xem video</a>
-                                        <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
-                                        <div class="video-product-price"><?php echo wc_price($product->get_regular_price()); ?></div>
-                                        <div class="views">5 lượt xem</div>
-                                        <div class="product-video-link"><?php echo get_field_details('video_san_pham')?></div>
-                                    <?php endif ?>
-                                <?php endwhile; ?>
-                                <?php wp_reset_query(); ?>
-							</div>
-						</div>
-						<div class="col-md-6">
-						    <div class="row">
-                                <?php
-                                $args = array( 'post_type' => 'product', 'posts_per_page' => 6, 'product_cat' => 'video-product', 'orderby' => 'rand' );
-                                $loop = new WP_Query( $args );
-                                while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                                    <?php if(get_field_details('main_video') == '0'): ?>
-                                        <div class="col-md-6 col-ssmm-6 col-ssm-6">
-                                            <div class="videos-sub-product">
-                                                <a class="img-wrapper" href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?></a>
-                                                <a href="javascript:;" class="view-more">Xem video</a>
-                                                <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
-                                                <div class="video-product-price"><?php echo wc_price($product->get_regular_price()); ?></div>
-                                                <div class="views">5 lượt xem</div>
-                                                <div class="product-video-link"><?php echo get_field_details('video_san_pham')?></div>
-                                            </div>
-                                        </div>
-                                    <?php endif ?>
-                                <?php endwhile; ?>
-                                <?php wp_reset_query(); ?>
-						    </div>							
-						</div>
-					</div>
-				</div>
-			</div>
+            <?php get_template_part( 'template-parts/store', 'services' ); ?>
+			<?php get_template_part( 'template-parts/product', 'video' ); ?>
 			<div class="section4 featured-products">
 				<div class="container">
 					<div class="fea-title">Dòng sản phẩm nổi bật</div>
@@ -208,88 +129,13 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div class="section5 promotions-reviews">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7 promotion-products">
-							<h3 class="promotion-title">SẢN PHẨM <strong>KHUYẾN MÃI</strong></h3>
-							<div class="row">
-							    <?php
-                                    $args = array( 'post_type' => 'product', 'posts_per_page' => 4, 'product_cat' => 'khuyen-mai', 'orderby' => 'rand' );
-                                    $loop = new WP_Query( $args );
-                                    while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                                        <div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-                                            <h3 class="product-feature-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></h3>
-                                            <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>">
-
-                                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
-                                                <span class="feature-price-sale"><?php echo wc_price($product->get_sale_price()); ?></span></a>
-                                            <div class="feature-price-real"><?php echo wc_price($product->get_regular_price()); ?></div>
-
-                                        </div>
-                                    <?php endwhile; ?>
-                                    <?php wp_reset_query(); ?>
-							</div>
-							
-						</div>
-						<div class="col-md-5 customer-reviews">
-							<div class="reviews-wrapper">
-								<h3 class="reviews-title">
-									KHÁCH HÀNG <strong>NÓI VỀ Zsofa</strong>
-								</h3>
-								<div class="cus-review-slide">
-									<div class="customer-reviews-slider flexslider">
-									  <ul class="slides">
-									    <li>
-									      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-									    </li>
-									    <li>
-									      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-									    </li>
-									    <li>
-									      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-									    </li>
-									  </ul>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
+            <?php get_template_part( 'template-parts/product','promotion' ); ?>
 			<figure class="banner-middle">
 				<div class="container">
 					<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/153.jpg" alt=""></a>
 				</div>
 			</figure>
-			<div class="section6 best-selling-products">
-				<div class="container">
-					<div class="best-sell-title">
-						<h1>SẢN PHẨM <strong>ĐANG BÁN RẤT CHẠY</strong></h1>
-					</div>
-					<div class="mobile-best-sell-title hot-product-title">
-						<h1>SẢN PHẨM BÁN CHẠY</h1>
-					</div>
-					<div class="row">
-					<?php
-                        $args = array( 'post_type' => 'product', 'posts_per_page' => 6, 'product_cat' => 'san-pham-ban-chay', 'orderby' => 'rand' );
-                        $loop = new WP_Query( $args );
-                        while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                            <div class="col-md-4 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-                                <h3 class="product-feature-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></h3>
-                                <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>">
-
-                                    <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
-                                    <span class="feature-price-sale"><?php echo wc_price($product->get_sale_price()); ?></span></a>
-                                <div class="feature-price-real"><?php echo wc_price($product->get_regular_price()); ?></div>
-
-                            </div>
-                        <?php endwhile; ?>
-                        <?php wp_reset_query(); ?>
-					</div>
-				</div>
-			</div>
+            <?php get_template_part( 'template-parts/best','selling' ); ?>
 			<div class="featured-category sofa">
 				<div class="container">
 					<div class="category-title-pr">
@@ -569,53 +415,8 @@ get_header(); ?>
 			    <h3>Kết nối với Zsofa</h3>
 			</div>
 			<div style="width:375px;margin:auto;"><div class="fb-page fb_iframe_widget fb_iframe_widget_fluid" data-href="https://www.facebook.com/sieuthinoithatrosano" data-adapt-container-width="true" data-tabs="timeline" data-show-facepile="true" data-width="375" data-height="300" data-colorscheme="light" data-show-faces="1" data-header="1" data-stream="1" data-show-border="1" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;color_scheme=light&amp;container_width=375&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsieuthinoithatrosano&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;tabs=timeline&amp;width=375"><span style="vertical-align: bottom; width: 375px; height: 300px;"><iframe name="fff68f6c7fd7ac" width="375px" height="300px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FmAiQUwlReIP.js%3Fversion%3D42%23cb%3Df880af12b2f314%26domain%3Derado.vn%26origin%3Dhttp%253A%252F%252Ferado.vn%252Ffad893aac5b54%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=375&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsieuthinoithatrosano&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;tabs=timeline&amp;width=375" style="border: none; visibility: visible; width: 375px; height: 300px;" class=""></iframe></span></div></div>
-			<div class="section7 product-categories">
-				<div class="container">
-					<h2 class="product-cate-title">
-						Danh mục <strong>sản phẩm</strong>
-					</h2>
-					<div class="row product-cate-wrapper">
-						<div class="col-md-2">
-							<h3 class="cate-subtitle">Ghế sofa</h3>
-							<ul>
-								<li><a href="">Sofa da</a></li>
-								<li><a href="">Sofa góc</a></li>
-								<li><a href="">Sofa đẹp</a></li>
-								<li><a href="">Sofa phòng khách</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2">
-							<h3 class="cate-subtitle">Nội thất</h3>
-							<ul>
-								<li><a href="">Sofa da</a></li>
-								<li><a href="">Sofa góc</a></li>
-								<li><a href="">Sofa đẹp</a></li>
-								<li><a href="">Sofa phòng khách</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2">
-							<h3 class="cate-subtitle">Hàng Trang Trí</h3>
-							<ul>
-								<li><a href="">Sofa da</a></li>
-								<li><a href="">Sofa góc</a></li>
-								<li><a href="">Sofa đẹp</a></li>
-								<li><a href="">Sofa phòng khách</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2">
-							<h3 class="cate-subtitle">Thảm trải sàn</h3>
-							<ul>
-								<li><a href="">Sofa da</a></li>
-								<li><a href="">Sofa góc</a></li>
-								<li><a href="">Sofa đẹp</a></li>
-								<li><a href="">Sofa phòng khách</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			<div class="section8 store-news">
+    <?php get_template_part( 'template-parts/product','categories' ); ?>
+            <div class="section8 store-news">
 				<div class="container">
 					<div class="row">
 						<div class="col-ssmm-12 col-ssm-12 col-md-4">
