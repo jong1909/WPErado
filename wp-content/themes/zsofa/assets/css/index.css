@@ -2258,6 +2258,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .feature-product-wrapp a.wrapper-link img {
     width: 100%; }
+  .feature-product-wrapp .feature-price-sale {
+    font-size: 27px; }
+  .feature-product-wrapp .product-feature-title {
+    height: 19px;
+    overflow: hidden; }
 
   .featured-category a.product-image img {
     width: 100%; }
