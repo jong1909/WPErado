@@ -1909,6 +1909,10 @@ ul.pagination {
     border-top-right-radius: 2px; }
     .news-content-wrapper .news-item-wr:hover {
       border: solid 1px #ffe651; }
+    .news-content-wrapper .news-item-wr a img {
+      display: block;
+      max-width: 100%;
+      max-height: 156px; }
     .news-content-wrapper .news-item-wr .news-image {
       border-top-left-radius: 2px;
       border-top-right-radius: 2px; }
@@ -1991,6 +1995,19 @@ ul.pagination {
   padding: 0 0px 10px; }
 .news-detail-page .news-main-content {
   margin-bottom: 60px; }
+  .news-detail-page .news-main-content .intro p {
+    line-height: 24px;
+    margin: 10px 0;
+    text-align: justify; }
+  .news-detail-page .news-main-content .intro strong, .news-detail-page .news-main-content .intro b, .news-detail-page .news-main-content .intro h1, .news-detail-page .news-main-content .intro h2, .news-detail-page .news-main-content .intro h3, .news-detail-page .news-main-content .intro h4, .news-detail-page .news-main-content .intro h5, .news-detail-page .news-main-content .intro h6 {
+    font-weight: bold;
+    font-size: initial;
+    margin: initial;
+    padding: initial;
+    border: initial;
+    vertical-align: initial; }
+  .news-detail-page .news-main-content .intro span {
+    font-size: 13px; }
 .news-detail-page .other-news-section .title {
   color: #003399;
   font-weight: bold;

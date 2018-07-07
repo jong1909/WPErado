@@ -2493,6 +2493,13 @@ footer{
         &:hover{
             border: solid 1px #ffe651;
         }
+        a{
+            img{
+                display: block;
+                max-width: 100%;
+                max-height:  156px;
+            }
+        }
         .news-image{
             border-top-left-radius: 2px;
             border-top-right-radius: 2px;
@@ -2597,6 +2604,24 @@ footer{
     }
     .news-main-content{
         margin-bottom: 60px;
+        .intro{
+            p{
+                line-height: 24px;
+                margin: 10px 0;
+                text-align: justify;
+            }
+            strong,b,h1, h2, h3, h4, h5, h6{
+                font-weight: bold;
+                font-size: initial;
+                margin: initial;
+                padding: initial;
+                border: initial;
+                vertical-align: initial;
+            }
+            span{
+                font-size: 13px;
+            }
+        }
     }
     .other-news-section{
         .title{

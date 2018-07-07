@@ -15,39 +15,8 @@
 get_header(); ?>
 <div class="container">
 		    <div class="section1 slider">
-				<div id="product-list-slider" class="flexslider">
-				    <ul class="slides">
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g92.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g93.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g94.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g104.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g109.png" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g111.png" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g114.png" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g136.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g138.jpg" />
-                        </li>
-                         <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g154.jpg" />
-                        </li>
-				    </ul>
+				<div id="product-list-slider">
+                    <?php echo do_shortcode( '[rev_slider alias="list-page-slider"]' );  ?>
 				</div>
 			</div>
 		</div>
@@ -188,170 +157,32 @@ get_header(); ?>
 			                        <li><a href="">Tin mới nhất</a></li>
 			                    </ul>			                    
 			                </div>
-			                <h3 class="general-introduction">Tin Tức mới Nhất Của Thương Hiệu Nội Thất ERADO</h3>
+			                <h3 class="general-introduction">Tin Tức mới Nhất Của Thương Hiệu Nội Thất ZSOFA</h3>
                             <div class="news-content-wrapper row">
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
+                                <?php
+                                global $post;
+                                $args = array( 'posts_per_page' => 18, 'category' => 1,'orderby' => 'date','post_type' => 'post' );
+                                $myposts = get_posts( $args );
+                                foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                                    <div class="col-md-4 col-ssmm-6 col-ssm-6">
+                                        <div class="news-item-wr">
+                                            <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $page->ID, 'post-thumb' );?></a>
+                                            <a href="<?php the_permalink(); ?>" class="news-title"><?php the_title(); ?></a>
+                                            <span class="line-separator">&nbsp;</span>
+                                            <div class="short-description">
+                                                <?php if(the_excerpt()){
+                                                    the_excerpt();
+                                                    }
+                                                    else{
+                                                        echo 'Tin tức từ thương hiệu Zsofa nổi tiếng';
+                                                    }
+                                                ?>
+                                            </div>
+                                            <a href="<?php the_permalink(); ?>" class="news-view-more">Xem chi tiết</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/5-ly-do-khien-giuong-boc-da-dang-tro-thanh-xu-huong-cua-noi-that-hien-dai.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">5 lý do khiến giường bọc da đang trở thành xu hướng của nội thất hiện đại</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Giường ngủ bọc da thật đang là xu hướng phổ biến trong các căn hộ hiện</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/5-ly-do-khien-giuong-boc-da-dang-tro-thanh-xu-huong-cua-noi-that-hien-dai.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">5 lý do khiến giường bọc da đang trở thành xu hướng của nội thất hiện đại</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Giường ngủ bọc da thật đang là xu hướng phổ biến trong các căn hộ hiện</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/5-ly-do-khien-giuong-boc-da-dang-tro-thanh-xu-huong-cua-noi-that-hien-dai.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">5 lý do khiến giường bọc da đang trở thành xu hướng của nội thất hiện đại</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Giường ngủ bọc da thật đang là xu hướng phổ biến trong các căn hộ hiện</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/5-ly-do-khien-giuong-boc-da-dang-tro-thanh-xu-huong-cua-noi-that-hien-dai.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">5 lý do khiến giường bọc da đang trở thành xu hướng của nội thất hiện đại</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Giường ngủ bọc da thật đang là xu hướng phổ biến trong các căn hộ hiện</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/5-ly-do-khien-giuong-boc-da-dang-tro-thanh-xu-huong-cua-noi-that-hien-dai.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">5 lý do khiến giường bọc da đang trở thành xu hướng của nội thất hiện đại</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Giường ngủ bọc da thật đang là xu hướng phổ biến trong các căn hộ hiện</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/5-ly-do-khien-giuong-boc-da-dang-tro-thanh-xu-huong-cua-noi-that-hien-dai.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">5 lý do khiến giường bọc da đang trở thành xu hướng của nội thất hiện đại</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Giường ngủ bọc da thật đang là xu hướng phổ biến trong các căn hộ hiện</div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-ssmm-6 col-ssm-6">
-                                    <div class="news-item-wr">
-                                        <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                        <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
-                                        <span class="line-separator">&nbsp;</span>
-                                        <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
-                                        <a href="" class="news-view-more">Xem chi tiết</a>
-                                    </div>
-                                </div>
+                                <?php endforeach;
+                                wp_reset_postdata();?>
                             </div>
                             <ul class="pagination float-right">
                               <li class="active"><a href="#">1</a></li>
