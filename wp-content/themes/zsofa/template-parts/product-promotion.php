@@ -1,4 +1,4 @@
-<div class="section5 promotions-reviews">
+<div class="section5 promotions-reviews clearfix">
     <div class="container">
         <div class="row">
             <div class="col-md-7 promotion-products">
