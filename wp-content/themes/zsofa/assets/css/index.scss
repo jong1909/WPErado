@@ -2094,6 +2094,14 @@ footer{
             .mobile-tab-title{
                 display: none;
             }
+            strong,b,h1, h2, h3, h4, h5, h6{
+                font-weight: bold;
+                font-size: initial;
+                margin: initial;
+                padding: initial;
+                border: initial;
+                vertical-align: initial;
+            }
         }
         .col-md-3{
             padding-left: 20px;

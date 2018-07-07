@@ -1374,7 +1374,7 @@ footer {
     .product-detail-page .col-md-7.col-right .row.promotion-wr .applications li.delivery {
       background: url(../images/g.png) no-repeat 5px 3px; }
   .product-detail-page .col-md-7.col-right .promotion {
-    /* height: 67px; */
+    height: 67px;
     border: solid 1px #3caea6;
     border-radius: 5px;
     margin-top: -6px;
@@ -1594,6 +1594,13 @@ footer {
       display: block; }
     .product-detail-page .product-description .tab-contents .mobile-tab-title {
       display: none; }
+    .product-detail-page .product-description .tab-contents strong, .product-detail-page .product-description .tab-contents b, .product-detail-page .product-description .tab-contents h1, .product-detail-page .product-description .tab-contents h2, .product-detail-page .product-description .tab-contents h3, .product-detail-page .product-description .tab-contents h4, .product-detail-page .product-description .tab-contents h5, .product-detail-page .product-description .tab-contents h6 {
+      font-weight: bold;
+      font-size: initial;
+      margin: initial;
+      padding: initial;
+      border: initial;
+      vertical-align: initial; }
   .product-detail-page .product-description .col-md-3 {
     padding-left: 20px; }
   .product-detail-page .product-description .schedule {
