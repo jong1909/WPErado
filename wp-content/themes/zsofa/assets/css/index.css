@@ -576,7 +576,8 @@ a {
 .feature-product-wrapp .feature-price-real {
   text-decoration: line-through;
   float: right;
-  margin-top: 5px; }
+  margin-top: 5px;
+  color: #ff0000; }
 .feature-product-wrapp .feature-price-sale {
   font-size: 36px;
   position: absolute;
