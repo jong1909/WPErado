@@ -28,6 +28,9 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
     'images',
 ) );
 $dimensions = wc_format_dimensions($product->get_dimensions(false));
+$sale_price = $product->get_sale_price();
+$regular_price = $product->get_regular_price();
+$saving_price = $regular_price - $sale_price;
 
 ?>
     <div class="product-breadcrumb">
@@ -94,9 +97,9 @@ $dimensions = wc_format_dimensions($product->get_dimensions(false));
                     <div class="col-ssmm-12 col-ssm-12 col-md-3"><div class="product-warranty"><span>Bảo hành: </span><?php echo get_field_details('bao_hanh'); ?></div></div>
                     <div class="col-ssmm-12 col-ssm-12 col-md-5"><div class="product-status"><span>Tình trạng: </span><?php echo ($product->is_in_stock())? 'Còn hàng' : 'Hết hàng'?></div></div>
                     <div class="price-wrapper clearfix">
-                        <div class="price col-ssmm-12 col-ssm-12 col-md-5"><span class="title">Giá bán: </span><span class="num"><?php echo $product->get_price_html(); ?></span></div>
-                        <div class="old-price col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Giá cũ: </span><span class="num">45,000,000</span><span class="currency"> đ</span></div>
-                        <div class="saving col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Tiết kiệm:</span><span class="num">2,000,000</span><span class="currency"> đ</span></div>
+                        <div class="price col-ssmm-12 col-ssm-12 col-md-5"><span class="title">Giá bán: </span><span class="num"><?php echo wc_price($sale_price); ?></span></div>
+                        <div class="old-price col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Giá cũ: </span><span class="num"><?php echo wc_price($regular_price); ?></span></div>
+                        <div class="saving col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Tiết kiệm:</span><span class="num"><?php echo wc_price($saving_price); ?></span></div>
                     </div>
                     <div class="other-price"><span class="title">Hoặc mua với giá:</span><div class="price"></div></div>
                     <div class="row promotion-wr">
