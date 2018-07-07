@@ -206,169 +206,22 @@ $dimensions = wc_format_dimensions($product->get_dimensions(false));
                         <li>
                             <h3 class="mobile-tab-title">Tại sao chọn Zsofa</h3>
                             <!--Begin user's content-->
-                            <span style="font-size: 18px;"><span style="font-family: 'Times New Roman';"><span style="color: rgb(255, 0, 0);">12 Lý do vượt trội của sofa ERADO so với các nơi khác khiến hàng nghìn khách hàng chọn mua:</span></span></span><span style="font-family: 'Times New Roman';"><span style="font-size: 17px;"><span style="color: rgb(255, 0, 0);"><br>
-</span></span></span>
-                            <ul>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Mẫu sofa thiết kế theo phong cách châu âu: sang trọng và lịch lãm</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Vật liệu hạng sang nhập khẩu bọc sofa được ERADO&nbsp;nghiên cứu và lưạ chọn rất kĩ càng.</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Gam mầu thời trang không lỗi mốt, theo kịp với xu hướng nội thất.</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Độ thẩm mỹ hoàn hảo, rất nhiều khách hàng đi xem nhiều nơi khác đến chia sẻ lại&nbsp;</span></span></li>
-                                <li style="text-align: justify;"><span style="font-family: 'Times New Roman'; font-size: 16px;">Cấu tạo bên trong sofa theo tiêu chuẩn xuất khẩu châu âu</span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">(Kiểm chứng kết cấu: Có mẫu thực tế để quý khách xem bên trong và bên ngoài)</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Cực nhiều sản phẩm sofa bán sẵn ở showroom để cho khách hàng lựa chọn</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Thời gian bảo hành sản phẩm sofa ở Erado lên đến 12 năm, lâu nhất trên thị trường</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Sofa Erado gia công trong nước đạt chất lượng là hàng Việt Nam Xuất Khẩu</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Dòng sản phẩm sofa được nhập khẩu từ những thương hiệu có uy tín và danh tiếng.&nbsp;</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Cơ sở vật chất rộng rãi sang trọng, đúng như thương hiệu công khai về cơ sở vật chất</span></span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Tính năng chăm sóc sức khoẻ tích hợp trên sofa là giá trị vượt trội hơn các nơi khác ở hai góc độ: các điểm phần ngồi được tính toán theo các đốt trên cột sống người dùng ngả lưng và sofa ERADOđã chạm được các điểm trên cột sống và giảm mệt mỏi cho người dùng.&nbsp;</span>&nbsp;</span></li>
-                                <li style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">Sofa ZSOFA&nbsp;nối tiếp nối thành công của thương hiệu cũ rOsano, được hàng trăm nghìn khách hàng trên toàn quốc tin dùng</span></span><span style="font-size: 16px;"><span style="font-family: 'Times New Roman';"> .</span></span></li>
-                            </ul>
-                            <div style="text-align: right;">
-                                <div style="text-align: left;"><span style="font-size: 10px;"> <br>
-<br>
-<br>
-</span></div>
-                                <div style="text-align: center;"><span style="font-size: 10px;"><br>
-<br>
-</span><span style="font-family: 'Times New Roman'; text-align: start; font-size: 10px;">.........</span><span style="font-family: 'Times New Roman'; font-size: 18px; text-align: start; color: rgb(255, 0, 0);"><strong>NGƯỜI NỔI TIẾNG CHỌN ERADO</strong></span><span style="font-family: 'Times New Roman'; text-align: start; font-size: 10px;">.............</span></div>
-                                <div style="text-align: justify;"><span style="font-size: 10px;"> <br>
-</span><font style="text-align: start;" face="Times New Roman"><span style="font-size: 18px;">Thương hiệu nội thất&nbsp;</span></font><span style="color: rgb(255, 0, 0);"><span style="font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: right;">ERADO</span></span><font style="text-align: start;" face="Times New Roman"><span style="font-size: 18px;">&nbsp;được rất nhiều sao việt chọn mua đồ nội thất cho không gian sống, bởi những yếu tố khác biệt về mẫu và giá trị thật của sản phẩm mà họ nhận được (điều này thật dễ hiểu bởi họ đi diễn ở khắp nơi trong và ngoài nước lên có những cách nhìn sâu sắc về thẩm mỹ hay giá trị thực của sản phẩm)</span><br>
-                                        <br>
-                                        <span style="font-size: 18px;"> Quyết định chọn mua nội thất của sao việt ở thương hiệu Erado.... là đã trải qua rất nhiều sự tham khảo ở các showroom hay cửa hàng nội thất khác và quyết định chọn ở Erado là nơi có niềm tin sáng giá nhất.</span><br>
-                                        <br>
-                                        <span style="font-size: 18px;"> Cảm kích trước sự lựa chọn và niềm tin được đặt đúng chỗ của người nổi tiếng với thương hiệu nội thất&nbsp;</span></font><span style="font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: right;">ERADO</span><font style="text-align: start;" face="Times New Roman"><span style="font-size: 18px;">, chủ thương hiệu&nbsp;</span></font><span style="color: rgb(255, 0, 0);"><span style="font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: right;">ERADO</span><font style="text-align: start;" face="Times New Roman"><span style="font-size: 18px;">:</span></font></span><font style="text-align: start;" face="Times New Roman"><span style="font-size: 18px;">&nbsp;Ông Đỗ Văn Đức đã mời diễn viên: Quang Tèo và Á Hậu Huyền My đại diện hình ảnh cho thương hiệu nội thất&nbsp;</span></font><span style="font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: right;">ERADO</span><font style="text-align: start;" face="Times New Roman"><span style="font-size: 18px;">. Dưới đây là những khách hàng tiêu biểu được&nbsp;</span></font><span style="font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: right;">ERADO</span><font style="text-align: start;" face="Times New Roman"><span style="font-size: 18px;">&nbsp;ghi lại hình ảnh:</span><br>
-                                    </font><strong style="font-family: 'Times New Roman'; text-align: start;"><font color="#333399"><span style="font-size: 18px;"><br>
-<br>
-</span></font></strong><strong style="color: rgb(51, 51, 153); font-family: 'Times New Roman'; font-size: 18px;">Giáo sư: Đặng Hữu&nbsp;</strong><strong style="color: rgb(51, 51, 153); font-family: 'Times New Roman'; font-size: 18px;">- Nguyên bộ trưởng bộ khoa học công nghệ và môi trường.<br>
-                                        <br>
-                                        <img src="http://erado.vn/Images/image/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bac-huu/banner%20bo%20sung-05.png" alt="" width="733"><br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </strong><strong style="font-family: 'Times New Roman'; text-align: start;"><font color="#333399"><span style="font-size: 18px;">Danh Hài: Chiến Thắng</span></font></strong><strong style="color: rgb(51, 51, 153); font-family: 'Times New Roman'; font-size: 18px;"><br>
-                                    </strong><font style="text-align: start;" face="Times New Roman"><strong><br>
-                                            <img src="http://erado.vn/Images/image/%20!sofada853/Untitled-1-15.jpg" alt="" width="733"><br style="color: rgb(51, 51, 153); font-size: 18px;">
-                                        </strong></font><span style="font-family: 'Times New Roman'; text-align: start; font-size: 18px;"><br>
-</span><span style="font-family: 'Times New Roman'; font-size: 11px; text-align: start;">...................................................<br>
-<br>
-<br>
-</span><strong style="color: rgb(51, 51, 153); font-family: 'Times New Roman'; text-align: start;"><span style="font-size: 18px;">Hoa Hậu: Kỳ Duyên<br>
-<img src="http://erado.vn/Images/image/!24h/anh-trong-web.png" alt="" width="733"><br>
-</span></strong><span style="font-family: 'Times New Roman'; text-align: start; font-size: 18px;"><br>
-<span style="font-size: 11px;">...................................................</span><br>
-</span><span style="font-family: 'Times New Roman'; text-align: start; color: rgb(51, 51, 153);"><strong><span style="font-size: 18px;"><br>
-Á Hậu: Huyền My</span></strong></span><span style="font-family: 'Times New Roman'; text-align: start; color: rgb(255, 0, 0);"><span style="font-size: 18px;"><br>
-<img src="http://erado.vn/Images/image/%20!sofada853/Huyen-My-3.jpg" alt="" width="733"><br>
-</span></span><font style="text-align: start;" face="Times New Roman"><strong><font color="#333399"><span style="font-size: 18px;">  </span></font></strong><span style="font-size: 16px;"><br>
-....................................................</span><strong><font color="#333399"><span style="font-size: 18px;"><br>
-<br>
-Diễn Viên, Đạo Diễn: Bình Trọng&nbsp;</span></font></strong><span style="font-size: 18px; color: rgb(255, 0, 0);"><br>
-</span><span style="font-size: 18px;"><img alt="Người nổi tiếng chọn Erado" src="http://erado.vn/Images/image/%20!sofada853/Untitled-1-10%20(1).png" width="733"></span><br>
-                                    </font></div>
-                                <div style="text-align: left;"><font style="text-align: start;" face="Times New Roman"><span style="color: rgb(255, 0, 0);"><span style="font-size: 18px;"><br>
-</span></span></font><span style="text-align: start; font-size: 10px;">..............................................................<br>
-</span><font style="text-align: start;" face="Times New Roman"><span style="color: rgb(255, 0, 0);"><span style="font-size: 18px;"><strong><br>
-</strong><span style="color: rgb(51, 51, 153);"><strong>Nghệ Sĩ: Quang Tèo</strong></span><br>
-<img alt="Người nổi tiếng chọn Erado" src="http://erado.vn/Images/image/%20!sofada853/Untitled-1-11%20(1).png" width="733"><br>
-<br>
-</span></span></font><span style="text-align: start; font-size: 10px;">..............................................................<br>
-<br>
-</span><br style="text-align: start; font-size: 10px;">
-                                    <font style="text-align: start;" face="Times New Roman"><span style="color: rgb(255, 0, 0);"><span style="font-size: 18px;"><span style="color: rgb(51, 51, 153);"><strong>&nbsp;Diễn Viên Vân Dung:<br>
-<img alt="Người nổi tiếng chọn Erado" src="http://erado.vn/Images/image/!dantri/giadinhVanDung.png" width="733"><br>
-</strong></span><br>
-</span></span></font><strong style="text-align: start; color: rgb(51, 51, 153); font-family: 'Times New Roman'; font-size: 18px;"><br>
-                                        Sao Mai Huyền Trang:<br>
-                                        <img src="http://erado.vn/Images/image/%20!sofada853/nguoi-noi-tieng-Huyen-Trang.png" alt=""><br>
-                                    </strong></div>
-                                <div style="text-align: left;">&nbsp;</div>
-                                <div style="text-align: left;"><a href="http://erado.vn/lich-su-phat-trien-erado.html"><br>
-                                    </a></div>
-                                <div style="text-align: right;"><a href="http://erado.vn/lich-su-phat-trien-erado.html"><img style="color: rgb(255, 0, 0);" alt="Lịch sử phát triển Erado" src="http://erado.vn/Images/image/!24h/new_gif.gif" width="63" height="14"><span style="color: rgb(51, 51, 153);">&nbsp;<span style="color: rgb(0, 51, 102);">X<span style="font-size: 16px;"><span style="font-family: 'Times New Roman';">em thêm : Lịch sử phát triển thương hiệu nội thất Erado<br>
-</span></span></span></span></a></div>
-                            </div>
+                            <?php echo get_field_details('tai_sao_chon_zsofa', 'default_value'); ?>
+                            
                             <!--End user's content-->
                         </li>
                         <li>
                             <h3 class="mobile-tab-title">Chương trình khuyến mại</h3>
                             <!--Begin user's content-->
-                            <h2>
-                                <div style="font-family: Arial; font-size: 12px; font-weight: normal; text-align: justify;">
-                                    <p style="text-align: start; margin: 0px 0px 6px; font-family: Helvetica, Arial, sans-serif; color: rgb(29, 33, 41); font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: justify;">Để chọn mua đồ nội thất cho gia đình với tiêu chí: “bền - đẹp - không lỗi mốt" giữa vô vàn nơi bán, trong khi bạn thực sự không phải là một chuyên gia và không hiểu biết sâu sắc về sản phẩm thì hãy chọn một nơi - một thương hiệu uy tín để mua.</span><br style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: justify;">
-                                        <br style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: justify;">
-                                        <span style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: justify;">Một trong những địa chỉ danh tiếng&nbsp;và tín được người tiêu dùng nhắc đến khi chọn mua các sản phẩm nội thất cho căn hộ chung cư và gia đình&nbsp;tại Hà Nội là thương hiệu ERADO, thương hiệu này phát triển nối tiếp giá trị thành công của thương hiệu cũ rOsano được hàng triệu khách hàng trên toàn quốc tin dùng.</span><span style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px; text-align: justify;"><br>
-<br>
-</span></p>
-                                </div>
-                            </h2>
-                            <h2 style="padding: 10px 0px 5px; margin: 0px; font-size: 12px; color: rgb(51, 51, 51); font-family: Arial; text-align: center;"><span style="color: rgb(0, 0, 128);"><span style="font-size: 23px;"><span style="font-family: &quot;Times New Roman&quot;;">"</span></span></span><span style="font-size: 23px;"><span style="font-family: &quot;Times New Roman&quot;;"><span style="color: rgb(255, 0, 0);">&nbsp;VUI MUA SẮM NHẬN ƯU ĐÃI HẤP DẪN</span>&nbsp;<span style="color: rgb(0, 0, 128);">"</span></span></span></h2>
-                            <h2>
-                                <div style="font-family: Arial; font-size: 12px; font-weight: normal; text-align: justify;"><span style="font-family: Arial, Verdana, sans-serif; text-align: start; font-size: 16px;"><strong><span style="font-size: 18px;"><span style="color: rgb(51, 51, 153);"><span style="font-family: &quot;Times New Roman&quot;;">1. Mua sofa Giảm TRỰC TIẾP vào hóa đơn mua hàng từ <span style="color: rgb(255, 0, 0);">1.600.000đ</span> đến <span style="color: rgb(255, 0, 0);">2.000.000đ<br>
-<br>
-</span></span></span></span></strong></span><span style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px;">&nbsp; &nbsp;Ưu đãi được áp dụng khi Quý khách MUA SẴN hoặc ĐẶT HÀNG các sản phẩm Ghế sofa góc (chất liệu da hoặc vải) và Ghế sofa Văng bộ từ 2 văng trở lên. <br>
-<br>
-&nbsp; &nbsp;Quý khách được giảm trừ trực tiếp <strong><span style="color: rgb(255, 0, 0);">1.600.000đ</span></strong> khi mua sofa Vải hoặc sofa Giả da - Giảm ngay <span style="color: rgb(255, 0, 0);"><strong>2.000.000đ</strong></span> khi mua Sofa da thật (Lưu ý: Không áp dụng kèm ưu đãi giảm giá nào khác)<br>
-</span><span style="font-family: Arial, Verdana, sans-serif; text-align: start; font-size: 16px;"><strong><span style="font-size: 18px;"><span style="color: rgb(51, 51, 153);"><span style="font-family: &quot;Times New Roman&quot;;"><br>
-2. Được giảm ngay&nbsp;<span style="color: rgb(255, 0, 0);">1.800.000đ&nbsp;</span>khi mua bàn trà – kệ tivi&nbsp;</span></span></span></strong><br>
-</span>
-                                    <p style="font-family: Arial, Verdana, sans-serif;">&nbsp;<span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Sản phẩm bàn trà – kệ tivi mang nhiều phong cách khác nhau, dù sở hữu mặt đá marble sang trọng hay mặt kính temper cao cấp và bền bỉ… cũng đều là những lựa chọn tuyệt vời cho nội thất phòng khách. Tuyệt vời hơn khi ERADO dành tặng khách hàng&nbsp;<strong><span style="color: rgb(255, 0, 0);">1.800.000đ</span></strong>&nbsp;cho set bàn trà - kệ tivi với những mẫu mới nhất.</span></span></p>
-                                    <p style="font-family: Arial, Verdana, sans-serif; text-align: start;"><span style="color: rgb(51, 51, 153);"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;</span></span><strong><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">3.</span></span><span style="font-size: 18px;"><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;Giảm thêm</span></span></strong></span><strong><span style="color: rgb(51, 51, 153);"><span style="font-size: 18px;"><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;<span style="color: rgb(255, 0, 0);">2.000.000đ&nbsp;</span>cho mỗi bộ bàn ghế ăn</span></span></span></strong></p>
-                                    <div style="font-family: Arial, Verdana, sans-serif;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Bàn ghế ăn thế hệ mới với sơn men 4k - điều chỉnh kích thước linh hoạt theo mong muốn, mặt kính temper chịu va đập mạnh và chịu nhiệt độ cao, tích hợp&nbsp;<a href="http://erado.vn/ban-ghe-an/ban-an-tich-hop-bep-tu-ma-l113b.html">bếp từ</a>&nbsp;tiện dụng… Quý khách sẽ được nhận ngay&nbsp;<span style="color: rgb(255, 0, 0);"><strong>2.000.000đ</strong></span>&nbsp;cho mỗi bộ bàn ghế ăn cao cấp đến từ thương hiệu ERADO danh tiếng</span></span></div>
-                                    <div style="font-family: Arial, Verdana, sans-serif; text-align: start;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;</span></span><br>
-                                        <span style="color: rgb(51, 51, 153);"><span style="font-size: 18px;"><strong><span style="font-family: &quot;Times New Roman&quot;;">4. Giảm trực tiếp&nbsp;<span style="color: rgb(255, 0, 0);">500.000đ</span>/tấm khi mua thảm trang trí</span></strong></span></span></div>
-                                    <div style="font-family: Arial, Verdana, sans-serif; text-align: start;"><br>
-                                        <img src="http://erado.vn/Images/image/aaaaaamuanoithatsangtrungvangtailoceradovn/Untitled-1-03.jpg" width="750" alt="Đặc Quyền Ưu Đãi Cho Cư Dân Goldmark Khi Mua Nội Thất ERADO"></div>
-                                    <div style="font-family: Arial, Verdana, sans-serif;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;"><br>
-</span></span><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Thảm trang trí phòng khách, phòng ngủ được nhập khẩu chính hãng từ Dubai, Thổ nhĩ kì, Bỉ. Tất cả có CO &amp; CQ chứng thực hàng hoá nhập khẩu và chất lượng sản phẩm từ phía nhà sản xuất.<br>
-<br type="_moz">
-</span></span></div>
-                                    <div style="font-family: Arial, Verdana, sans-serif; text-align: start;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;</span></span><strong><span style="color: rgb(51, 51, 153);"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">5</span></span><span style="font-size: 18px;"><span style="font-family: &quot;Times New Roman&quot;;">.&nbsp;Giảm</span></span></span></strong><span style="color: rgb(51, 51, 153);"><span style="font-size: 18px;"><strong><span style="font-family: &quot;Times New Roman&quot;;"> trừ&nbsp;<span style="color: rgb(255, 0, 0);">5%</span>&nbsp;tổng hóa đơn cho đơn hàng Giấy dán tường<br>
-<br type="_moz">
-</span></strong></span></span></div>
-                                    <div style="font-family: Arial, Verdana, sans-serif; text-align: start;"><img src="http://erado.vn/Images/image/aaaaaamuanoithatsangtrungvangtailoceradovn/Untitled-1-05.jpg" width="750" alt="Đặc Quyền Ưu Đãi Cho Cư Dân Goldmark Khi Mua Nội Thất ERADO"><br>
-                                        &nbsp;<br>
-                                        <span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Hơn 10.000 mẫu giấy dán tường với hoa văn phong phú luôn có sẵn hàng, thợ thi công chuyên nghiệp vô cùng nhanh chóng, gọn gàng, không bị bong rộp…</span></span></div>
-                                </div>
-                            </h2>
-                            <h2>
-                                <div style="font-family: Arial; font-size: 12px; font-weight: normal; text-align: justify;">&nbsp;</div>
-                            </h2>
+                            <?php echo get_field_details('khuyen_mai_chung', 'default_value'); ?>
+                            
                             <!--End user's content-->
                         </li>
                         <li>
                             <h3 class="mobile-tab-title">Miễn phí vận chuyển</h3>
                             <!--Begin user's content-->
-                            &nbsp;<br>
-                            <strong style="text-align: justify;"><span style="font-size: 16px;"><span style="color: rgb(255, 0, 0); font-family: &quot;Times New Roman&quot;;">CHÍNH SÁCH VẬN CHUYỂN&nbsp;<span style="color: rgb(0, 0, 128);">"</span>MIỄN PHÍ</span><span style="font-family: &quot;Times New Roman&quot;;"><font color="#000080">" </font><font color="#ff0000">TỚI NHÀ KHÁCH HÀNG:</font></span></span></strong>
-                            <div style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;"><br>
-</span></span></div>
-                            <div style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Nhằm đem lại sự tiện ích cho khách hàng ở xa mong muốn mua nội thất tại thương hiệu ERADO,&nbsp;</span></span><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">chúng tôi áp dụng chính sách "miễn phí vận chuyển" đối với các thành phố sau:<br>
-<br>
-<br>
-</span></span><span style="color: rgb(255, 0, 0);"><span style="font-size: 17px;"><span style="font-family: &quot;Times New Roman&quot;;">►</span></span></span><span style="color: rgb(0, 0, 128);"><span style="font-size: 17px;"><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;;">Hà Nội - Hồ Chí Minh - Đà Nẵng.<br>
-<br>
-</span><span style="color: rgb(255, 0, 0);"><span style="font-family: &quot;Times New Roman&quot;;">►</span></span><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;;">Hải Phòng - Hưng Yên - Quảng Ninh - Hải Dương - Hoà Bình - Bắc Ninh - Bắc Giang - Vĩnh Phúc - Thái Bình - Ninh Bình - Nam Định - Hoà Bình - Thái Nguyên - Việt Trì (Phú Thọ)<br>
-<br>
-</span><span style="color: rgb(255, 0, 0);"><span style="font-family: &quot;Times New Roman&quot;;">►</span></span><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;;">Thanh Hoá - &nbsp;Nghệ An - Hà Tĩnh - Vinh.</span></span></span><span style="font-family: &quot;Times New Roman&quot;; font-size: 16px;"><br>
-</span><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;"><br>
-<img src="http://erado.vn/Images/image/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ba015/Untitled-3-01.jpg" alt="" width="750"><br>
-</span></span></div>
-                            <div style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;"><br>
-</span></span></div>
-                            <div style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">B. Thời gian giao hàng tại tỉnh, thành phố:</span></span></div>
-                            <ul>
-                                <li><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Thời gian các tỉnh lân cận Hà Nội: Giao ngay, sau thời gian đặt hàng là: 24h hoặc 48h<br>
-    </span></span></li>
-                                <li><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Thời gian các thành phố: Hồ Chí Minh - Đà Nẵng - Vinh - Nghệ An - Hà Tĩnh, thời gian từ&nbsp;<span style="color: rgb(255, 0, 0);">3</span>&nbsp;đến&nbsp;<span style="color: rgb(255, 0, 0);">5</span>&nbsp;ngày .</span></span></li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <p><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Thời gian phụ thuộc vào phí của hãng vận chuyển đối với từng địa phương. Chúng tôi sẽ trao đổi trực tiếp với quý khách khi nhận được thông tin đặt hàng.</span></span></p>
-                                </li>
-                            </ul>
-                            <div style="text-align: justify;"><span style="color: rgb(255, 0, 0);"><u><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">Lưu ý</span></span></u></span><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">: Tuy nhiên vào thời điểm lễ, tết... hoặc tùy theo một số điều kiện khách quan như thiên tai, hỏng hóc phương tiện... chúng tôi không thể giao hàng ngay nên sẽ thỏa thuận thời gian giao hàng cụ thể cho khách hàng khi mua hàng. <br>
-</span></span></div>
-                            <div style="text-align: justify;"><span style="font-size: 16px;"><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;</span></span></div>
+                            <?php echo get_field_details('mien_phi_van_chuyen', 'default_value'); ?>
+                            
                             <!--End user's content-->
                         </li>
                     </ul>
