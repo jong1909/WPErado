@@ -1374,7 +1374,7 @@ footer {
     .product-detail-page .col-md-7.col-right .row.promotion-wr .applications li.delivery {
       background: url(../images/g.png) no-repeat 5px 3px; }
   .product-detail-page .col-md-7.col-right .promotion {
-    height: 67px;
+    /* height: 67px; */
     border: solid 1px #3caea6;
     border-radius: 5px;
     margin-top: -6px;
