@@ -15,39 +15,8 @@
 get_header(); ?>
 <div class="container">
 		    <div class="section1 slider">
-				<div id="product-list-slider" class="flexslider">
-				    <ul class="slides">
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g92.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g93.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g94.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g104.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g109.png" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g111.png" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g114.png" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g136.jpg" />
-                        </li>
-                        <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g138.jpg" />
-                        </li>
-                         <li>
-                          <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/list-product-slide/g154.jpg" />
-                        </li>
-				    </ul>
+				<div id="product-list-slider">
+                    <?php echo do_shortcode( '[rev_slider alias="list-page-slider"]' );  ?>
 				</div>
 			</div>
 		</div>

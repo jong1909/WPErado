@@ -121,10 +121,4 @@
         disableLoadingMessage();
     });
 
-    /* OnLoad Window */
-    var init = function() {
-
-    };
-    window.onload = init;
-
 })(jQuery);

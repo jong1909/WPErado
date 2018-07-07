@@ -105,7 +105,13 @@
 	</div>
 
 </div>
+<div class="win-wrapper-vdproduct popup-mobile hide">
+    <div class="win">
+        <a href="javascript:;" class="win-close"></a>
+        <div id="product-video-content"><iframe width="854" height="480" src="https://www.youtube.com/embed/iZhIG_fJj9A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
+    </div>
+</div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;

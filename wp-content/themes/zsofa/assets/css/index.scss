@@ -485,6 +485,11 @@ a {
 	    		top:0;
 	    		left: 0;
 	    	}
+            img{
+                max-width: 100%;
+                max-height: 333px;
+                display: block;
+            }
     	}
     	
     	a.view-more{
@@ -519,11 +524,6 @@ a {
     		color: #ea445c;
     		font-size: 16px;
     		font-weight: bold;
-    		span{
-    			color: #959595;
-    			font-size: 12px;
-    			font-weight: normal;
-    		}
     	}
     	.views{
     		position: absolute;
@@ -550,6 +550,11 @@ a {
 	    		top:0;
 	    		left: 0;
 	    	}
+            img{
+                max-width: 100%;
+                height: 143px;
+                display: block;
+            }
     	}
     	
     	a.view-more{
@@ -579,6 +584,9 @@ a {
     		font-size: 12px;
     		padding-top: 8px;
     		font-weight: bold;
+            height: 25px;
+            line-height: 19px;
+            overflow: hidden;
     		a{
     			&:hover{
     				color: #ff0000;
@@ -590,11 +598,6 @@ a {
     		font-size: 16px;
     		font-weight: bold;
 		    margin-bottom: 12px;
-    		span{
-    			color: #959595;
-    			font-size: 12px;
-    			font-weight: normal;
-    		}
     	}
     	.views{
     		position: absolute;
@@ -753,6 +756,7 @@ a {
 		text-decoration: line-through;
 		float: right;
 		margin-top: 5px;
+        color: #ff0000;
 	}
 	.feature-price-sale{
 	    font-size: 36px;
@@ -1798,6 +1802,9 @@ footer{
             border-radius: 5px;
             margin-top: -6px;
             padding: 7px 0 10px 10px;
+            br{
+                display: none;
+            }
             .promo-title{
                 width: 140px;
                 height: 28px;
@@ -2046,13 +2053,13 @@ footer{
                 height: 36px;
                 line-height: 36px;
                 float: left;
-                padding: 0 6px;
+                padding: 0 7px;
                 margin-right: 5px;
                 text-transform: uppercase;
                 cursor: pointer;
             }
             li.promo{
-                padding-left: 30px;
+                padding-left: 33px;
                 background: #404042 url(../images/i.png) 7px center no-repeat;
             }
             li.active.promo{
@@ -2487,6 +2494,13 @@ footer{
         &:hover{
             border: solid 1px #ffe651;
         }
+        a{
+            img{
+                display: block;
+                max-width: 100%;
+                max-height:  156px;
+            }
+        }
         .news-image{
             border-top-left-radius: 2px;
             border-top-right-radius: 2px;
@@ -2591,6 +2605,24 @@ footer{
     }
     .news-main-content{
         margin-bottom: 60px;
+        .intro{
+            p{
+                line-height: 24px;
+                margin: 10px 0;
+                text-align: justify;
+            }
+            strong,b,h1, h2, h3, h4, h5, h6{
+                font-weight: bold;
+                font-size: initial;
+                margin: initial;
+                padding: initial;
+                border: initial;
+                vertical-align: initial;
+            }
+            span{
+                font-size: 13px;
+            }
+        }
     }
     .other-news-section{
         .title{
@@ -2933,6 +2965,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             img{
                 width: 100%;
             }
+        }
+        .feature-price-sale{
+            font-size: 27px;
+        }
+        .product-feature-title{
+            height: 19px;
+            overflow: hidden;
         }
     }
     .featured-category{
@@ -4229,5 +4268,207 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 /*-----------------------End media screen --------------------*/
+/* -------------Product video css ----------*/
+/* .win .win-close:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+} */
+.win-wrapper-vdproduct {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  margin: -240px 0 0 -427px;
+  width: 854px;
+  height: 480px;
+  -webkit-box-shadow: 0px 1px 5px 1px #333;
+  -moz-box-shadow: 0px 1px 5px 1px #333;
+  box-shadow: 0px 1px 5px 1px #333;
+}
+.win-wrapper-vdproduct a {
+  text-decoration: none;
+}
+.win-wrapper-vdproduct .logo-pop {
+  display: block;
+  margin: 0 auto;
+  width: 196px;
+  height: 87px;
+  margin-bottom: 12px;
+}
+.win-wrapper-vdproduct .logo-pop a {
+  line-height: 0;
+  display: block;
+}
+.win-wrapper-vdproduct .pop-title {
+  text-align: center;
+  font-size: 33px;
+  color: #003333;
+  margin-bottom: 25px;
+}
+.win-wrapper-vdproduct .main-form {
+  width: 100%;
+}
+.win-wrapper-vdproduct .main-form input {
+  width: 88%;
+  height: 37px;
+  border: 2px solid #818285;
+  border-radius: 7px;
+  padding-left: 41px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.win-wrapper-vdproduct .main-form input.submit {
+  width: 100%;
+  background: #ea9c2c;
+  padding: 0;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 25px;
+}
+.win-wrapper-vdproduct .main-form input.submit:hover {
+  background: #f1be76;
+}
+.win-wrapper-vdproduct #loginname {
+  background: url(../images/member-ic.png) no-repeat scroll 8px center;
+}
+.win-wrapper-vdproduct #password {
+  background: url(../images/lock-pop.png) no-repeat scroll 8px center;
+}
+.win-wrapper-vdproduct #captcha_image {
+  background: url(../images/polar.png) no-repeat scroll 8px center;
+  margin-bottom: 0;
+}
+.win-wrapper-vdproduct .polar-wrapper {
+  position: relative;
+}
+.win-wrapper-vdproduct .accuracy {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}
+.win-wrapper-vdproduct .lock-wrapper {
+  position: relative;
+}
+.win-wrapper-vdproduct .lock-wrapper a {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  background: url(../images/eye-pop.png);
+}
+.win-wrapper-vdproduct .lock-wrapper a:hover {
+  opacity: .75;
+}
+.win-wrapper-vdproduct .win {
+  position: relative;
+  height: 100%;
+  border: #ccc solid 1px;
+}
+.win-wrapper-vdproduct .win a.button-click {
+  position: absolute;
+  width: 120px;
+  height: 32px;
+  top: 66%;
+  transition: all .1s ease-in;
+  margin: 0 auto;
+  left: 52%;
+  right: 0;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  background: #FFA000;
+}
+.win-wrapper-vdproduct .win a.button-click:hover {
+  background: #CF8200;
+}
+.win-wrapper-vdproduct .win .win-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 1001;
+  width: 18px;
+  height: 18px;
+  line-height: 0;
+  background: url(../images/common-icon/close.png) no-repeat;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+.win-wrapper-vdproduct .error-wrapper {
+  height: 37px;
+  visibility: visible;
+  font-size: 15px;
+  line-height: 37px;
+  color: #cc0000;
+  text-align: left;
+}
+.win-wrapper-vdproduct .error-wrapper #error {
+  background: url(../images/err-icon.png) no-repeat scroll left center;
+  text-align: left;
+  padding-left: 25px;
+  font-weight: 700;
+}
+.win-wrapper-vdproduct ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #666666;
+  font-size: 20px;
+  padding-top: 3px;
+}
+.win-wrapper-vdproduct ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #666666;
+  font-size: 20px;
+  padding-top: 3px;
+}
+.win-wrapper-vdproduct :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #666666;
+  font-size: 20px;
+  padding-top: 3px;
+}
+.win-wrapper-vdproduct :-moz-placeholder {
+  /* Firefox 18- */
+  color: #666666;
+  font-size: 20px;
+  padding-top: 3px;
+}
 
+#overlay-region {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.75;
+  filter: alpha(opacity=0);
+  position: fixed;
+}
+
+div.show {
+  display: block;
+}
+
+div.hide {
+  display: none;
+}
+.product-video-link{
+    display: none;
+}
+/* -------------End product video css ----------*/
+/*# sourceMappingURL=vdproduct-popup.css.map */
 

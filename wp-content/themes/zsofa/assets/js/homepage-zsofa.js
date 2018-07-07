@@ -87,6 +87,17 @@
         });
         
     }
+    function showProductVideo(){
+        $('.view-more').click(function(){
+            var videoContentIframe = $(this).parent().find('.product-video-link').html();
+            $('#product-video-content').html(videoContentIframe);
+            $('.win-wrapper-vdproduct,#overlay-region').show();
+        });
+        $('#overlay-region').click(function(){
+            $('#product-video-content').html('');
+            $('.win-wrapper-vdproduct,#overlay-region').hide();
+        });
+    }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
     /* ----------------------------------------------- */
@@ -97,6 +108,7 @@
         runSlider();
         toggleMenuLeftSide();
         showToolTipMenu();
+        showProductVideo();
             //  Function Click out site menu-> hide menu
 
         $.fn.clickOff = function(callback, selfDestroy) {
@@ -122,7 +134,7 @@
         $(".mega-menu-mobile").clickOff(function() {
             $(".mobile-menu-icon").removeClass('active');
             $(".mega-menu-mobile .sub-menu").hide();
-            $('#overlay-region').hide();
+            // $('#overlay-region').hide();
         });
         $(".mobile-menu-icon").click(function(e){
             e.preventDefault();            
@@ -133,7 +145,7 @@
             }else{
                 $(this).addClass('active');
                 $(".mega-menu-mobile .sub-menu").show();
-                $('#overlay-region').show();
+                $('#overlay-region').addClass('show');
             }
             
             
@@ -143,6 +155,24 @@
             $(this).hide();
             $(".mobile-menu-icon").removeClass('active');
         });
+        var popup = popup || {};
+
+        // close popup function
+        popup.closePopup = function(idName, className) {
+            var winClose = $(className + " .win-close");
+            $(idName).click(function() {
+                $(className).removeClass('show').addClass('hide');
+                $(this).css({
+                    display: 'none',
+                    left: '0'
+                });
+            });
+            winClose.click(function() {
+                $(className).hide();
+                $(idName).hide();
+            });
+        }
+        popup.closePopup('#overlay-region', ".win-wrapper-vdproduct");
 
     });
 

@@ -83,3 +83,8 @@ function wpdocs_theme_thumb_wide() {
 
 }
 add_action( 'after_setup_theme', 'wpdocs_theme_thumb_wide' );
+
+function new_excerpt_more( $excerpt ) {
+    return preg_replace('`\[[^\]]*\]`','...',$excerpt);
+}
+//add_filter( 'wp_trim_excerpt', 'new_excerpt_more' );
