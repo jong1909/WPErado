@@ -132,7 +132,7 @@ get_header(); ?>
             <?php get_template_part( 'template-parts/product','promotion' ); ?>
 			<figure class="banner-middle">
 				<div class="container">
-					<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/153.jpg" alt=""></a>
+                    <?php echo do_shortcode( '[rev_slider alias="banner-middle"]' );  ?>
 				</div>
 			</figure>
             <?php get_template_part( 'template-parts/best','selling' ); ?>
