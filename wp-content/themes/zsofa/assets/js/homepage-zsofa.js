@@ -170,6 +170,7 @@
             winClose.click(function() {
                 $(className).hide();
                 $(idName).hide();
+                $('#product-video-content').html('');
             });
         }
         popup.closePopup('#overlay-region', ".win-wrapper-vdproduct");
