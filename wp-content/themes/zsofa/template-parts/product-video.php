@@ -26,6 +26,7 @@
                     $args = array( 'post_type' => 'product', 'posts_per_page' => 6, 'product_cat' => 'video-product', 'orderby' => 'rand' );
                     $loop = new WP_Query( $args );
                     while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                    <?php var_dump(get_field_details('main_video')); ?>
                         <?php if(get_field_details('main_video') == '0'): ?>
                             <div class="col-md-6 col-ssmm-6 col-ssm-6">
                                 <div class="videos-sub-product">
