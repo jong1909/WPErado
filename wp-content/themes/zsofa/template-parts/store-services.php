@@ -6,27 +6,39 @@
         <h2 class="why-choose-us">CÙNG HÀNG NGHÌN KHÁCH HÀNG <strong>ĐÃ CHỌN ZSOFA</strong> BỞI :</h2>
         <div class="store-services-content row">
             <div class="col-md-3 phy-facilities">
-                <h3>Cơ sở vật chất sang trọng</h3>
+                <?php $field_name = "field_5b43a6279d939";
+                $field = get_field_object($field_name);
+                ?>
+                <h3><?php echo $field['label'] ?></h3>
                 <p class="item-desc">
-                    Showroom rộng lớn, thiết kế hiện đại sang trọng theo tiêu chuẩn 3S, phục vụ tốt nhất cho khách hàng
+                    <?php echo $field['instructions']?>
                 </p>
             </div>
             <div class="col-md-3 exquisite-product">
-                <h3>Sản phẩm tinh xảo</h3>
+                <?php $field_name = "field_5b43a68b9d93b";
+                $field = get_field_object($field_name);
+                ?>
+                <h3><?php echo $field['label'] ?></h3>
                 <p class="item-desc">
-                    Mẫu sản phẩm được thiết kế hoàn mỹ, sắc nét vượt trội, vật liệu hạng sang, nguồn gốc rõ ràng!
+                    <?php echo $field['instructions']?>
                 </p>
             </div>
             <div class="col-md-3 professional-human">
-                <h3>Nhân lực chuyên nghiệp</h3>
+                <?php $field_name = "field_5b43a6a59d93c";
+                $field = get_field_object($field_name);
+                ?>
+                <h3><?php echo $field['label'] ?></h3>
                 <p class="item-desc">
-                    Nhân sự Zsofa được đào tạo chuẩn quốc tế, quy trình lắp đặt được thực hiện an toàn chuyên nghiệp
+                    <?php echo $field['instructions']?>
                 </p>
             </div>
             <div class="col-md-3 product-warranty">
-                <h3>Bảo hành sản phẩm</h3>
+                <?php $field_name = "field_5b43a6c49d93d";
+                $field = get_field_object($field_name);
+                ?>
+                <h3><?php echo $field['label'] ?></h3>
                 <p class="item-desc">
-                    Dịch vụ bảo hành tận nơi. Cam kết chế độ bảo hành chu đáo, tận tâm, linh hoạt. Ghét chậm trễ
+                    <?php echo $field['instructions']?>
                 </p>
             </div>
         </div>
