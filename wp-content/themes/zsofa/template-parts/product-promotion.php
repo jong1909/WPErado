@@ -28,18 +28,8 @@
                         KHÁCH HÀNG <strong>NÓI VỀ Zsofa</strong>
                     </h3>
                     <div class="cus-review-slide">
-                        <div class="customer-reviews-slider flexslider">
-                            <ul class="slides">
-                                <li>
-                                    <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-                                </li>
-                                <li>
-                                    <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-                                </li>
-                                <li>
-                                    <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-                                </li>
-                            </ul>
+                        <div class="customer-reviews-slider">
+                            <?php echo do_shortcode( '[rev_slider alias="customer-review"]' );  ?>
                         </div>
                     </div>
                 </div>
