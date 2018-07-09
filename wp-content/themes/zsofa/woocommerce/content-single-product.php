@@ -111,11 +111,13 @@ $saving_price = $regular_price - $sale_price;
                     </div>
                     <div class="price-wrapper clearfix">
                         <div class="price col-ssmm-12 col-ssm-12 col-md-5"><span class="title">Giá bán: </span><span
-                                    class="num"><?php echo wc_price($sale_price); ?></span></div>
+                                    class="num"><?php echo  (!empty($sale_price))? wc_price($sale_price): wc_price($regular_price); ?></span></div>
+                        <?php if(!empty($sale_price)):   ?>
                         <div class="old-price col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Giá cũ: </span><span
                                     class="num"><?php echo wc_price($regular_price); ?></span></div>
                         <div class="saving col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Tiết kiệm:</span><span
                                     class="num"><?php echo wc_price($saving_price); ?></span></div>
+                        <?php endif; ?>
                     </div>
                     <div class="other-price"><span class="title">Hoặc mua với giá:</span>
                         <div class="price"></div>
