@@ -3414,7 +3414,7 @@ div.hide {
   border-radius: 50%; }
 
 .tp-mask-wrap .tp-caption {
-  text-align: center; }
+  text-align: center !important; }
 
 /* -------------End product video css ----------*/
 /*# sourceMappingURL=vdproduct-popup.css.map */
