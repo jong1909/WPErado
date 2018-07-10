@@ -98,6 +98,20 @@
             $('.win-wrapper-vdproduct,#overlay-region').hide();
         });
     }
+    function activeMenu(){
+        var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                offset: 50
+            }
+        });
+
+        // build scenes
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".main-magemenu"
+        })
+            .setClassToggle(".section2", "active")
+            .addTo(controller);
+    }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
     /* ----------------------------------------------- */
@@ -109,6 +123,7 @@
         toggleMenuLeftSide();
         showToolTipMenu();
         showProductVideo();
+        activeMenu();
             //  Function Click out site menu-> hide menu
 
         $.fn.clickOff = function(callback, selfDestroy) {
