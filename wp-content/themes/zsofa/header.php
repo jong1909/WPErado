@@ -52,7 +52,7 @@
 					<div class="col-md-4 store-support">
 						<div class="col-md-6 hotline">
 							<div class="hotline-tilte">Hotline :</div>
-							<div class="hotline-num">0976.529.529</div>
+							<div class="hotline-num">0975.488.488</div>
 						</div>
 						<div class="col-md-6 user-login">
 							<div class="float-right user-login-wrapper">

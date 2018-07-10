@@ -2212,9 +2212,7 @@ ul.pagination {
 body.customize-support #header .header-middle-wrapper.menu-mobile-wrapper {
   top: 46px; }
 
-body.customize-support .main-site {
-  margin-top: 32px; }
-body.customize-support #header .top-nav {
+body.logged-in #header .top-nav {
   margin-top: 32px; }
 
 @-webkit-keyframes autofill {
@@ -2879,7 +2877,9 @@ input[type="search"]::-webkit-search-results-decoration {
       background: #E7EAEF url(../images/is.png) no-repeat right center;
       border-radius: 5px;
       height: 36px;
-      width: 100%; }
+      width: 100%;
+      padding-left: 10px;
+      border: 1px solid #ccc; }
     #header .main-search-box #search-product {
       width: 100%; }
   #header .mega-menu-mobile {

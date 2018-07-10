@@ -2917,10 +2917,7 @@ footer{
 body.customize-support #header .header-middle-wrapper.menu-mobile-wrapper{
     top: 46px;
 }
-body.customize-support{
-    .main-site{
-        margin-top: 32px;        
-    }
+body.logged-in{
     #header .top-nav{
         margin-top: 32px;
     }
@@ -3818,6 +3815,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 border-radius: 5px;
                 height: 36px;
                 width: 100%;
+                padding-left: 10px;
+                border: 1px solid #ccc;
             }
             #search-product{
                 width: 100%;
