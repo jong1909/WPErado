@@ -109,7 +109,7 @@
         var scene = new ScrollMagic.Scene({
             triggerElement: ".main-magemenu"
         })
-            .setClassToggle(".section2", "active")
+            .setClassToggle(".main-magemenu", "active")
             .addTo(controller);
     }
     /* ----------------------------------------------- */
