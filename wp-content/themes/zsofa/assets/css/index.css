@@ -3413,6 +3413,9 @@ div.hide {
 .user-avata img {
   border-radius: 50%; }
 
+.tp-mask-wrap .tp-caption {
+  text-align: center; }
+
 /* -------------End product video css ----------*/
 /*# sourceMappingURL=vdproduct-popup.css.map */
 
