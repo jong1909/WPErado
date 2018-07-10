@@ -197,65 +197,7 @@ get_header(); ?>
 			        </div>
 			    </div>
 			</div>
-			<div class="section5 promotions-reviews">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7 promotion-products">
-							<h3 class="promotion-title">SẢN PHẨM <strong>KHUYẾN MÃI</strong></h3>
-							<div class="row">
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Ghế thư giãn Ceri mã 05</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Sofa da thật mã 352</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Sofa phòng khách mã 242</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
-								<div class="col-md-6 col-ssmm-6 col-ssm-6 feature-product-wrapp">
-									<div class="product-feature-title"><a href="">Sofa đẹp mã 564</a></div>
-									<a class="wrapper-link" href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-phong-khach-ma-242-2261.jpg" alt=""><span class="feature-price-sale">21.900</span></a>
-									<div class="feature-price-real">25,000,000 <span class="currency">đ</span></div>
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="col-md-5 customer-reviews">
-							<div class="reviews-wrapper">
-								<h3 class="reviews-title">
-									KHÁCH HÀNG <strong>NÓI VỀ ERADO</strong>
-								</h3>
-								<div class="cus-review-slide">
-									<div class="customer-reviews-slider flexslider">
-									  <ul class="slides">
-									    <li>
-									      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-									    </li>
-									    <li>
-									      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-									    </li>
-									    <li>
-									      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/2018-06-10_19-59-25.png" />
-									    </li>
-									  </ul>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
+<?php get_template_part( 'template-parts/product','promotion' ); ?>
 			<figure class="banner-middle">
 				<div class="container">
                     <?php echo do_shortcode( '[rev_slider alias="banner-middle"]' );  ?>
