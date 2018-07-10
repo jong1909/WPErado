@@ -185,9 +185,16 @@ a {
             top: 10px;
         }
 	}
+    .main-magemenu.active{
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
 	.main-magemenu{
 		background: #231D2B;
 		height: 43px;
+        position: initial;
+        width: 100%;
 		ul.cont-megamenu{
             position: relative;
 			>li{				
@@ -2920,6 +2927,9 @@ body.customize-support #header .header-middle-wrapper.menu-mobile-wrapper{
 body.logged-in{
     #header .top-nav{
         margin-top: 0;
+    }
+    #header .main-magemenu.active{
+        top: 32px;
     }
 }
 @-webkit-keyframes autofill {

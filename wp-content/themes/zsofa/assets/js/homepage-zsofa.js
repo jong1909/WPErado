@@ -99,18 +99,13 @@
         });
     }
     function activeMenu(){
-        var controller = new ScrollMagic.Controller({
-            globalSceneOptions: {
-                offset: 50
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.main-magemenu').addClass('active');
+            } else {
+                $('.main-magemenu').removeClass('active');
             }
         });
-
-        // build scenes
-        var scene = new ScrollMagic.Scene({
-            triggerElement: ".main-magemenu"
-        })
-            .setClassToggle(".main-magemenu", "active")
-            .addTo(controller);
     }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */

@@ -131,9 +131,15 @@ a {
     position: relative;
     left: -38px;
     top: 10px; }
+#header .main-magemenu.active {
+  position: fixed;
+  top: 0;
+  z-index: 9999; }
 #header .main-magemenu {
   background: #231D2B;
-  height: 43px; }
+  height: 43px;
+  position: initial;
+  width: 100%; }
   #header .main-magemenu ul.cont-megamenu {
     position: relative; }
     #header .main-magemenu ul.cont-megamenu > li > a {
@@ -2214,6 +2220,8 @@ body.customize-support #header .header-middle-wrapper.menu-mobile-wrapper {
 
 body.logged-in #header .top-nav {
   margin-top: 0; }
+body.logged-in #header .main-magemenu.active {
+  top: 32px; }
 
 @-webkit-keyframes autofill {
   to {
