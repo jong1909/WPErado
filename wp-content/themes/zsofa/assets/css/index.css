@@ -263,11 +263,13 @@ a {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    color: #ed4135; }
+    color: #ed4135;
+    display: none; }
   .store-services .why-choose-us {
     text-align: center;
     font-size: 23px;
-    position: relative; }
+    position: relative;
+    padding-top: 40px; }
     .store-services .why-choose-us strong {
       font-weight: bold; }
     .store-services .why-choose-us:after {
@@ -282,7 +284,6 @@ a {
       background: url(../images/b1.png) center top; }
   .store-services .container:after {
     content: "";
-    background: url(../images/quangteo.png) no-repeat left top;
     height: 300px;
     width: 180px;
     position: absolute;
@@ -291,7 +292,6 @@ a {
     top: 100px; }
   .store-services .container:before {
     content: "";
-    background: url(../images/huyen-my.png) no-repeat left top;
     height: 300px;
     width: 180px;
     position: absolute;

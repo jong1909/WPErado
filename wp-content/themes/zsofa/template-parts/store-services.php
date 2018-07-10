@@ -24,7 +24,7 @@ $zsofa_values = [
         <div class="title-customer">
             "Nghệ sỹ Quang Tèo và Á hậu Huyền My"
         </div>
-        <h2 class="why-choose-us">CÙNG HÀNG NGHÌN KHÁCH HÀNG <strong>ĐÃ CHỌN ZSOFA</strong> BỞI :</h2>
+        <h2 class="why-choose-us">HÀNG NGHÌN KHÁCH HÀNG <strong>ĐÃ CHỌN ZSOFA</strong> BỞI :</h2>
         <div class="store-services-content row">
             <div class="col-md-3 phy-facilities">
                 <?php $field_name = "field_5b43a6279d939";

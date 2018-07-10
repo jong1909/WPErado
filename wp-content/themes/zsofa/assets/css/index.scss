@@ -356,11 +356,13 @@ a {
 	    font-size: 20px;
 	    font-weight: bold;
 	    color: #ed4135;
+        display: none;
 	}
 	.why-choose-us{
 		text-align: center;
 		font-size: 23px;
 		position: relative;
+        padding-top: 40px;
 		strong{
 			font-weight: bold;
 		}
@@ -379,7 +381,7 @@ a {
 	.container{
 		&:after{
 			content: "";
-			background: url(../images/quangteo.png) no-repeat left top;
+//			background: url(../images/quangteo.png) no-repeat left top;
 		    height: 300px;
 		    width: 180px;
 		    position: absolute;
@@ -389,7 +391,7 @@ a {
 		}
 		&:before{
 			content: "";
-			background: url(../images/huyen-my.png) no-repeat left top;
+//			background: url(../images/huyen-my.png) no-repeat left top;
 		    height: 300px;
 		    width: 180px;
 		    position: absolute;
