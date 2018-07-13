@@ -988,28 +988,35 @@ footer {
   .listing-page-wrapper .featured-category .col-md-4 {
     padding: 0 10px;
     margin-bottom: 10px; }
-.listing-page-wrapper ul.pagination {
+.listing-page-wrapper ul.pagination, .listing-page-wrapper ul.page-numbers {
   margin-bottom: 20px; }
-  .listing-page-wrapper ul.pagination li {
+  .listing-page-wrapper ul.pagination li, .listing-page-wrapper ul.page-numbers li {
     text-align: center;
     float: left;
     margin-left: 3px; }
-    .listing-page-wrapper ul.pagination li a {
+    .listing-page-wrapper ul.pagination li a, .listing-page-wrapper ul.page-numbers li a {
       width: 26px;
       height: 20px;
       line-height: 20px;
       display: inline-block;
       background: #F4F4F4; }
-      .listing-page-wrapper ul.pagination li a:hover {
+      .listing-page-wrapper ul.pagination li a:hover, .listing-page-wrapper ul.page-numbers li a:hover {
         text-decoration: none;
         background: #FFFF00;
         color: #ff0000; }
-    .listing-page-wrapper ul.pagination li a.next, .listing-page-wrapper ul.pagination li a.previous {
+    .listing-page-wrapper ul.pagination li a.next, .listing-page-wrapper ul.pagination li a.previous, .listing-page-wrapper ul.page-numbers li a.next, .listing-page-wrapper ul.page-numbers li a.previous {
       width: 46px;
       padding: 0 3px; }
-  .listing-page-wrapper ul.pagination li.active {
+    .listing-page-wrapper ul.pagination li .page-numbers.current, .listing-page-wrapper ul.page-numbers li .page-numbers.current {
+      color: #ff0000;
+      width: 26px;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+      background: #FFFF00; }
+  .listing-page-wrapper ul.pagination li.active, .listing-page-wrapper ul.page-numbers li.active {
     margin-left: 0; }
-    .listing-page-wrapper ul.pagination li.active a {
+    .listing-page-wrapper ul.pagination li.active a, .listing-page-wrapper ul.page-numbers li.active a {
       background: #FFFF00;
       color: #ff0000; }
 .listing-page-wrapper .col-left-pr {
@@ -2259,7 +2266,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
 .zsofa-sorting {
-  display: none; }
+  display: block; }
 
 /*-----------------------Begin media screen --------------------*/
 @media (max-width: 1023px) {

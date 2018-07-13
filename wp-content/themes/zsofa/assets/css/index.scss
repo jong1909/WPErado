@@ -1278,7 +1278,7 @@ footer{
             margin-bottom: 10px;
         }
     }
-    ul.pagination{
+    ul.pagination,ul.page-numbers{
         margin-bottom: 20px;
         li{            
             text-align: center;
@@ -1299,6 +1299,14 @@ footer{
             a.next,a.previous{
                 width: 46px;
                 padding: 0 3px; 
+            }
+            .page-numbers.current{
+                color: #ff0000;
+                width: 26px;
+                height: 20px;
+                line-height: 20px;
+                display: inline-block;
+                background: #FFFF00;
             }
         }
         li.active{
@@ -2966,7 +2974,7 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 .zsofa-sorting{
-    display: none;
+    display: block;
 }
 /*-----------------------Begin media screen --------------------*/
 
