@@ -1918,6 +1918,9 @@ ul.pagination {
     font-weight: bold;
     padding-left: 5px; }
 
+.woocommerce-ordering {
+  padding-left: 10px; }
+
 /*-----------------------End Product Detail--------------------*/
 /*-----------------------Begin News Page--------------------*/
 .news-content-wrapper {
