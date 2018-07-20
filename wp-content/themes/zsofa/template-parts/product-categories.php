@@ -6,39 +6,19 @@
         <div class="row product-cate-wrapper">
             <div class="col-md-2">
                 <h3 class="cate-subtitle">Ghế sofa</h3>
-                <ul>
-                    <li><a href="">Sofa da</a></li>
-                    <li><a href="">Sofa góc</a></li>
-                    <li><a href="">Sofa đẹp</a></li>
-                    <li><a href="">Sofa phòng khách</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'menu' => 'Ghế sofa' ) ); ?>
             </div>
             <div class="col-md-2">
                 <h3 class="cate-subtitle">Nội thất</h3>
-                <ul>
-                    <li><a href="">Sofa da</a></li>
-                    <li><a href="">Sofa góc</a></li>
-                    <li><a href="">Sofa đẹp</a></li>
-                    <li><a href="">Sofa phòng khách</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'menu' => 'Nội thất' ) ); ?>
             </div>
             <div class="col-md-2">
                 <h3 class="cate-subtitle">Hàng Trang Trí</h3>
-                <ul>
-                    <li><a href="">Sofa da</a></li>
-                    <li><a href="">Sofa góc</a></li>
-                    <li><a href="">Sofa đẹp</a></li>
-                    <li><a href="">Sofa phòng khách</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'menu' => 'Hàng trang trí' ) ); ?>
             </div>
             <div class="col-md-2">
                 <h3 class="cate-subtitle">Thảm trải sàn</h3>
-                <ul>
-                    <li><a href="">Sofa da</a></li>
-                    <li><a href="">Sofa góc</a></li>
-                    <li><a href="">Sofa đẹp</a></li>
-                    <li><a href="">Sofa phòng khách</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'menu' => 'Thảm trải sàn' ) ); ?>
             </div>
         </div>
     </div>
