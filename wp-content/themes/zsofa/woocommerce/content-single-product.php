@@ -222,7 +222,7 @@ $saving_price = $regular_price - $sale_price;
                         <li class="show">
                             <h3 class="mobile-tab-title">Thông tin sản phẩm</h3>
                             <!--begin item info-->
-                            <?php echo $product->get_description(); ?>
+                            <?php the_content(); ?>
 
                             <!--End item-info -->
                         </li>
