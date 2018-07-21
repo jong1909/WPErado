@@ -106,10 +106,11 @@ a {
 			position: absolute;
 			width: 80px;
 			height: 100px;
-			background: url(../images/my.png) no-repeat left top;
+			background: url(../images/common-icon/Sofa-Set.png) no-repeat left top;
 			z-index: 999;
 		    left: -78px;
-		    bottom: -70px;
+            bottom: -121px;
+            background-size: contain;
 		}
 	}
 	.shop-logo{
