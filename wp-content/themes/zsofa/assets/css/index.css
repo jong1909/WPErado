@@ -700,7 +700,7 @@ figure.banner-middle {
     .featured-category a.product-image img {
       max-width: 100%;
       display: block; }
-    .featured-category a.product-image img-thumb-wrapper {
+    .featured-category a.product-image .img-thumb-wrapper {
       height: 100%;
       display: block;
       overflow: hidden; }
