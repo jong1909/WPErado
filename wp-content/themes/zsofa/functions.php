@@ -119,3 +119,6 @@ function limit_words($string, $word_limit){
     $words = explode(" ",$string);
     return implode(" ",array_splice($words,0,$word_limit));
 }
+function call_template_path($post_type,$category_name, $posts_per_page, $product_cat,$orderby,$category_class){
+    include( locate_template( 'template-parts/product-list.php', false, false ) );
+}

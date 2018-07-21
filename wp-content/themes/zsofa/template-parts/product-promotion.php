@@ -12,7 +12,7 @@
                             <h3 class="product-feature-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></h3>
                             <a class="wrapper-link" href="<?php echo get_permalink( $loop->post->ID ) ?>">
 
-                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?>
+                                <span class="img-thumb-wrapper"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="300px" height="210px" />'; ?></span>
                                 <span class="feature-price-sale"><?php echo wc_price($product->get_sale_price()); ?></span></a>
                             <div class="feature-price-real"><?php echo wc_price($product->get_regular_price()); ?></div>
 

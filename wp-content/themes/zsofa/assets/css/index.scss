@@ -578,8 +578,7 @@ a {
 		    padding-left: 13px;
 		    background: rgba(0, 0, 0, 0.5019607843137255) url(../images/c1.png) no-repeat 77px center;
 		    position: absolute;
-		    top: 50%;
-            margin-top: -22px;
+		    top: 30%;            
 		    left: 0;
 		    right: 0;
 		    margin: 0 auto;
@@ -4156,7 +4155,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .feature-product-wrapp{
         a.wrapper-link{
             height: 145px;
-            overflow: hidden;
             img{
                 max-width: 100%;
                 display: block;
@@ -4284,36 +4282,56 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
     .featured-category{
         a.product-image{
-            height: 124px;
-            overflow: hidden;
+            height: 115px;
             img{
                 max-width: 100%;
                 display: block;
                 height: auto;
+            }
+            .img-thumb-wrapper{
+                height: 100%;
+                overflow: hidden;
             }
         }
     }
     .section5.promotions-reviews{
         .feature-product-wrapp{
             a.wrapper-link{
-                height: 128px;
-                overflow: hidden;
+                height: 115px;
                 img{
                     display: block;
                     max-width: 100%;
                     height: auto;
                 }
             }
+            .img-thumb-wrapper{
+                height: 100%;
+                overflow: hidden;
+            }
         }
     }
     .feature-product-wrapp{
         a.wrapper-link{
-            height: 128px;
-            overflow: hidden;
+            height: 115px;
             img{
                 display: block;
                 max-width: 100%;
                 height: auto;
+            }
+            .img-thumb-wrapper{
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+    }
+    .section3.real-videos{
+        .videos-sub-product{
+            a.img-wrapper{
+                height: 112px;
+            }
+            .img-thumb-wrapper{
+                height: 100%;
+                overflow: hidden;
             }
         }
     }
