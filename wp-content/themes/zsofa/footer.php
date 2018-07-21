@@ -7,7 +7,7 @@
 				<div class="row">
 					<div class="col-md-4 about-store-cont">
 						<div class="footer-ge-title about-Zsofa">
-							VỀ Zsofa
+							Giới thiệu về Zsofa
 						</div>
 						<p class="about-Zsofa-desc">
 							" Nội thất Zsofa tiếp nối thành công của thương hiệu rOsano (thuộc công ty cổ phần rOsano Việt Nam nay đổi tên thành công ty cổ phần Zsofa Việt Nam)..được hàng trăm nghìn khách hàng trên toàn quốc tin dùng."
