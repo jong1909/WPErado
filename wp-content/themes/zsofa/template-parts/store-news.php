@@ -15,7 +15,7 @@
                     ?>
                 <div class="more-link"><a href="<?php the_permalink(); ?>"><?php echo limit_words($post->post_title,9); ?></a></div>
                 <div class="news-content-wr">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(28); ?></p>
                 </div>
                 <div class="other-news">
                     <h5 class="other-news-title">Các tin khác</h5>
@@ -46,7 +46,7 @@
                 ?>
                 <div class="more-link"><a href="<?php the_permalink(); ?>"><?php echo limit_words($post->post_title,9); ?></a></div>
                 <div class="news-content-wr">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(28); ?></p>
                 </div>
                 <div class="other-news">
                     <h5 class="other-news-title">Các tin khác</h5>
@@ -77,7 +77,7 @@
                 ?>
                 <div class="more-link"><a href="<?php the_permalink(); ?>"><?php echo limit_words($post->post_title,9); ?></a></div>
                 <div class="news-content-wr">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(28); ?></p>
                 </div>
                 <div class="other-news">
                     <h5 class="other-news-title">Các tin khác</h5>
