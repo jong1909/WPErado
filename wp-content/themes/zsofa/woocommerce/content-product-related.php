@@ -27,7 +27,7 @@ $link = apply_filters( 'woocommerce_loop_product_link', get_the_permalink(), $pr
 ?>
 <div class="col-md-3 col-ssmm-6 col-ssm-6">
     <div class="product-wrapper">
-        <a class="product-image image_blur" href="<?php echo esc_url( $link ) ?>"><?php echo woocommerce_get_product_thumbnail(); ?></a>
+        <a class="product-image image_blur" href="<?php echo esc_url( $link ) ?>"><span class="img-thumb-wrapper"><?php echo woocommerce_get_product_thumbnail(); ?></span></a>
 
     </div>
     <div class="product-title-info"><a href="<?php echo esc_url( $link ) ?>" class="product-link"><?php echo get_the_title() ?></a></div>
