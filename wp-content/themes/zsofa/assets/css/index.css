@@ -569,7 +569,6 @@ a {
   line-height: 0;
   position: relative; }
   .feature-product-wrapp a.wrapper-link img {
-    border: solid 3px #fff;
     max-width: 100%;
     max-height: 140px;
     height: 140px; }
@@ -697,7 +696,6 @@ figure.banner-middle {
     display: block;
     line-height: 0; }
     .featured-category a.product-image img {
-      border: 2px solid #fff;
       max-width: 100%;
       height: 158px;
       max-height: 158px;
@@ -3242,14 +3240,16 @@ input[type="search"]::-webkit-search-results-decoration {
     background: #EC4136; }
 
   .featured-category a.product-image {
-    height: 115px; }
+    height: 115px;
+    padding: 2px; }
     .featured-category a.product-image img {
       max-width: 100%;
       display: block;
       height: auto; }
     .featured-category a.product-image .img-thumb-wrapper {
       height: 100%;
-      overflow: hidden; }
+      overflow: hidden;
+      display: block; }
 
   .section5.promotions-reviews .feature-product-wrapp a.wrapper-link {
     height: 115px; }
@@ -3259,23 +3259,28 @@ input[type="search"]::-webkit-search-results-decoration {
       height: auto; }
   .section5.promotions-reviews .feature-product-wrapp .img-thumb-wrapper {
     height: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    display: block; }
 
   .feature-product-wrapp a.wrapper-link {
-    height: 115px; }
+    height: 115px;
+    padding: 3px; }
     .feature-product-wrapp a.wrapper-link img {
       display: block;
       max-width: 100%;
       height: auto; }
     .feature-product-wrapp a.wrapper-link .img-thumb-wrapper {
       height: 100%;
-      overflow: hidden; }
+      overflow: hidden;
+      display: block; }
 
   .section3.real-videos .videos-sub-product a.img-wrapper {
-    height: 112px; }
+    height: 112px;
+    padding: 3px; }
   .section3.real-videos .videos-sub-product .img-thumb-wrapper {
     height: 100%;
-    overflow: hidden; } }
+    overflow: hidden;
+    display: block; } }
 @media (min-width: 1024px) {
   .section4.featured-products .fea-product-content .col-md-3 {
     width: 23%; }
