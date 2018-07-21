@@ -5,16 +5,30 @@
                 <h1 class="store-news-title">
                     <a href="">CHUYÊN ĐỀ ZSOFA</a>
                 </h1>
-                <div class="more-link"><a href="">Bàn giao nội thất cho anh Long ở FLC Thanh Hóa</a></div>
+                <?php
+                $array = array('posts_per_page' => 4,'category_name'=> 'Chuyên đề Zsofa','orderby'=> 'date');
+                $latest_posts = get_posts( $args );
+                if ( $latest_posts ) : $post_count = 0;
+                foreach ( $latest_posts as $post ) :
+                setup_postdata( $post );
+                    if($post_count == 0):
+                    ?>
+                <div class="more-link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                 <div class="news-content-wr">
-                    <a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-giao-noi-that-cho-anh-long-o-flc-thanh-hoa.jpg" alt=""></a><p class="news-summary">Thương hiệu nội thất ERADO vô cùng vui mừng khi anh Long ở FLC Thanh Hóa đã quyết định chọn nội thất cho căn nhà của </p>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
                 </div>
                 <div class="other-news">
                     <h5 class="other-news-title">Các tin khác</h5>
                     <ul>
-                        <li><a href="">Bàn giao nội thất cho gia đình anh Dũng - P1013, Khu </a></li>
-                        <li><a href="">Bàn giao sofa cho chị Thúy ở Lò Đúc</a></li>
-                        <li><a href="">Bàn giao sofa cho Chị Tân ở KĐT Yên Hòa, Trung Yên </a></li>
+                    <?php else: ?>
+                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <?php
+                    endif;
+                    $post_count++;
+                    endforeach;
+                    wp_reset_postdata();
+                    endif;
+                    ?>
                     </ul>
                 </div>
             </div>
@@ -22,31 +36,61 @@
                 <h1 class="store-news-title">
                     <a href="">Kinh nghiệm hay của Zsofa</a>
                 </h1>
-                <div class="more-link"><a href="">Chọn ghế bàn ăn loại nào</a></div>
+                <?php
+                $array = array('posts_per_page' => 4,'category_name'=> 'Kinh nghiệm hay của Zsofa','orderby'=> 'date');
+                $latest_posts = get_posts( $args );
+                if ( $latest_posts ) : $post_count = 0;
+                foreach ( $latest_posts as $post ) :
+                setup_postdata( $post );
+                if($post_count == 0):
+                ?>
+                <div class="more-link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                 <div class="news-content-wr">
-                    <a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/nen-mua-ban-ghe-an-loai-nao.jpg" alt=""></a><p class="news-summary">Ghế ăn hiện đại với khung thép cứng và được bọc da hoàn toàn vô cùng hiện đại và sang trọng cũng như tốt cho sức khỏe của gia đình. </p>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
                 </div>
                 <div class="other-news">
                     <h5 class="other-news-title">Các tin khác</h5>
                     <ul>
-                        <li><a href="">Chọn ghế ngồi ăn cho căn hộ nhỏ</a></li>
+                        <?php else: ?>
+                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <?php
+                        endif;
+                        $post_count++;
+                        endforeach;
+                        wp_reset_postdata();
+                        endif;
+                        ?>
                     </ul>
                 </div>
             </div>
             <div class="col-ssmm-12 col-ssm-12 col-md-4">
                 <h1 class="store-news-title">
-                    <a href="">Chuyên đề nội thất</a>
+                    <a href="">CHUYÊN ĐỀ NỘI THẤT</a>
                 </h1>
-                <div class="more-link"><a href="">Sức hút từ bộ sưu tập sofa da thật phối gỗ của thương </a></div>
+                <?php
+                $array = array('posts_per_page' => 4,'category_name'=> 'Chuyên đề nội thất','orderby'=> 'date');
+                $latest_posts = get_posts( $args );
+                if ( $latest_posts ) : $post_count = 0;
+                foreach ( $latest_posts as $post ) :
+                setup_postdata( $post );
+                if($post_count == 0):
+                ?>
+                <div class="more-link"><a href="<?php the_permalink(); ?>"><?php echo limit_words($post->post_title,9); ?></a></div>
                 <div class="news-content-wr">
-                    <a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-phoi-go-den-tu-thuong-hieu-noi-that-erado.png" alt=""></a><p class="news-summary">Thương hiệu nội thất ZSOFA giới thiệu đến quý khách hàng bộ sưu tập sofa da thật phối gỗ hiện đại đang được rất nhiều khách hàng </p>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
                 </div>
                 <div class="other-news">
                     <h5 class="other-news-title">Các tin khác</h5>
                     <ul>
-                        <li><a href="">Bàn giao nội thất cho gia đình anh Dũng - P1013, Khu </a></li>
-                        <li><a href="">Bàn giao sofa cho chị Thúy ở Lò Đúc</a></li>
-                        <li><a href="">Bàn giao sofa cho Chị Tân ở KĐT Yên Hòa, Trung Yên </a></li>
+                        <?php else: ?>
+                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <?php
+                        endif;
+                        $post_count++;
+                        endforeach;
+                        wp_reset_postdata();
+                        endif;
+                        ?>
                     </ul>
                 </div>
             </div>

@@ -813,13 +813,24 @@ figure.banner-middle {
     margin-top: 5px;
     border: 1px solid #d2d2d2; }
     .section8.store-news .news-content-wr a img {
-      border: 2px solid #fff; }
+      border: 2px solid #fff;
+      max-width: 100%;
+      height: auto;
+      max-height: 41px;
+      display: block; }
   .section8.store-news .other-news-title {
     font-weight: 600; }
   .section8.store-news .other-news ul li {
     background: url(../images/i8.gif) no-repeat left 7px;
     padding-left: 10px;
     position: relative; }
+    .section8.store-news .other-news ul li a {
+      text-transform: lowercase;
+      display: inline-block; }
+    .section8.store-news .other-news ul li a::first-letter {
+      text-transform: uppercase; }
+    .section8.store-news .other-news ul li a:first-letter {
+      text-transform: uppercase; }
 
 .section9.newsletter {
   background-color: #f1f1f2;

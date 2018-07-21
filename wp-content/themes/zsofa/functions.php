@@ -87,4 +87,35 @@ add_action( 'after_setup_theme', 'wpdocs_theme_thumb_wide' );
 function new_excerpt_more( $excerpt ) {
     return preg_replace('`\[[^\]]*\]`','...',$excerpt);
 }
-//add_filter( 'wp_trim_excerpt', 'new_excerpt_more' );
+// function to limit excerpt;
+function excerpt($limit) {
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    if (count($excerpt)>=$limit) {
+        array_pop($excerpt);
+        $excerpt = implode(" ",$excerpt).'...';
+    } else {
+        $excerpt = implode(" ",$excerpt);
+    }
+    $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+    return $excerpt;
+}
+// function to limit content;
+function content($post_content,$limit) {
+    $content = explode(' ', $post_content , $limit);
+    if (count($content)>=$limit) {
+        array_pop($content);
+        $content = implode(" ",$content).'...';
+    } else {
+        $content = implode(" ",$content);
+    }
+    $content = preg_replace('`<[^>]*>`','',$content);
+    $content = preg_replace('/\[.+\]/','', $content);
+    $content = apply_filters('the_content', $content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    return $content;
+}
+// function to show short title;
+function limit_words($string, $word_limit){
+    $words = explode(" ",$string);
+    return implode(" ",array_splice($words,0,$word_limit));
+}

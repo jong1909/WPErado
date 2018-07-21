@@ -1055,6 +1055,10 @@ figure.banner-middle{
 		    border: 1px solid #d2d2d2;
 		    img{
 		    	border: 2px solid #fff;
+                max-width: 100%;
+                height: auto;
+                max-height: 41px;
+                display: block;
 		    }
     	}
     }
@@ -1067,6 +1071,17 @@ figure.banner-middle{
 				background: url(../images/i8.gif) no-repeat left 7px;
 				padding-left: 10px;
 				position: relative;
+                a{
+                    text-transform: lowercase;
+                    display: inline-block;
+                }
+                a::first-letter{
+                    text-transform: uppercase;
+                }
+                a:first-letter{
+                    text-transform: uppercase;
+                }
+                
     		}
     	}
     }
