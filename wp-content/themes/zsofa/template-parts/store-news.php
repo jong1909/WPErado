@@ -13,7 +13,7 @@
                 setup_postdata( $post );
                     if($post_count == 0):
                     ?>
-                <div class="more-link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                <div class="more-link"><a href="<?php the_permalink(); ?>"><?php echo limit_words($post->post_title,9); ?></a></div>
                 <div class="news-content-wr">
                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
                 </div>
@@ -44,7 +44,7 @@
                 setup_postdata( $post );
                 if($post_count == 0):
                 ?>
-                <div class="more-link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                <div class="more-link"><a href="<?php the_permalink(); ?>"><?php echo limit_words($post->post_title,9); ?></a></div>
                 <div class="news-content-wr">
                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><p class="news-summary"><?php echo excerpt(30); ?></p>
                 </div>
