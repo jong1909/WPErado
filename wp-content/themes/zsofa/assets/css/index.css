@@ -567,11 +567,16 @@ a {
   display: block;
   border: solid 1px #cbcbcb;
   line-height: 0;
-  position: relative; }
+  position: relative;
+  padding: 3px; }
   .feature-product-wrapp a.wrapper-link img {
     max-width: 100%;
     max-height: 140px;
     height: 140px; }
+  .feature-product-wrapp a.wrapper-link .img-thumb-wrapper {
+    display: block;
+    height: 100%;
+    overflow: hidden; }
 .feature-product-wrapp .product-feature-title {
   margin-bottom: 2px; }
   .feature-product-wrapp .product-feature-title a {
@@ -695,7 +700,7 @@ figure.banner-middle {
     border: solid 1px #cbcbcb;
     display: block;
     line-height: 0;
-    padding: 2px;
+    padding: 3px;
     height: 158px; }
     .featured-category a.product-image img {
       max-width: 100%;

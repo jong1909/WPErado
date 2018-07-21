@@ -746,11 +746,17 @@ a {
     	border: solid 1px #cbcbcb;
 	    line-height: 0;
 	    position: relative;
+        padding: 3px;
 	    img{
             max-width: 100%;
             max-height: 140px;
             height: 140px;
 		}
+        .img-thumb-wrapper{
+            display: block;
+            height: 100%;
+            overflow: hidden;
+        }
     }
 	.product-feature-title{
 		margin-bottom: 2px;
@@ -902,7 +908,7 @@ figure.banner-middle{
 		border: solid 1px #cbcbcb;
 		display: block;
 		line-height: 0;
-        padding: 2px;
+        padding: 3px;
         height: 158px;
 		img{
             max-width: 100%;
