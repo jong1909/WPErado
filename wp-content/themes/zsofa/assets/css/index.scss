@@ -3006,6 +3006,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         a.wrapper-link{
             img{
                 width: 100%;
+                height: 237px;
+                max-height: 237px;
             }
         }
         .feature-price-sale{
@@ -3020,6 +3022,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         a.product-image{
             img{
                 width: 100%;
+                height: 229px;
+                max-height: 229px;
             }
         }
     }
@@ -4141,7 +4145,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .featured-category{
         a.product-image{
             img{
-                width: initial;
+                max-width: 100%;
+                display: block;
+                height: 145px;
             }
         }
     }
@@ -4231,7 +4237,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         }
         img{
             width: initial;
-        }
+        }        
     }
     footer{
         .about-us-title,.for-buyers-title{
@@ -4249,6 +4255,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 bottom: -9px;
                 left: 0;
                 background: #EC4136;
+            }
+        }
+    }
+    .featured-category{
+        a.product-image{
+            img{
+                max-width: 100%;
+                display: block;
+                height: 116px;
             }
         }
     }

@@ -1086,13 +1086,13 @@ body {
     width: 96.5%; }
 
   .container {
-    width: 100%; } }
+    width: 480px; } }
 @media (min-width: 768px) {
   .page {
     width: 96.5%; }
 
   .container {
-    width: 100%; } }
+    width: 750px; } }
 @media (min-width: 1024px) {
   .page {
     width: 100%; }
