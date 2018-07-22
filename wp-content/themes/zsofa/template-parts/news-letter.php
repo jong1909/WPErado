@@ -17,7 +17,7 @@
 
             </div>
             <div class="col-md-7">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/169.jpg" alt="" class="img-responsive">
+                <?php echo do_shortcode( '[rev_slider alias="coupon-banner"]' );  ?>
             </div>
         </div>
     </div>
