@@ -140,7 +140,7 @@ get_header(); ?>
 <?php call_template_path('product','GHẾ SOFA',20,'ghe-sofa','rand','sofa'); ?>
 <?php call_template_path('product','Nội thất',12,'noi-that','rand','furniture'); ?>
 <?php call_template_path('product','Sofa giường',8,'sofa-giuong','rand','bed'); ?>
-<?php call_template_path('product','Thảm thổ nhĩ kỳ',8,'tham-tho-nhi-ky','rand','decorations'); ?>
+<?php call_template_path('product','Bàn sofa',8,'ban-sofa','rand','decorations'); ?>
 <?php call_template_path('product','Thảm trải sàn',8,'tham-sofa','rand','carpet'); ?>
 			<div class="store-connect-mobile">
 			    <h3>Kết nối với Zsofa</h3>
