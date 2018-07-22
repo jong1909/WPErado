@@ -1139,9 +1139,17 @@ footer{
 		height: 310px;
 	    overflow: hidden;
 	    background: url(../images/bf.gif) repeat-x left top;
-	    a{
-	    	color: #fff;
-	    }
+        .menu{
+          a{
+                color: #fff;
+            }  
+        }
+        .footer-ge-title{
+            a{
+                color: #fff;
+            }
+        }
+	    
 	}
 	.footer-ge-title{
 	    margin-bottom: 20px;

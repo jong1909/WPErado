@@ -20,22 +20,13 @@
 								<div class="footer-ge-title about-us-title">
 									<h2><a href="">VỀ CÔNG TY</a></h2>
 								</div>
-								<ul>
-									<li><a href="">Giới thiệu Zsofa</a></li>
-									<li><a href="">Công Trình Đã Thực Hiện</a></li>
-									<li><a href="">Chỉ đường đến Zsofa</a></li>
-								</ul>
+                                <?php wp_nav_menu( array( 'menu' => 'Về công ty' ) ); ?>
 							</div>
 							<div class="col-md-6 col-ssm-12 col-ssmm-6 for-buyers">
 								<div class="footer-ge-title for-buyers-title">
 									<h2><a href="">DÀNH CHO NGƯỜI MUA</a></h2>
 								</div>
-								<ul>
-									<li><a href="">Bảo mật thông tin</a></li>
-									<li><a href="">Chính sách bảo hành</a></li>
-									<li><a href="">Chương trình khuyến mại</a></li>
-									<li><a href="">Mua hàng và thanh toán</a></li>
-								</ul>
+                                <?php wp_nav_menu( array( 'menu' => 'Dành cho người mua' ) ); ?>
 							</div>
 						</div>
 						

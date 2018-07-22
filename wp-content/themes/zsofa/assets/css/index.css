@@ -877,7 +877,9 @@ footer {
     height: 310px;
     overflow: hidden;
     background: url(../images/bf.gif) repeat-x left top; }
-    footer .footer-main a {
+    footer .footer-main .menu a {
+      color: #fff; }
+    footer .footer-main .footer-ge-title a {
       color: #fff; }
   footer .footer-ge-title {
     margin-bottom: 20px;
