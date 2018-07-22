@@ -1,9 +1,12 @@
+<?php
+$category_ids = array(1764,1765,1766);
+?>
 <div class="section8 store-news">
     <div class="container">
         <div class="row">
             <div class="col-ssmm-12 col-ssm-12 col-md-4">
                 <h1 class="store-news-title">
-                    <a href="">CHUYÊN ĐỀ ZSOFA</a>
+                    <a href="<?php echo esc_url( get_category_link( $category_ids[1] )); ?>"><?php echo get_cat_name( $category_ids[1] );?></a>
                 </h1>
                 <?php
                 $array = array('posts_per_page' => 4,'category_name' => 'chuyen-de-zsofa' ,'orderby'=> 'date');
@@ -34,7 +37,7 @@
             </div>
             <div class="col-ssmm-12 col-ssm-12 col-md-4">
                 <h1 class="store-news-title">
-                    <a href="">Kinh nghiệm hay của Zsofa</a>
+                    <a href="<?php echo esc_url( get_category_link( $category_ids[2] )); ?>"><?php echo get_cat_name( $category_ids[2] );?></a>
                 </h1>
                 <?php
                 $array = array('posts_per_page' => 4,'category_name' => 'kinh-nghiem-hay-cua-zsofa' ,'orderby'=> 'date');
@@ -65,7 +68,7 @@
             </div>
             <div class="col-ssmm-12 col-ssm-12 col-md-4">
                 <h1 class="store-news-title">
-                    <a href="">CHUYÊN ĐỀ NỘI THẤT</a>
+                    <a href="<?php echo esc_url( get_category_link( $category_ids[0] )); ?>"><?php echo get_cat_name( $category_ids[0] );?></a>
                 </h1>
                 <?php
                 $array = array('posts_per_page' => 4,'category_name' => 'chuyen-de-noi-that' ,'orderby'=> 'date');
