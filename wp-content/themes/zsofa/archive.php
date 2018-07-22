@@ -176,15 +176,6 @@ get_header(); ?>
                         endif;
                         ?>
                     </div>
-                    <ul class="pagination float-right">
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a class="next" href="#">Tiếp</a></li>
-                        <li><a class="previous" href="#">Cuối</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
