@@ -18,13 +18,13 @@
 						<div class="row top-content">
 							<div class="col-md-6 col-ssm-12 col-ssmm-6 about-us">
 								<div class="footer-ge-title about-us-title">
-									<h2><a href="">VỀ CÔNG TY</a></h2>
+									<h2><a href="javascript:;">VỀ CÔNG TY</a></h2>
 								</div>
                                 <?php wp_nav_menu( array( 'menu' => 'Về công ty' ) ); ?>
 							</div>
 							<div class="col-md-6 col-ssm-12 col-ssmm-6 for-buyers">
 								<div class="footer-ge-title for-buyers-title">
-									<h2><a href="">DÀNH CHO NGƯỜI MUA</a></h2>
+									<h2><a href="javascript:;">DÀNH CHO NGƯỜI MUA</a></h2>
 								</div>
                                 <?php wp_nav_menu( array( 'menu' => 'Dành cho người mua' ) ); ?>
 							</div>
