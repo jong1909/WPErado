@@ -125,11 +125,28 @@
                     </div>
                     <div class="related-news clearfix">
                         <h2>Bài viết liên quan</h2>
-                        <ul class="clearfix">
-                            <li><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-phoi-go-den-tu-thuong-hieu-noi-that-erado.png" alt=""></a><a class="summary-content" href="">Sức hút từ bộ sưu tập sofa da thật phối gỗ của thương hiệu nội thất </a></li>
-                            <li><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ghe-sofa-thong-minh-voi-ngan-keo-ra-thanh-giuong.png" alt=""></a><a class="summary-content" href="">Ghế sofa thông minh với ngăn kéo ra thành giường</a></li>
-                            <li><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/me-man-voi-nhung-mau-ghe-sofa-cho-chung-cu-nho.png" alt=""></a><a class="summary-content" href="">Mê mẩn với những mẫu ghế sofa cho chung cư nhỏ</a></li>
-                        </ul>
+                        <?php
+                        $categories = get_the_category(get_the_ID());
+                        if ($categories){
+                            $category_ids = array();
+                            foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+                            $args=array(
+                                'category__in' => $category_ids,
+                                'post__not_in' => array(get_the_ID()),
+                                'posts_per_page' => 3
+                            );
+                            $my_query = new wp_query($args);
+                            if( $my_query->have_posts() ):
+                                echo '<ul class="clearfix">';
+                                while ($my_query->have_posts()):$my_query->the_post();
+                                    ?>
+                                    <li class="clearfix"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a><a class="summary-content" href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+                                <?php
+                                endwhile;
+                                echo '</ul>';
+                            endif; wp_reset_query();
+                        }
+                        ?>
                     </div>
                     <div class="ext-banner clearfix">
                         <a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/174.jpg" alt=""></a>

@@ -1463,13 +1463,14 @@ footer{
                 line-height: 30px;
                 padding-left: 10px;
                 background:#EC2127;
+                margin-bottom: 5px;
                 &:before{
                     content: initial;
                 }
             }
             li{
                 clear: both;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 img{
                     width: 80px;
                     height: 60px;
@@ -1479,6 +1480,12 @@ footer{
                 }
                 .summary-content{
                     font-weight: bold;
+                    display: inline-block;
+                    text-transform: lowercase;
+                    width: 62%;
+                }
+                .summary-content:first-letter{
+                    text-transform: uppercase;
                 }
             }
         }

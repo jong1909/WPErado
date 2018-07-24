@@ -1119,12 +1119,13 @@ footer {
     height: 30px;
     line-height: 30px;
     padding-left: 10px;
-    background: #EC2127; }
+    background: #EC2127;
+    margin-bottom: 5px; }
     .listing-page-wrapper .col-left-pr .related-news h2:before {
       content: initial; }
   .listing-page-wrapper .col-left-pr .related-news li {
     clear: both;
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
     .listing-page-wrapper .col-left-pr .related-news li img {
       width: 80px;
       height: 60px;
@@ -1132,7 +1133,12 @@ footer {
       float: left;
       margin-right: 6px; }
     .listing-page-wrapper .col-left-pr .related-news li .summary-content {
-      font-weight: bold; }
+      font-weight: bold;
+      display: inline-block;
+      text-transform: lowercase;
+      width: 62%; }
+    .listing-page-wrapper .col-left-pr .related-news li .summary-content:first-letter {
+      text-transform: uppercase; }
 .listing-page-wrapper .bread-crumb-cat ul {
   height: 32px;
   overflow: hidden;
