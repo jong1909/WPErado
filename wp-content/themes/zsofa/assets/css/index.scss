@@ -2668,6 +2668,13 @@ footer{
         margin-bottom: 60px;
         margin-top: 20px;
         .intro{
+            img{
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+        }        
+        .intro{
             p{
                 line-height: 24px;
                 margin: 10px 0;

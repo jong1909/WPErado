@@ -2041,6 +2041,10 @@ ul.pagination {
 .news-detail-page .news-main-content {
   margin-bottom: 60px;
   margin-top: 20px; }
+  .news-detail-page .news-main-content .intro img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
   .news-detail-page .news-main-content .intro p {
     line-height: 24px;
     margin: 10px 0;
