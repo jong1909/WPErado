@@ -110,8 +110,14 @@ $saving_price = $regular_price - $sale_price;
                         </div>
                     </div>
                     <div class="price-wrapper clearfix">
-                        <div class="price col-ssmm-12 col-ssm-12 col-md-5"><span class="title">Giá bán: </span><span
-                                    class="num"><?php echo  (!empty($sale_price))? wc_price($sale_price): wc_price($regular_price); ?></span></div>
+                        <div class="price col-ssmm-12 col-ssm-12 col-md-5"><span class="title">Giá bán: </span>
+                            <span class="num">
+                                <?php
+                                $product_price = (!empty($sale_price))? $sale_price : $regular_price;
+                                echo  wc_price($product_price);
+                                ?>
+                            </span>
+                        </div>
                         <?php if(!empty($sale_price)):   ?>
                         <div class="old-price col-ssmm-6 col-ssm-6 col-md-3"><span class="title">Giá cũ: </span><span
                                     class="num"><?php echo wc_price($regular_price); ?></span></div>
@@ -119,7 +125,9 @@ $saving_price = $regular_price - $sale_price;
                                     class="num"><?php echo wc_price($saving_price); ?></span></div>
                         <?php endif; ?>
                     </div>
-                    <div class="other-price"><span class="title">Hoặc mua với giá:</span>
+                    <?php if(!empty($product_price)):?>
+                    <div class="other-price"><span class="title">Hoặc mua trả góp với giá từ: <?php echo wc_price(round($product_price/12,-3));?> / tháng bằng thẻ tín dụng</span>
+                    <?php endif; ?>
                         <div class="price"></div>
                     </div>
                     <div class="row promotion-wr">
