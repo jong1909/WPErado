@@ -98,6 +98,14 @@
             $('.win-wrapper-vdproduct,#overlay-region').hide();
         });
     }
+    function showPopupOrderOnline(){
+        $('.buy-online').click(function(){
+            $('.order-online,#overlay-region').show();
+        });
+        $('#overlay-region,.order-close-bt').click(function(){
+            $('.order-online,#overlay-region').hide();
+        });
+    }
     function activeMenu(){
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
@@ -119,6 +127,7 @@
         showToolTipMenu();
         showProductVideo();
         activeMenu();
+        showPopupOrderOnline();
             //  Function Click out site menu-> hide menu
 
         $.fn.clickOff = function(callback, selfDestroy) {
