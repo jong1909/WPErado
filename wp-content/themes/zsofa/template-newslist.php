@@ -141,26 +141,24 @@ get_header(); ?>
 			                <div class="related-news clearfix">
 			                    <h2>Bài viết liên quan</h2>
                                 <?php
-                                $categories = get_the_category(get_the_ID());
-                                if ($categories){
-                                    $category_ids = array();
-                                    foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
-                                    $args=array(
-                                        'category__in' => $category_ids,
-                                        'post__not_in' => array(get_the_ID()),
-                                        'posts_per_page' => 3
-                                    );
-                                    $my_query = new wp_query($args);
-                                    if( $my_query->have_posts() ):
-                                        echo '<ul class="clearfix">';
-                                        while ($my_query->have_posts()):$my_query->the_post();
-                                            ?>
-                                            <li class="clearfix"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a><a class="summary-content" href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
-                                        <?php
-                                        endwhile;
-                                        echo '</ul>';
-                                    endif; wp_reset_query();
-                                }
+                                $args=array(
+                                    'post_type'=>'post',
+                                    'post_status'=>'publish',
+                                    'cat' => 1,
+                                    'orderby' => 'rand',
+                                    'order' => 'DESC',
+                                    'posts_per_page'=> 3
+                                );
+                                $my_query = new wp_query($args);
+                                if( $my_query->have_posts() ):
+                                    echo '<ul class="clearfix">';
+                                    while ($my_query->have_posts()):$my_query->the_post();
+                                        ?>
+                                        <li class="clearfix"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a><a class="summary-content" href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+                                    <?php
+                                    endwhile;
+                                    echo '</ul>';
+                                endif; wp_reset_query();
                                 ?>
 			                </div>
 			                <div class="ext-banner clearfix">

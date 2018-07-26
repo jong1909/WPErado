@@ -2047,6 +2047,8 @@ ul.pagination {
 .news-detail-page .news-main-content {
   margin-bottom: 60px;
   margin-top: 20px; }
+  .news-detail-page .news-main-content .intro figure {
+    max-width: 100%; }
   .news-detail-page .news-main-content .intro img {
     max-width: 100%;
     height: auto;

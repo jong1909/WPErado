@@ -170,8 +170,19 @@ get_header(); ?>
                     </div>
                     <h3 class="general-introduction"><?php the_archive_title();?></h3>
                     <div class="news-content-wrapper row">
-                        <?php if ( have_posts() ) :
-                            while ( have_posts() ) : the_post(); ?>
+                        <?php
+                        $category = get_category( get_query_var( 'cat' ) );
+                        $cat_id = $category->cat_ID;
+                        $zsofa_news = new WP_Query(array(
+                            'post_type'=>'post',
+                            'post_status'=>'publish',
+                            'orderby' => 'ID',
+                            'cat' => $cat_id,
+                            'order' => 'DESC',
+                            'posts_per_page'=> 18));
+                        ?>
+                        <?php if ( $zsofa_news->have_posts() ) :
+                            while ( $zsofa_news->have_posts() ) : $zsofa_news->the_post(); ?>
                             <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                 <div class="news-item-wr">
                                     <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $page->ID, 'post-thumb' );?></a>

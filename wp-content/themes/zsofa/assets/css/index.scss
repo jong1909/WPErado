@@ -2675,6 +2675,9 @@ footer{
         margin-bottom: 60px;
         margin-top: 20px;
         .intro{
+            figure{
+                max-width: 100%;
+            }
             img{
                 max-width: 100%;
                 height: auto;
