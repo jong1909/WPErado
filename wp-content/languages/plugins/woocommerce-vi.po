@@ -11559,7 +11559,7 @@ msgstr "Thêm đơn hàng"
 
 #: includes/class-wc-post-types.php:287
 msgid "This is where you can add new products to your store."
-msgstr "Đây là nơi bạn có thể thêm các sản phẩm mới vào cửa hàng của bạn."
+msgstr "Tất cả các sản phẩm hiện có trên hệ thống của ZSOFA."
 
 #: includes/class-wc-post-types.php:280
 msgid "Use as product image"
