@@ -97,28 +97,7 @@ get_header(); ?>
                 <div class="col-ssmm-12 col-ssm-12 col-md-3 col-left-pr">
                     <div class="product-type">
                         <h2 class="product-type-title">Ghế sofa</h2>
-                        <ul>
-                            <li><a href="">Sofa nỉ</a></li>
-                            <li><a href="">Sofa da</a></li>
-                            <li><a href="">Sofa vải</a></li>
-                            <li><a href="">Sofa góc</a></li>
-                            <li><a href="">Sofa đẹp</a></li>
-                            <li><a href="">Sofa cafe</a></li>
-                            <li><a href="">Sofa văng</a></li>
-                            <li><a href="">Sofa giường</a></li>
-                            <li><a href="">Sofa hà nội</a></li>
-                            <li><a href="">Sofa cổ điển</a></li>
-                            <li><a href="">Sofa da thật</a></li>
-                            <li><a href="">Sofa cao cấp</a></li>
-                            <li><a href="">Sofa karaoke</a></li>
-                            <li><a href="">Sofa gia đình</a></li>
-                            <li><a href="">Sofa hàn quốc</a></li>
-                            <li><a href="">Sofa văn phòng</a></li>
-                            <li><a href="">Sofa phòng ngủ</a></li>
-                            <li><a href="">Sofa phòng khách</a></li>
-                            <li><a href="">Bàn kính sofa</a></li>
-                            <li><a href="">Sofa chung cư</a></li>
-                        </ul>
+                        <?php wp_nav_menu( array( 'menu' => 'Archive left menu' ) ); ?>
                     </div>
                     <div class="price-ranges clearfix">
                         <h2 class="price-ranges-tile">Chọn giá</h2>
@@ -217,35 +196,12 @@ get_header(); ?>
                             <li><a href=""><?php woocommerce_page_title(); ?></a></li>
                         </ul>
                     </div>
-                    <h3 class="general-introduction">Điều gì khiến Á hậu Huyền My Chọn Mua Sofa Erado ?</h3>
+                    <h3 class="general-introduction">Điều gì khiến bạn lựa chọn <?php woocommerce_page_title(); ?> tại ZSOFA ?</h3>
                     <div class="cont-description">
-                        <p>
-                            Á hậu Huyền My chia sẻ khi chọn mua nội thất gia đình: <i>"Ba mẹ giao cho Huyền My lựa chọn
-                                nội thất cho căn hộ mới mua, My đã đi xem ở nhiều nơi, nhiều showroom nội thất tại Hà
-                                Nội và My đã quyết định chọn mua nội thất Erado"</i>.
-                        </p>
-                        <img class="category-banner img-responsive"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-danhmuc-ghesofa.jpg"
-                             alt="">
-                        <h5>VỚI SOFA ERADO MY CHỌN</h5>
-                        <ul class="list-choice">
-                            <li>Mẫu sofa da thiết kế theo phong cách châu âu: sang trọng và lịch lãm</li>
-                            <li>Vật liệu hạng sang nhập khẩu bọc sofa được ERADO nghiên cứu và lưạ chọn rất kĩ càng.
-                            </li>
-                            <li>Gam mầu thời trang không lỗi mốt, theo kịp với xu hướng nội thất.</li>
-                            <li>Độ thẩm mỹ hoàn hảo, vì My đã đi xem nhiều nơi và nhận thấy.</li>
-                            <li>Rõ ràng với kết cấu bên trong, ở ERADO được kiểm chứng và xác thực ngay tại showroom
-                            </li>
-                            <li>Rất nhiều sản phẩm sofa phòng khách ở showroom để cho khách hàng lựa chọn</li>
-                            <li>Thời gian bảo hành sản phẩm sofa ở đây lên đến 12 năm, lâu nhất trên thị trường</li>
-                            <li>Cơ sở vật chất rộng rãi sang trọng, đúng như thương hiệu công khai về cơ sở vật chất
-                            </li>
-                            <li>Tính năng chăm sóc sức khoẻ tích hợp trên sofa là giá trị vượt trội hơn các nơi khác ở
-                                hai góc độ: các điểm phần ngồi được tính toán theo các đốt trên cột sống người dùng ngả
-                                lưng và sofa ERADO đã chạm được các điểm trên cột sống và giảm mệt mỏi cho người dùng.
-                            </li>
-                        </ul>
-                        <div class="thanks-erado float-right">Cảm ơn nội thất ERADO!</div>
+                        <?php
+                        $term_object = get_queried_object();
+                        echo $term_object->description;
+                        ?>
                     </div>
                     <div class="featured-category sofa clearfix">
                         <div class="row list-products">

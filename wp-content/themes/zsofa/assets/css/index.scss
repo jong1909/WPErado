@@ -1574,6 +1574,11 @@ footer{
             font-size: 16px;
             font-family: 'Times New Roman';
             margin-bottom: 60px;
+            img{
+                max-width: 100%;
+                display: block;
+                height: auto;
+            }
             i{
                 font-style: italic;
             }

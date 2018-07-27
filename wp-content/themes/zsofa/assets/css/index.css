@@ -1204,6 +1204,10 @@ footer {
   font-size: 16px;
   font-family: 'Times New Roman';
   margin-bottom: 60px; }
+  .listing-page-wrapper .col-right-pr .cont-description img {
+    max-width: 100%;
+    display: block;
+    height: auto; }
   .listing-page-wrapper .col-right-pr .cont-description i {
     font-style: italic; }
 .listing-page-wrapper .col-right-pr .category-banner {
