@@ -2833,6 +2833,24 @@ footer{
                 height: 85px;
                 background: #414143;
                 padding-top: 55px;
+                >a{
+                    display: none !important;
+                }
+                .sub-menu{
+                    display: block;
+                    position: absolute;
+                    background: transparent;
+                    bottom: 5px;
+                    left: 0;
+                    >li{
+                        float: left;
+                        width: 50%;
+                        padding: 0;
+                        a{
+                            width: 100%;
+                        }
+                    }
+                }
                 a{
                     height: 22px;
                     line-height: 22px;

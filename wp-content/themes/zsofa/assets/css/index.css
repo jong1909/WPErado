@@ -2166,6 +2166,20 @@ ul.pagination {
     height: 85px;
     background: #414143;
     padding-top: 55px; }
+    #header .mega-menu-mobile .sub-menu .user-register > a {
+      display: none !important; }
+    #header .mega-menu-mobile .sub-menu .user-register .sub-menu {
+      display: block;
+      position: absolute;
+      background: transparent;
+      bottom: 5px;
+      left: 0; }
+      #header .mega-menu-mobile .sub-menu .user-register .sub-menu > li {
+        float: left;
+        width: 50%;
+        padding: 0; }
+        #header .mega-menu-mobile .sub-menu .user-register .sub-menu > li a {
+          width: 100%; }
     #header .mega-menu-mobile .sub-menu .user-register a {
       height: 22px;
       line-height: 22px;

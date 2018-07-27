@@ -80,21 +80,7 @@
                             <li>&nbsp;</li>
                         </ul>
                     </div>
-                    <ul class="sub-menu">
-                        <li class="user-register">                        
-                            <a class="register" href="">Đăng ký tài khoản</a><a class="login" href="">Đăng nhập</a></li>
-                        <li class="home-link"><a href="">Trang chủ</a></li>
-                        <li class="special-subject-link"><a href="">Chuyên đề Zsofa</a></li>
-                        <li class="chairs-link"><a href="">Ghế sofa</a></li>
-                        <li class="furniture-link"><a href="">Chuyên đề nội thất</a></li>
-                        <li class="special-link"><a href="">Nội thất</a></li>
-                        <li class="bed-link"><a href="">Giường ngủ</a></li>
-                        <li class="decor-link"><a href="">Trang trí nhà đẹp</a></li>
-                        <li class="decorating-goods-link"><a href="">Hàng trang trí</a></li>
-                        <li class="carpet-link"><a href="">Thảm trải sàn</a></li>
-                        <li class="promotion-link"><a href="">Khuyến mãi</a></li>
-                        <li class="video-link"><a href="">Video</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array( 'menu' => 'Mobile main menu','menu_class' => 'sub-menu' ) ); ?>
                 </div>
                 <div class="mobile-top-hotline">
                     <div class="hotline-num">0976.529.529</div>
