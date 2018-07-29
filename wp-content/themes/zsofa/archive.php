@@ -198,7 +198,17 @@ get_header(); ?>
                             while ( $zsofa_news->have_posts() ) : $zsofa_news->the_post(); ?>
                             <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                 <div class="news-item-wr">
-                                    <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $page->ID, 'post-thumb' );?></a>
+                                    <?php if(has_post_thumbnail()):?>
+                                        <a class="product-image image_blur" href="<?php the_permalink() ?>"><span class="img-thumb-wrapper"><?php echo get_the_post_thumbnail( $page->ID, 'post-thumb' );?></span></a>
+                                    <?php else :?>
+                                        <?php
+                                        $html = '<div class="news-image-placeholder">';
+                                        $html .= sprintf('<img src="%s" alt="%s" class="wp-post-image" />', esc_url(wc_placeholder_img_src()), esc_html__('Awaiting product image', 'woocommerce'));
+                                        $html .= '</div>';
+
+                                        echo apply_filters('woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id);
+                                        ?>
+                                    <?php endif;?>
                                     <a href="<?php the_permalink(); ?>" class="news-title"><?php the_title(); ?></a>
                                     <span class="line-separator">&nbsp;</span>
                                     <div class="short-description">
