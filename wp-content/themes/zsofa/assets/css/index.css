@@ -2347,6 +2347,12 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #ffff00;
   color: #ff0000; }
 
+.search-results .listing-page-wrapper .col-right-pr .general-introduction {
+  display: none; }
+
+#product-list-slider {
+  margin-bottom: 10px; }
+
 .order-online {
   width: 940px;
   height: 450px;
