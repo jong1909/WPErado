@@ -438,15 +438,6 @@ $saving_price = $regular_price - $sale_price;
                 ?>
             </div>
             <input type="hidden" value="<?php global $term; echo json_encode($term);?>" id="current-product-category">
-            <ul class="pagination float-right">
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a class="next" href="#">Tiếp</a></li>
-                <li><a class="previous" href="#">Cuối</a></li>
-            </ul>
         </div>
     </div>
 
@@ -590,7 +581,7 @@ $saving_price = $regular_price - $sale_price;
             <div class="col-ssm-7">
                 <div class="user-contact-form">
                     <h2>ĐẶT ONLINE NGHE TƯ VẤN MIỄN PHÍ</h2>
-                    <?php echo do_shortcode('[contact-form-7 id="14159" title="Order online"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="14209" title="Order online"]'); ?>
                 </div>
             </div>
         </div>

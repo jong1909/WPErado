@@ -2469,7 +2469,12 @@ input[type="search"]::-webkit-search-results-decoration {
       color: #fff;
       background: #eb1c24;
       border-radius: 5px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .12s ease-out; }
+      .order-online .user-contact-form #user-request:hover {
+        background: #eb1c24; }
+    .order-online .user-contact-form .wpcf7-validation-errors {
+      display: none !important; }
     .order-online .user-contact-form .shop-services {
       margin-top: 20px; }
       .order-online .user-contact-form .shop-services li {

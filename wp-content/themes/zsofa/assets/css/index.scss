@@ -3233,6 +3233,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             background: #eb1c24;
             border-radius: 5px;
             cursor: pointer;
+            transition: all .12s ease-out;
+            &:hover{
+                background: #eb1c24;
+            }
+        }
+        .wpcf7-validation-errors{
+            display: none !important;
         }
         .shop-services{
             margin-top: 20px;
