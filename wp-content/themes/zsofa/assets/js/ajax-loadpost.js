@@ -6,7 +6,6 @@
 			var paged = hrefThis.match(/\/\d+\//)[0];
 			var categories_id = JSON.parse($('#current-category').val());
             categories_id = JSON.stringify(categories_id);
-			console.log(categories_id);
 			paged = paged.match(/\d+/)[0];
 			if(!paged) paged = 1;
 			$.ajax({
@@ -37,7 +36,6 @@
             var paged = hrefThis.match(/\/\d+\//)[0];
             var categories_id = JSON.parse($('#current-news-category').val());
             categories_id = JSON.stringify(categories_id);
-            console.log(categories_id);
             paged = paged.match(/\d+/)[0];
             if(!paged) paged = 1;
             $.ajax({
@@ -69,7 +67,6 @@
             var paged = hrefThis.match(/\/\d+\//)[0];
             var categories_id = JSON.parse($('#current-product-category').val());
             categories_id = JSON.stringify(categories_id);
-            console.log(categories_id);
             paged = paged.match(/\d+/)[0];
             if(!paged) paged = 1;
             $.ajax({

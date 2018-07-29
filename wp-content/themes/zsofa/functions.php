@@ -11,10 +11,6 @@
 $theme              = wp_get_theme( 'zsofa' );
 $zsofa_version = $theme['Version'];
 /*
- * Thêm dòng này vào file functions.php của theme
- */
-include 'AjaxPagination/ajax_pagination_wp.php';
-/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
@@ -170,10 +166,6 @@ function ajax_load_post_func() {
         <?php $stt = 1; while ($news->have_posts()):$news->the_post();?>
         <?php if($stt == 1):?><div class="zsofa_news_col1"><?php endif;?>
         <?php if($stt == 2):?><div class="zsofa_news_col2"><?php endif;?>
-        <?php
-        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
-        $urlThumb = $thumb['0'];
-        ?>
         <div class="col-md-4 col-ssmm-6 col-ssm-6">
             <div class="news-item-wr">
                 <?php if(has_post_thumbnail()):?>
@@ -230,10 +222,6 @@ function ajax_load_news_post_func() {
         <?php $stt = 1; while ($news->have_posts()):$news->the_post();?>
         <?php if($stt == 1):?><div class="zsofa_news_col1"><?php endif;?>
         <?php if($stt == 2):?><div class="zsofa_news_col2"><?php endif;?>
-        <?php
-        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
-        $urlThumb = $thumb['0'];
-        ?>
         <div class="col-md-4 col-ssmm-6 col-ssm-6">
             <div class="news-item-wr">
                 <?php if(has_post_thumbnail()):?>
@@ -275,14 +263,6 @@ function ajax_load_simiar_products() {
     $term = isset($_POST['categories'])?json_decode($_POST['categories']): 1;
     $paged = isset($_POST['ajax_paged'])?intval($_POST['ajax_paged']):'';
     if($paged <= 0 || !$paged || !is_numeric($paged)) wp_send_json_error('Paged?');
-    $news = new WP_Query(array(
-        'post_type'         =>  'post',
-        'posts_per_page'    =>  18,
-        'paged'             =>  $paged,
-        'category__in' => $category,
-        'orderby' => 'date'
-    ));
-
     $related_product = new WP_Query( array(
         'post_type'             => 'product',
         'post_status'           => 'publish',
