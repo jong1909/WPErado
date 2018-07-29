@@ -1717,6 +1717,16 @@ footer {
     padding: 9px;
     text-align: center;
     border-bottom: solid 1px #ebebeb; }
+    .product-detail-page .product-description .new-product-item .img-feature-wrapper {
+      height: 140px;
+      display: block; }
+      .product-detail-page .product-description .new-product-item .img-feature-wrapper span {
+        height: 100%;
+        display: block;
+        overflow: hidden; }
+      .product-detail-page .product-description .new-product-item .img-feature-wrapper img {
+        max-width: 100%;
+        display: block; }
     .product-detail-page .product-description .new-product-item .product-name {
       color: #4f4f4f;
       font-weight: bold;

@@ -298,39 +298,42 @@ $saving_price = $regular_price - $sale_price;
                     <div class="new-products">
                         <h3>Sản phẩm mới ra mắt</h3>
                         <div class="new-products-wrapper">
-                            <div class="new-product-item">
-                                <a href=""><img class="img-responsive"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/ban-an-8-ghe-ma-t1723-8270.jpg"
-                                                alt=""></a>
-                                <a class="product-name" href="">Bàn ăn 8 ghế mã T1723</a>
-                                <div class="product-price"><span>Giá: </span><span class="num">35,000,000</span><span
-                                            class="currency">đ</span></div>
-                                <div class="sale-price"><span>Giá KM: </span><span class="num">33,000,000</span><span
-                                            class="currency"> đ</span></div>
-                                <a href="" class="buy-now">Mua ngay</a>
-                            </div>
-                            <div class="new-product-item">
-                                <a href=""><img class="img-responsive"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/ban-an-8-ghe-ma-t1723-8270.jpg"
-                                                alt=""></a>
-                                <a class="product-name" href="">Bàn ăn 8 ghế mã T1723</a>
-                                <div class="product-price"><span>Giá: </span><span class="num">35,000,000</span><span
-                                            class="currency">đ</span></div>
-                                <div class="sale-price"><span>Giá KM: </span><span class="num">33,000,000</span><span
-                                            class="currency"> đ</span></div>
-                                <a href="" class="buy-now">Mua ngay</a>
-                            </div>
-                            <div class="new-product-item">
-                                <a href=""><img class="img-responsive"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/ban-an-8-ghe-ma-t1723-8270.jpg"
-                                                alt=""></a>
-                                <a class="product-name" href="">Bàn ăn 8 ghế mã T1723</a>
-                                <div class="product-price"><span>Giá: </span><span class="num">35,000,000</span><span
-                                            class="currency">đ</span></div>
-                                <div class="sale-price"><span>Giá KM: </span><span class="num">33,000,000</span><span
-                                            class="currency"> đ</span></div>
-                                <a href="" class="buy-now">Mua ngay</a>
-                            </div>
+                            <?php
+                            $args = array(
+                                'post_type' => 'product',
+                                'posts_per_page' => 3,
+                                'orderby' => 'rand',
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'product_visibility',
+                                        'field'    => 'name',
+                                        'terms'    => 'featured',
+                                    ),
+                                ),
+                            );
+                            $loop_feature_products = new WP_Query( $args );
+                            if ( $loop_feature_products->have_posts() ) {
+                                while ( $loop_feature_products->have_posts() ) : $loop_feature_products->the_post();
+                                global $product;
+                                $regular_price = $product->get_regular_price();
+                                $sale_price = $product->get_sale_price();
+                                ?>
+                                    <div class="new-product-item">
+                                        <a class="img-feature-wrapper" href="<?php the_permalink() ?>"><span class="img-thumb-wrapper"><?php if (has_post_thumbnail($loop_feature_products->post->ID)) echo get_the_post_thumbnail($loop_feature_products->post->ID, 'medium'); else echo '<img src="' . woocommerce_placeholder_img_src() . '" width="300px" height="210px" />'; ?></span></a>
+                                        <a class="product-name" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                        <div class="product-price"><span>Giá: </span><span class="num"><?php echo wc_price($regular_price); ?></span></div>
+                                        <div class="sale-price"><span>Giá KM: </span><span class="num"><?php echo wc_price($sale_price); ?></span></div>
+                                        <a href="<?php the_permalink() ?>" class="buy-now">Mua ngay</a>
+                                    </div>
+
+
+                                <?php
+                                endwhile;
+                            } else {
+                                echo __( 'No products found' );
+                            }
+                            wp_reset_postdata();
+                            ?>
                         </div>
 
 

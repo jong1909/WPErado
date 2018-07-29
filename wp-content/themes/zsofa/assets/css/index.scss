@@ -2250,6 +2250,19 @@ footer{
             padding: 9px;
             text-align: center;
             border-bottom: solid 1px #ebebeb;
+            .img-feature-wrapper{
+                height: 140px;
+                display: block;
+                span{
+                    height: 100%;
+                    display: block;
+                    overflow: hidden;
+                }
+                img{
+                    max-width: 100%;
+                    display: block;
+                }
+            }
             .product-name{
                 color: #4f4f4f;
                 font-weight: bold;
