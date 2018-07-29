@@ -134,7 +134,7 @@ function zsofa_pagination_ajax($custom_query = null, $paged = 1) {
         'format' 	=> '?paged=%#%',
         'current' 	=> max( 1, $paged ),
         'total' 	=> $total,
-        'mid_size'	=> '5',
+        'mid_size'	=> '2',
         'prev_text'    => __('Trước','zsofavn'),
         'next_text'    => __('Tiếp','zsofavn'),
     ) );
@@ -361,7 +361,7 @@ function zsofa_archive_pagination($custom_query = null, $paged = null) {
         'format' => '?paged=%#%',
         'current' => max( 1, $paged ),
         'total' => $total,
-        'mid_size' => '10', // Số trang hiển thị khi có nhiều trang trước khi hiển thị ...
+        'mid_size' => '2', // Số trang hiển thị khi có nhiều trang trước khi hiển thị ...
         'prev_text'    => __('Trước','zsofavn'),
         'next_text'    => __('Tiếp','zsofavn'),
     ) );
