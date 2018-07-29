@@ -1636,6 +1636,10 @@ footer {
       padding: 20px 0; }
     .product-detail-page .product-description .tab-contents > li.show {
       display: block; }
+      .product-detail-page .product-description .tab-contents > li.show img, .product-detail-page .product-description .tab-contents > li.show figure {
+        max-width: 100% !important;
+        height: auto;
+        display: block; }
     .product-detail-page .product-description .tab-contents .mobile-tab-title {
       display: none; }
     .product-detail-page .product-description .tab-contents strong, .product-detail-page .product-description .tab-contents b, .product-detail-page .product-description .tab-contents h1, .product-detail-page .product-description .tab-contents h2, .product-detail-page .product-description .tab-contents h3, .product-detail-page .product-description .tab-contents h4, .product-detail-page .product-description .tab-contents h5, .product-detail-page .product-description .tab-contents h6 {

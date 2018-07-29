@@ -2153,6 +2153,11 @@ footer{
             }
             >li.show{
                 display: block;
+                img,figure{
+                    max-width: 100% !important;
+                    height: auto;
+                    display: block;
+                }
             }
             .mobile-tab-title{
                 display: none;
