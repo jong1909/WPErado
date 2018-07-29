@@ -169,17 +169,30 @@ get_header(); ?>
                         </ul>
                     </div>
                     <h3 class="general-introduction"><?php the_archive_title();?></h3>
-                    <div class="news-content-wrapper row">
+                    <div class="news-content-wrapper row" id="archive-news">
                         <?php
                         $category = get_category( get_query_var( 'cat' ) );
                         $cat_id = $category->cat_ID;
-                        $zsofa_news = new WP_Query(array(
+                        $news = new WP_Query(array(
+                            'post_type'         =>  'post',
+                            'posts_per_page'    =>  18,
+                            'category__in' => $cat_id,
+                            'orderby' => 'ID'
+                        ));
+
+                        $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+
+                        $args = array(
+                            'posts_per_page' => 18,
                             'post_type'=>'post',
                             'post_status'=>'publish',
                             'orderby' => 'ID',
-                            'cat' => $cat_id,
                             'order' => 'DESC',
-                            'posts_per_page'=> 18));
+                            'cat' => $cat_id,
+                            'paged' => $paged
+                        );
+
+                        $zsofa_news = new WP_Query( $args );
                         ?>
                         <?php if ( $zsofa_news->have_posts() ) :
                             while ( $zsofa_news->have_posts() ) : $zsofa_news->the_post(); ?>
@@ -202,9 +215,21 @@ get_header(); ?>
                             </div>
                         <?php
                         endwhile;
-                        endif;
+                            //code pagination
+                            $big = 999999999; // need an unlikely integer
+
+                            echo paginate_links( array(
+                                'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                                'format' => '?paged=%#%',
+                                'current' => max( 1, get_query_var('paged') ),
+                                'total' => $the_query->max_num_pages
+                            ) );
+                            if (function_exists('zsofa_archive_pagination')) zsofa_archive_pagination($zsofa_news);
+//                        devvn_corenavi_ajax($news);
+                        endif; wp_reset_query();
                         ?>
                     </div>
+                    <input type="hidden" value="<?php echo json_encode($cat_id);?>" id="current-news-category">
                 </div>
             </div>
         </div>

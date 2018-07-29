@@ -22,7 +22,38 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
+		<?php
+	global $term;
+    $cate = get_queried_object();
+    $cateIDs = get_the_terms($cate->ID,'product_cat');
+    foreach($cateIDs as $cate )
+	{
+		$term[]= $cate->term_id;
+	}
 
+    $args = new WP_Query( array(
+        'post_type'             => 'product',
+        'post_status'           => 'publish',
+        'ignore_sticky_posts'   => 1,
+        'posts_per_page'        => '12',
+        'orderby' => 'date',
+        'tax_query'             => array(
+            array(
+                'taxonomy'      => 'product_cat',
+                'field' => 'term_id', //This is optional, as it defaults to 'term_id'
+                'terms'         => $term,
+                'operator'      => 'IN' // Possible values are 'IN', 'NOT IN', 'AND'.
+            ),
+            array(
+                'taxonomy'      => 'product_visibility',
+                'field'         => 'slug',
+                'terms'         => 'exclude-from-catalog', // Possibly 'exclude-from-search' too
+                'operator'      => 'NOT IN'
+            )
+        )
+    ));
+
+		?>
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php foreach ( $related_products as $related_product ) : ?>
@@ -37,7 +68,9 @@ if ( $related_products ) : ?>
 			<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>
-
+		<?php
+    zsofa_pagination_ajax($args);
+		?>
 
 <?php endif;
 

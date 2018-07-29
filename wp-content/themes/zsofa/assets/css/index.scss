@@ -2564,6 +2564,13 @@ footer{
         border: solid 1px #e6e8e7;
         border-top-left-radius: 2px;
         border-top-right-radius: 2px;
+        .news-image-placeholder{
+            max-height: 156px;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+            }
+        }
         &:hover{
             border: solid 1px #ffe651;
         }
@@ -3052,6 +3059,25 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 .zsofa-sorting{
     display: block;
+}
+/* Css pagination */
+.paginate_links {
+    text-align: left;
+    color: #FF9B00;
+    float: right;
+}
+.paginate_links .page-numbers {
+    padding: 4px 10px;
+    margin: 0 2px 5px 0;
+    text-align: center;
+    background: #F4F4F4;
+    color: #6d6e71;
+    text-decoration: none;
+    display: inline-block;
+}
+.paginate_links .current, .paginate_links .page-numbers:hover {
+    background: #ffff00;
+    color: #ff0000;
 }
 .order-online{
     width: 940px;

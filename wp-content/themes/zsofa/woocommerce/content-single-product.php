@@ -402,7 +402,7 @@ $saving_price = $regular_price - $sale_price;
     <div class="similar-products featured-category">
         <div class="container">
             <h1>Sản phẩm cùng loại</h1>
-            <div class="row list-products">
+            <div class="row list-products" id="similar-products">
                 <?php
                 global $product;
                 $args = array(
@@ -437,6 +437,7 @@ $saving_price = $regular_price - $sale_price;
                 wc_get_template('single-product/related.php', $args);
                 ?>
             </div>
+            <input type="hidden" value="<?php global $term; echo json_encode($term);?>" id="current-product-category">
             <ul class="pagination float-right">
                 <li class="active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>

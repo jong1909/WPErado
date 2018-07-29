@@ -181,17 +181,23 @@
                     <div class="fb-comments" data-href="http://erado.vn/sofa-da-that/sofa-da-that-ma-369.html" data-width="100%" data-numposts="5"></div>
                     <div class="other-news-section">
                         <div class="title">CÁC TIN TỨC KHÁC</div>
-                        <div class="news-content-wrapper row">
+                        <div class="news-content-wrapper row" id="news-post-detail">
                             <?php
-
                             $categories = get_the_category(get_the_ID());
                             if ($categories):
                                 $category_ids = array();
                                 foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+                                $news = new WP_Query(array(
+                                    'post_type'         =>  'post',
+                                    'posts_per_page'    =>  9,
+                                    'category__in' => $category_ids,
+                                    'orderby' => 'date'
+                                ));
                                 $args=array(
                                     'category__in' => $category_ids,
                                     'post__not_in' => array(get_the_ID()),
-                                    'posts_per_page' => 12
+                                    'posts_per_page' => 9,
+                                    'orderby' => 'date'
                                 );
                                 $my_query = new wp_query($args);
                                 if( $my_query->have_posts() ):
@@ -209,18 +215,11 @@
                                         </div>
                                     <?php
                                     endwhile;
+                                    zsofa_pagination_ajax($news);
                                 endif; wp_reset_query(); ?>
                             <?php endif; ?>
                         </div>
-                        <ul class="pagination float-right">
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a class="next" href="#">Tiếp</a></li>
-                            <li><a class="previous" href="#">Cuối</a></li>
-                        </ul>
+                        <input type="hidden" value="<?php echo json_encode($category_ids);?>" id="current-category">
                     </div>
                 </div>
             </div>
