@@ -33,6 +33,69 @@ $regular_price = $product->get_regular_price();
 $saving_price = $regular_price - $sale_price;
 
 ?>
+    <div class="order-online">
+        <div class="order-close-bt">&nbsp;</div>
+        <div class="order-main-cont">
+            <div class="row">
+                <div class="col-ssm-5">
+                    <div class="product-image-wp">
+                        <?php
+                        if ( has_post_thumbnail() ) {
+                            $html  = wc_get_gallery_image_html( $post_thumbnail_id, true );
+                        } else {
+                            $html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+                            $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+                            $html .= '</div>';
+                        }
+
+                        echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id );
+                        ?>
+                    </div>
+                    <div class="product-name"><?php the_title('<h1 class="product_title entry-title">', '</h1>'); ?></div>
+                    <div class="product-size"><span>Kích thước: </span><?php if ($product->has_dimensions()) {
+                            echo $dimensions;
+                        } else {
+                            echo 'Liên hệ ( kích thước tùy chọn )';
+                        }
+                        ?></div>
+                    <div class="col-ssmm-12 col-ssm-12 col-md-4">
+                        <div class="product-warranty">
+                            <span>Bảo hành: </span><?php echo get_field_details('bao_hanh'); ?></div>
+                    </div>
+                    <div class="col-ssmm-12 col-ssm-12 col-md-5">
+                        <div class="product-status">
+                            <span>Tình trạng: </span><?php echo ($product->is_in_stock()) ? 'Còn hàng' : 'Hết hàng' ?>
+                        </div>
+                    </div>
+                    <div class="price-wrapper clearfix">
+                        <div class="price col-ssmm-12 col-ssm-12 col-md-6"><span class="title">Giá bán: </span>
+                            <span class="num">
+                                <?php
+                                $product_price = (!empty($sale_price))? $sale_price : $regular_price;
+                                echo  wc_price($product_price);
+                                ?>
+                            </span>
+                        </div>
+                        <?php if(!empty($sale_price)):   ?>
+                            <div class="old-price col-ssmm-6 col-ssm-6 col-md-6"><span class="title">Giá cũ: </span><span
+                                        class="num"><?php echo wc_price($regular_price); ?></span></div>
+                        <?php endif; ?>
+                    </div>
+                    <?php if(!empty($product_price)):?>
+                    <div class="other-price"><span class="title">Hoặc mua trả góp với giá từ: <?php echo wc_price(round($product_price/12,-3));?> / tháng bằng thẻ tín dụng</span>
+                        <?php endif; ?>
+                    </div>
+
+                </div>
+                <div class="col-ssm-7">
+                    <div class="user-contact-form">
+                        <h2>ĐẶT ONLINE NGHE TƯ VẤN MIỄN PHÍ</h2>
+                        <?php echo do_shortcode('[contact-form-7 id="14209" title="Order online"]'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="product-breadcrumb">
         <div class="container">
             <ul>
@@ -459,136 +522,13 @@ $saving_price = $regular_price - $sale_price;
                 </div>
                 <div class="col-ssm-9">
                     <div id="viewed-product-slider" class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <div class="item-wrapper">
-                                    <a class="product-image" href=""><img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/sofa-da-that-ma-369-2033.jpg"
-                                                alt="" class="img-responsive"></a>
-                                    <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-                                    <div class="item-price">
-                                        <span class="price-title">Giá: </span><span
-                                                class="value">43,000,000 </span><span class="currency">VNĐ</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item-wrapper">
-                                    <a class="product-image" href=""><img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/sofa-da-that-ma-369-2033.jpg"
-                                                alt="" class="img-responsive"></a>
-                                    <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-                                    <div class="item-price">
-                                        <span class="price-title">Giá: </span><span
-                                                class="value">43,000,000 </span><span class="currency">VNĐ</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item-wrapper">
-                                    <a class="product-image" href=""><img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/sofa-da-that-ma-369-2033.jpg"
-                                                alt="" class="img-responsive"></a>
-                                    <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-                                    <div class="item-price">
-                                        <span class="price-title">Giá: </span><span
-                                                class="value">43,000,000 </span><span class="currency">VNĐ</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item-wrapper">
-                                    <a class="product-image" href=""><img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/sofa-da-that-ma-369-2033.jpg"
-                                                alt="" class="img-responsive"></a>
-                                    <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-                                    <div class="item-price">
-                                        <span class="price-title">Giá: </span><span
-                                                class="value">43,000,000 </span><span class="currency">VNĐ</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item-wrapper">
-                                    <a class="product-image" href=""><img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/sofa-da-that-ma-369-2033.jpg"
-                                                alt="" class="img-responsive"></a>
-                                    <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-                                    <div class="item-price">
-                                        <span class="price-title">Giá: </span><span
-                                                class="value">43,000,000 </span><span class="currency">VNĐ</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                        <?php dynamic_sidebar('zsofawidget-viewed-product'); ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 <?php get_template_part('template-parts/news', 'letter'); ?>
-<div class="order-online">
-    <div class="order-close-bt">&nbsp;</div>
-    <div class="order-main-cont">
-        <div class="row">
-            <div class="col-ssm-5">
-                <div class="product-image-wp">
-                    <?php
-                    if ( has_post_thumbnail() ) {
-                        $html  = wc_get_gallery_image_html( $post_thumbnail_id, true );
-                    } else {
-                        $html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-                        $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-                        $html .= '</div>';
-                    }
 
-                    echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id );
-                    ?>
-                </div>
-                <div class="product-name"><?php the_title('<h1 class="product_title entry-title">', '</h1>'); ?></div>
-                <div class="product-size"><span>Kích thước: </span><?php if ($product->has_dimensions()) {
-                        echo $dimensions;
-                    } else {
-                        echo 'Liên hệ ( kích thước tùy chọn )';
-                    }
-                    ?></div>
-                <div class="col-ssmm-12 col-ssm-12 col-md-4">
-                    <div class="product-warranty">
-                        <span>Bảo hành: </span><?php echo get_field_details('bao_hanh'); ?></div>
-                </div>
-                <div class="col-ssmm-12 col-ssm-12 col-md-5">
-                    <div class="product-status">
-                        <span>Tình trạng: </span><?php echo ($product->is_in_stock()) ? 'Còn hàng' : 'Hết hàng' ?>
-                    </div>
-                </div>
-                <div class="price-wrapper clearfix">
-                    <div class="price col-ssmm-12 col-ssm-12 col-md-6"><span class="title">Giá bán: </span>
-                        <span class="num">
-                                <?php
-                                $product_price = (!empty($sale_price))? $sale_price : $regular_price;
-                                echo  wc_price($product_price);
-                                ?>
-                            </span>
-                    </div>
-                    <?php if(!empty($sale_price)):   ?>
-                        <div class="old-price col-ssmm-6 col-ssm-6 col-md-6"><span class="title">Giá cũ: </span><span
-                                    class="num"><?php echo wc_price($regular_price); ?></span></div>
-                    <?php endif; ?>
-                </div>
-                <?php if(!empty($product_price)):?>
-                <div class="other-price"><span class="title">Hoặc mua trả góp với giá từ: <?php echo wc_price(round($product_price/12,-3));?> / tháng bằng thẻ tín dụng</span>
-                    <?php endif; ?>
-                </div>
-
-            </div>
-            <div class="col-ssm-7">
-                <div class="user-contact-form">
-                    <h2>ĐẶT ONLINE NGHE TƯ VẤN MIỄN PHÍ</h2>
-                    <?php echo do_shortcode('[contact-form-7 id="14209" title="Order online"]'); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <?php
 get_footer();

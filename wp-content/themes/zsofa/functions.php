@@ -367,3 +367,12 @@ function zsofa_archive_pagination($custom_query = null, $paged = null) {
     ) );
     if($total > 1) echo '</div>';
 }
+register_sidebar(array(
+    'name' => 'Block Viewed Products',
+    'id' => 'zsofawidget-viewed-product',
+    'description' => 'Khu vực sidebar hiển thị sản phẩm đã xem',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h1 class="widget-title">',
+    'after_title' => '</h1>'
+));
