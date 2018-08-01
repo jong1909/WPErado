@@ -998,53 +998,7 @@ Sao Mai Huyền Trang:<br>
 			            </div>
 			            <div class="col-ssm-9">
 			                <div id="viewed-product-slider" class="flexslider">
-			                    <ul class="slides">
-			                        <li>
-			                            <div class="item-wrapper">
-			                                <a class="product-image" href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-ma-369-2033.jpg" alt="" class="img-responsive"></a>
-			                                <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-			                                <div class="item-price">
-			                                    <span class="price-title">Giá: </span><span class="value">43,000,000 </span><span class="currency">VNĐ</span>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li>
-			                            <div class="item-wrapper">
-			                                <a class="product-image" href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-ma-369-2033.jpg" alt="" class="img-responsive"></a>
-			                                <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-			                                <div class="item-price">
-			                                    <span class="price-title">Giá: </span><span class="value">43,000,000 </span><span class="currency">VNĐ</span>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li>
-			                            <div class="item-wrapper">
-			                                <a class="product-image" href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-ma-369-2033.jpg" alt="" class="img-responsive"></a>
-			                                <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-			                                <div class="item-price">
-			                                    <span class="price-title">Giá: </span><span class="value">43,000,000 </span><span class="currency">VNĐ</span>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li>
-			                            <div class="item-wrapper">
-			                                <a class="product-image" href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-ma-369-2033.jpg" alt="" class="img-responsive"></a>
-			                                <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-			                                <div class="item-price">
-			                                    <span class="price-title">Giá: </span><span class="value">43,000,000 </span><span class="currency">VNĐ</span>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li>
-			                            <div class="item-wrapper">
-			                                <a class="product-image" href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/sofa-da-that-ma-369-2033.jpg" alt="" class="img-responsive"></a>
-			                                <div class="item-name"><a href="">Sofa da thật mã 369</a></div>
-			                                <div class="item-price">
-			                                    <span class="price-title">Giá: </span><span class="value">43,000,000 </span><span class="currency">VNĐ</span>
-			                                </div>
-			                            </div>
-			                        </li>
-			                    </ul>
+                                <?php dynamic_sidebar('zsofawidget-viewed-product'); ?>
 			                </div>
 			            </div>
 			        </div>
