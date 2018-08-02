@@ -101,13 +101,7 @@ get_header(); ?>
                     </div>
                     <div class="price-ranges clearfix">
                         <h2 class="price-ranges-tile">Chọn giá</h2>
-                        <ul>
-                            <li><a href="">Dưới 10 triệu</a></li>
-                            <li><a href="">Từ 10 - 20 triệu</a></li>
-                            <li><a href="">Từ 20 - 30 triệu</a></li>
-                            <li><a href="">Từ 30 - 40 triệu</a></li>
-                            <li><a href="">Từ 40 - 55 triệu</a></li>
-                        </ul>
+                        <?php dynamic_sidebar('zsofawidget-filter-product-price'); ?>
                     </div>
                     <div class="online-support">
                         <h2 class="online-support-title">Hỗ trợ trực tuyến</h2>

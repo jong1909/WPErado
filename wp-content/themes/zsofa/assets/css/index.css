@@ -1094,19 +1094,8 @@ footer {
     border-bottom: solid 2px #c8c8c8;
     margin-bottom: 10px;
     padding-top: 10px; }
-    .listing-page-wrapper .col-left-pr .price-ranges ul li {
-      height: 18px;
-      line-height: 18px;
-      overflow: hidden;
-      background: url(../images/ga.gif) no-repeat 10px center;
-      padding-left: 36px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      font-size: 13px; }
-      .listing-page-wrapper .col-left-pr .price-ranges ul li:hover {
-        background: url(../images/gb.gif) no-repeat 10px center; }
-        .listing-page-wrapper .col-left-pr .price-ranges ul li:hover a {
-          color: #ff0000; }
+    .listing-page-wrapper .col-left-pr .price-ranges ul li:hover a {
+      color: #ff0000; }
   .listing-page-wrapper .col-left-pr h2.price-ranges-tile:before {
     background: #414143 url(../images/l1.gif) center no-repeat;
     left: 0;
@@ -2540,6 +2529,25 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   text-align: center;
   top: 5px; }
+
+.yith-wcan-list-price-filter .price-item a {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  background: url(../images/ga.gif) no-repeat 10px center;
+  padding-left: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 13px; }
+  .yith-wcan-list-price-filter .price-item a.active {
+    background: url(../images/gb.gif) no-repeat 10px center; }
+  .yith-wcan-list-price-filter .price-item a:before {
+    content: none; }
+  .yith-wcan-list-price-filter .price-item a:hover {
+    background: url(../images/gb.gif) no-repeat 10px center; }
+.yith-wcan-list-price-filter .woocommerce-Price-amount {
+  display: none; }
 
 /*-----------------------Begin media screen --------------------*/
 @media (max-width: 1023px) {
