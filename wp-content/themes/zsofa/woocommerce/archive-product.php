@@ -165,8 +165,7 @@ get_header(); ?>
                         ?>
                     </div>
                     <div class="ext-banner clearfix">
-                        <a href=""><img class="img-responsive"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/174.jpg" alt=""></a>
+                        <?php dynamic_sidebar('zsofawidget-banner-right-column'); ?>
                     </div>
                 </div>
                 <div class="col-ssmm-12 col-ssm-12 col-md-9 col-right-pr">
