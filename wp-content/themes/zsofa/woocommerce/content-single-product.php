@@ -409,41 +409,29 @@ $saving_price = $regular_price - $sale_price;
                         <h2 class="online-support-title">Hỗ trợ trực tuyến</h2>
                         <ul>
                             <li class="light">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/62.png" alt="">
-                                <span>Hà Quỳnh</span><strong>0905.356.356</strong>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dich-vu-bao-hanh.png" alt="">
+                                <span>Hoàng Trắc</span>
+                                <strong>0962.494.992</strong>
                             </li>
                             <li class="grey">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/72.png" alt="">
-                                <span>Mai Hoa</span>
-                                <strong>0905.356.356</strong>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dich-vu-bao-hanh.png" alt="">
+                                <span>Huỳnh Nhật</span>
+                                <strong>0963.214.107</strong>
                             </li>
                             <li class="light">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/100.png" alt="">
-                                <span>Thu Hằng</span><strong>0905.356.356</strong>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dich-vu-bao-hanh.png" alt="">
+                                <span>Đức Vũ</span>
+                                <strong> 01674.669.060</strong>
                             </li>
                             <li class="grey">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/101.png" alt="">
-                                <span>Nguyễn Long</span><strong>0905.356.356</strong>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dich-vu-bao-hanh.png" alt="">
+                                <span>Văn Lợi</span>
+                                <strong>0917.303.047</strong>
                             </li>
                             <li class="light">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/83.png" alt="">
-                                <span>Mạnh Hoàng</span><strong>0905.356.356</strong>
-                            </li>
-                            <li class="grey">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/102.png" alt="">
-                                <span>Phạm Cường</span><strong>0905.356.356</strong>
-                            </li>
-                            <li class="light">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/94.png" alt="">
-                                <span>Bích Ngọc</span><strong>0905.356.356</strong>
-                            </li>
-                            <li class="grey">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/95.png" alt="">
-                                <span>Hoàng Ngân</span><strong>0905.356.356</strong>
-                            </li>
-                            <li class="light">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/103.png" alt="">
-                                <span>Nguyễn Vân</span><strong>0905.356.356</strong>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dich-vu-bao-hanh.png" alt="">
+                                <span>Thanh Toàn</span>
+                                <strong>0916.898.738</strong>
                             </li>
                         </ul>
                     </div>
