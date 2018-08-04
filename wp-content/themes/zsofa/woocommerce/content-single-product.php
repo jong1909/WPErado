@@ -150,8 +150,7 @@ $saving_price = $regular_price - $sale_price;
                 </div>
                 <div class="col-ssmm-12 col-ssm-12 col-md-7 col-right">
                     <div class="ribbon-wrapper">
-                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>ZSOFA</strong> tiếp nối thành công của
-                            thương hiệu <strong>rOsano</strong></div>
+                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>zSOFA.vn</strong> đã đăng kí thương hiệu độc quyền tại <strong>VN</strong></div>
                         <div class="col-ssmm-5 col-ssm-5 col-md-5">
                             ĐẾN ĐÚNG NƠI - MUA ĐÚNG CHỖ
                         </div>
