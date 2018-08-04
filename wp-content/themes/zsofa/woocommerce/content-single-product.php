@@ -201,10 +201,10 @@ $saving_price = $regular_price - $sale_price;
                         </div>
                         <div class="col-ssmm-12 col-ssm-12 col-md-4 applications">
                             <ul>
-                                <li class="directions"><a href="">Chỉ đường đến Zsofa</a></li>
-                                <li class="shopping-guide col-ssmm-6 col-ssm-6 col-md-12"><a href="">Hướng dẫn mua
+                                <li class="directions"><a href="/lien-he/">Chỉ đường đến Zsofa</a></li>
+                                <li class="shopping-guide col-ssmm-6 col-ssm-6 col-md-12"><a href="/quy-trinh-tu-van-khach-hang-cua-zsofa-vn/">Hướng dẫn mua
                                         hàng</a></li>
-                                <li class="delivery col-ssmm-6 col-ssm-6 col-md-12"><a href="">Giao hàng toàn quốc</a>
+                                <li class="delivery col-ssmm-6 col-ssm-6 col-md-12"><a href="/chinh-sach-van-chuyen/">Giao hàng toàn quốc</a>
                                 </li>
                             </ul>
                         </div>
