@@ -1658,7 +1658,8 @@ footer {
     .product-detail-page .product-description .schedule span {
       display: block;
       font-size: 11px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      white-space: nowrap; }
     .product-detail-page .product-description .schedule form {
       height: 26px;
       width: 100%;
