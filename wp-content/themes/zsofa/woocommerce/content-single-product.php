@@ -401,8 +401,7 @@ $saving_price = $regular_price - $sale_price;
 
                     </div>
                     <div class="feedback">
-                        <a href=""><img class="img-responsive"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/173.jpg" alt=""></a>
+                        <?php dynamic_sidebar('zsofawidget-banner-support-online'); ?>
                     </div>
                     <div class="online-support">
                         <h2 class="online-support-title">Hỗ trợ trực tuyến</h2>
