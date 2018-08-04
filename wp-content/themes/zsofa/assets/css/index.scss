@@ -4881,6 +4881,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #header .shop-logo {
 	    padding: 5px 97px 5px 0;
 	}
+    .product-detail-page .col-md-7.col-right .price-wrapper{
+        .price,.old-price{
+            display: inline-block;
+            width: initial;
+            margin-right: 18px;
+        }
+    }
 }
 
 @media (min-width: 1280px) {
