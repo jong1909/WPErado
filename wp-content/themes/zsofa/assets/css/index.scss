@@ -3126,13 +3126,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     z-index: 9999;
     display: none;
     .product-image-wp{
-        a{
-            border: solid 1px #DBDBDB;
-            display: block;
-            height: 220px;
-            line-height: 0;
-            padding: 3px;
-        }
+        border: solid 1px #DBDBDB;
+        display: block;
+        line-height: 0;
+        padding: 3px;
+        height: 220px;
     }
     .order-main-cont{
         background: #fff;
@@ -3209,12 +3207,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
     .product-image-wp{
         img{
-            max-width: 350px;
-            border: 1px solid #DBDBDB;
-            padding: 3px;
+            max-width: 100%;
             height: auto;
             display: block;
-            border-radius: 2px;
         }
     }
     .row{
