@@ -4185,6 +4185,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 }
 @media (max-width: 767px) {
+    .woocommerce-ordering{
+        margin-bottom: 6px;
+    }
+    .woocommerce-result-count{
+        padding-left: 10px;
+    }
+    .woocommerce-pagination{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
     #header{
         .top-nav{
             display: none;
