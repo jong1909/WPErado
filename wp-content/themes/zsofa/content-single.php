@@ -106,8 +106,8 @@
                     <div class="customer-purchased clearfix">
                         <h2>Khách hàng đã mua</h2>
                         <div class="customers-news">
-                            <a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/ban-giao-noi-that-cho-anh-long-o-flc-thanh-hoa.jpg" alt=""></a>
-                            <a class="view-more" href="">Bàn giao nội thất cho anh Long ở FLC Thanh Hóa</a>
+                            <a href="https://www.facebook.com/pg/zsofa.vn1/photos/?tab=album&album_id=818838611627129"><?php echo do_shortcode('[rev_slider alias="products-purchased"]')?></a>
+                            <a class="view-more" href="">Bộ sưu tập Sofa đã bàn giao tại zsofa.vn</a>
                         </div>
 
                     </div>
