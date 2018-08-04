@@ -3125,6 +3125,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-top: -225px;
     z-index: 9999;
     display: none;
+    .product-image-wp{
+        a{
+            border: solid 1px #DBDBDB;
+            display: block;
+            height: 220px;
+            line-height: 0;
+            padding: 3px;
+        }
+    }
     .order-main-cont{
         background: #fff;
         height: 100%;

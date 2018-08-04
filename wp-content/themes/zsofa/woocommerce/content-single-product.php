@@ -39,17 +39,19 @@ $saving_price = $regular_price - $sale_price;
             <div class="row">
                 <div class="col-ssm-5">
                     <div class="product-image-wp">
-                        <?php
-                        if ( has_post_thumbnail() ) {
-                            $html  = wc_get_gallery_image_html( $post_thumbnail_id, true );
-                        } else {
-                            $html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-                            $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-                            $html .= '</div>';
-                        }
+                        <span class="img-thumb-wrapper">
+                            <?php
+                            if ( has_post_thumbnail() ) {
+                                $html  = wc_get_gallery_image_html( $post_thumbnail_id, true );
+                            } else {
+                                $html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+                                $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+                                $html .= '</div>';
+                            }
 
-                        echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id );
-                        ?>
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id );
+                            ?>
+                        </span>
                     </div>
                     <div class="product-name"><?php the_title('<h1 class="product_title entry-title">', '</h1>'); ?></div>
                     <div class="product-size"><span>Kích thước: </span><?php if ($product->has_dimensions()) {
