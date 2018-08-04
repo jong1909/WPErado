@@ -3487,6 +3487,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         background-size: 70%;
     }
 }
+.div.wpcf7-mail-sent-ok{
+    display: block;
+    margin: 0;
+    border: none;
+    color: #ff0000;
+}
 /*-----------------------Begin media screen --------------------*/
 
 @media (max-width: 1023px) {
