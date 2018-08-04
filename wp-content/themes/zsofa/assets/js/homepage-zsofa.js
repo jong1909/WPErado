@@ -103,7 +103,7 @@
             var productPurchased = $('.order-online h1.product_title').text();
             var linkProduct = $('link[rel="canonical"]').attr('href');
             $('.order-online,#overlay-region').show();
-            $('#user-message textarea').html(productPurchased+'<br>+'linkProduct);
+            $('#user-message textarea').html(productPurchased+'<br>'+linkProduct);
         });
         $('#overlay-region,.order-close-bt').click(function(){
             $('.order-online,#overlay-region').hide();
