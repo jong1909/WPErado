@@ -3131,6 +3131,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         line-height: 0;
         padding: 3px;
         height: 220px;
+        .img-thumb-wrapper{
+            height: 100%;
+            display: block;
+            overflow: hidden;
+            border-radius: 2px;
+        }
     }
     .order-main-cont{
         background: #fff;
@@ -4684,6 +4690,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         padding-top: 40px;
         top: 52%;
         .product-image-wp{
+            height: 200px;
             img{
                 max-width: 100%;
             }
