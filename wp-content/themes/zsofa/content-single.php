@@ -106,7 +106,7 @@
                     <div class="customer-purchased clearfix">
                         <h2>Khách hàng đã mua</h2>
                         <div class="customers-news">
-                            <a href="https://www.facebook.com/pg/zsofa.vn1/photos/?tab=album&album_id=818838611627129"><?php echo do_shortcode('[rev_slider alias="products-purchased"]')?></a>
+                            <a href="https://www.facebook.com/pg/zsofa.vn1/photos/?tab=album&album_id=818838611627129"><?php echo do_shortcode('[rev_slider alias="products-purchased"]');?></a>
                             <a class="view-more" href="">Bộ sưu tập Sofa đã bàn giao tại zsofa.vn</a>
                         </div>
 
