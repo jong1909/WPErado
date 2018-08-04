@@ -1712,7 +1712,8 @@ footer{
        
     }
     .customers-purchase{
-         h3{
+        h3{
+            display: none;
             margin-top: 17px;
             height: 30px;
             background: url(../images/i2.gif) no-repeat left top;
@@ -1723,6 +1724,10 @@ footer{
             span{
                 color: #ed4135;
             }
+            ul{
+                display: none;
+            }
+            
         }
     }
     .ribbon-mobile{
