@@ -86,9 +86,8 @@
 	</footer><!-- End footer -->
 	<?php do_action( 'zsofa_after_footer' ); ?>
 	<div class="fbmstest animated fadeInLeftBig" id="fbmstest" style="">
-	    <a href="https://m.me/sieuthinoithatrosano" target="_blank" class="testms">
-	        <img class="img-responsive img-avatar" src="<?php echo get_template_directory_uri() ; ?>/assets/images/fb.png" alt="sieuthinoithatrosano">
-	        <span class="camera-icon btn-browse">8</span>
+	    <a href="https://m.me/1870997039801451" target="_blank" class="testms">
+	        <img class="img-responsive img-avatar" src="<?php echo get_template_directory_uri() ; ?>/assets/images/fb.png" alt="sieuthinoithatzsofa">
 	    </a>
 	</div>
 	<div id="leave-mess">
