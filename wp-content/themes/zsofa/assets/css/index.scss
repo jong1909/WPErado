@@ -1708,6 +1708,9 @@ footer{
                     font-style: italic;
                 }
             }
+            ul{
+                display: none;
+            }
         }
        
     }
@@ -1723,9 +1726,6 @@ footer{
             line-height: 22px;
             span{
                 color: #ed4135;
-            }
-            ul{
-                display: none;
             }
             
         }
