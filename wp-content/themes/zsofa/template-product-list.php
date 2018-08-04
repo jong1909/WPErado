@@ -577,7 +577,7 @@ get_header(); ?>
 			</div>
 			<figure class="banner-middle">
 				<div class="container">
-					<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/153.jpg" alt=""></a>
+                    <?php echo do_shortcode( '[rev_slider alias="banner-middle"]' ); ?>
 				</div>
 			</figure>
 			<div class="section6 best-selling-products">
