@@ -443,8 +443,7 @@ $saving_price = $regular_price - $sale_price;
 
                     </div>
                     <div class="ext-banner">
-                        <a href=""><img class="img-responsive"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/174.jpg" alt=""></a>
+                        <?php dynamic_sidebar('zsofawidget-banner-right-column'); ?>
                     </div>
                 </div>
             </div>

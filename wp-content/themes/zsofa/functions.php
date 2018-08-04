@@ -385,3 +385,12 @@ register_sidebar(array(
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>'
 ));
+register_sidebar(array(
+    'name' => 'Block Banner Right Column',
+    'id' => 'zsofawidget-banner-right-column',
+    'description' => 'Khu vực sidebar hiển thị banner cột bên phải',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h1 class="widget-title">',
+    'after_title' => '</h1>'
+));
