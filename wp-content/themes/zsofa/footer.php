@@ -105,9 +105,9 @@
 </div>
 <div class="zsofa-chat">
     <ul class="chat-box-wp">
-        <li class="facebook-fanpage"><a href="https://m.facebook.com/zsofavn2/" target="_blank"></a></li>
-        <li class="zalo"><a href="http://zalo.me/0933322804" target="_blank"></a></li>
-        <li class="tel"><a href="tel:0933322804"></a></li>
+        <li class="facebook-fanpage"><a href="https://m.me/1870997039801451" target="_blank"></a></li>
+        <li class="zalo"><a href="http://zalo.me/01279488488" target="_blank"></a></li>
+        <li class="tel"><a href="tel:01279488488"></a></li>
     </ul>
 </div>
 <script>(function(d, s, id) {
