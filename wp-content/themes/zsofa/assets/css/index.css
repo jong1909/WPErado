@@ -2714,8 +2714,9 @@ input[type="search"]::-webkit-search-results-decoration {
   #header .mobile-top-hotline {
     background: url(../images/t.png) no-repeat left top;
     width: 35px;
-    height: 39px;
-    left: 50px;
+    height: 35px;
+    left: 46px;
+    top: 7px;
     position: absolute; }
     #header .mobile-top-hotline .hotline-num {
       display: none; }
@@ -3529,7 +3530,7 @@ input[type="search"]::-webkit-search-results-decoration {
   #header .mobile-top-hotline .hotline-num {
     display: block;
     height: 100%;
-    width: 32px; }
+    width: 100%; }
 
   .zsofa-chat {
     display: block; }
