@@ -99,9 +99,16 @@
 <div class="win-wrapper-vdproduct popup-mobile hide">
     <div class="win">
         <a href="javascript:;" class="win-close"></a>
-        <div id="product-video-content"><iframe width="854" height="480" src="https://www.youtube.com/embed/iZhIG_fJj9A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        <div id="product-video-content"><iframe width="854" height="480" src="<?php echo get_template_directory_uri() ; ?>/assets/images/common-icon/Spinner.svg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
     </div>
+</div>
+<div class="zsofa-chat">
+    <ul class="chat-box-wp">
+        <li class="facebook-fanpage"><a href="https://m.facebook.com/zsofavn2/" target="_blank"></a></li>
+        <li class="zalo"><a href="http://zalo.me/0933322804" target="_blank"></a></li>
+        <li class="tel"><a href="tel:0933322804"></a></li>
+    </ul>
 </div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

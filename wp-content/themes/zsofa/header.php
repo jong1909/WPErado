@@ -83,7 +83,7 @@
                     <?php wp_nav_menu( array( 'menu' => 'Mobile main menu','menu_class' => 'sub-menu' ) ); ?>
                 </div>
                 <div class="mobile-top-hotline">
-                    <div class="hotline-num">0976.529.529</div>
+                    <a class="hotline-num" href="tel:0933322804">&nbsp;</a>
                 </div>
                 <div class="col-md-3 col-ssmm-6 col-ssm-6 shop-logo">
                     <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/zsofa_logo.png" class="img-responsive" alt=""></a>

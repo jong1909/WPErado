@@ -164,6 +164,7 @@ a {
     		font-weight: bold;
 		    position: relative;
     		top: -6px;
+            display: block;
 	    }
 	}
 	.user-login{
@@ -3352,7 +3353,120 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .yith-wcan-list-price-filter h1.widget-title{
     display: none;
 }
+.zsofa-chat{
+    right: 10px;
+    bottom: 100px;
+    position: fixed;
+    z-index: 998;
+    display: none;
+    li{
+        width: 44px;
+        height: 44px;
+        overflow: hidden;
+        a{
+                display: block;
+                width: 100%;
+                height: 100%;
+        }
+    }
+    .facebook-fanpage{
+        background: url(../images/common-icon/fb.png) no-repeat left top;
+        margin-bottom: 10px;
+    }
+    .zalo{
+        background: url(../images/common-icon/zl.png) no-repeat left top;
+        margin-bottom: 10px;
+    }
+    @-moz-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        -moz-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        -moz-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        -moz-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        -moz-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        -moz-transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        -moz-transform: rotate(0) scale(1) skew(1deg)
+    }
+}
 
+@-webkit-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-o-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        -o-transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        -o-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        -o-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        -o-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        -o-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        -o-transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        -o-transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+    .tel{
+        background: rgb(100,188,70) url(../images/common-icon/iconphone.png) no-repeat center center;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+        -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+        -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+        -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+        animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        background-color: #64bc46;
+        background-size: 70%;
+    }
+}
 /*-----------------------Begin media screen --------------------*/
 
 @media (max-width: 1023px) {
@@ -4547,6 +4661,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 }
 @media (max-width: 479px) {
+    #header{
+        .mobile-top-hotline{
+            .hotline-num{
+                display: block;
+                height: 100%;
+                width: 32px;
+            }
+        }
+    }
+    .zsofa-chat{
+        display: block;
+    }
      .section4.featured-products{
         height: initial;
         background: #373a3e;
