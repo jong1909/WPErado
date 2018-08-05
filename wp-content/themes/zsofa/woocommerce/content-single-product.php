@@ -331,7 +331,7 @@ $saving_price = $regular_price - $sale_price;
                                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/176.jpg"
                                                                 alt=""></a>
                     <div class="facebook-sharing">
-                        <a class="fb-share-bt" rel="nofollow" href="<?php the_permalink(); ?>" target="socialbookmark"></a>
+                        <a class="fb-share-bt" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="socialbookmark"></a>
                         <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
                         <div id="___plusone_0"
                              style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 24px;">
