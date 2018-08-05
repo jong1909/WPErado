@@ -237,27 +237,4 @@
     <h3>Kết nối với Erado</h3>
 </div>
 <div class="fb-page" data-href="https://www.facebook.com/zsofavn2/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/zsofavn2/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/zsofavn2/">zsofa.vn - Gò Vấp - Hệ thống bán sỉ và lẻ ghế sofa.</a></blockquote></div>
-<div class="section9 newsletter">
-    <div class="mobile-newsletter">
-        <form action="" class="newsletter-form">
-            <img src="" alt="" class="img-responsive">
-            <input type="email" placeholder="Nhập địa chỉ email của bạn">
-            <input class="mobile-submit" type="submit" value="Đăng ký">
-        </form>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <form action="" class="newsletter-form">
-                    <img src="" alt="" class="img-responsive">
-                    <input type="email" placeholder="Nhập địa chỉ email của bạn vào đây">
-                    <input class="desktop-submit" type="submit" value="Đăng ký">
-                </form>
-
-            </div>
-            <div class="col-md-7">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri() ; ?>/assets/images/169.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
+<?php get_template_part('template-parts/news', 'letter'); ?>
