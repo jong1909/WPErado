@@ -166,7 +166,7 @@ $saving_price = $regular_price - $sale_price;
                         ?></div>
                     <div class="col-ssmm-12 col-ssm-12 col-md-3">
                         <div class="product-warranty">
-                            <span>Bảo hành: </span><?php echo get_field_details('bao_hanh'); ?></div>
+                            <span>Bảo hành: </span><?php echo get_field_details('bao_hanh','default_value'); ?></div>
                     </div>
                     <div class="col-ssmm-12 col-ssm-12 col-md-5">
                         <div class="product-status">
