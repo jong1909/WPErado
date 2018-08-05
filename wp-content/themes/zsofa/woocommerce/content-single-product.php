@@ -346,8 +346,7 @@ $saving_price = $regular_price - $sale_price;
                                     data-gapiattached="true" title="G+"></iframe>
                         </div>
                     </div>
-                    <div class="fb-comments" data-href="http://erado.vn/sofa-da-that/sofa-da-that-ma-369.html"
-                         data-width="100%" data-numposts="5"></div>
+                    <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="5"></div>
                 </div>
                 <!--End left column-->
                 <div class="col-ssmm-12 col-ssm-12 col-md-3">
