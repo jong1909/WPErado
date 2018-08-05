@@ -22,38 +22,7 @@ get_header(); ?>
 			</div>
 			<div class="section1 slider-mobile slider">
 				<div id="main-mobile-slider" class="flexslider">
-				  <ul class="slides">
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g159.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g155.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g144.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g127.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g128.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g125.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g126.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g130.jpg" />
-				    </li>
-				    <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g129.jpg" />
-				    </li>
-				     <li>
-				      <img src="<?php echo get_template_directory_uri() ; ?>/assets/images/g131.jpg" />
-				    </li>
-				  </ul>
+                    <?php echo do_shortcode( '[rev_slider alias="mobile-banners"]' );  ?>
 				</div>
 			</div>
 			<div class="mobile-quick-menu">
