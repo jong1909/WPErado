@@ -24,16 +24,10 @@
 						</ul>
 					</div>
 					<div class="col-md-6 about-us-info">
-						<ul>
-							<li><a href="/lich-su-phat-trien-zsofa/">Lịch sử phát triển Zsofa</a></li>
-							<li><a href="/tam-nhin-su-menh/">Tầm nhìn, sứ mệnh</a></li>
-							<li><a href="/tuyen-dung/">Tuyển Dụng</a></li>
-							<li><a href="/goc-bao-chi/">Góc báo Chí</a></li>
-							<li><a href="/tin-moi-nhat/">Tin mới nhất</a></li>
-						</ul>
+                        <?php wp_nav_menu( array( 'menu' => 'Primary Navigation' ) ); ?>
 					</div>
 					<div class="col-md-2 sell-with-us">
-						<a href="/ban-hang-cung-zsofa/">Bán hàng cùng Zsofa</a>
+						<a href="/tuyen-dung/">Tuyển Dụng</a>
 					</div>
 				</div>
 
