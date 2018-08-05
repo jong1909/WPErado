@@ -197,7 +197,7 @@ $saving_price = $regular_price - $sale_price;
                         <div class="col-ssm-8">
                             <div class="promotion">
                                 <h3 class="promo-title">Khuyến mại</h3>
-                                <?php echo get_field_details('khuyen_mai'); ?>
+                                <?php echo get_field_details('khuyen_mai','default_value'); ?>
                             </div>
                         </div>
                         <div class="col-ssmm-12 col-ssm-12 col-md-4 applications">
