@@ -20,7 +20,7 @@
 					<div class="col-md-4 face-book-link">
 						<ul class="clearfix">
 							<li class="famous-people"><a href="">Người nổi tiếng chọn Zsofa</a></li>
-							<li class="facebook-like"><script type="text/javascript">document.write('<div class="fb-like" data-send="false" data-layout="button_count" data-width="30" data-show-faces="false"></div>');</script></li>
+							<li class="facebook-like"><div class="fb-like" data-href="https://www.facebook.com/zsofavn2/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div></li>
 						</ul>
 					</div>
 					<div class="col-md-6 about-us-info">
