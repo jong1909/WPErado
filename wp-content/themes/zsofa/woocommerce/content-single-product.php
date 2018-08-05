@@ -331,11 +331,8 @@ $saving_price = $regular_price - $sale_price;
                                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/176.jpg"
                                                                 alt=""></a>
                     <div class="facebook-sharing">
-                        <a class="fb-share-bt" rel="nofollow"
-                           href="https://www.facebook.com/sharer/sharer.php?u=http://erado.vn/sofa-da-that/sofa-da-that-ma-369.html&amp;p[images][0]=http://erado.vn//images/pro/sofa-da-that-ma-369_2033.jpg"
-                           target="socialbookmark"></a>
-                        <div style="margin-left:10px;" class="fb-like" data-send="false" data-layout="box_count"
-                             data-width="60" data-show-faces="false"></div>
+                        <a class="fb-share-bt" rel="nofollow" href="<?php the_permalink(); ?>&amp;p[images][0]=<?php the_post_thumbnail( 'medium' ); ?>" target="socialbookmark"></a>
+                        <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
                         <div id="___plusone_0"
                              style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 24px;">
                             <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0"
