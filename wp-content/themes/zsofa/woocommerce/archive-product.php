@@ -257,24 +257,7 @@ get_header(); ?>
     <div class="store-connect-mobile">
         <h3>Kết nối với Erado</h3>
     </div>
-    <div style="width:375px;margin:auto;">
-        <div class="fb-page fb_iframe_widget fb_iframe_widget_fluid"
-             data-href="https://www.facebook.com/sieuthinoithatrosano" data-adapt-container-width="true"
-             data-tabs="timeline" data-show-facepile="true" data-width="375" data-height="300" data-colorscheme="light"
-             data-show-faces="1" data-header="1" data-stream="1" data-show-border="1" fb-xfbml-state="rendered"
-             fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;color_scheme=light&amp;container_width=375&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsieuthinoithatrosano&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;tabs=timeline&amp;width=375">
-            <span style="vertical-align: bottom; width: 375px; height: 300px;"><iframe name="fff68f6c7fd7ac"
-                                                                                       width="375px" height="300px"
-                                                                                       frameborder="0"
-                                                                                       allowtransparency="true"
-                                                                                       allowfullscreen="true"
-                                                                                       scrolling="no"
-                                                                                       allow="encrypted-media"
-                                                                                       title="fb:page Facebook Social Plugin"
-                                                                                       src="https://www.facebook.com/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FmAiQUwlReIP.js%3Fversion%3D42%23cb%3Df880af12b2f314%26domain%3Derado.vn%26origin%3Dhttp%253A%252F%252Ferado.vn%252Ffad893aac5b54%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=375&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsieuthinoithatrosano&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;tabs=timeline&amp;width=375"
-                                                                                       style="border: none; visibility: visible; width: 375px; height: 300px;"
-                                                                                       class=""></iframe></span></div>
-    </div>
+    <div class="fb-page" data-href="https://www.facebook.com/zsofavn2/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/zsofavn2/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/zsofavn2/">zsofa.vn - Gò Vấp - Hệ thống bán sỉ và lẻ ghế sofa.</a></blockquote></div>
 <?php get_template_part( 'template-parts/news','letter' ); ?>
 
 <?php
