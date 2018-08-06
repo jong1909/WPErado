@@ -244,7 +244,7 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/product','categories' ); ?>
 <?php get_template_part( 'template-parts/store','news' ); ?>
     <div class="store-connect-mobile">
-        <h3>Kết nối với Erado</h3>
+        <h3>Kết nối với zSOFA</h3>
     </div>
     <div class="fb-page" data-href="https://www.facebook.com/zsofavn2/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/zsofavn2/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/zsofavn2/">zsofa.vn - Gò Vấp - Hệ thống bán sỉ và lẻ ghế sofa.</a></blockquote></div>
 <?php get_template_part( 'template-parts/news','letter' ); ?>
