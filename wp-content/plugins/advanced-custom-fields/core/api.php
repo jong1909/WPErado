@@ -81,7 +81,7 @@ function get_field_details($field_name, $return='default_value') {
 	$result = [];
 	$post_name = $field['id'];
 
-	$posts = get_posts(['post_type' => 'acf']);
+	$posts = get_posts(['post_type' => 'acf','posts_per_page' => -1]);
 	foreach ($posts as $post) {
 		$post_id = $post->ID;
 		$post_metas = get_post_meta($post_id, '', true);
