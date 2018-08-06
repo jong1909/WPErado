@@ -91,22 +91,22 @@
         $('.view-more').click(function(){
             var videoContentIframe = $(this).parent().find('.product-video-link').html();
             $('#product-video-content').html(videoContentIframe);
-            $('.win-wrapper-vdproduct,#overlay-region').show();
+            $('.win-wrapper-vdproduct,#overlay-region-pr').show();
         });
-        $('#overlay-region').click(function(){
+        $('#overlay-region-pr').click(function(){
             $('#product-video-content').html('');
-            $('.win-wrapper-vdproduct,#overlay-region').hide();
+            $('.win-wrapper-vdproduct,#overlay-region-pr').hide();
         });
     }
     function showPopupOrderOnline(){
         $('.buy-online').click(function(){
             var productPurchased = $('.order-online h1.product_title').text();
             var linkProduct = $('link[rel="canonical"]').attr('href');
-            $('.order-online,#overlay-region').show();
+            $('.order-online,#overlay-region-pr').show();
             $('#user-message textarea').html(productPurchased+'<br>'+linkProduct);
         });
-        $('#overlay-region,.order-close-bt').click(function(){
-            $('.order-online,#overlay-region').hide();
+        $('#overlay-region-pr,.order-close-bt').click(function(){
+            $('.order-online,#overlay-region-pr').hide();
         });
     }
     function activeMenu(){
@@ -117,6 +117,25 @@
                 $('.main-magemenu').removeClass('active');
             }
         });
+    }
+    function showHideMobileMenu(){
+        $(".mobile-menu-icon").click(function(e){
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $(".menu-mobile-contents").toggleClass('active');
+            $('#overlay-region').toggleClass('active');
+        });
+        $('#menu-mobile-main-menu>li.menu-item-has-children').click(function(event) {
+            event.preventDefault();
+            $(this).toggleClass('active').find('ul').slideToggle("slow");
+            $(this).siblings('.active').removeClass('active').find('ul').slideUp("slow");
+        });
+        $('#overlay-region').on("click touchstart",function() {
+            $(".menu-mobile-contents").removeClass('active');
+            $(this).removeClass('active');
+            $(".mobile-menu-icon").removeClass('active');
+        });
+
     }
     /* ----------------------------------------------- */
     /* ------------- FrontEnd Functions -------------- */
@@ -131,52 +150,8 @@
         showProductVideo();
         activeMenu();
         showPopupOrderOnline();
-            //  Function Click out site menu-> hide menu
-
-        $.fn.clickOff = function(callback, selfDestroy) {
-            var clicked = false;
-            var parent = this;
-            var destroy = selfDestroy || true;
-
-            parent.on("click touchstart",function() {
-                clicked = true;
-            });
-
-            $(document).on("click touchstart",function(event) {
-                if (!clicked) {
-                    callback(parent, event);
-                }
-                if (destroy) {
-                    //parent.clickOff = function() {};
-                };
-                clicked = false;
-            });
-        };
+        showHideMobileMenu();
         
-        $(".mega-menu-mobile").clickOff(function() {
-            $(".mobile-menu-icon").removeClass('active');
-            $(".mega-menu-mobile .sub-menu").hide();
-            // $('#overlay-region').hide();
-        });
-        $(".mobile-menu-icon").click(function(e){
-            e.preventDefault();            
-            if($(this).hasClass('active')){
-                $(".mega-menu-mobile .sub-menu").hide();
-                $('#overlay-region').hide();
-                $(this).removeClass('active');
-            }else{
-                $(this).addClass('active');
-                $(".mega-menu-mobile .sub-menu").show();
-                $('#overlay-region').addClass('show');
-            }
-            
-            
-        });
-        $('#overlay-region').on("click touchstart",function() {
-            $(".mega-menu-mobile .sub-menu").hide();
-            $(this).hide();
-            $(".mobile-menu-icon").removeClass('active');
-        });
         var popup = popup || {};
 
         // close popup function
@@ -195,7 +170,7 @@
                 $('#product-video-content').html('');
             });
         }
-        popup.closePopup('#overlay-region', ".win-wrapper-vdproduct");
+        popup.closePopup('#overlay-region-pr', ".win-wrapper-vdproduct");
 
     });
 

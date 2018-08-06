@@ -12,6 +12,7 @@
 <?php do_action( 'zsofa_before_site' ); ?>
 <!-- Begin Header -->
 <div id="overlay-region"></div>
+<div id="overlay-region-pr"></div>
 <div class="main-site">
 	<header id="header" class="clearfix">
 		<div class="top-nav">
@@ -74,7 +75,13 @@
                             <li>&nbsp;</li>
                         </ul>
                     </div>
-                    <?php wp_nav_menu( array( 'menu' => 'Mobile main menu','menu_class' => 'sub-menu' ) ); ?>
+                    <div class="menu-mobile-contents">
+                        <div class="member-login">
+                            <div class="mobile-login col-ssmm-6 col-ssm-6"><?php echo do_shortcode( '[llrmloginlogout]' );?></div>
+                            <div class="mobile-register col-ssmm-6 col-ssm-6"><?php echo do_shortcode( '[llrmregister]' );?></div>
+                        </div>
+                        <?php wp_nav_menu( array( 'menu' => 'Mobile main menu','menu_class' => 'sub-menu' ) ); ?>
+                    </div>
                 </div>
                 <div class="mobile-top-hotline">
                     <a class="hotline-num" href="tel:0933322804">&nbsp;</a>
