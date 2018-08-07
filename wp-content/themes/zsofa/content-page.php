@@ -183,7 +183,7 @@
         <div class="row">
             <div class="col-md-4">
                 <h1 class="store-news-title">
-                    <a href="">CHUYÊN ĐỀ ERADO</a>
+                    <a href="">CHUYÊN ĐỀ ZSOFA</a>
                 </h1>
                 <div class="more-link"><a href="">Bàn giao nội thất cho anh Long ở FLC Thanh Hóa</a></div>
                 <div class="news-content-wr">
@@ -200,7 +200,7 @@
             </div>
             <div class="col-md-4">
                 <h1 class="store-news-title">
-                    <a href="">Kinh nghiệm hay của erado</a>
+                    <a href="">Kinh nghiệm hay của ZSOFA</a>
                 </h1>
                 <div class="more-link"><a href="">Chọn ghế bàn ăn loại nào</a></div>
                 <div class="news-content-wr">
