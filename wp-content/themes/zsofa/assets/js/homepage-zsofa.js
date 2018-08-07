@@ -125,10 +125,10 @@
             $(".menu-mobile-contents").toggleClass('active');
             $('#overlay-region').toggleClass('active');
         });
-        $('#menu-mobile-main-menu>li.menu-item-has-children').click(function(event) {
+        $('#menu-mobile-main-menu>li.menu-item-has-children>a').click(function(event) {
             event.preventDefault();
-            $(this).toggleClass('active').find('ul').slideToggle("slow");
-            $(this).siblings('.active').removeClass('active').find('ul').slideUp("slow");
+            $(this).parent().toggleClass('active').find('ul').slideToggle("slow");
+            $(this).parent().siblings('.active').removeClass('active').find('ul').slideUp("slow");
         });
         $('#overlay-region').on("click touchstart",function() {
             $(".menu-mobile-contents").removeClass('active');
