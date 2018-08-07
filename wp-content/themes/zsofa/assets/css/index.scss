@@ -1616,8 +1616,47 @@ footer{
 /*-----------------------Begin Product Detail--------------------*/
 .product-detail-page{
     .product-breadcrumb{
-        height: 35px;
+        height: 35px;        
         border-bottom: 1px solid #E9E9E9;
+        overflow: hidden;
+        .zsofa-breadcrumb{
+            padding: 0;
+            margin: 0;
+        }
+        .woocommerce-breadcrumb{
+            font-size: 12px;
+            font-weight: bold;
+            a{
+                height: 35px;
+                line-height: 35px;
+                display: inline-block;
+                font-weight: bold;
+                color: #4f4f4f;
+                &:hover{
+                    color: #ff0000;
+                }
+                &:first-child{
+                    background: url(../images/hh.gif) center no-repeat;
+                    text-indent: -99999px;
+                }
+            }
+            .breadcrumb-separator{
+                padding: 0;
+                height: 35px;
+                top: -8px;
+                padding: 0 10px;
+                &:after{
+                    content: '';
+                    background: url(https://zsofa.xyz/wp-content/themes/zsofa/assets/images/g9.gif) left top no-repeat;
+                    width: 12px;
+                    height: 35px;
+                    top: 0;
+                    left: 0;
+                    opacity: 1;
+                    transform: initial;
+                }
+            }
+        }
         li{
             float: left;
             line-height: 35px;

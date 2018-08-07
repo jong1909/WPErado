@@ -100,11 +100,7 @@ $saving_price = $regular_price - $sale_price;
     </div>
     <div class="product-breadcrumb">
         <div class="container">
-            <ul>
-                <li class="home"><a href="">Home</a></li>
-                <li><a href="">Ghế sofa</a></li>
-                <li><a href="">Sofa da thật</a></li>
-            </ul>
+            <?php woocommerce_breadcrumb(); ?>
         </div>
     </div>
     <div class="product-info-wrapper">
