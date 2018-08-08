@@ -403,3 +403,9 @@ register_sidebar(array(
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>'
 ));
+
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+function new_loop_shop_per_page( $cols ) {
+    $cols = 21;
+    return $cols;
+}
