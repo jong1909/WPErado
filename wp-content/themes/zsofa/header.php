@@ -59,11 +59,7 @@
 				</div>
 				
 				<div class="search-box-mobile col-ssmm-12 col-ssm-12 main-search-box">
-                    <form action="" id="search-product">
-                        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
-                        <input type="submit" alt="search">
-                    </form>
-
+                    <?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
                 </div>				
 			</div>
 			<div class="header-middle-wrapper row menu-mobile-wrapper">

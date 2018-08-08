@@ -169,7 +169,7 @@ get_header(); ?>
                                 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
-                                            <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $page->ID, 'post-thumb' );?></a>
+                                            <a href="<?php the_permalink(); ?>"><span class="img-thumb-wrapper"><?php echo get_the_post_thumbnail( $page->ID, 'post-thumb' );?></span></a>
                                             <a href="<?php the_permalink(); ?>" class="news-title"><?php the_title(); ?></a>
                                             <span class="line-separator">&nbsp;</span>
                                             <div class="short-description">
