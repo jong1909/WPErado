@@ -4909,10 +4909,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 background: #f2f2f2 url(../images/l4.gif) no-repeat 78% center;
             }
             &:hover{
-                .news-item-wr{
-                    .news-view-more{
-                        background: #ffde17 url(../images/l4.gif) no-repeat 80% center;
-                    }
+                .news-view-more{
+                    background: #ffde17 url(../images/l4.gif) no-repeat 80% center;
                 }
             }
         }
