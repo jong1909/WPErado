@@ -2680,10 +2680,11 @@ footer{
             line-height: 30px;
             border-bottom: solid 1px #cacbcf;
             text-align: center;
-            background: #f2f2f2 url(../images/l4.gif) no-repeat 158px center;
+            background: #f2f2f2 url(../images/l4.gif) no-repeat 68.5% center;
             font-weight: bold;
             position: relative;
             top: 1px;
+            transition: all .15s ease-out;
             &:hover{
                 color: #ff0000;
             }
