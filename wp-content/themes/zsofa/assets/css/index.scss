@@ -4907,14 +4907,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             .news-view-more{
                 background: #f2f2f2 url(../images/l4.gif) no-repeat 78% center;
             }
-        }
-        &:hover{
-            .news-item-wr{
-                .news-view-more{
-                    background: #f2f2f2 url(../images/l4.gif) no-repeat 80% center;
+            &:hover{
+                .news-item-wr{
+                    .news-view-more{
+                        background: #f2f2f2 url(../images/l4.gif) no-repeat 80% center;
+                    }
                 }
             }
         }
+        
     }
     .order-online{
         width: 100%;
