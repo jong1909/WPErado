@@ -348,6 +348,21 @@ a {
 	}
 	.flex-control-nav{
 		bottom: 1px;
+        &.flex-control-thumbs{
+            position: absolute;
+            bottom: -67px;
+            li{
+                width: 14.2857142857%;
+                float: left;
+                margin-left: 7px;
+                border: 1px solid #DBDBDB;
+                padding: 2px;
+                img{
+                    height: auto;
+                    border-radius: 3px;
+                }
+            }
+        }
 	}
 	.flex-control-paging li a{
 		border-radius: 50%;

@@ -108,8 +108,7 @@ $saving_price = $regular_price - $sale_price;
             <div class="row">
                 <div class="col-ssmm-12 col-ssmm-12 col-md-5 col-left">
                     <div class="ribbon-wrapper ribbon-mobile">
-                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>Zsofa</strong> tiếp nối thành công của
-                            thương hiệu <strong>rOsano</strong></div>
+                        <div class="col-ssmm-12 col-ssm-12 col-md-7"><strong>zSOFA.vn</strong> đã đăng kí thương hiệu độc quyền tại <strong>VN</strong></div>
                         <div class="col-ssmm-5 col-ssm-5 col-md-5">
                             ĐẾN ĐÚNG NƠI - MUA ĐÚNG CHỖ
                         </div>
@@ -130,7 +129,7 @@ $saving_price = $regular_price - $sale_price;
 
                             echo apply_filters('woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id);
 
-                            //                            do_action( 'woocommerce_product_thumbnails' );
+                            do_action( 'woocommerce_product_thumbnails' );
                             ?>
                         </figure>
                     </div>
@@ -187,8 +186,8 @@ $saving_price = $regular_price - $sale_price;
                     </div>
                     <?php if(!empty($product_price)):?>
                     <div class="other-price"><span class="title">Hoặc mua trả góp với giá từ: <?php echo wc_price(round($product_price/12,-3));?> / tháng bằng thẻ tín dụng</span>
-                    <?php endif; ?>
                     </div>
+                    <?php endif; ?>
                     <div class="row promotion-wr">
                         <div class="col-ssm-8">
                             <div class="promotion">
