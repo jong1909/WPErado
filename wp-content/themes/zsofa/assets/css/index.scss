@@ -4515,13 +4515,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .woocommerce-result-count{
         padding-left: 10px;
     }
+    .zsofa-sorting{
+        margin-bottom: 13px !important;
+    }
     .woocommerce-pagination{
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
-        clear: both;
-        height: 0;
+        padding-left: 2%;
+        margin: 10px 0 13px;
+        &:before,&:after{
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
     }
     #header{
         .top-nav{
