@@ -5130,7 +5130,33 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         }
     }
 }
-
+@media (max-width: 320px){
+    .featured-category a.product-image{
+        height: 90px;
+    }
+    .featured-category .list-products .col-md-3{
+        margin-bottom: 10px;
+        height: 150px;
+    }
+    #wpadminbar .yoast-logo.svg{
+        width: 33px;
+    }
+    .section5.promotions-reviews .feature-product-wrapp a.wrapper-link{
+        height: 100px;
+    }
+    .feature-product-wrapp a.wrapper-link{
+        height: 100px;
+    }
+    .listing-page-wrapper .section5.promotions-reviews{
+        height: auto;
+    }
+    .section4.featured-products .fea-product-content .active .feature-cont-wrapper{
+        padding: 10px 8px;
+    }
+    .section4.featured-products .feature-cont-wrapper{
+        padding: 10px 8px;
+    }
+}
 @media (min-width: 1024px) {
 	.section4.featured-products{
 		.fea-product-content{
