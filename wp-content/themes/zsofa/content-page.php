@@ -159,7 +159,7 @@
                             ); ?></div>
                     </div>
                 </div> <!--End news-content-detail-wrapper-->
-                <div class="facebook-sharing">
+                <div class="facebook-sharing clearfix">
                     <a class="fb-share-bt" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="socialbookmark"></a>
                     <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                 </div>

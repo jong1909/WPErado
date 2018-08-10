@@ -177,7 +177,7 @@ get_header(); ?>
                                     </span><span style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px;">Thương hiệu&nbsp;</span><a href="http://erado.com.vn/" style="color: rgb(79, 79, 79); text-decoration-line: none; font-family: &quot;Times New Roman&quot;; font-size: 16px;"><strong>Nội thất ERADO</strong></a><span style="color: rgb(51, 51, 51); font-family: &quot;Times New Roman&quot;; font-size: 16px;">&nbsp;rất vinh hạnh và tự hào khi được là Nhà tài trợ Vàng của đêm Liveshow " Nhạc tình muôn thuở 6" lần này.&nbsp;</span></div><div class="cl"></div></div>
                                 </div>
                             </div> <!--End news-content-detail-wrapper-->
-                            <div class="facebook-sharing">
+                            <div class="facebook-sharing clearfix">
                                <a class="fb-share-bt" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="socialbookmark"></a>
                                 <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                             </div>
@@ -188,9 +188,9 @@ get_header(); ?>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
@@ -206,18 +206,18 @@ get_header(); ?>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
@@ -233,18 +233,18 @@ get_header(); ?>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveshow-nhac-tinh-muon-thuo.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA_Nhà tài trợ vàng liveshow nhạc tình muôn thuở</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm</div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
@@ -260,36 +260,36 @@ get_header(); ?>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-ssmm-6 col-ssm-6">
                                         <div class="news-item-wr">
                                             <a href=""><img src="<?php echo get_template_directory_uri() ; ?>/assets/images/noi-that-erado-nha-tai-tro-vang-liveconcert-my-tam-jimmii-nguyen.jpg" alt="" class="img-responsive news-image"></a>
-                                            <a href="" class="news-title">Nội thất ERADO - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
+                                            <a href="" class="news-title">Nội thất ZSOFA - Nhà Tài Trợ Vàng LiveConcert "Mỹ Tâm - Jimmii</a>
                                             <span class="line-separator">&nbsp;</span>
-                                            <div class="short-description">Thương hiệu nội thất ERADO vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
+                                            <div class="short-description">Thương hiệu nội thất ZSOFA vô cùng hân hạnh trở thành nhà tài trợ cho đêm </div>
                                             <a href="" class="news-view-more">Xem chi tiết</a>
                                         </div>
                                     </div>
