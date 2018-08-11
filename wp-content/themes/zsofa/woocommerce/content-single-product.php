@@ -368,7 +368,7 @@ $saving_price = $regular_price - $sale_price;
                                         <a class="img-feature-wrapper" href="<?php the_permalink() ?>"><span class="img-thumb-wrapper"><?php if (has_post_thumbnail($loop_feature_products->post->ID)) echo get_the_post_thumbnail($loop_feature_products->post->ID, 'medium'); else echo '<img src="' . woocommerce_placeholder_img_src() . '" width="300px" height="210px" />'; ?></span></a>
                                         <a class="product-name" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                                         <div class="product-price"><span>Giá: </span><span class="num"><?php echo wc_price($regular_price); ?></span></div>
-                                        <?php if(!empty($sale_price):?>
+                                        <?php if(!empty($sale_price)):?>
                                             <div class="sale-price"><span>Giá KM: </span><span class="num"><?php echo wc_price($sale_price); ?></span></div>
                                         <?php endif;?>
                                         <a href="<?php the_permalink() ?>" class="buy-now">Mua ngay</a>
