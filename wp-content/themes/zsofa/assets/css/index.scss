@@ -5129,6 +5129,27 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             }
         }
     }
+    .win-wrapper-vdproduct{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        left: 0;
+        margin: 0;
+        top: 30%;
+        #product-video-content{
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+            iframe{
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+        }
+    }
 }
 @media (max-width: 320px){
     .featured-category a.product-image{
