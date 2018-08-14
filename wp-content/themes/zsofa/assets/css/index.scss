@@ -5125,6 +5125,12 @@ div.hide {
     }
 }
 @media (max-width: 479px) {
+    .product-detail-page .col-md-7.col-right .working-hours{
+        width: 100%;
+    }
+    .product-detail-page .col-md-7.col-right .other-price{
+        height: 28px;
+    }
     .product-detail-page .product-info-wrapper{
         padding-top: 40px;
         .col-left{
