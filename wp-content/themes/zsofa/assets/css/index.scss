@@ -3928,6 +3928,7 @@ div.hide {
             img{
                 width: 100%;
                 height: initial;
+                max-height: initial;
             }
         }
         .feature-price-sale{
@@ -3941,6 +3942,12 @@ div.hide {
     .feature-product-wrapp a.wrapper-link .img-thumb-wrapper{
         height: 136px;
         overflow: hidden;
+    }
+    .listing-page-wrapper .section5.promotions-reviews{
+        height: auto;
+    }
+    .promotions-reviews .feature-product-wrapp a.wrapper-link .img-thumb-wrapper{
+        height: 225px;
     }
     .featured-category{
         a.product-image{
