@@ -474,7 +474,7 @@ a {
 	
 }
 .section3.real-videos{
-	height: 535px;
+	height: auto;
     padding: 30px 0px;
     overflow: hidden;
     background-color: #f2f2f2;
@@ -575,6 +575,7 @@ a {
             .img-thumb-wrapper{
                 height: 100%;
                 overflow: hidden;
+                display: block;
             }
     		&:before{
 	    		content: '';
