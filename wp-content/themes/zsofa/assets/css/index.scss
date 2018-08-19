@@ -3940,18 +3940,18 @@ div.hide {
         }
     }
     .feature-product-wrapp a.wrapper-link .img-thumb-wrapper{
-        height: initial;
+        height: 100%;
+        overflow: hidden;
     }
     .product-detail-page .best-selling-products.slider-product .feature-product-wrapp a.wrapper-link{
         height: 136px;
-        overflow: hidden;
     }
     .best-selling-products .feature-product-wrapp a.wrapper-link .img-thumb-wrapper{
-        height: initial;
+        height: 100%;
+        overflow: hidden;
     }
     .feature-product-wrapp a.wrapper-link{
         height: 225px;
-        overflow: hidden;
     }
     .listing-page-wrapper .section5.promotions-reviews{
         height: auto;
