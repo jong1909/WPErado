@@ -171,7 +171,7 @@ get_header(); ?>
                 <div class="col-ssmm-12 col-ssm-12 col-md-9 col-right-pr">
                     <div class="bread-crumb-cat clearfix">
                         <ul>
-                            <li><a href="">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href=""><?php woocommerce_page_title(); ?></a></li>
                         </ul>
                     </div>

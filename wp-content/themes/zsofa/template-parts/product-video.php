@@ -12,7 +12,11 @@
                             <a class="img-wrapper" href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb-wide'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="600px" height="400px" />'; ?></a>
                             <a href="javascript:;" class="view-more">Xem video</a>
                             <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
-                            <div class="video-product-price"><?php echo wc_price($product->get_regular_price()); ?></div>
+                            <div class="video-product-price">
+                                <?php if ( $price_html = $product->get_price_html() ) : ?>
+                                    <?php echo $price_html; ?>
+                                <?php endif; ?>
+                            </div>
                             <div class="views">5 lượt xem</div>
                             <div class="product-video-link"><?php echo get_field_details('video_san_pham')?></div>
                         <?php endif ?>
@@ -33,7 +37,11 @@
                                         <a href="javascript:;" class="view-more">Xem video</a>
                                     </a>
                                     <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
-                                    <div class="video-product-price"><?php echo wc_price($product->get_regular_price()); ?></div>
+                                    <div class="video-product-price">
+                                        <?php if ( $price_html = $product->get_price_html() ) : ?>
+                                            <?php echo $price_html; ?>
+                                        <?php endif; ?>
+                                    </div>
                                     <div class="views">5 lượt xem</div>
                                     <div class="product-video-link"><?php echo get_field_details('video_san_pham')?></div>
                                 </div>
