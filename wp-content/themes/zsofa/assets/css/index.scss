@@ -3946,8 +3946,12 @@ div.hide {
     .listing-page-wrapper .section5.promotions-reviews{
         height: auto;
     }
-    .promotions-reviews .feature-product-wrapp a.wrapper-link .img-thumb-wrapper{
+    .section5.promotions-reviews .feature-product-wrapp a.wrapper-link {
         height: 225px;
+    }
+    .promotions-reviews .feature-product-wrapp a.wrapper-link .img-thumb-wrapper{
+        height: 100%;
+        overflow: hidden;
     }
     .featured-category{
         a.product-image{
