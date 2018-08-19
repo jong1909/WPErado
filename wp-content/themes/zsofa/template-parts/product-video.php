@@ -9,7 +9,7 @@
                     $loop = new WP_Query( $args );
                     while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
                         <?php if(get_field_details('main_video') == '1'): ?>
-                            <a class="img-wrapper" href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb-wide'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="600px" height="400px" />'; ?></a>
+                            <a class="img-wrapper" href="<?php echo get_permalink( $loop->post->ID ) ?>"><span class="img-thumb-wrapper"><?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'post-thumb-wide'); else echo '<img src="'.woocommerce_placeholder_img_src().'" width="600px" height="400px" />'; ?></span></a>
                             <a href="javascript:;" class="view-more">Xem video</a>
                             <div class="video-product-title"><a href="<?php echo get_permalink( $loop->post->ID ) ?>"><?php the_title(); ?></a></div>
                             <div class="video-product-price">
