@@ -4520,10 +4520,16 @@ div.hide {
             }
         }
         .product-main-img{
-            margin: 10px auto 10px;            
+            margin: 10px auto 10px;
+            a{
+                display: block;
+                height: 500px;
+                overflow: hidden;
+            }
             img{
                 padding: 0 10px;
                 width: 100%;
+                height: initial;
             }
         }
         .col-md-7.col-right{
@@ -5154,6 +5160,9 @@ div.hide {
     }
 }
 @media (max-width: 479px) {
+    .product-detail-page .product-main-img a{
+        height: 280px;
+    }
     .section3.real-videos .videos-sub-product .video-product-price{
         font-size: 14px;
     }
