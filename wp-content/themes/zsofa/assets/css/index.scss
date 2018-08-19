@@ -4494,6 +4494,7 @@ div.hide {
         }
         .product-breadcrumb{
             border-top: 1px solid #E9E9E9;
+            margin-bottom: 39px;
             li{
                 &:before{
                     height: 31px;
@@ -5163,6 +5164,9 @@ div.hide {
     }
 }
 @media (max-width: 479px) {
+    .product-detail-page .product-breadcrumb{
+        margin-bottom: 0;
+    }
     .product-detail-page .product-main-img a{
         height: 225px;
     }
