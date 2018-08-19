@@ -768,10 +768,11 @@ a {
 	    line-height: 0;
 	    position: relative;
         padding: 3px;
+        height: 200px;
 	    img{
             max-width: 100%;
-            max-height: 140px;
-            height: 140px;
+            max-height: initial;
+            height: initial;
 		}
         .img-thumb-wrapper{
             display: block;
