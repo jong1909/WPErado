@@ -3935,6 +3935,10 @@ div.hide {
 /*-----------------------Begin media screen --------------------*/
 
 @media (max-width: 1023px) {
+    .product-detail-page .product-info-wrapper .col-left{
+        background: none;
+        border-radius: none;
+    }
     .section3.real-videos .videos-sub-product a.view-more{
         top: 40%;
     }
