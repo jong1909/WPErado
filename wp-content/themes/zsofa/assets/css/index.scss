@@ -1732,8 +1732,8 @@ footer{
             }
         }
         img{
-            max-width: 100%;
-            height: 280px;
+            width: 100%;
+            height: initial;
             display: block;
         }
     }
@@ -1758,6 +1758,10 @@ footer{
     .product-info-wrapper{
         background: #F5F5F5;
         border-bottom: 1px solid #DBDBDB;
+        .col-left{
+            background: #fff;
+            border-radius: 0 0 10px 10px;
+        }
         .customers-purchase{
             height: 113px;
             background: url(../images/g10.gif) repeat-x left -5px;
