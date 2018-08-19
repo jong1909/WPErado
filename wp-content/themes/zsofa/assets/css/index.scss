@@ -3927,8 +3927,7 @@ div.hide {
         a.wrapper-link{
             img{
                 width: 100%;
-                height: 237px;
-                max-height: 237px;
+                height: initial;
             }
         }
         .feature-price-sale{
@@ -3938,6 +3937,10 @@ div.hide {
             height: 19px;
             overflow: hidden;
         }
+    }
+    .feature-product-wrapp a.wrapper-link .img-thumb-wrapper{
+        height: 136px;
+        overflow: hidden;
     }
     .featured-category{
         a.product-image{
